@@ -1,0 +1,156 @@
+# Repository
+repo_name: cudy-docs
+repo_url: https://github.com/cudytech-pr/User-Guide
+edit_uri: ""
+
+site_name: Docs
+site_description: Documentation for Cudy Products
+site_author: Cudy Docs
+site_url: https://docs.cudy.com
+site_dir: site
+copyright: © 2025, Shenzhen Cudy Technology Co., Ltd.
+
+docs_dir: docs
+
+theme: 
+  name: material
+  logo: images/cudyicon.png
+  custom_dir: overrides
+  features:
+    - search.highlight
+    - navigation.indexes
+    - navigation.tabs
+    - navigation.top
+    
+  # palette:
+  #   - scheme: default
+  #     primary: white
+  #     accent: indigo
+  #     toggle:
+  #       icon: material/toggle-switch-off-outline
+  #       name: Switch to dark mode
+  #   - scheme: slate
+  #     primary: cyan
+  #     accent: cyan
+  #     toggle:
+  #       icon: material/toggle-switch
+  #       name: Switch to light mode
+  favicon: images/favicon.ico
+
+# Plugins
+plugins:
+  - search:
+      prebuild_index: filter_search_index.py
+  - include-markdown
+  - pdf-export:
+      verbose: true
+      media_type: print
+      enabled_if_env: ENABLE_PDF_EXPORT
+
+# Customization
+extra:
+  # analytics:
+  #   provider: google
+  #   property: G-PEZ9H4DS1X
+  social:
+    - icon: fontawesome/solid/envelope
+      link: mailto:support@cudy.com
+    - icon: fontawesome/solid/globe
+      link: https://www.cudy.com
+    - icon: fontawesome/brands/github
+      link: https://github.com/cudytech-pr
+    - icon: fontawesome/brands/facebook
+      link: https://www.facebook.com/cudytech/
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/company/cudytech
+    - icon: fontawesome/brands/youtube
+      link: https://www.youtube.com/channel/UCi9XeBubGtEazL6KxO8In6w
+    - icon: fontawesome/brands/instagram
+      link: https://www.instagram.com/cudytech
+
+extra_css:
+  - https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.css
+  - https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/default-skin/default-skin.min.css
+  - https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@3.0.1/dist/cookieconsent.css
+
+  # we can use the cdn or files
+  # - stylesheets/photoswipe.min.css
+  # - stylesheets/default-skin.min.css
+  - stylesheets/extra.css
+  
+extra_javascript:
+  - https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.js
+  - https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe-ui-default.min.js
+  - https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@3.0.1/dist/cookieconsent.umd.js
+  # we can use the cdn or files
+  # - javascripts/photoswipe.min.js
+  # - javascripts/photoswipe-ui-default.min.js
+  - javascripts/analytics.js
+  - javascripts/extra.js
+  - javascripts/cookieconsent.js
+
+markdown_extensions:
+  - attr_list
+  - md_in_html
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.details
+  - toc:
+      permalink: true
+  - admonition
+
+nav:
+  - Home: index.md
+  - User Guide:
+    - Overview: user_guide/index.md
+    - WR3600:
+      - WR3600: user_guide/wr3600/index.md
+      - Overview: user_guide/wr3600/overview.md
+      - Connection: user_guide/wr3600/connection.md
+      - Quick Setup: user_guide/wr3600/quick_setup.md
+      - Management:
+        - System Status: user_guide/wr3600/status.md
+        - General Settings:
+          - WAN Mode: user_guide/wr3600/wan.md
+          - Wireless: user_guide/wr3600/wireless.md
+          - VPN: user_guide/wr3600/vpn.md
+          - Captive Portal: user_guide/wr3600/captive_portal.md
+          - Firmware: user_guide/wr3600/firmware.md
+        - Advanced Settings:
+          - Network: user_guide/wr3600/network.md
+          - Security: user_guide/wr3600/security.md
+          - System: user_guide/wr3600/system.md
+        - Parental Control: user_guide/wr3600/parental_control.md
+        - Diagnostic Tools: user_guide/wr3600/diagnostic_tools.md
+    - GP1200: 
+      - GP1200: user_guide/gp1200/index.md
+      - Overview: user_guide/gp1200/overview.md
+      - Connection: user_guide/gp1200/connection.md
+      - Quick Setup: user_guide/gp1200/quick_setup.md 
+      - Management:
+        - Status: user_guide/gp1200/pon_status.md 
+        - LAN: user_guide/gp1200/pon_lan.md 
+        - WLAN: user_guide/gp1200/pon_wlan.md 
+        - WAN: user_guide/gp1200/pon_wan.md 
+        - Services: user_guide/gp1200/pon_service.md 
+        - Advance: user_guide/gp1200/pon_advance.md
+        - Admin: user_guide/gp1200/pon_admin.md  
+        - Diagnostics: user_guide/gp1200/pon_diagnostics.md 
+        - Statistics: user_guide/gp1200/pon_statistics.md 
+    - GS1024E:
+      - GS1024E: user_guide/gs1024e/index.md
+      - Overview: user_guide/gs1024e/overview.md  
+      - Installation: user_guide/gs1024e/installation.md
+      - Management:
+        - Log In/Out: user_guide/gs1024e/log_in_out.md
+        - System Manage: user_guide/gs1024e/system_manage.md
+        - Port Management: user_guide/gs1024e/port_management.md
+        - Protocol Management: user_guide/gs1024e/protocol_management.md
+        - VLAN: user_guide/gs1024e/vlan.md
+        - QoS: user_guide/gs1024e/qos.md
+        - Tools: user_guide/gs1024e/tools.md
+    - IR04: user_guide/ir04/index.md
+    - C200P: user_guide/c200p/index.md
+  - FAQ:
+    - FAQ: FAQ/index.md

@@ -1,0 +1,2557 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Documentation for Cudy Products">
+      
+      
+        <meta name="author" content="Cudy Docs">
+      
+      
+        <link rel="canonical" href="https://docs.cudy.com/user_guide/gp1200/pon_advance/">
+      
+      
+        <link rel="prev" href="../pon_service/">
+      
+      
+        <link rel="next" href="../pon_admin/">
+      
+      
+      <link rel="icon" href="../../../images/favicon.ico">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.4.6">
+    
+    
+      
+        <title>Advance - Docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.35e1ed30.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.css">
+    
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/default-skin/default-skin.min.css">
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@3.0.1/dist/cookieconsent.css">
+    
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#advance" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="Docs" class="md-header__button md-logo" aria-label="Docs" data-md-component="logo">
+      
+  <img src="../../../images/cudyicon.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Docs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Advance
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/cudytech-pr/User-Guide" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    cudy-docs
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../.." class="md-tabs__link">
+        
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../" class="md-tabs__link">
+          
+  
+    
+  
+  User Guide
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../FAQ/" class="md-tabs__link">
+          
+  
+    
+  
+  FAQ
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Docs" class="md-nav__button md-logo" aria-label="Docs" data-md-component="logo">
+      
+  <img src="../../../images/cudyicon.png" alt="logo">
+
+    </a>
+    Docs
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/cudytech-pr/User-Guide" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    cudy-docs
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    User Guide
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            User Guide
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../wr3600/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    WR3600
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            WR3600
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../wr3600/overview/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../wr3600/connection/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Connection
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../wr3600/quick_setup/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Quick Setup
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2_5" id="__nav_2_2_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Management
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_2_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2_5">
+            <span class="md-nav__icon md-icon"></span>
+            Management
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../wr3600/status/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    System Status
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2_5_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2_5_2" id="__nav_2_2_5_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    General Settings
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_2_5_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2_5_2">
+            <span class="md-nav__icon md-icon"></span>
+            General Settings
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../wr3600/wan/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    WAN Mode
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../wr3600/wireless/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Wireless
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../wr3600/vpn/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    VPN
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../wr3600/captive_portal/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Captive Portal
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../wr3600/firmware/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Firmware
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2_5_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2_5_3" id="__nav_2_2_5_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Advanced Settings
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_2_5_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2_5_3">
+            <span class="md-nav__icon md-icon"></span>
+            Advanced Settings
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../wr3600/network/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Network
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../wr3600/security/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Security
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../wr3600/system/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    System
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../wr3600/parental_control/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Parental Control
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../wr3600/diagnostic_tools/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Diagnostic Tools
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    GP1200
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            GP1200
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../overview/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../connection/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Connection
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../quick_setup/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Quick Setup
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3_5" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_3_5" id="__nav_2_3_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Management
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_3_5_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_3_5">
+            <span class="md-nav__icon md-icon"></span>
+            Management
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pon_status/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Status
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pon_lan/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    LAN
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pon_wlan/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    WLAN
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pon_wan/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    WAN
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pon_service/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Services
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Advance
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Advance
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#advance_1" class="md-nav__link">
+    Advance
+  </a>
+  
+    <nav class="md-nav" aria-label="Advance">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#arp-table" class="md-nav__link">
+    ARP Table
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bridging" class="md-nav__link">
+    Bridging
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#routing" class="md-nav__link">
+    Routing
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#link-mode" class="md-nav__link">
+    Link Mode
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#print-server" class="md-nav__link">
+    Print Server
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ip-qos" class="md-nav__link">
+    IP QoS
+  </a>
+  
+    <nav class="md-nav" aria-label="IP QoS">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#qos-policy" class="md-nav__link">
+    Qos Policy
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#qos-classification" class="md-nav__link">
+    QoS Classification
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#traffic-shaping" class="md-nav__link">
+    Traffic Shaping
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ipv6" class="md-nav__link">
+    IPv6
+  </a>
+  
+    <nav class="md-nav" aria-label="IPv6">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ipv6-enabledisable" class="md-nav__link">
+    IPv6 Enable/Disable
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#radvd" class="md-nav__link">
+    RADVD
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dhcpv6" class="md-nav__link">
+    DHCPv6
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mld-proxy" class="md-nav__link">
+    MLD Proxy
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mld-snooping" class="md-nav__link">
+    MLD Snooping
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ipv6-routing" class="md-nav__link">
+    IPv6 Routing
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ipport-filtering" class="md-nav__link">
+    IP/Port Filtering
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ipv6-acl" class="md-nav__link">
+    IPv6 ACL
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pon_admin/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Admin
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pon_diagnostics/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Diagnostics
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pon_statistics/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Statistics
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../gs1024e/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    GS1024E
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_4" id="__nav_2_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            GS1024E
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../gs1024e/overview/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../gs1024e/installation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Installation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4_4" id="__nav_2_4_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Management
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_4_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4_4">
+            <span class="md-nav__icon md-icon"></span>
+            Management
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../gs1024e/log_in_out/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Log In/Out
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../gs1024e/system_manage/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    System Manage
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../gs1024e/port_management/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Port Management
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../gs1024e/protocol_management/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Protocol Management
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../gs1024e/vlan/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    VLAN
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../gs1024e/qos/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    QoS
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../gs1024e/tools/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Tools
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ir04/index.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    IR04
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../c200p/index.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    C200P
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../FAQ/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    FAQ
+  </span>
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            FAQ
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#advance_1" class="md-nav__link">
+    Advance
+  </a>
+  
+    <nav class="md-nav" aria-label="Advance">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#arp-table" class="md-nav__link">
+    ARP Table
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bridging" class="md-nav__link">
+    Bridging
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#routing" class="md-nav__link">
+    Routing
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#link-mode" class="md-nav__link">
+    Link Mode
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#print-server" class="md-nav__link">
+    Print Server
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ip-qos" class="md-nav__link">
+    IP QoS
+  </a>
+  
+    <nav class="md-nav" aria-label="IP QoS">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#qos-policy" class="md-nav__link">
+    Qos Policy
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#qos-classification" class="md-nav__link">
+    QoS Classification
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#traffic-shaping" class="md-nav__link">
+    Traffic Shaping
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ipv6" class="md-nav__link">
+    IPv6
+  </a>
+  
+    <nav class="md-nav" aria-label="IPv6">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ipv6-enabledisable" class="md-nav__link">
+    IPv6 Enable/Disable
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#radvd" class="md-nav__link">
+    RADVD
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dhcpv6" class="md-nav__link">
+    DHCPv6
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mld-proxy" class="md-nav__link">
+    MLD Proxy
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mld-snooping" class="md-nav__link">
+    MLD Snooping
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ipv6-routing" class="md-nav__link">
+    IPv6 Routing
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ipport-filtering" class="md-nav__link">
+    IP/Port Filtering
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ipv6-acl" class="md-nav__link">
+    IPv6 ACL
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+
+  <!-- Edit button -->
+  
+
+  <!--
+    Hack: check whether the content contains a h1 headline. If it
+    doesn't, the page title (or respectively site name) is used
+    as the main headline.
+  -->
+  
+
+  <!-- Markdown content -->
+  <h1 id="advance">Advance<a class="headerlink" href="#advance" title="Permanent link">&para;</a></h1>
+<h2 id="advance_1">Advance<a class="headerlink" href="#advance_1" title="Permanent link">&para;</a></h2>
+<h3 id="arp-table">ARP Table<a class="headerlink" href="#arp-table" title="Permanent link">&para;</a></h3>
+<p><img src="../../../images/gp1200/image-93.png" alt="" width=600px style="border: 1px solid #eee;" /></p>
+<p>ARP (Address Resolution Protocol) is a fundamental networking protocol used to map an IP address to a MAC address (physical hardware address) on a local network.</p>
+<hr />
+<h3 id="bridging">Bridging<a class="headerlink" href="#bridging" title="Permanent link">&para;</a></h3>
+<p><img src="../../../images/gp1200/image-39.png" alt="" width=600px style="border: 1px solid #eee;" /></p>
+<p>• Aging Time: The duration a bridge retains unused MAC address entries in its forwarding table before discarding them to free up resources. Default value is 300 seconds.</p>
+<p>• 802.1d Spanning Tree: A legacy protocol (STP) that prevents network loops by dynamically disabling redundant paths in a bridged/switched network, ensuring a single active path.
+For most networks—especially those with redundancy or unknown future changes—keeping STP enabled by default is the safer choice. Disable or replace it only after careful evaluation of risks and alternatives.</p>
+<p><em>- Apply Changes:</em> Click to activate all the settings or changes.</p>
+<p><em>- Show MACs:</em> Click to view the <em>Bridge Forwarding Database</em> with information about Port, MAC Address, Local, Ageing Timer.</p>
+<p><img src="../../../images/gp1200/image-95.png" alt="" width=600px style="border: 1px solid #eee;" /></p>
+<hr />
+<h3 id="routing">Routing<a class="headerlink" href="#routing" title="Permanent link">&para;</a></h3>
+<p><img src="../../../images/gp1200/image-40.png" alt="" width=600px style="border: 1px solid #eee;" /></p>
+<p>• Enable: Tick to enable the Routing configuration.</p>
+<p>• Destination: The target IP address or network where the packet needs to be delivered.</p>
+<p>• Subnet Mask: Defines the network portion of an IP address, determining which hosts are local or remote.</p>
+<p>• Next Hop: The immediate next router/gateway IP the packet should be forwarded to.</p>
+<p>• Metric: A value (e.g., hop count, bandwidth) used to determine the best path to the destination.</p>
+<p>• Interface: The physical/logical port through which the packet is sent.</p>
+<p><em>- Add Route:</em> Click to add the route configured above into the <em>Static Route Table</em>.</p>
+<p><em>- Update:</em> Click to update the parameters for the selected route.</p>
+<p><em>- Delete Selected:</em> Click to delete the selected route.</p>
+<p><em>- Show Routes:</em> Click to view the <em>IP Route Table</em> of destination routes commonly accessed by your network.</p>
+<hr />
+<h3 id="link-mode">Link Mode<a class="headerlink" href="#link-mode" title="Permanent link">&para;</a></h3>
+<p><img src="../../../images/gp1200/image-41.png" alt="" width=600px style="border: 1px solid #eee;" /></p>
+<p>Set the Ethernet Link Speed/Duplex Mode to ensure stable and efficient communication by matching the data rate (e.g.,10/100/1000 Mbps) and transmission direction, both way simultaneously (Full Duplex) or alternately (Half Duplex), between connected devices. Proper settings prevent performance issues like packet loss or speed degradation caused by mismatched parameters. </p>
+<p>• Auto Mode: Automatically selects the highest compatible speed/duplex, reducing manual errors. It is recommended in most cases.</p>
+<p>• 10M/100M/1000M Half/Full Mode:. In cases you have to manually set the Mode:</p>
+<ul>
+<li>
+<p>Always match settings on both ends (e.g., both 1000M Full Mode).</p>
+</li>
+<li>
+<p>Avoid mismatches: Full Duplex on one end and Half Duplex on the other causes collisions</p>
+</li>
+<li>
+<p>Verify with tools: </p>
+<p>① Linux: <code>ethtool &lt;interface&gt;</code> </p>
+<p>② Cisco: <code>show interfaces status</code></p>
+<p>③ Windows: <code>netsh interface show interface</code>, etc.</p>
+</li>
+</ul>
+<hr />
+<h3 id="print-server">Print Server<a class="headerlink" href="#print-server" title="Permanent link">&para;</a></h3>
+<p><img src="../../../images/gp1200/image-42.png" alt="" width=600px style="border: 1px solid #eee;" /></p>
+<p>Printer Server on the router enables network-wide printing by sharing a locally connected USB printer, accessible via a web interface (e.g., http://192.168.1.1:631) for setup and management. </p>
+<p><strong>How to configure:</strong></p>
+<ol>
+<li>Connect the printer to the router’s USB port.</li>
+<li>Enable the print server in the management page.</li>
+<li>Click <em>Refresh</em> to view the updated printer URL(s). </li>
+<li>Add the printer to devices using the provided URL.</li>
+</ol>
+<hr />
+<h2 id="ip-qos">IP QoS<a class="headerlink" href="#ip-qos" title="Permanent link">&para;</a></h2>
+<h3 id="qos-policy">Qos Policy<a class="headerlink" href="#qos-policy" title="Permanent link">&para;</a></h3>
+<p><img src="../../../images/gp1200/image-43.png" alt="" width=600px style="border: 1px solid #eee;" /></p>
+<p>IP QoS (Quality of Service) is a network technology that prioritizes and manages data traffic to ensure optimal performance for critical applications (e.g., VoIP, video streaming) by controlling bandwidth, latency, and packet loss.</p>
+<p>• IP QoS: Select <em>Enable</em> to configure the IP QoS.</p>
+<p><strong>- QoS Queue Config</strong></p>
+<ul>
+<li>If select <em>Policy PRIO</em>, tick <em>Enable</em> behind the Queue. The smaller number, the higher priority.</li>
+<li>If select <em>Policy WRR</em>, enter the weight number (default is 40:30:20:10) for the queue and tick <em>Enable</em> behind it. </li>
+</ul>
+<p><strong>- QoS Bandwidth Config</strong></p>
+<ul>
+<li>
+<p>User Defined Bandwidth: If select <em>Disable</em>, CPE will select an appropriate bandwidth based on WAN. If select <em>Enable</em>, specific bandwidth of WAN needs to be configured.</p>
+</li>
+<li>
+<p>Total Bandwidth Limit: Cap the maximum upload/download speed based on your ISP plan (90% of ISP speed) to ensure critical apps get priority and prevent network congestion.</p>
+</li>
+</ul>
+<p><em>- Apply Changes:</em> Click to activate all the settings or changes.</p>
+<hr />
+<h3 id="qos-classification">QoS Classification<a class="headerlink" href="#qos-classification" title="Permanent link">&para;</a></h3>
+<p><img src="../../../images/gp1200/image-44.png" alt="" width=600px style="border: 1px solid #eee;" /></p>
+<p><em>- Add:</em> Click to configure the QoS Classification rules.</p>
+<p><em>- Apply Changes:</em> Click to activate all the settings or changes.</p>
+<p><img src="../../../images/gp1200/image-45.png" alt="" width=600px style="border: 1px solid #eee;" /></p>
+<p>• RuleName: Identifies the rule’s purpose (e.g., VoIP_Priority).</p>
+<p>• RuleOrder: Defines evaluation sequence (higher priority rules checked first).</p>
+<p>• Precedence: Select Queue priority level for IP packets.</p>
+<p>• DSCP Remarking: Select a proper DSCP value. Here is a <em>DSCP Value Chart</em> for your referrence.</p>
+<p><img src="../../../images/gp1200/image-94.png" alt="" width=600px/></p>
+<p>• 802.1p: Prioritizes VLAN traffic (0-7, e.g., 5 for real-time data).</p>
+<p>• IP QoS Rule by type：</p>
+<p>① Port</p>
+<p>• Port/Physical Port: Filters by logical (TCP/UDP) or physical switch port.</p>
+<p>• DSCP Pattern: Matches packets with specific DSCP tags (e.g., EF for VoIP).</p>
+<p>② Ethery Type</p>
+<p>• Ethernet Type: Filters by Ethernet protocol (e.g., 0x0800 for IPv4).</p>
+<p>③ IP/Protocol</p>
+<p>• IP Version: IPv4/IPv6 differentiation.</p>
+<p>• Protocol: Matches TCP/UDP/ICMP, etc.</p>
+<p>• DSCP Pattern: Matches packets with specific DSCP tags (e.g., EF for VoIP).  </p>
+<p>• Source/Destination IP/Mask: Filters by IP ranges (e.g., 192.168.1.0/24).</p>
+<p>• Source/Destination Port: Targets specific ports (e.g., 5060 for SIP).</p>
+<p>④ MAC Address</p>
+<p>• Source/Destination MAC: Filters by hardware addresses.</p>
+<p><em>- Apply Changes:</em> Click to activate all the settings or changes.</p>
+<hr />
+<h3 id="traffic-shaping">Traffic Shaping<a class="headerlink" href="#traffic-shaping" title="Permanent link">&para;</a></h3>
+<p><img src="../../../images/gp1200/image-46.png" alt="" width=600px style="border: 1px solid #eee;" /></p>
+<p><em>- Add:</em> Click to configure the IP QoS Traffic Shaping Rule.</p>
+<p><em>- Apply Changes:</em> Click to activate all the settings or changes.</p>
+<p><img src="../../../images/gp1200/image-47.png" alt="" width=600px style="border: 1px solid #eee;" /></p>
+<p>• IP Version: Select the IP protocol version used, IPv4 or IPv6.</p>
+<p>• Direction: Select the Traffic flow direction,Upstream or Downstream.</p>
+<p>• WAN Interface: Select an External network interface.</p>
+<p>• LAN Interface: Select a Local network interface. </p>
+<p>• Protocol: Select a transport layer protocol,TCP or UDP, ICMP.</p>
+<p><strong>- In IPv4 Version</strong></p>
+<p>• Source IP/Mask: Enter the originating IP address and subnet mask.</p>
+<p>• Destination IP/Mask: Enter the target IP address and subnet mask.</p>
+<p><strong>- In IPv6 Version</strong></p>
+<p>• Source/Destination IP: Enter the full IPv6 address (e.g., 2001:db8::1 for a single device). Or
+use :: to shorten long strings of zeros (e.g., 2001:0db8::1 → 2001:db8::1).</p>
+<p>• Source/Destination Prefix Length: Enter a proper prefix length.</p>
+<ul>
+<li>
+<p>/128: Matches one exact device (e.g., 2001:db8::1/128).</p>
+</li>
+<li>
+<p>/64: Matches a whole local network (default for home/office).</p>
+</li>
+<li>
+<p>/48 or shorter: For big networks (e.g., ISP ranges).</p>
+</li>
+</ul>
+<p>• Source/Destination Port: Enter the Application ports for filtering.</p>
+<p>• Rate Limit: Enter the Bandwidth cap (e.g., 10Mbps) for traffic control.</p>
+<p><em>- Apply Changes:</em> Click to activate all the settings or changes.</p>
+<hr />
+<h2 id="ipv6">IPv6<a class="headerlink" href="#ipv6" title="Permanent link">&para;</a></h2>
+<h3 id="ipv6-enabledisable">IPv6 Enable/Disable<a class="headerlink" href="#ipv6-enabledisable" title="Permanent link">&para;</a></h3>
+<p><img src="../../../images/gp1200/image-48.png" alt="" width=600px style="border: 1px solid #eee;" /></p>
+<p><em>- IPv6:</em> Select to <em>Enable</em> or <em>Disable</em> IPv6 configuration. </p>
+<p><em>- Apply Changes:</em> Click to activate the change.</p>
+<hr />
+<h3 id="radvd">RADVD<a class="headerlink" href="#radvd" title="Permanent link">&para;</a></h3>
+<p><img src="../../../images/gp1200/image-49.png" alt="" width=600px style="border: 1px solid #eee;" /></p>
+<p>RADVD (Router Advertisement Daemon) is an IPv6 service that broadcasts network prefixes and routing information to hosts, enabling SLAAC  (StateLess Address Auto-Configuration) without DHCPv6. It allows devices to automatically generate IPv6 addresses and discover default gateways via RA (Router Advertisement) messages.</p>
+<p>• RADVD: Select <em>On</em> to configure <em>Prefix Mode</em> and <em>ULA</em>. Otherwise select <em>Off</em>.</p>
+<p>• MaxRtrAdvInterval: Maximum time (in seconds) between Router Advertisement messages sent by the router (default:600s).</p>
+<p>• MinRtrAdvInterval: Minimum time (in seconds) between Router Advertisement messages (default:0.33×MaxRtrAdvInterval).</p>
+<p>• AdvManagedFlag: Select <em>On</em> to indicate DHCPv6 is required for IP addresses (not SLAAC), otherwise select <em>Off</em>.</p>
+<p>• AdvOtherConfigFlag: Select <em>On</em> to tell devices to use DHCPv6 for DNS/other info (even if SLAAC is used for IPs), otherwise select <em>Off</em>.</p>
+<p>• Prefix Mode: Select the Mode how network prefixes are advertised to devices.</p>
+<p>① Auto(SLAAC): The router automatically advertises prefixes, allowing devices to generate their own IPv6 addresses (using Stateless Address Autoconfiguration).For example, devices combine the prefix (2001:db8::/64) with their MAC to create a unique IP.</p>
+<p><img src="../../../images/gp1200/image-99.png" alt="" width=600px/></p>
+<ul>
+<li>RDNSS Mode: Select <em>HGW Proxy</em> to manually configure DNS (e.g., custom servers like Cloudflare) and force devices to route DNS queries through the gateway; select <em>WAN Connection Mode</em> to automatically advertise the ISP's default DNS servers obtained from the WAN interface (e.g., via PPPoE/DHCPv6).</li>
+</ul>
+<p>② Manual: Prefixes are statically configured and advertised without SLAAC. Address assignment relies on DHCPv6 or manual input. For example, in controlled environments where specific prefixes must be enforced.</p>
+<p><img src="../../../images/gp1200/image-97.png" alt="" width=600px/></p>
+<ul>
+<li>
+<p>Prefix: Enter the IPv6 network prefix.</p>
+</li>
+<li>
+<p>Prefix Length: Set subnet size (e.g., /64 for a standard LAN).</p>
+</li>
+<li>
+<p>AdvValidLifetime: Set the time (seconds) the prefix remains valid (e.g.,86400 = 1 day).</p>
+</li>
+<li>
+<p>AdvPreferredLifetime: Set the time (seconds) for SLAAC address preference (e.g., 14400 = 4 hours).</p>
+</li>
+<li>
+<p>RDNSS 1/2: Add recursive DNS servers (e.g., 2001:4860:4860::8888 for Google DNS).</p>
+</li>
+</ul>
+<p>• Enable ULA: Select <em>On</em> for private/internal networks (like IPv4's 192.168.0.0) or backup addressing; select <em>Off</em> if you only need global IPv6 (GUA) or avoid NAT-like complexities. </p>
+<p><em>- Apply Changes:</em> Click to activate all the settings or changes.</p>
+<hr />
+<h3 id="dhcpv6">DHCPv6<a class="headerlink" href="#dhcpv6" title="Permanent link">&para;</a></h3>
+<p><img src="../../../images/gp1200/image-50.png" alt="" width=600px style="border: 1px solid #eee;" /></p>
+<p>• DHCP Mode:</p>
+<p>① None: DHCP is disabled completely and manual IP configuration is required.</p>
+<p>② DHCP Relay: The router forwards DHCP requests across subnets/VLANs (enterprise use, e.g., centralizing DHCP in a data center).</p>
+<p><img src="../../../images/gp1200/image-98.png" alt="" width=600px style="border: 1px solid #eee;" /></p>
+<p><em>- Apply Changes:</em> Click to activate all the settings or changes.</p>
+<p>③ DHCP Server: The router assigns IP addresses to clients (default for home networks, manages IP pools/leases).</p>
+<p><img src="../../../images/gp1200/image-100.png" alt="" width=400px style="border: 1px solid #eee;" /></p>
+<p>• DHCPv6 Server Type:</p>
+<p>① Auto: The router automatically assigns IPv6 addresses and settings (like DNS) using SLAAC or DHCPv6, typically based on ISP or upstream network configurations.</p>
+<p><img src="../../../images/gp1200/image-101.png" alt="" width=400px style="border: 1px solid #eee;" /></p>
+<p>② Manual: You manually define the IPv6 address range, lease time, DNS servers, and other parameters for full control over DHCPv6 assignments.</p>
+<p><img src="../../../images/gp1200/image-102.png" alt="" width=400px style="border: 1px solid #eee;" /></p>
+<p>• IP Pool Range: Set the range of IPv6 addresses available for DHCPv6 assignment (e.g., 2001:db8::1000 to 2001:db8::2000).</p>
+<p>• Prefix Length: Set the subnet mask length (e.g., /64) to define the network portion of assigned addresses.</p>
+<p>• Valid Lifetime: Enter the maximum time (seconds) an assigned IPv6 address remains valid (e.g., 86400 = 1 day).</p>
+<p>• Preferred Lifetime: Enter the time (seconds) an address stays "preferred" for use before deprecation (e.g., 14400 = 4 hours).</p>
+<p>• Renew Time: Enter the time when clients start renewing leases (e.g., 1800 = 30 minutes before expiry).</p>
+<p>• Rebind Time: Enter the time when clients seek alternate servers if renewal fails (e.g., 2880 = 48 minutes before expiry).</p>
+<p>• Client DUID: Set a unique DHCPv6 client identifier (like a MAC address for IPv6).</p>
+<p>• Domain: Set the DNS domain name pushed to clients (e.g., home.lan). Then click <em>Add</em> to add the new entry into the <em>Domain Search Table</em>.</p>
+<p>• Name Server IP: Set the DNS server(s) provided to clients (e.g., 2001:4860:4860::8888). Then click <em>Add</em> to add the new entry into the <em>Name Server Table</em>.</p>
+<p>• NTP Server IP: Enter the IPv4/IPv6 address of a Network Time Protocol (NTP) server used to synchronize device clocks (e.g., 216.239.35.0 for Google NTP). Then click <em>Add</em> to add the new entry into the <em>NTP Server Table</em>.</p>
+<p>• Hostname: Enter a readable label for a device on a network (e.g., router.home).</p>
+<p>• MAC Address: Enter a unique 48-bit hardware identifier for network interfaces (e.g., 00:1A:2B:3C:4D:5E).</p>
+<p>• IP Address: Enter a numerical label assigned to devices for network communication (e.g., 192.168.1.1 or 2001:db8::1). Then click <em>Add</em> to add the new entry into the <em>MAC Binding Table</em>.</p>
+<p><em>- Apply Changes:</em> Click to activate all the settings or changes.</p>
+<p><em>- Show Clients:</em> Click to view all the <em>Active DHCPv6 Clients</em> with the assigned IP address, DUID and expired time for each DHCP leased client.</p>
+<p><em>- Delete Selected:</em> Click to delete the selected entries in the table. </p>
+<p><em>- Delete All:</em> Click to delete all the entries in the table. </p>
+<hr />
+<h3 id="mld-proxy">MLD Proxy<a class="headerlink" href="#mld-proxy" title="Permanent link">&para;</a></h3>
+<p><img src="../../../images/gp1200/image-51.png" alt="" width=600px style="border: 1px solid #eee;" /></p>
+<p>It is a protocol that forwards Multicast Listener Discovery (MLD) messages between IPv6 networks, enabling multicast routing without full PIM-SM support. It acts as a simple relay for multicast group memberships across subnet boundaries.</p>
+<p>• Robust Count: Set the number of times IGMP/MLD queries are sent to ensure group membership stability (e.g., 2 for redundancy).</p>
+<p>• Query Interval: Set the time (seconds) between general IGMP/MLD membership queries (e.g., 125).</p>
+<p>• Query Response Interval: Set the maximum delay for hosts to respond to queries (e.g., 2000ms).</p>
+<p>• Response Interval of Last Group Member: Set the delay (seconds) for final leave-group messages (e.g., 1 to reduce latency,2 for better reliability).</p>
+<p><em>- Apply Changes:</em> Click to activate all the settings or changes.</p>
+<hr />
+<h3 id="mld-snooping">MLD Snooping<a class="headerlink" href="#mld-snooping" title="Permanent link">&para;</a></h3>
+<p><img src="../../../images/gp1200/image-52.png" alt="" width=600px style="border: 1px solid #eee;" /></p>
+<p>It is a Layer 2 optimization technique where switches listen to MLD (Multicast Listener Discovery) messages to intelligently forward IPv6 multicast traffic only to ports with interested receivers, reducing unnecessary network flooding.</p>
+<p>• Enable: Select it when you need efficient IPv6 multicast traffic delivery within a VLAN (e.g., video streaming networks). </p>
+<p>• Disable: Select it if all ports require broadcast-like multicast flooding (e.g., testing environments) or to reduce switch processing load.</p>
+<p><em>- Apply Changes:</em> Click to activate all the settings or changes.</p>
+<hr />
+<h3 id="ipv6-routing">IPv6 Routing<a class="headerlink" href="#ipv6-routing" title="Permanent link">&para;</a></h3>
+<p><img src="../../../images/gp1200/image-53.png" alt="" width=600px style="border: 1px solid #eee;" /></p>
+<p>It manually configures fixed paths for network traffic by specifying destination prefixes and next-hop addresses, ideal for small or stable networks. Use it when routes rarely change, but avoid in large/dynamic networks due to lack of automatic updates.</p>
+<p>• Enable: Tick to turn on the static route.</p>
+<p>• Destination: Enter the target IPv6 network prefix (e.g., 2001:db8::/64).</p>
+<p>• Next Hop: Enter the adjacent router's IPv6 address for forwarding (e.g., fe80::1).</p>
+<p>• Metric: Enter the Route priority used if multiple paths exist. 1 stands for that the route is preferred as the primary path due to its lower cost; while 2 means that it acts as a backup/secondary route and is used only when the primary (Metric=1) fails.</p>
+<p>• Interface: Physical/Virtual port for sending traffic (e.g., GigabitEthernet0/1).</p>
+<p><em>- Add Route:</em> Click to add the route configured above into the <em>IPv6 Static Route Table</em>.</p>
+<p><em>- Update:</em> Click to update the parameters for the selected route.</p>
+<p><em>- Delete Selected:</em> Click to delete the selected route.</p>
+<p><em>- Delete All:</em> Click to delete all the routes.</p>
+<p><em>- Show Routes:</em> Click to view the <em>IP Route Table</em> of destination routes commonly accessed by your network.</p>
+<hr />
+<h3 id="ipport-filtering">IP/Port Filtering<a class="headerlink" href="#ipport-filtering" title="Permanent link">&para;</a></h3>
+<p><img src="../../../images/gp1200/image-54.png" alt="" width=600px style="border: 1px solid #eee;" /></p>
+<p>It controls network access by blocking/allowing specific IPv6 addresses and port numbers, enhancing security (e.g., deny 2001:db8::1 port 22). It operates at firewall or router levels to restrict unauthorized traffic.</p>
+<p>• Outgoing Default Action: Select the default behavior for outgoing traffic. <em>Allow</em> for open environments where most traffic is trusted (e.g., home networks), while <em>Deny</em> for strict security to block all traffic unless explicitly permitted (e.g., corporate firewalls).</p>
+<p>• Incoming Default Action: Select the default handling of incoming traffic. <em>Allow</em> for open networks where most incoming traffic is trusted (e.g., internal collaboration tools), while <em>Deny</em> for strict security to block all inbound traffic unless explicitly permitted (e.g., public-facing servers).</p>
+<p>• Direction: Select the traffic flow for rule application. <em>Incoming</em> to control external-to-internal traffic (e.g., blocking attacks), while <em>Outgoing</em> to restrict internal-to-external flows (e.g., preventing data leaks).</p>
+<p>• Protocol: Select a filter by transport layer protocol. <em>TCP</em> for reliable connection-based data (e.g., web browsing), <em>UDP</em> for low-latency connectionless traffic (e.g., video streaming), while <em>ICMPv6</em> for network diagnostics (e.g., ping, MTU discovery).</p>
+<p>• Rule Action: Select Action to take if the rule matches (Permit or Block). <em>Allow</em> to explicitly permit matched traffic (e.g., whitelisting trusted services), while <em>Deny</em> to block specific threats or unwanted flows (e.g., blacklisting malicious IPs).</p>
+<p>• Source IP Address: Enter a specific IPv6 address (e.g., 2001:db8::1) where the traffic to be filtered originates from.</p>
+<p>• Source Prefix Length: Specifies the IPv6 subnet mask length (e.g., /64) for the source IPv6 address range, determining how broadly (e.g., entire network) or narrowly (e.g., single host) the rule applies.</p>
+<p>• Destination IP Address: Enter a specific IPv6 address to send the target traffic to (e.g., ff02::1 for multicast).</p>
+<p>• Destination Prefix Length: Defines the IPv6 subnet mask (e.g., /64) for the target network, controlling whether the rule applies to a single host (/128), a subnet, or broader ranges.</p>
+<p>• Source Port: Enter the sender’s port for the filtered traffic (e.g., 1024 for custom apps).</p>
+<p>• Destination Port: Enter the receiver’s port for the filtered traffic (e.g., 80 for HTTP).</p>
+<p><em>- Apply Changes:</em> Click to activate the change.</p>
+<p><em>- Add:</em> Click to add the new entry into the <em>Current Filter Table</em>.</p>
+<p><em>- Delete Selected:</em> Click to delete the selected entries.</p>
+<p><em>- Delete All:</em> Click to delete all the entries in the table. </p>
+<hr />
+<h3 id="ipv6-acl">IPv6 ACL<a class="headerlink" href="#ipv6-acl" title="Permanent link">&para;</a></h3>
+<p><img src="../../../images/gp1200/image-55.png" alt="" width=600px style="border: 1px solid #eee;" /></p>
+<p>IPv6 ACL (Access Control List) filters network traffic by defining permit/deny rules based on IPv6 addresses, ports, or protocols to enforce security policies.</p>
+<p>• IPv6 ACL Capability: Select <em>Enable</em> when you need granular traffic control (e.g., security filtering); select <em>Disable</em> if no traffic restrictions are required to reduce device processing overhead.</p>
+<p>• Interface: Select the physical/virtual port for applying the rule. <em>WAN</em> for rules filtering external/internet-facing traffic (e.g., blocking inbound attacks), while <em>LAN</em> for internal network controls (e.g., restricting inter-VLAN access).</p>
+<p>• Source IP Address: Set Source IP Address to specify the exact IPv6 host (2001:db8::1) or network range (2001:db8::/64) for traffic filtering, ensuring precise control over allowed/blocked sources.</p>
+<p>• Source Prefix Length: Set Source Prefix Length to define the scope of source IPv6 addresses (e.g., /64 for a subnet, /128 for a single host), balancing specificity and flexibility in traffic filtering.</p>
+<p>• Service: Defines rules to filter traffic for specific protocols (e.g., FTP, HTTP, ICMPv6) by matching ports (TCP/UDP) or ICMPv6 types (e.g., PING uses types 128/129).</p>
+<ul>
+<li>
+<p>Any: Select it only for broad rules (e.g., testing, default deny) but avoid it in strict security policies. It indicates a wildcard that matches all addresses (::/0) and ports (if unspecified).</p>
+</li>
+<li>
+<p>FTP: File transfer protocol (TCP ports 20/21); select it for secure internal file transfers with authentication.</p>
+</li>
+<li>
+<p>TFTP: Trivial FTP (UDP port 69); select it for simple, fast transfers in local networks (e.g., device configs).</p>
+</li>
+<li>
+<p>HTTP: Web data protocol (TCP 80); select it for unencrypted web traffic (avoid on sensitive sites).</p>
+</li>
+<li>
+<p>HTTPS: Secure HTTP (TCP 443); always prefer for encrypted web access (e.g., logins, payments).</p>
+</li>
+<li>
+<p>PING: Network diagnostic tool (ICMPv6 types 128/129); select it to test connectivity, but block in strict ACLs for security.</p>
+</li>
+</ul>
+<p><em>- Add:</em> Click to add the new entry into the <em>Current ACL Table</em>.</p>
+<p><em>- Delete Selected:</em> Click to delete the selected entries.</p>
+<hr />
+
+  <!-- Last update of source file -->
+  
+
+  <!-- Root element of PhotoSwipe. Must have class pswp. -->
+  <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe. 
+        It's a separate element, as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+        <!-- Container that holds slides. PhotoSwipe keeps only 3 slides in DOM to save memory. -->
+        <!-- don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+          <div class="pswp__item"></div>
+          <div class="pswp__item"></div>
+          <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+          <div class="pswp__top-bar">
+            <!--  Controls are self-explanatory. Order can be changed. -->
+            <div class="pswp__counter"></div>
+            <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+            <!-- <button class="pswp__button pswp__button--share" title="Share"></button> -->
+            <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+            <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+            <!-- Preloader demo https://codepen.io/dimsemenov/pen/yyBWoR -->
+            <!-- element will get class pswp__preloader--active when preloader is running -->
+            <div class="pswp__preloader">
+              <div class="pswp__preloader__icn">
+              <div class="pswp__preloader__cut">
+                <div class="pswp__preloader__donut"></div>
+              </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+            <div class="pswp__share-tooltip"></div> 
+          </div>
+
+          <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+          </button>
+
+          <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+          </button>
+
+          <div class="pswp__caption">
+            <div class="pswp__caption__center"></div>
+          </div>
+        </div>
+    </div>
+</div>
+
+              </article>
+            </div>
+          
+          
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      © 2025, Shenzhen Cudy Technology Co., Ltd.
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+    <a href="mailto:support@cudy.com" target="_blank" rel="noopener" title="" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4l217.6 163.2c11.4 8.5 27 8.5 38.4 0l217.6-163.2c12.1-9.1 19.2-23.3 19.2-38.4 0-26.5-21.5-48-48-48H48zM0 176v208c0 35.3 28.7 64 64 64h384c35.3 0 64-28.7 64-64V176L294.4 339.2a63.9 63.9 0 0 1-76.8 0L0 176z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.cudy.com" target="_blank" rel="noopener" title="www.cudy.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M352 256c0 22.2-1.2 43.6-3.3 64H163.3c-2.2-20.4-3.3-41.8-3.3-64s1.2-43.6 3.3-64h185.4c2.2 20.4 3.3 41.8 3.3 64zm28.8-64h123.1c5.3 20.5 8.1 41.9 8.1 64s-2.8 43.5-8.1 64H380.8c2.1-20.6 3.2-42 3.2-64s-1.1-43.4-3.2-64zm112.6-32H376.7c-10-63.9-29.8-117.4-55.3-151.6 78.3 20.7 142 77.5 171.9 151.6zm-149.1 0H167.7c6.1-36.4 15.5-68.6 27-94.7 10.5-23.6 22.2-40.7 33.5-51.5C239.4 3.2 248.7 0 256 0s16.6 3.2 27.8 13.8c11.3 10.8 23 27.9 33.5 51.5 11.6 26 20.9 58.2 27 94.7zm-209 0H18.6c30-74.1 93.6-130.9 172-151.6-25.5 34.2-45.3 87.7-55.3 151.6zM8.1 192h123.1c-2.1 20.6-3.2 42-3.2 64s1.1 43.4 3.2 64H8.1C2.8 299.5 0 278.1 0 256s2.8-43.5 8.1-64zm186.6 254.6c-11.6-26-20.9-58.2-27-94.6h176.6c-6.1 36.4-15.5 68.6-27 94.6-10.5 23.6-22.2 40.7-33.5 51.5-11.2 10.7-20.5 13.9-27.8 13.9s-16.6-3.2-27.8-13.8c-11.3-10.8-23-27.9-33.5-51.5zM135.3 352c10 63.9 29.8 117.4 55.3 151.6-78.4-20.7-142-77.5-172-151.6h116.7zm358.1 0c-30 74.1-93.6 130.9-171.9 151.6 25.5-34.2 45.2-87.7 55.3-151.6h116.6z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/cudytech-pr" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.facebook.com/cudytech/" target="_blank" rel="noopener" title="www.facebook.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.linkedin.com/company/cudytech" target="_blank" rel="noopener" title="www.linkedin.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.youtube.com/channel/UCi9XeBubGtEazL6KxO8In6w" target="_blank" rel="noopener" title="www.youtube.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.instagram.com/cudytech" target="_blank" rel="noopener" title="www.instagram.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["search.highlight", "navigation.indexes", "navigation.tabs", "navigation.top"], "search": "../../../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.aecac24b.min.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe-ui-default.min.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@3.0.1/dist/cookieconsent.umd.js"></script>
+      
+        <script src="../../../javascripts/analytics.js"></script>
+      
+        <script src="../../../javascripts/extra.js"></script>
+      
+        <script src="../../../javascripts/cookieconsent.js"></script>
+      
+    
+  </body>
+</html>
