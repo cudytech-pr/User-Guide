@@ -1,12 +1,12 @@
   # Repository
   repo_name: Cudy-docs
-  repo_url: https://github.com/Cudytech-pr/User-Guide
+  repo_url: https://github.com/maggie202506/cudydocs-trial/
   edit_uri: ""
 
   site_name: Docs
   site_description: Documentation for Cudy Products
   site_author: Cudy Docs
-  site_url: https://docs.cudy.com
+  site_url: https://maggie202506.github.io/cudydocs-trial/
   site_dir: site
   copyright: © 2026, Shenzhen Cudy Technology Co., Ltd.
 
