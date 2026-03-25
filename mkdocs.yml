@@ -1,12 +1,12 @@
   # Repository
   repo_name: Cudy-docs
-  repo_url: https://github.com/cudytech-pr/User-Guide/
+  repo_url: https://github.com/maggie202506/cudy-docs-aibot
   edit_uri: ""
 
   site_name: Docs
   site_description: Documentation for Cudy Products
   site_author: Cudy Docs
-  site_url: https://docs.cudy.com/
+  site_url: https://maggie202506.github.io/cudy-docs-aibot/
   site_dir: site
   copyright: © 2026, Shenzhen Cudy Technology Co., Ltd.
 
@@ -72,7 +72,7 @@
         link: https://www.youtube.com/channel/UCi9XeBubGtEazL6KxO8In6w
       - icon: fontawesome/brands/instagram
         link: https://www.instagram.com/Cudytech
-    cname: docs.cudy.com
+    cname: https://maggie202506.github.io/cudy-docs-aibot/
 
   extra_css:
     - https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.css

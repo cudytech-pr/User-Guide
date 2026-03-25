@@ -22,5 +22,3 @@ Or use the requirements.txt in the root of the project
 
 Refer: [https://squidfunk.github.io/mkdocs-material/getting-started/#with-pip](https://squidfunk.github.io/mkdocs-material/getting-started/#with-pip)
 
-## Online View
-Please view the docs online at [https://docs.cudy.com](https://docs.cudy.com)
