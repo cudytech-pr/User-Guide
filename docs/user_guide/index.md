@@ -43,6 +43,11 @@
     <div class="product-img" style="background-image:url('http://www.cudy.com/cdn/shop/files/WR1200-A.png?v=1710323628')"></div>
     <div class="product-name">WR1200</div>
   </a>
+  
+  <a href="wireless_router/wr1200e" class="product-card">
+    <div class="product-img" style="background-image:url('https://www.cudy.com/cdn/shop/files/WR300-A2_dfa3c210-e9e5-4f86-ab8e-7236f4d9f911.png?v=1715242342')"></div>
+    <div class="product-name">WR1200E</div>
+  </a>
 
   <a href="wireless_router/wr300" class="product-card">
     <div class="product-img" style="background-image:url('http://www.cudy.com/cdn/shop/files/WR300-A2.png?v=1710731891')"></div>

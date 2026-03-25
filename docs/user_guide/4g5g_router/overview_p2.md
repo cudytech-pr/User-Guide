@@ -51,7 +51,7 @@
     <td rowspan="3" style="text-align: left; vertical-align: middle;">
     <img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/wireless_router/2.4g-led.webp" alt="Wi-Fi icon" width="20" height="20"><br>(Wireless)</td>
     <td><strong>Off</strong></td>
-    <td>Wireless Band is disabled.</td>
+    <td>Wireless is disabled.</td>
     </tr>
     <tr>
     <td><strong>Blink</strong></td>
@@ -59,7 +59,7 @@
     </tr>
     <tr>
     <td><strong>On</strong></td>
-    <td>Wireless Band is enabled.</td>
+    <td>Wireless is enabled.</td>
     </tr>
     <tr>
     <td rowspan="4" style="text-align: left; vertical-align: middle;">
@@ -76,8 +76,8 @@
     <td>Internet Signal is medium.</td>
     </tr>
     <tr>
-    <td><strong>Yellow</strong></td>
-    <td>Internet Signal is medium.</td>
+    <td><strong>White</strong></td>
+    <td>Internet Signal is strong.</td>
     </tr>
 </tbody>
     </table>

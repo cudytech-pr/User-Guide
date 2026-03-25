@@ -85,7 +85,8 @@
     - stylesheets/theme-tokens.css
     - stylesheets/admonitions.css
     - stylesheets/extra.css
-    - stylesheets/preview-panel.css  
+    - stylesheets/preview-panel.css
+    - chatbot.css
 
     
   extra_javascript:
@@ -101,6 +102,7 @@
     - javascripts/lazyload.js
     - javascripts/preview-panel.js
     - javascripts/nav-toggle.js
+    - chatbot.js
 
   markdown_extensions:
     - attr_list

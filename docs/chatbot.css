@@ -1,0 +1,453 @@
+/* ── Cudy Chatbot Widget ────────────────────────────────────────────────────── */
+
+#cudy-chatbot-root {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 99999;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* ── FAB Button ─────────────────────────────────────────────────────────────── */
+#cudy-fab {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  border: none;
+  background: linear-gradient(135deg, #0066cc 0%, #0044aa 100%);
+  color: #fff;
+  cursor: pointer;
+  box-shadow: 0 4px 20px rgba(0, 102, 204, 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  outline: none;
+}
+
+#cudy-fab:hover {
+  transform: scale(1.08);
+  box-shadow: 0 6px 28px rgba(0, 102, 204, 0.55);
+}
+
+#cudy-fab:active {
+  transform: scale(0.96);
+}
+
+.cudy-fab-icon {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cudy-fab-icon svg {
+  width: 22px;
+  height: 22px;
+}
+
+/* ── Panel ──────────────────────────────────────────────────────────────────── */
+#cudy-panel {
+  position: absolute;
+  bottom: 68px;
+  right: 0;
+  width: 360px;
+  max-height: 520px;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.16), 0 2px 8px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  transform-origin: bottom right;
+}
+
+.cudy-panel-open {
+  animation: cudy-pop-in 0.25s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+.cudy-panel-closed {
+  display: none !important;
+}
+
+@keyframes cudy-pop-in {
+  from { opacity: 0; transform: scale(0.85) translateY(12px); }
+  to   { opacity: 1; transform: scale(1) translateY(0); }
+}
+
+/* ── Header ─────────────────────────────────────────────────────────────────── */
+#cudy-header {
+  background: linear-gradient(135deg, #0066cc 0%, #0044aa 100%);
+  color: #fff;
+  padding: 14px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-shrink: 0;
+}
+
+.cudy-header-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.cudy-avatar {
+  width: 36px;
+  height: 36px;
+  background: rgba(255,255,255,0.2);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.cudy-avatar img {
+  width: 26px;
+  height: 26px;
+  object-fit: contain;
+  filter: brightness(0) invert(1);
+}
+
+#cudy-title {
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.01em;
+}
+
+#cudy-subtitle {
+  font-size: 11px;
+  opacity: 0.8;
+  margin-top: 1px;
+}
+
+#cudy-lang-btn {
+  background: rgba(255,255,255,0.18);
+  border: 1px solid rgba(255,255,255,0.35);
+  color: #fff;
+  border-radius: 20px;
+  padding: 4px 12px;
+  font-size: 12px;
+  cursor: pointer;
+  font-family: inherit;
+  transition: background 0.15s;
+  white-space: nowrap;
+}
+
+#cudy-lang-btn:hover {
+  background: rgba(255,255,255,0.28);
+}
+
+/* ── Messages ───────────────────────────────────────────────────────────────── */
+#cudy-messages {
+  flex: 1;
+  overflow-y: auto;
+  padding: 16px 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-height: 200px;
+  max-height: 340px;
+  scroll-behavior: smooth;
+}
+
+#cudy-messages::-webkit-scrollbar {
+  width: 4px;
+}
+#cudy-messages::-webkit-scrollbar-track {
+  background: transparent;
+}
+#cudy-messages::-webkit-scrollbar-thumb {
+  background: #d0d7e3;
+  border-radius: 4px;
+}
+
+.cudy-msg {
+  display: flex;
+  max-width: 88%;
+}
+
+.cudy-msg-user {
+  align-self: flex-end;
+  flex-direction: row-reverse;
+}
+
+.cudy-msg-bot {
+  align-self: flex-start;
+}
+
+.cudy-bubble {
+  padding: 9px 13px;
+  border-radius: 14px;
+  font-size: 13.5px;
+  line-height: 1.55;
+  word-break: break-word;
+}
+
+.cudy-msg-user .cudy-bubble {
+  background: linear-gradient(135deg, #0066cc, #0044aa);
+  color: #fff;
+  border-bottom-right-radius: 4px;
+}
+
+.cudy-msg-bot .cudy-bubble {
+  background: #f0f3f8;
+  color: #1a2233;
+  border-bottom-left-radius: 4px;
+}
+
+.cudy-bubble code {
+  background: rgba(0,0,0,0.08);
+  padding: 1px 5px;
+  border-radius: 4px;
+  font-family: "SF Mono", "Fira Code", monospace;
+  font-size: 12px;
+}
+
+.cudy-msg-user .cudy-bubble code {
+  background: rgba(255,255,255,0.2);
+}
+
+/* Typing dots */
+.cudy-dots {
+  display: inline-flex;
+  gap: 4px;
+  align-items: center;
+  padding: 2px 0;
+}
+
+.cudy-dots span {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #7a8faa;
+  animation: cudy-bounce 1.2s infinite ease-in-out;
+}
+
+.cudy-dots span:nth-child(1) { animation-delay: 0s; }
+.cudy-dots span:nth-child(2) { animation-delay: 0.2s; }
+.cudy-dots span:nth-child(3) { animation-delay: 0.4s; }
+
+@keyframes cudy-bounce {
+  0%, 80%, 100% { transform: translateY(0); opacity: 0.5; }
+  40%            { transform: translateY(-5px); opacity: 1; }
+}
+
+/* ── Input Area ─────────────────────────────────────────────────────────────── */
+#cudy-input-area {
+  display: flex;
+  align-items: flex-end;
+  gap: 8px;
+  padding: 10px 12px;
+  border-top: 1px solid #e8ecf2;
+  background: #fff;
+  flex-shrink: 0;
+}
+
+#cudy-input {
+  flex: 1;
+  border: 1.5px solid #d0d9e8;
+  border-radius: 10px;
+  padding: 8px 12px;
+  font-size: 13.5px;
+  font-family: inherit;
+  resize: none;
+  outline: none;
+  color: #1a2233;
+  background: #f7f9fc;
+  transition: border-color 0.15s;
+  max-height: 120px;
+  line-height: 1.5;
+}
+
+#cudy-input:focus {
+  border-color: #0066cc;
+  background: #fff;
+}
+
+#cudy-input::placeholder {
+  color: #a0adc0;
+}
+
+#cudy-send-btn {
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  border: none;
+  background: linear-gradient(135deg, #0066cc, #0044aa);
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: opacity 0.15s, transform 0.15s;
+  outline: none;
+}
+
+#cudy-send-btn:hover {
+  opacity: 0.88;
+  transform: scale(1.05);
+}
+
+#cudy-send-btn:active {
+  transform: scale(0.95);
+}
+
+#cudy-send-btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+  transform: none;
+}
+
+#cudy-send-btn svg {
+  width: 16px;
+  height: 16px;
+}
+
+/* ── Responsive ─────────────────────────────────────────────────────────────── */
+@media (max-width: 420px) {
+  #cudy-panel {
+    width: calc(100vw - 32px);
+    right: 0;
+    bottom: 68px;
+  }
+
+  #cudy-chatbot-root {
+    bottom: 16px;
+    right: 16px;
+  }
+}
+
+/* ── Contact Bar ─────────────────────────────────────────────────────────── */
+#cudy-contact-bar {
+  padding: 6px 12px;
+  border-top: 1px solid #e8ecf2;
+  background: #f7f9fc;
+  display: flex;
+  justify-content: center;
+}
+
+#cudy-contact-btn {
+  background: none;
+  border: 1.5px solid #0066cc;
+  color: #0066cc;
+  border-radius: 20px;
+  padding: 5px 16px;
+  font-size: 12.5px;
+  cursor: pointer;
+  font-family: inherit;
+  transition: background 0.15s, color 0.15s;
+}
+
+#cudy-contact-btn:hover {
+  background: #0066cc;
+  color: #fff;
+}
+
+/* ── Chat View Layout ────────────────────────────────────────────────────── */
+#cudy-chat-view {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  overflow: hidden;
+}
+
+/* ── Contact Form View ───────────────────────────────────────────────────── */
+#cudy-contact-view {
+  flex-direction: column;
+  flex: 1;
+  overflow-y: auto;
+  padding: 16px;
+  gap: 10px;
+}
+
+#cudy-contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#cudy-back-btn {
+  background: none;
+  border: none;
+  color: #0066cc;
+  font-size: 13px;
+  cursor: pointer;
+  font-family: inherit;
+  padding: 0;
+  text-align: left;
+  margin-bottom: 4px;
+}
+
+#cudy-back-btn:hover {
+  text-decoration: underline;
+}
+
+.cudy-field input,
+.cudy-field textarea {
+  width: 100%;
+  border: 1.5px solid #d0d9e8;
+  border-radius: 10px;
+  padding: 8px 12px;
+  font-size: 13.5px;
+  font-family: inherit;
+  color: #1a2233;
+  background: #f7f9fc;
+  outline: none;
+  box-sizing: border-box;
+  resize: none;
+  transition: border-color 0.15s;
+}
+
+.cudy-field input:focus,
+.cudy-field textarea:focus {
+  border-color: #0066cc;
+  background: #fff;
+}
+
+.cudy-field input::placeholder,
+.cudy-field textarea::placeholder {
+  color: #a0adc0;
+}
+
+#cudy-form-send-btn {
+  width: 100%;
+  padding: 10px;
+  background: linear-gradient(135deg, #0066cc, #0044aa);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-size: 14px;
+  font-family: inherit;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.15s;
+  margin-top: 4px;
+}
+
+#cudy-form-send-btn:hover { opacity: 0.88; }
+#cudy-form-send-btn:disabled { opacity: 0.5; cursor: not-allowed; }
+
+.cudy-feedback-success {
+  color: #1a7f3c;
+  font-size: 13px;
+  text-align: center;
+  padding: 6px;
+  background: #eafaf1;
+  border-radius: 8px;
+}
+
+.cudy-feedback-error {
+  color: #c0392b;
+  font-size: 13px;
+  text-align: center;
+  padding: 6px;
+  background: #fdf0ee;
+  border-radius: 8px;
+}
