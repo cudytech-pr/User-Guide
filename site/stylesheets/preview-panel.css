@@ -119,7 +119,7 @@ body.resizing {
 
 [data-md-color-scheme="slate"] #preview-panel .content {
   background: #222529;
-  color: #00000030;
+  color: var(--md-default-fg-color);
 }
 
 /* ------------------------------------------ */
