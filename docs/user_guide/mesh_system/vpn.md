@@ -2,7 +2,9 @@
 **VPN (Virtual Private Network)** helps you access Internet resources remotely, securely, and privately through tunneling technology. When you access the Internet, VPN encrypts your personal information and hides your IP address from the public. For VPN users, it looks like the devices are directly connected. Cudy Router supports 6 types of VPN connections: PPTP, L2TP, OpenVPN, WireGuard, ZeroTier, IPSec (site-to-site). Please choose an appropriate VPN according to your needs and circumstances.
 
 !!! Note
-    Before you enable VPN Server, it is recommended to configure Dynamic DNS Service or assign a Static IP Address for router’s WAN port and synchronize your System Time with Internet. 
+    - Before you enable VPN Server, it is recommended to configure Dynamic DNS Service or assign a Static IP Address for router’s WAN port and synchronize your System Time with Internet. 
+    - M1200 is used as an example in this guide. Refer to your actual product for more details.
+
 
 <img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/mesh_system/vpn.webp" alt="" width="800px" style="display: block; margin: 0 auto;" />
 

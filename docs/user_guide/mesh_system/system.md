@@ -1,5 +1,8 @@
 # System
 
+!!! Note
+    M1200 is used as an example in this guide. Refer to your actual product for more details.
+
 System is to manage the router’s systematic features. It includes System Time, Firmware, Backup/Restore, Administration, Admin Account, Language, Timed Reboot, Reboot, Reset, LED Control, and TR069 (not in Wireless Access Point mode).
 
 ---
@@ -143,14 +146,6 @@ The LEDs indicate the router’s activities and status. *LED Control* allows you
 <img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/wireless_router/led-control.webp" alt="" width="500px" style="border: 1px solid #eee; display: block; margin: 0 auto;" />
 
 ---
-## Toggle Button
-The toggle button on the router has no function by default. On this page, you may customize its function to be controlling VPN ON/OFF or LED ON/OFF.
-
-<img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/wireless_router/toggle-button.webp" alt="" width="500px" style="border: 1px solid #eee; display: block; margin: 0 auto;" />
-
-!!! Note
-    This feature is not available for all models. Please refer to your model and management page.
-
 ## TR069
 TR-069, also known as CWMP (CPE WAN Management), allows Auto-Configuration Server (ACS) to perform auto-configuration, provision, connection, and diagnostics to this device. You may configure this function under your ISP’s instructions.
 

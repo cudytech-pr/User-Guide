@@ -1,5 +1,9 @@
 # Security
- To enhance your home network security with a kit of features built in Cudy Router. In Wireless Router mode, it includes Firewall, MAC filter, IP filter, Domain Filter, IP/MAC Binding, WPS, Wi-Fi Schedule, and ALG; while in Wireless Access Point mode, it consists of WPS and Wi-Fi Schedule.
+
+!!! Note
+    M1200 is used as an example in this guide. Refer to your actual product for more details.
+
+To enhance your home network security with a kit of features built in Cudy Router. In Wireless Router mode, it includes Firewall, MAC filter, IP filter, Domain Filter, IP/MAC Binding, WPS, Wi-Fi Schedule, and ALG; while in Wireless Access Point mode, it consists of WPS and Wi-Fi Schedule.
 
 ---
 ## Firewall

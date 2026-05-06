@@ -1,10 +1,13 @@
 # Quick Installation Guide
 
+!!! Note
+    M1200 is used as an example in this guide. Refer to your actual product for more details.
+
 ## Scenario 1: Set up main unit for a New Mesh Network.
 
 1. Plug the power adapter into the DC power jack of the main unit. Power it on and wait for the system LED to turn solid on.
 
-2. Plug the Ethernet cable from the DSL/cable modem or wall outlet into Port 1 of the main unit.
+2. Plug the Ethernet cable from the DSL/cable modem or wall outlet into Port 1 (or WAN Port) of the main unit.
     <img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/mesh_system/m1200_connection.webp" alt="" width="500px" style="display: block; margin: 0 auto;" />
 
 3. Go to *Settings > WLAN* on your phone. Find and tap on the Wi-Fi name of the main unit. Enter its password and tap Join.
@@ -38,7 +41,7 @@
 
     !!! Note
         - It may take a few minutes for the router to successfully connect to the Internet.
-        - lf you change the 2.4G/5G SSlD or Password, please connect to its new Wi-Fi network after the Quick Setup steps.
+        - lf you change the 2.4G/5G/6G SSlD or Password, please connect to its new Wi-Fi network after the Quick Setup steps.
 
 5. Place the new unit near the main unit, power it on and wait for its system LED to turn solid on. Choose one method to pair it with the main unit. Or simply follow the instructions on the downloaded Cudy APP.
     - Method A: Pair up automatically if the new unit is from the same package with the main unit.

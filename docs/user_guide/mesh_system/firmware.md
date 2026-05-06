@@ -10,7 +10,7 @@ The Router will automatically update firmware to the latest version at the speci
 
 1) Enable Auto Update.
 
-2) Specify the Update Time. 
+2) Specify the *Update Time*. 
 
 3) Click *Save & Apply*.
 
@@ -20,13 +20,13 @@ The Router will automatically update firmware to the latest version at the speci
 
 ## Online Update
 
-If there is a new firmware available for the Router, a prompt will appear upon your login to the Router web management page. Click <i>Update Now</i> and then <i>Update</i> to upgrade the firmware to the latest version.
+If there is a new firmware available for the Router, a prompt will appear upon your login to the Router web management page. Click *Update Now* and then *Update* to upgrade the firmware to the latest version.
 
 <img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/wireless_router/online-update.webp" alt="" width="600px" style="border: 1px solid #eee; display: block; margin: 0 auto;" />
 
-If you miss the prompt, please go to General Settings -> Firmware to Check for update. If there is one, click Update and wait a few minutes for the update and reboot to complete. 
+If you miss the prompt, please go to General Settings -> Firmware -> Online Update and click *Check for update*. If there is one, click *Update* and wait a few minutes for the update and reboot to complete. 
 
-<img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/wireless_router/online-update2.webp" alt="" width="500px" style="border: 1px solid #eee; display: block; margin: 0 auto;" />
+<img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/mesh_system/online-update.webp" alt="" width="500px" style="border: 1px solid #eee; display: block; margin: 0 auto;" />
 
 ## Local Update
 
@@ -35,4 +35,15 @@ Click *Browse...* to locate and upload the latest firmware file you’ve downloa
 <img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/wireless_router/local-update.webp" alt="" width="600px" style="border: 1px solid #eee; display: block; margin: 0 auto;" />
 
 !!! Note
-    If you fail to update the firmware for the Router, please contact our <a href="mailto:support@cudy.com">technical support</a>.
+    - *Local Update* is available for models M1200/M1300.
+    - If you fail to update the firmware for the Router, please contact our <a href="mailto:support@cudy.com">technical support</a>.
+
+## Satellite Update
+
+The table will display the firmware versions for the satellite mesh units connected to this main mesh. You may update the firmware for the satellite mesh units on this page. Click *Check for updates* and click *Update* if a latest firmware is detected. Wait a few minutes for the update and reboot to complete.
+
+<img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/mesh_system/satellite-update.webp" alt="" width="600px" style="border: 1px solid #eee; display: block; margin: 0 auto;" />
+
+!!! Note
+    - *Satellite Update* is available for models M1500/M3000/M3600/M6500/M11000/M21000.
+    - If you fail to update the firmware for the Router, please contact our <a href="mailto:support@cudy.com">technical support</a>.
