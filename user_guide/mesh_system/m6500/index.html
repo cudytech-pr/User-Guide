@@ -12,7 +12,7 @@
         <meta name="author" content="Cudy Docs">
       
       
-        <link rel="canonical" href="https://docs.cudy.com/user_guide/mesh_system/dhcp/">
+        <link rel="canonical" href="https://docs.cudy.com/user_guide/mesh_system/m6500/">
       
       
       
@@ -22,7 +22,7 @@
     
     
       
-        <title>DHCP Server - Docs</title>
+        <title>M6500 - Docs</title>
       
     
     
@@ -100,7 +100,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#dhcp-server" class="md-skip">
+        <a href="#m6500" class="md-skip">
           Skip to content
         </a>
       
@@ -135,7 +135,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              DHCP Server
+              M6500
             
           </span>
         </div>
@@ -937,23 +937,91 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#dhcp-status" class="md-nav__link">
-    DHCP Status
+  <a href="#overview" class="md-nav__link">
+    Overview
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#dhcp-leases" class="md-nav__link">
-    DHCP Leases
+  <a href="#quick-installation-guide" class="md-nav__link">
+    Quick Installation Guide
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#dhcp-settings" class="md-nav__link">
-    DHCP Settings
+  <a href="#manage" class="md-nav__link">
+    Manage
   </a>
+  
+    <nav class="md-nav" aria-label="Manage">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#i-system-status" class="md-nav__link">
+    I. System Status
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ii-general-settings" class="md-nav__link">
+    II. General Settings
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#iii-parental-control" class="md-nav__link">
+    III. Parental Control
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#iv-advanced-settings" class="md-nav__link">
+    IV. Advanced Settings
+  </a>
+  
+    <nav class="md-nav" aria-label="IV. Advanced Settings">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#-network" class="md-nav__link">
+    - Network
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-security" class="md-nav__link">
+    - Security
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-system" class="md-nav__link">
+    - System
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#v-diagnostic-tools" class="md-nav__link">
+    V. Diagnostic Tools
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -981,29 +1049,126 @@
   
 
   <!-- Markdown content -->
-  <h1 id="dhcp-server">DHCP Server<a class="headerlink" href="#dhcp-server" title="Permanent link">&para;</a></h1>
-<p>Router acts as a DHCP (Dynamic Host Configuration Protocol) server, which is enabled by default. It dynamically assigns TCP/IP parameters to client devices from the IP Address Pool. DO NOT disable DHCP server unless you have another DHCP server, or you want to manually assign the TCP/IP parameters to every client device on the network. </p>
-<h2 id="dhcp-status">DHCP Status<a class="headerlink" href="#dhcp-status" title="Permanent link">&para;</a></h2>
-<p>Go to <em>System Status -&gt; DHCP Server -&gt; More Details -&gt; Status</em> to view the DHCP Server status and detailed information.</p>
-<p><a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/mesh_system/dhcp-status.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/mesh_system/dhcp-status.webp" alt="" width="800px" style="border: 1px solid #eee;" /></a></p>
-<h2 id="dhcp-leases">DHCP Leases<a class="headerlink" href="#dhcp-leases" title="Permanent link">&para;</a></h2>
-<p><a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/mesh_system/dhcp-lease.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/mesh_system/dhcp-lease.webp" alt="" width="800px" style="border: 1px solid #eee;" /></a></p>
-<p>Go to <em>System Status -&gt; DHCP Server -&gt; More Details -&gt; DHCP Leases</em> and get a list of clients which the Router being a DHCP server has allocated an IP address to, including such information as IP address, MAC address and Host name.</p>
-<h2 id="dhcp-settings">DHCP Settings<a class="headerlink" href="#dhcp-settings" title="Permanent link">&para;</a></h2>
-<p><a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/mesh_system/dhcp-settings.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/mesh_system/dhcp-settings.webp" alt="" width="800px" style="border: 1px solid #eee;" /></a></p>
-<p><strong>To specify the IP address that the Router assigns, please follow the steps below.</strong></p>
-<ol>
-<li>Go to <em>System Status -&gt; DHCP Server -&gt; More Details -&gt; Settings</em> or <em>Advanced Settings -&gt; Network -&gt; DHCP Server</em>.</li>
-<li>Enable the <em>DHCP Server</em>.</li>
-<li>Enter the starting IP addresses and the Limit number to create the IP Address Pool.</li>
-<li>(Optional) Enter the DNS if the ISP offers. </li>
-<li>Enter the Lease time.</li>
-<li>Click <em>Save &amp; Apply</em>.</li>
-</ol>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>If you want to reserve for a specified client device an IP address, which is assigned by the router as a DHCP server, you may use the <a href="../security/#ipmac-binding">IP/MAC binding</a> function.</p>
-</div>
+  <p><a href="../">&lt;&lt;&lt; Back to Mesh Wi-Fi System</a></p>
+<h1 id="m6500">M6500<a class="headerlink" href="#m6500" title="Permanent link">&para;</a></h1>
+<h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h2>
+<ul>
+<li>View the Mesh's appearance — <a data-preview="data-preview" href="../overview_m6500/#front-panel">front</a> and <a data-preview="data-preview" href="../overview_m6500/#back-panel">back</a>.</li>
+<li>Check the <a data-preview="data-preview" href="../overview_m6500/#front-panel">LED</a> status and indication.</li>
+<li>Check the <a data-preview="data-preview" href="../overview_m6500/#back-panel">interfaces</a> layout and instructions. </li>
+</ul>
+<h2 id="quick-installation-guide">Quick Installation Guide<a class="headerlink" href="#quick-installation-guide" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a data-preview="data-preview" href="../qig/#scenario-1-set-up-main-unit-for-a-new-mesh-network">Scenario 1</a>: Set up main unit for a New Mesh Network.</li>
+<li><a data-preview="data-preview" href="../qig/#scenario-2-add-a-new-unit-to-an-existing-mesh-network">Scenario 2</a>: Add a new unit to an existing Mesh Network.</li>
+</ul>
+<hr />
+<h2 id="manage">Manage<a class="headerlink" href="#manage" title="Permanent link">&para;</a></h2>
+<h3 id="i-system-status">I. System Status<a class="headerlink" href="#i-system-status" title="Permanent link">&para;</a></h3>
+<p>On the <strong>System Status</strong> page, you can check the status of the Mesh router system, including:</p>
+<ul>
+<li>
+<p><em>Status</em> shows whether the Mesh router has connected to the Internet or not, and its work mode and interface. Click <a data-preview="data-preview" href="../qig/"><em>Quick Setup</em></a> to redirect to the <em>Quick Setup</em> page.</p>
+</li>
+<li>
+<p><em>Mesh</em> shows the Mesh router’s Mesh network status (SOLE or MESH), the mesh device name and the amount of mesh units. Click <a data-preview="data-preview" href="../mesh/"><em>More Details</em></a> to know more information or add/manage mesh unit(s).</p>
+</li>
+<li>
+<p><em>Devices</em> shows the number of devices connected to this Mesh router, via Ethernet cable or 2.4G WiFi or 5G WiFi. Click <a data-preview="data-preview" href="../devices/"><em>More Details</em></a> to know more information about these devices or configure the settings.</p>
+</li>
+<li>
+<p><em>WAN</em> shows the WAN port connection status. Click <a data-preview="data-preview" href="../wan/"><em>More Details</em></a> to know more information about it or make changes on Settings page. </p>
+</li>
+<li>
+<p><em>LAN</em> shows the connected LAN port status. Click <a data-preview="data-preview" href="../network/#lan"><em>More Details</em></a> to know more information about it or make changes.</p>
+</li>
+<li>
+<p><em>WISP</em> shows the connected HOST Network status, its SSID and Upload/Download speed. Click <a data-preview="data-preview" href="../wisp/"><em>More Details</em></a> to know more information about it or make changes.</p>
+</li>
+<li>
+<p><em>Wireless 2.4G</em> shows the Wireless 2.4G status. Click <a data-preview="data-preview" href="../wireless/#24g5g"><em>More Details</em></a> to know more information about it or make changes on Settings page. </p>
+</li>
+<li>
+<p><em>Wireless 5G</em> shows the Wireless 5G status. Click <a data-preview="data-preview" href="../wireless/#24g5g"><em>More Details</em></a> to know more information about it or make changes on Settings page. </p>
+</li>
+<li>
+<p><em>VPN</em> shows VPN connection status. Click <a data-preview="data-preview" href="../vpn/"><em>More Details</em></a> to know more information about it or make changes on Settings page.</p>
+</li>
+<li>
+<p><em>DHCP Server</em> shows the DHCP Server status. Click <a data-preview="data-preview" href="../network/#dhcp-server"><em>More Details</em></a> to know more information about it or make changes on Settings page.</p>
+</li>
+<li>
+<p><em>System</em> shows the System status. Click <a data-preview="data-preview" href="../system_status/"><em>More Details</em></a> to view more information about it or make changes on Settings page.</p>
+</li>
+</ul>
+<h3 id="ii-general-settings">II. General Settings<a class="headerlink" href="#ii-general-settings" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a data-preview="data-preview" href="../wan/">WAN Mode</a>: is to set your Internet connection. Select your Internet connection type from the drop-down list of Protocol. Follow the instructions on the page to complete the configuration.</li>
+<li><a data-preview="data-preview" href="../wisp/">WISP</a>: Enable the Mesh router to wirelessly connect to a distant Wi-Fi network and share that connection locally via Ethernet/Wi-Fi, acting as a client bridge.</li>
+<li><a data-preview="data-preview" href="../wireless/">Wireless</a>: is to customize the Mesh router's wireless settings, including SSID and password, mode, channel, channel width and transmit power, and so on.</li>
+<li><a data-preview="data-preview" href="../vpn/">VPN</a>: namely, Virtual Private Network, helps you access Internet resources remotely, securely, and privately through tunneling technology. When you access the Internet, VPN encrypts your personal information and hides your IP address from the public. For VPN users, it looks like the devices are directly connected. </li>
+<li><a data-preview="data-preview" href="../captive_portal/">Captive Portal</a>: allows you to design a portal page for network access verification. Customers are directed to view an advertisement or accept set terms before being granted Internet access. In this way, it offers unique marketing opportunities for small businesses to improve brand awareness and deliver marketing messages. </li>
+<li><a data-preview="data-preview" href="../firmware/">Firmware</a>: Update the Mesh router's firmware to be the latest version.</li>
+</ul>
+<h3 id="iii-parental-control">III. Parental Control<a class="headerlink" href="#iii-parental-control" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a data-preview="data-preview" href="../parental_control/">Parental Control</a> helps to set up unique restrictions on Internet access for each member of your family via Parental Control feature. You can block inappropriate content, set daily limits for the total time spent online and restrict Internet access to certain time of the day, etc. <strong>This feature only works in Wireless router mode.</strong></li>
+</ul>
+<h3 id="iv-advanced-settings">IV. Advanced Settings<a class="headerlink" href="#iv-advanced-settings" title="Permanent link">&para;</a></h3>
+<h4 id="-network"><a data-preview="data-preview" href="../network/">- Network</a><a class="headerlink" href="#-network" title="Permanent link">&para;</a></h4>
+<ul>
+<li><a data-preview="data-preview" href="../network/#lan">LAN</a>: Modify the Mesh router's LAN IP address, when necessary.</li>
+<li><a data-preview="data-preview" href="../network/#guest-network">Guest Network</a>: Create a guest network without disturbing the main network's security and privacy.</li>
+<li><a data-preview="data-preview" href="../network/#dhcp-server">DHCP Server</a>: Specify the IP address for client devices by the Mesh router as a DHCP Server.</li>
+<li><a data-preview="data-preview" href="../network/#ipv6">IPv6</a>: Set up an IPv6 Connection.</li>
+<li><a data-preview="data-preview" href="../network/#igmp">IGMP</a>:  Manage and optimize multicast traffic for the client devices, like IPTV.</li>
+<li><a data-preview="data-preview" href="../network/#iptvvlan">IPTV/VLAN</a>:  Enjoy IPTV or VoIP service.</li>
+<li><a data-preview="data-preview" href="../network/#qos">QoS</a>: Prioritize connection of specific devices for a certain duration. </li>
+<li><a data-preview="data-preview" href="../network/#custom-dns">Custom DNS</a>: Customize a DNS server to be resolved through for DNS names.</li>
+<li><a data-preview="data-preview" href="../network/#ddns">DDNS</a>: Map a domain name to the dynamic IP address of a network device.</li>
+<li><a data-preview="data-preview" href="../network/#static-routing">Static Routing</a>: Manually configure routings for data forwarding.</li>
+<li><a data-preview="data-preview" href="../network/#port-forwards">Port Forwards</a>: Set up public services on your local network with higher security.</li>
+<li><a data-preview="data-preview" href="../network/#port-trigger">Port Trigger</a>: Specify a triggering port and its corresponding external ports.</li>
+<li><a data-preview="data-preview" href="../network/#dmz">DMZ</a>: Disable DMZ unless necessary.</li>
+<li><a data-preview="data-preview" href="../network/#online-detection">Online Detection</a>: Ensure your network always online and operational.</li>
+<li><a data-preview="data-preview" href="../network/#ttl">TTL</a>: Set the maximum time for packets to survive in the network.</li>
+<li><a data-preview="data-preview" href="../network/#wake-on-lan">Wake on LAN</a>: Allow a computer to be turned on or awakened by a network message.</li>
+<li><a data-preview="data-preview" href="../network/#upnp">UPnP</a>: Allow applications or host devices to automatically find the front-end NAT device.</li>
+</ul>
+<h4 id="-security"><a data-preview="data-preview" href="../security/">- Security</a><a class="headerlink" href="#-security" title="Permanent link">&para;</a></h4>
+<ul>
+<li><a data-preview="data-preview" href="../security/#firewall">Firewall</a>: Monitor and control incoming and outgoing network traffic based on predetermined security rules.</li>
+<li><a data-preview="data-preview" href="../security/#mac-filter">MAC Filter</a>: Prevent unauthorized devices with certain MAC address from accessing the network.</li>
+<li><a data-preview="data-preview" href="../security/#ip-filter">IP Filter</a>: Block or allow traffic to your network or system based on the IP addresses. </li>
+<li><a data-preview="data-preview" href="../security/#domain-filter">Domain Filter</a>: Control or limit access to specific websites or Internet services by filtering domain name requests. </li>
+<li><a data-preview="data-preview" href="../security/#ipmac-binding">IP/MAC Binding</a>: Bind network device's IP address to its MAC address. </li>
+<li><a data-preview="data-preview" href="../security/#wps">WPS</a>: Set up a security-protected Wi-Fi connection without sharing/entering credentials. </li>
+<li><a data-preview="data-preview" href="../security/#wifi-schedule">WiFi Schedule</a>: Turn on/off the Mesh router's wireless network automatically at a specific time.</li>
+<li><a data-preview="data-preview" href="../security/#alg">ALG</a>: Inspect and modify application-layer data in network traffic to allow it to pass through firewalls and other security devices more easily.</li>
+</ul>
+<h4 id="-system"><a data-preview="data-preview" href="../system/">- System</a><a class="headerlink" href="#-system" title="Permanent link">&para;</a></h4>
+<ul>
+<li><a data-preview="data-preview" href="../system/#system-time">System Time</a>: Configure the Mesh router's system time, necessary for some time-based functions.</li>
+<li><a data-preview="data-preview" href="../system/#firmware">Firmware</a>: Upgrade the firmware to the latest version.</li>
+<li><a data-preview="data-preview" href="../system/#backuprestore">Backup/Restore</a>: Backup the configuration file or restore it.</li>
+<li><a data-preview="data-preview" href="../system/#administration">Administration</a>: Access and manage the Mesh router from the local or remote devices.</li>
+<li><a data-preview="data-preview" href="../system/#admin-account">Admin Account</a>: Change the Mesh router's login password.</li>
+<li><a data-preview="data-preview" href="../system/#language">Language</a>: Customize the Mesh router's web management language.</li>
+<li><a data-preview="data-preview" href="../system/#timed-reboot">Timed Reboot</a>: Schedule for the Mesh router rebooting.</li>
+<li><a data-preview="data-preview" href="../system/#reboot">Reboot</a>: Reboot the Mesh router for the settings or changes to take effect.</li>
+<li><a data-preview="data-preview" href="../system/#reset">Reset</a>: Restore the Mesh router to its factory default settings.</li>
+<li><a data-preview="data-preview" href="../system/#led-control">LED Control</a>: Control the Mesh router's LED.</li>
+<li><a data-preview="data-preview" href="../system/#tr069">TR069</a>: Configure the Mesh router's TR069 (CPE WAN Management).</li>
+</ul>
+<h3 id="v-diagnostic-tools">V. Diagnostic Tools<a class="headerlink" href="#v-diagnostic-tools" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a data-preview="data-preview" href="../diagnostic_tools/#diagnosis">Diagnosis</a>: The diagnosis result will indicate the status of Internet, Wireless, Devices, Services and System. You can click Download to reserve the diagnosis bin file. </li>
+<li><a data-preview="data-preview" href="../diagnostic_tools/#ping">PING</a>: Used to test the connectivity between the Mesh router and the tested host, and measure the round-trip time. </li>
+<li><a data-preview="data-preview" href="../diagnostic_tools/#traceroute">TRACEROUTE</a>: Used to test the route (path) your Mesh router has passed to reach the tested host, and measure transit delays of packets across an Internet Protocol network. </li>
+<li><a data-preview="data-preview" href="../diagnostic_tools/#nslookup">NSLOOKUP</a>: Check if the DNS IP address of the WAN can work normally. </li>
+<li><a data-preview="data-preview" href="../diagnostic_tools/#system-log">System Log</a>: Track all the Mesh router behaviors. When the Mesh router does not work normally, download the system log and send it to our Technical Support for troubleshooting.</li>
+</ul>
+<p><a href="../">&lt;&lt;&lt; Back to Mesh Wi-Fi System</a></p>
 
   <!-- Last update of source file -->
   

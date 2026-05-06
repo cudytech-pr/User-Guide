@@ -937,13 +937,6 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#lanwan-switch" class="md-nav__link">
-    LAN/WAN Switch
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#lan" class="md-nav__link">
     LAN
   </a>
@@ -962,12 +955,94 @@
     DHCP Server
   </a>
   
+    <nav class="md-nav" aria-label="DHCP Server">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#dhcp-settings" class="md-nav__link">
+    DHCP Settings
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dhcp-status" class="md-nav__link">
+    DHCP Status
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dhcp-leases" class="md-nav__link">
+    DHCP Leases
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
   <a href="#ipv6" class="md-nav__link">
     IPv6
   </a>
+  
+    <nav class="md-nav" aria-label="IPv6">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#relay" class="md-nav__link">
+    Relay
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dynamic-ipslaacdhcpv6" class="md-nav__link">
+    Dynamic IP(SLAAC/DHCPv6)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#staticfixed-lp" class="md-nav__link">
+    Static(Fixed lP):
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#passthrough" class="md-nav__link">
+    Passthrough
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#464xlat" class="md-nav__link">
+    464XLAT
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#map-e" class="md-nav__link">
+    MAP-E
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ds-lite" class="md-nav__link">
+    DS-Lite
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1087,19 +1162,11 @@
 
   <!-- Markdown content -->
   <h1 id="network">Network<a class="headerlink" href="#network" title="Permanent link">&para;</a></h1>
-<p>Network section allows you to manage and configure a series of network features for the router. In Wireless Router mode, it includes LAN, guest network, DHCP server, IPv6, IGMP, IPTV/VLAN, QoS, Custom DNS, DDNS, Static Routing, Port Forwards, Port Trigger, DMZ, Online detection, TTL, Wake on LAN, and UPnP; while in Wireless Access Point mode, it consists of LAN, DHCP server, IGMP and Wake on LAN. </p>
-<hr />
-<h2 id="lanwan-switch">LAN/WAN Switch<a class="headerlink" href="#lanwan-switch" title="Permanent link">&para;</a></h2>
-<p>Converts the LAN/WAN port between local network switching (LAN mode) and wide-area routing (WAN mode), enabling flexible topology adaptation in the networks.</p>
-<p><a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/wireless_router/lan-wan-switch.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/wireless_router/lan-wan-switch.webp" alt="" width="500px" style="border: 1px solid #eee;display:block; margin:0 auto;" /></a></p>
-<ul>
-<li><em>Current Status</em>: Displays the current working mode of the WAN/LAN port.</li>
-<li><em>LAN/WAN Switch</em>: Click <em>Switch to LAN</em> to change working mode from WAN to LAN; or click <em>Switch to WAN</em> to change it from LAN to WAN.</li>
-</ul>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>This feature is not available for all models. Please refer to your model and management page.</p>
+<p>M1200 is used as an example in this guide. Refer to your actual product for more details.</p>
 </div>
+<p>Network section allows you to manage and configure a series of network features for the router. In Wireless Router mode, it includes LAN, guest network, DHCP server, IPv6, IGMP, IPTV/VLAN, QoS, Custom DNS, DDNS, Static Routing, Port Forwards, Port Trigger, DMZ, Online detection, TTL, Wake on LAN, and UPnP; while in Wireless Access Point mode, it consists of LAN, DHCP server, IGMP and Wake on LAN. </p>
 <hr />
 <h2 id="lan">LAN<a class="headerlink" href="#lan" title="Permanent link">&para;</a></h2>
 <p>The router is preset with a default LAN IP 192.168.10.1, which you can use to log in to its web management page. The LAN IP address together with the Subnet Mask also defines the subnet that the connected devices are on. If the IP address conflicts with another device on your local network or your network requires a specific IP subnet, you can change it.</p>
@@ -1123,32 +1190,90 @@
 <p><a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/wireless_router/network-2.4g.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/wireless_router/network-2.4g.webp" alt="" width="800px" style="border: 1px solid #eee; display: block; margin: 0 auto;" /></a></p>
 <p><strong>To set up a guest network, please follow the steps below.</strong></p>
 <ol>
-<li>Enable 2.4G/5G Guest Network.</li>
-<li>Customize the SSID. Don’t enable Hidden Network unless you want your guests to manually input the SSID for guest network access.</li>
-<li>Select your Encryption type and customize your own Password.</li>
-<li>Enable Access Filter. If enabled, the firewall-related functions (such as MAC filter, IP filter, and domain filter, parental control, etc.) will take effect on clients connected to the guest network.</li>
+<li>Enable <em>2.4G/5G</em> (and <em>6G</em> if any) Guest Network.</li>
+<li>Customize the <em>SSID</em>. Don’t enable <em>Hidden Network</em> unless you want your guests to manually input the SSID for guest network access.</li>
+<li>Select your <em>Encryption</em> type and create a <em>Password</em>.</li>
+<li>Enable <em>Access Filter</em>. If enabled, the firewall-related functions (such as MAC filter, IP filter, and domain filter, parental control, etc.) will take effect on clients connected to the guest network.</li>
 <li>Click <em>Save &amp; Apply</em>. </li>
 </ol>
 <p>Now your guests can access your guest network using the SSID and password you set.</p>
 <hr />
 <h2 id="dhcp-server">DHCP Server<a class="headerlink" href="#dhcp-server" title="Permanent link">&para;</a></h2>
-<p>DHCP Server is enabled by default and dynamically assigns TCP/lP parameters to client devices from the IP Address Pool. DO NOT disable DHCP server unless you have another DHCP server, or you want to manually assign the TCP/P parameters to every clients on the network. </p>
-<p><a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/wireless_router/network-dhcp.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/wireless_router/network-dhcp.webp" alt="" width="800px" style="border: 1px solid #eee; display: block; margin: 0 auto;" /></a></p>
-<p><strong>To specify the IP address that the router assigns, please take the steps below.</strong></p>
+<p>Router acts as a DHCP (Dynamic Host Configuration Protocol) server, which is enabled by default. It dynamically assigns TCP/IP parameters to client devices from the IP Address Pool. DO NOT disable DHCP server unless you have another DHCP server, or you want to manually assign the TCP/IP parameters to every client device on the network. </p>
+<h3 id="dhcp-settings">DHCP Settings<a class="headerlink" href="#dhcp-settings" title="Permanent link">&para;</a></h3>
+<p><a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/mesh_system/dhcp-settings.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/mesh_system/dhcp-settings.webp" alt="" width="800px" style="border: 1px solid #eee;" /></a></p>
+<p><strong>To specify the IP address that the Router assigns, please follow the steps below.</strong></p>
 <ol>
-<li>Enable DHCP Server.</li>
-<li>Enter the starting IP address and the Limit number to create the IP address pool.</li>
-<li>(Optional) Enter the Preferred and Alternate DNS if your ISP provides.</li>
-<li>Set the Lease time.</li>
+<li>Go to <em>System Status -&gt; DHCP Server -&gt; More Details -&gt; Settings</em> or <em>Advanced Settings -&gt; Network -&gt; DHCP Server</em>.</li>
+<li>Enable the <em>DHCP Server</em>.</li>
+<li>Enter the starting IP addresses and the Limit number to create the IP Address Pool.</li>
+<li>(Optional) Enter the DNS if the ISP offers. </li>
+<li>Enter the Lease time.</li>
 <li>Click <em>Save &amp; Apply</em>.</li>
 </ol>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>If you want to reserve for a specified client device an IP address, which is assigned by the router as a DHCP server, you may use the <em>IP/MAC binding</em> function.</p>
+<p>If you want to reserve for a specified client device an IP address, which is assigned by the router as a DHCP server, you may use the <a href="../security/#ipmac-binding">IP/MAC binding</a> function.</p>
 </div>
+<h3 id="dhcp-status">DHCP Status<a class="headerlink" href="#dhcp-status" title="Permanent link">&para;</a></h3>
+<p>Go to <em>System Status -&gt; DHCP Server -&gt; More Details -&gt; Status</em> to view the DHCP Server status and detailed information.</p>
+<p><a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/mesh_system/dhcp-status.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/mesh_system/dhcp-status.webp" alt="" width="800px" style="border: 1px solid #eee;" /></a></p>
+<h3 id="dhcp-leases">DHCP Leases<a class="headerlink" href="#dhcp-leases" title="Permanent link">&para;</a></h3>
+<p><a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/mesh_system/dhcp-lease.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/mesh_system/dhcp-lease.webp" alt="" width="800px" style="border: 1px solid #eee;" /></a></p>
+<p>Go to <em>System Status -&gt; DHCP Server -&gt; More Details -&gt; DHCP Leases</em> and get a list of clients which the Router being a DHCP server has allocated an IP address to, including such information as IP address, MAC address and Host name.</p>
 <hr />
 <h2 id="ipv6">IPv6<a class="headerlink" href="#ipv6" title="Permanent link">&para;</a></h2>
 <p>IPv6 may not be supported in the current version of the firewall, VPN, block list, etc.Therefore, the IPv6 function can only be used for configuration on this interface. There are 7 types of  IPv6 Internet connection, including Relay, Dynamic IP(SLAAC/DHCPv6), Static (Fixed lP), Passthrough, 464XLAT, MAP-E, and DS-Lite. Please choose the appropriate one and configure the parameters according to your ISP.</p>
+<p><a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/wireless_router/ipv6.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/wireless_router/ipv6.webp" alt="" width="500px" style="border: 1px solid #eee; display: block; margin: 0 auto;" /></a></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ul>
+<li>If the current version of the firewall (or VPN, block list, and etc.) does not support IPv6, you may enable and configure the IPv6 function on this page.</li>
+<li>If you use VPN and IPv6 functions at the same time, it's likely to cause IPv6 data leakage.</li>
+</ul>
+</div>
+<h3 id="relay">Relay<a class="headerlink" href="#relay" title="Permanent link">&para;</a></h3>
+<p><a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/wireless_router/ipv6-relay.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/wireless_router/ipv6-relay.webp" alt="" width="500px" style="border: 1px solid #eee; display: block; margin: 0 auto;" /></a></p>
+<p>Relay is typically used for IPv6 transition mechanisms. The router will act as a relay between your local IPv6 network and an IPv4-based upstream network provided by your ISP. </p>
+<p>Select <em>Relay</em> and just click <em>Save &amp; Apply</em> without any additional configuration.</p>
+<h3 id="dynamic-ipslaacdhcpv6">Dynamic IP(SLAAC/DHCPv6)<a class="headerlink" href="#dynamic-ipslaacdhcpv6" title="Permanent link">&para;</a></h3>
+<p><a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/wireless_router/ipv6-dhcp.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/wireless_router/ipv6-dhcp.webp" alt="" width="500px" style="border: 1px solid #eee; display: block; margin: 0 auto;" /></a></p>
+<p>Select <em>Dynamic IP(SLAAC/DHCPv6)</em>, and configure MAC Clone and MTU as needed.Then click <em>Save &amp; Apply</em>.</p>
+<ul>
+<li>MAC Clone: (Optional) Enter the MAC address of the device that is allowed by your ISP. You can usually find this in the device's network settings or on a label on the device.</li>
+<li>MTU: Enter the appropriate MTU size (commonly 1500 bytes for compatibility with IPv4). </li>
+</ul>
+<h3 id="staticfixed-lp">Static(Fixed lP):<a class="headerlink" href="#staticfixed-lp" title="Permanent link">&para;</a></h3>
+<p><a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/wireless_router/ipv6-static.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/wireless_router/ipv6-static.webp" alt="" width="500px" style="border: 1px solid #eee; display: block; margin: 0 auto;" /></a></p>
+<p>Select <em>Static (Fixed IP)</em> and enter the fixed IPv6 address, gateway, prefix and DNS server address provided by your ISP. Then click <em>Save &amp; Apply</em>.</p>
+<ul>
+<li>MAC Clone: (Optional) Enter the MAC address of the device if the ISP requires a specific MAC address for the static IP assignment. You can usually find this in the device's network settings or on a label on the device.</li>
+<li>MTU: Enter the appropriate MTU size based on the network's physical layer, typically 1500 bytes for Ethernet.</li>
+</ul>
+<h3 id="passthrough">Passthrough<a class="headerlink" href="#passthrough" title="Permanent link">&para;</a></h3>
+<p><a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/wireless_router/ipv6-passthrough.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/wireless_router/ipv6-passthrough.webp" alt="" width="500px" style="border: 1px solid #eee; display: block; margin: 0 auto;" /></a></p>
+<p>Passthrough allows an IPv6-enabled device to manage its own IP settings directly from the ISP, bypassing the router's DHCP server. </p>
+<p>Select <em>Passthrough</em> and just click <em>Save &amp; Apply</em> without any additional configuration.</p>
+<h3 id="464xlat">464XLAT<a class="headerlink" href="#464xlat" title="Permanent link">&para;</a></h3>
+<p><a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/wireless_router/ipv6-464xlat.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/wireless_router/ipv6-464xlat.webp" alt="" width="500px" style="border: 1px solid #eee; display: block; margin: 0 auto;" /></a></p>
+<p>464XLAT is a stateless translation mechanism that allows IPv4-only devices to communicate over an IPv6 network. </p>
+<p>Select <em>464XLAT</em> and just click <em>Save &amp; Apply</em> without any additional configuration.</p>
+<h3 id="map-e">MAP-E<a class="headerlink" href="#map-e" title="Permanent link">&para;</a></h3>
+<p><a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/wireless_router/ipv6-mape.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/wireless_router/ipv6-mape.webp" alt="" width="500px" style="border: 1px solid #eee; display: block; margin: 0 auto;" /></a></p>
+<p>MAP-E (Mapping of Address and Port with Encapsulation) is a method for translating IPv6 addresses to IPv4 addresses. </p>
+<p>Select <em>MAP-E</em>, and configure MAC Clone and MTU as needed. Then click <em>Save &amp; Apply</em>.</p>
+<ul>
+<li>MAC Clone: (Optional) MAP-E usually does not involve MAC address restrictions, so MAC Clone is not typically necessary.</li>
+<li>MTU: Enter the appropriate MTU size according to the maximum IPv4 packet size, which is typically 1500 bytes minus the headers.</li>
+</ul>
+<h3 id="ds-lite">DS-Lite<a class="headerlink" href="#ds-lite" title="Permanent link">&para;</a></h3>
+<p><a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/wireless_router/ipv6-dslite.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/wireless_router/ipv6-dslite.webp" alt="" width="500px" style="border: 1px solid #eee; display: block; margin: 0 auto;" /></a></p>
+<p>DS-Lite (Dual-Stack Lite) is a technology that allows ISPs to provide IPv4 service over an IPv6 network. </p>
+<p>Select <em>DS-Lite</em>, and configure MAC Clone and MTU as needed. Then click <em>Save &amp; Apply</em>.</p>
+<ul>
+<li>MAC Clone: (Optional) DS-Lite usually does not involve MAC address restrictions, so MAC Clone is not typically necessary.</li>
+<li>MTU: Enter the MTU value based on your network's requirements. The value should be within the range of 1280 to 1582 bytes. The MTU setting is important to ensure that the encapsulated IPv4 packets can be transmitted over the IPv6 network without fragmentation. </li>
+</ul>
 <hr />
 <h2 id="igmp">IGMP<a class="headerlink" href="#igmp" title="Permanent link">&para;</a></h2>
 <p>is useful in home network to manage and optimize multicast traffic, reduce network load, and enhance network security and efficiency, for instance, you would like to enjoy streaming video content or using IPTV services.</p>
@@ -1227,7 +1352,7 @@
 <p>is a form of routing that is configured manually by a network administrator or a user by adding entries into a routing table. The manually-configured routing information guides the router in forwarding data packets to the specific destination. </p>
 <p>For example, I want my PC to surf the Internet through router A and visit my company’s local network at the same time. Now I have a switch and Router B. I connect the devices as shown in the following figure so that the physical connection between my PC and my company’s server is established. </p>
 <p>To configure the static routing so that you can surf the Internet and visit my company’s network at the same time, please follow the steps below.</p>
-<p><a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/wireless_router/static-routing.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/wireless_router/static-routing.webp" alt="" width="800px"/></a></p>
+<p><a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/mesh_system/static-routing.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/mesh_system/static-routing.webp" alt="" width="800px"/></a></p>
 <ol>
 <li>Disable Router B’s DHCP function. Change the routers’ LAN IP addresses to two different IP addresses on the same subnet. </li>
 <li>Log in to Router A’s management web page <em>http://cudy.net</em>, and go to Advanced Settings -&gt; Network -&gt; Static Routing.</li>
