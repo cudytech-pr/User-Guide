@@ -131,6 +131,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://docs.cudy.com/tutorial/how_to_cloud_manage_switch/</loc>
+         <lastmod>2026-05-08</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://docs.cudy.com/user_guide/</loc>
          <lastmod>2026-05-08</lastmod>
          <changefreq>daily</changefreq>
