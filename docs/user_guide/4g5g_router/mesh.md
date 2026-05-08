@@ -1,5 +1,8 @@
 # Mesh
 
+!!! Note
+    P2 is used as an example in this guide. Refer to your actual product for more details.
+
 Go to *System Status -> Mesh -> More details* page to add or manage a Mesh Unit, please follow the steps:
 
 1. Click <img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/wireless_router/add-icon.webp" alt=""  width="20px"/> on the left to add new mesh unit.

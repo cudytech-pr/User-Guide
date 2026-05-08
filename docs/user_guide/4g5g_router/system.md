@@ -2,6 +2,8 @@
 
 System is to manage the router’s systematic features. It includes System Time, Firmware, Backup/Restore, Administration, Admin Account, Language, Timed Reboot, Reboot, Reset, LED Control, and TR069 (not in Wireless Access Point mode).
 
+!!! Note
+    P2 is used as an example in this guide. Refer to your actual product for more details.
 ---
 ## System Time
 is the time displayed while the router is running. The system time you configure here will be used for other time-based functions like WiFi schedule, parental control, etc. 

@@ -26,10 +26,11 @@ Follow the instructions below to get your router ready for use fast and easy.
         <img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/4g5g_router/qs2.webp" alt="" width="500px" style="border: 2px solid #eee; display: block; margin: 0 auto;" />
     - Customize your 2.4G/5G Wireless SSID and password or just keep it as default. Click *Next*.
         <img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/4g5g_router/qs3.webp" alt="" width="500px" style="border: 2px solid #eee; display: block; margin: 0 auto;" />
-    - Confirm your settings or click *Back* to make adjustments. Click *Save and Apply*.
+    - Confirm your settings or click *Back* to make adjustments. Click *Save & Apply*.
         <img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/4g5g_router/qs4.webp" alt="" width="500px" style="border: 2px solid #eee; display: block; margin: 0 auto;" />
 
 !!! Note
     - If the signal is still too weak indoors, try installing your extension antennas (not included in the box) to the SMA connector and placing the antennas outdoors.
     - If a *SIM blocked* window pops up, please input your SIM PIN or contact your carrier for help.
+    - P2 is used as an example in this guide. Refer to your actual product for more details.
 

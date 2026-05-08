@@ -1,6 +1,10 @@
 # Network
+
 Network section allows you to manage and configure a series of network features for the router. In Wireless Router mode, it includes LAN, guest network, DHCP server, IPv6, IGMP, IPTV/VLAN, QoS, Custom DNS, DDNS, Static Routing, Port Forwards, Port Trigger, DMZ, Online detection, TTL, Wake on LAN, and UPnP; while in Wireless Access Point mode, it consists of LAN, DHCP server, IGMP and Wake on LAN. 
 
+!!! Note
+    P2 is used as an example in this guide. Refer to your actual product for more details.
+    
 ---
 
 ## LAN/WAN Switch
@@ -218,7 +222,7 @@ For example, I want my PC to surf the Internet through router A and visit my com
 
 To configure the static routing so that you can surf the Internet and visit my company’s network at the same time, please follow the steps below.
 
-<img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/wireless_router/static-routing.webp" alt="" width="800px"/>
+<img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/4g5g_router/static-routing.webp" alt="" width="800px"/>
 
 1. Disable Router B’s DHCP function. Change the routers’ LAN IP addresses to two different IP addresses on the same subnet. 
 2. Log in to Router A’s management web page *http://cudy.net*, and go to Advanced Settings -> Network -> Static Routing.

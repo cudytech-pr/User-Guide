@@ -1,5 +1,8 @@
 # Cellular
 
+!!! Note
+    P2 is used as an example in this guide. Refer to your actual product for more details.
+
 Go to *System Status -> 5G -> More Details* or *General Settings -> Cellular* page, you can configure the following cellular features. 
 
 ## APN
