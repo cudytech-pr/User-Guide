@@ -1,23 +1,28 @@
 
-# How to Remotely Manage Your Cloud Easy-Managed Switch Using the Cudy App?
+# How to Remotely Manage Your Cloud Easy-Managed Switch?
 
-1. Use an Ethernet cable to connect your cloud easy-managed switch to your computer. Set the computer's IP address to **192.168.2.x** (x ranges from 2 to 254) and subnet mask to *255.255.255.0*.
+1. Use an Ethernet cable to connect your cloud easy-managed switch to your computer. Set the computer's IP address to **192.168.2.x** (x ranges from 2 to 254) and subnet mask to **255.255.255.0**.
 
 2. Open a web browser on the computer, enter **192.168.2.1** in the address bar and press **Enter**. 
 
-3. For the initial login, create a new password. If you already configured a password, enter it to log in. If the password is forgotten, press and hold the Reset button to restore factory settings. **Enable** Cloud Management, Dynamic lP and Auto DNS. (Serial Number may be needed if the QR code cannot be scanned.)
+3. Create a new password for the initial login, or enter the one you previously set. Enable **Cloud Management**, **Dynamic lP** and **Auto DNS**. Click **Apply**.
+
     <img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/tutorial/login2.webp" width="300px" style="display: block; margin: 0 auto;border: 1px solid #eee;">    
 
-4. When it appears *waits to get DHCP address...*, set your computer to *Obtain an IP address automatically* and *Obtain DNS server address automatically*.
+    !!! Note
+        - If the password is forgotten, press and hold the Reset button to restore factory settings. 
+        - Serial Number may be needed if the QR code cannot be scanned.
+
+4. When it appears *Waits to get DHCP address...*, set your computer to *Obtain an IP address automatically* and *Obtain DNS server address automatically*.
     <img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/tutorial/login3.webp" width="300px" style="display: block; margin: 0 auto;border: 1px solid #eee;">    
 
-5. On your smart phone/tablet, download and open the Cudy App. 
+5. On your smart phone/tablet, download the Cudy App. 
     <img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/tutorial/downloadapp.webp" width="300px" style="display: block; margin: 0 auto;border: 1px solid #eee;"> 
 
-6. Tick *I agree with...* and tap **Cloud Management**.
+6. Open Cudy App, tick *I agree with...* and tap **Cloud Management**.
     <img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/tutorial/cudy1.webp" width="300px" style="display: block; margin: 0 auto;border: 1px solid #eee;"> 
     
-7. **Log In** to your Cudy account, or **Register** first if you don't have one. 
+7. Enter your Cudy Account and Password, and tap **Log In**. **Register** first if you don't have one. 
     <img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/tutorial/cudylogin.webp" width="300px" style="display: block; margin: 0 auto;border: 1px solid #eee;">    
 
 8. Tap the menu icon (☰) on the left of Dashboard and select *Switch*.
