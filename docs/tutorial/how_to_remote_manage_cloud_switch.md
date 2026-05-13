@@ -54,5 +54,5 @@
 - Verify (or enter) the *Serial Number* and enter the *Password* (same as the web login password). Then tap the ✔ icon at the top right.
     <img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/tutorial/sn2.webp" width="300px" style="display: block; margin: 0 auto;border: 1px solid #eee;">    
    
-- After the switch is successfully added, you can start to manage the switch anywhere anytime using the Cudy App.    
+- After the switch is successfully added, you can start to remotely manage the switch using the Cudy App.    
     <img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/tutorial/app-in1.webp" width="900px" style="display: block; margin: 0 auto;">    
