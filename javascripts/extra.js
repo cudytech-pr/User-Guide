@@ -303,3 +303,54 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 });
 >>>>>>> 17d334a88abb8b948994d7245df47e8074cd4c5f
+
+document.addEventListener("DOMContentLoaded", function () {
+    const tabs = document.querySelector(".md-tabs");
+    if (!tabs) return;
+
+    let lastScrollTop = 0;
+
+    window.addEventListener("scroll", function () {
+        const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+
+        if (currentScroll > lastScrollTop && currentScroll > 80) {
+            // 向下滚动 → 隐藏
+            tabs.classList.add("md-tabs--hidden");
+        } else {
+            // 向上滚动 → 显示
+            tabs.classList.remove("md-tabs--hidden");
+        }
+
+        lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
+    });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    const tabs = document.querySelector(".md-tabs");
+
+    if (!tabs) {
+        console.log("md-tabs not found");
+        return;
+    }
+
+    let lastScroll = window.scrollY;
+
+    window.addEventListener("scroll", function () {
+
+        const currentScroll = window.scrollY;
+
+        // 向下滚动并且超过 100px
+        if (currentScroll > lastScroll && currentScroll > 100) {
+            tabs.classList.add("hidden");
+        }
+
+        // 向上滚动
+        else {
+            tabs.classList.remove("hidden");
+        }
+
+        lastScroll = currentScroll;
+    });
+
+});

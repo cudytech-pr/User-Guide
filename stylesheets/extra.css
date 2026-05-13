@@ -1,14 +1,24 @@
-/* ===== 主色调配置 ===== */
+/* =====================================================
+   Cudy MkDocs Custom Theme
+   ===================================================== */
+
+/* =====================================================
+   主色调变量
+   ===================================================== */
+
 :root {
-  --md-primary-fg-color: #008CFF;        /* 导航栏/主按钮 */
-  --md-primary-fg-color--light: #4DA8FF; /* 悬浮状态 */
-  --md-primary-fg-color--dark: #006BB3;  /* 深色模式 */
-  --md-default-fg-color: #000000;        /* 默认黑色文本 */
+  --md-primary-fg-color: #008cff;
+  --md-primary-fg-color--light: #4da8ff;
+  --md-primary-fg-color--dark: #006bb3;
+
+  --cudy-blue: #008cff;
+
+  --md-default-fg-color: #000000;
 }
 
-/* ===============================
-   Modern Product Card System
-================================= */
+/* =====================================================
+   Product Card System
+   ===================================================== */
 
 .product-grid {
   display: grid;
@@ -23,15 +33,15 @@
   padding: 20px 15px;
   text-align: center;
   text-decoration: none;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
   transition: all 0.25s ease;
-  border: 1px solid rgba(0,0,0,0.04);
+  border: 1px solid rgba(0, 0, 0, 0.04);
 }
 
 .product-card:hover {
   transform: translateY(-6px);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
-  border-color: #008CFF;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+  border-color: var(--cudy-blue);
 }
 
 .product-img {
@@ -46,18 +56,22 @@
 .product-name {
   font-size: 15px;
   font-weight: 600;
-  color: #008CFF;
+  color: var(--cudy-blue);
   line-height: 1.3;
 }
 
-/* 手机优化 */
+/* Mobile */
+
 @media (max-width: 600px) {
   .product-img {
     height: 80px;
   }
 }
 
-/* ===== 其他组件 ===== */
+/* =====================================================
+   Common Components
+   ===================================================== */
+
 .flex-container {
   display: flex;
   flex-wrap: wrap;
@@ -66,91 +80,84 @@
 }
 
 img.Cudyboxshadow {
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2), 0 6px 20px rgba(0,0,0,0.19);
+  box-shadow:
+    0 4px 8px rgba(0, 0, 0, 0.2),
+    0 6px 20px rgba(0, 0, 0, 0.19);
 }
 
-/* ===== 列表样式 ===== */
-.md-typeset ul li { 
-  list-style-type: disc; 
-} 
-.md-typeset ul ul li { 
-  list-style-type: circle; 
-} 
-.md-typeset ul ul ul li { 
-  list-style-type: square; 
-} 
+/* =====================================================
+   List Style
+   ===================================================== */
 
-/* ===== 固定 Footer ===== */
+.md-typeset ul li {
+  list-style-type: disc;
+}
+
+.md-typeset ul ul li {
+  list-style-type: circle;
+}
+
+.md-typeset ul ul ul li {
+  list-style-type: square;
+}
+
+/* =====================================================
+   Compact Footer
+   ===================================================== */
+
 .md-footer {
-  position: fixed;
-  bottom: 0;
-  left: 0;
+  position: static;
   width: 100%;
-  background-color:  #008cffe3; /* 整体统一底色 */
-  border-top: 1px solid rgba(255,255,255,0.2);
-  padding: 0.5rem 1rem;
-  text-align: center;
-  z-index: 9999;
+  background-color: var(--cudy-blue);
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
   box-sizing: border-box;
+  font-size: 12px;
 }
 
-/* 内部内容框继承父层背景色 */
-.md-footer__inner {
-  color: #ffffff; /* 文字颜色 */
-  background-color: inherit; /* 与父层统一 */
-  padding: 0.5rem 1rem;
-  border-radius: 0;
-  display: inline-block;
-  width: 100%;
+/* Footer layout */
+
+.md-footer__inner,
+.md-footer-meta__inner {
+  padding-top: 0.15rem !important;
+  padding-bottom: 0.15rem !important;
+  min-height: 28px;
 }
 
-/* 社交图标 */
-.md-footer-social {
-  display: flex !important;
-  justify-content: center;
-  gap: 0.5rem;
-  margin-top: 0.5rem;
-  opacity: 1 !important;
-}
+/* Footer background */
 
-/* 内容区底部留出空间，避免被 footer 遮挡 */
-.md-content {
-  padding-bottom: 4rem;
-}
-
-/* 统一 footer 背景色 */
 .md-footer,
 .md-footer-nav,
 .md-footer-meta,
 .md-footer-meta__inner {
-    background-color: #008cff !important;
-    padding-top: 0.03rem;   /* 原默认是 0.4rem 左右 */
-    padding-bottom: 0.05rem;
+  background-color: var(--cudy-blue) !important;
 }
 
-/* 统一文字颜色 */
+/* Footer text */
+
 .md-footer,
+.md-footer-nav,
 .md-footer-meta__inner,
-.md-footer-nav {
-    color: #ffffff !important;
-}
-
-/* 如果有链接文字，强制白色 */
 .md-footer a {
-    color: #ffffff !important;
+  color: #ffffff !important;
 }
 
-/* 响应式 Footer：手机端隐藏*/
-@media (max-width: 768px) {
-  .md-footer {
-    display: none !important;
-   }
+/* Footer social icons */
+
+.md-footer-social {
+  display: flex !important;
+  justify-content: center;
+  gap: 0.4rem;
+  margin-top: 0.2rem;
+  opacity: 1 !important;
 }
 
-/* 1. 基础样式与折叠状态 (灰色) */
+/* =====================================================
+   Glossary / Details Block
+   ===================================================== */
+
 details.glossary-item {
   background-color: #f5f5f5;
-  border: 1px solid #ddd;
+  border: 1px solid #dddddd;
   border-left: 0.2rem solid #9e9e9e;
   margin-bottom: 0.8em;
   border-radius: 4px;
@@ -159,32 +166,35 @@ details.glossary-item {
 
 details.glossary-item > summary {
   background-color: #f5f5f5;
-  color: #333;
+  color: #333333;
   font-weight: 600;
-  padding: 0.6rem 0.6rem 0.6rem 2.5rem !important; /* 留出图标位置 */
+  padding: 0.6rem 0.6rem 0.6rem 2.5rem !important;
   cursor: pointer;
   position: relative;
-  list-style: none; /* 隐藏默认箭头 */
+  list-style: none;
 }
 
-/* 隐藏 Firefox 默认箭头 */
+/* Hide default arrow */
+
 details.glossary-item > summary::-webkit-details-marker {
   display: none;
 }
 
-/* 2. 展开状态 (蓝色 #008cff) */
+/* Expanded state */
+
 details.glossary-item[open] {
-  background-color: white;
-  border: 1px solid #008cff;
-  border-left: 0.2rem solid #008CFF(211, 100%, 50%);
+  background-color: #ffffff;
+  border: 1px solid var(--cudy-blue);
+  border-left: 0.2rem solid var(--cudy-blue);
 }
 
 details.glossary-item[open] > summary {
   background-color: #ffffff;
-  color: rgb(0, 0, 0);
+  color: #000000;
 }
 
-/* 3. 笔记本图标 (标准样式) */
+/* Notebook icon */
+
 details.glossary-item > summary::before {
   content: "";
   position: absolute;
@@ -194,123 +204,152 @@ details.glossary-item > summary::before {
   width: 1.1rem;
   height: 1.1rem;
   background-color: currentColor;
-  /* 使用标准笔记本图标 SVG */
+
   -webkit-mask-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21,4H3C1.89,4 1,4.89 1,6V18C1,19.11 1.89,20 3,20H21C22.11,20 23,19.11 23,18V6C23,4.89 22.11,4 21,4M21,18H3V6H21V18M19,10H5V8H19V10M19,13H5V11H19V13M19,16H5V14H19V16Z"/></svg>');
+
   mask-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21,4H3C1.89,4 1,4.89 1,6V18C1,19.11 1.89,20 3,20H21C22.11,20 23,19.11 23,18V6C23,4.89 22.11,4 21,4M21,18H3V6H21V18M19,10H5V8H19V10M19,13H5V11H19V13M19,16H5V14H19V16Z"/></svg>');
+
   -webkit-mask-repeat: no-repeat;
   mask-repeat: no-repeat;
+
   -webkit-mask-size: contain;
   mask-size: contain;
 }
 
-/* 4. 内容区域样式 */
+/* Glossary content */
+
 details.glossary-item > .admonition-content {
   background-color: #ffffff;
-  color: #333;
+  color: #333333;
   padding: 1.2em;
-  border-top: 1px solid rgba(0,0,0,0.05);
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
 }
 
-<style>
-  /* 1. 让表格容器宽度自适应 */
-  .Cudy-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 0 0 40px 0;
-    display: block;
-  }
+/* =====================================================
+   Responsive Product Table
+   ===================================================== */
 
-  /* 2. tr 变成 Flex 容器，支持换行 */
-  .Cudy-table tr {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    border: none;
-  }
+.Cudy-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0 0 40px 0;
+  display: block;
+}
 
-  /* 3. 单元格宽度 */
+.Cudy-table tr {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  border: none;
+}
+
+.Cudy-table td {
+  display: block;
+  width: 14.28%;
+  min-width: 140px;
+  text-align: center;
+  padding: 15px 5px;
+  box-sizing: border-box;
+}
+
+.Cudy-table img {
+  height: 70px;
+  max-width: 100%;
+  object-fit: contain;
+  transition: 0.2s ease;
+}
+
+.Cudy-product-model {
+  font-size: 14px;
+  margin-top: 8px;
+  color: #333333;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 1024px) {
   .Cudy-table td {
-    display: block;
-    width: 14.28%;
-    min-width: 140px;
-    text-align: center;
-    padding: 15px 5px;
-    box-sizing: border-box;
+    width: 25%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .Cudy-table td {
+    width: 50%;
+    padding: 10px 5px;
   }
 
-  /* 4. 图片自适应 */
   .Cudy-table img {
-    height: 70px;
-    max-width: 100%;
-    object-fit: contain;
-    cursor: default;
-    transition: .2s ease;
+    height: 60px;
   }
 
   .Cudy-product-model {
-    font-size: 14px;
-    margin-top: 8px;
-    color: #333;
-    font-weight: 500;
-    line-height: 1.2;
-    cursor: pointer;
+    font-size: 13px;
   }
-
-  /* 响应式 */
-  @media screen and (max-width: 1024px) {
-    .Cudy-table td { width: 25%; }
-  }
-  @media screen and (max-width: 600px) {
-    .Cudy-table td { width: 50%; padding: 10px 5px; }
-    .Cudy-table img { height: 60px; }
-    .Cudy-product-model { font-size: 13px; }
-  }
-
-  /* 链接样式 */
-  td a {
-    text-decoration: none;
-    color: inherit;
-    display: block;
-  }
-</style>
-
-/* ===============================
-   左侧导航子菜单折叠动画
-   =============================== */
-nav li > ul {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.3s ease, padding 0.3s ease;
-    padding-left: 0;
 }
 
-/* 展开状态 */
-nav li > ul.show {
-    max-height: 1000px;  /* 足够展开所有子项 */
-    padding-left: 1em;
+/* Table links */
+
+.Cudy-table td a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
 }
 
-/* 子项悬停效果 */
-nav li ul li a:hover {
-    background-color: rgba(0, 140, 255, 0.1);
-    border-radius: 4px;
+/* =====================================================
+   Sidebar Navigation Animation
+   ===================================================== */
+
+/* Limit scope to primary sidebar only */
+
+.md-sidebar--primary nav li > ul {
+  max-height: 0;
+  overflow: hidden;
+  transition:
+    max-height 0.3s ease,
+    padding 0.3s ease;
+  padding-left: 0;
 }
 
-/* 父级当前页样式高亮 */
-nav li.current > a {
-    font-weight: bold;
-    color: #008CFF; /* 或深色模式可调 */
+/* Expanded */
+
+.md-sidebar--primary nav li > ul.show {
+  max-height: 1000px;
+  padding-left: 1em;
 }
 
-/* 强制默认折叠 User Guide 下的所有子菜单 */
-.md-nav li.md-nav__item > ul {
-    max-height: 0 !important;
-    overflow: hidden !important;
-    padding-left: 0 !important;
+/* Hover effect */
+
+.md-sidebar--primary nav li ul li a:hover {
+  background-color: rgba(0, 140, 255, 0.1);
+  border-radius: 4px;
 }
 
-.md-nav li.md-nav__item > ul.show {
-    max-height: 1000px !important;
-    padding-left: 1em !important;
+/* Current page */
+
+.md-sidebar--primary nav li.current > a {
+  font-weight: bold;
+  color: var(--cudy-blue);
 }
 
+/* =====================================================
+   Tabs Hide Animation
+   ===================================================== */
+
+.md-tabs {
+  transition:
+    transform 0.25s ease,
+    opacity 0.25s ease !important;
+
+  will-change: transform;
+}
+
+/* Hidden state */
+
+.md-tabs.hidden {
+  transform: translateY(-100%) !important;
+  opacity: 0;
+  pointer-events: none;
+}

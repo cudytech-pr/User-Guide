@@ -21,17 +21,27 @@
 /* =====================================================
    TIP — 蓝色
    ===================================================== */
-.md-typeset .admonition.tip,
-.md-typeset details.tip {
-  background-color: #ffffff !important; /* 浅蓝背景 */
-  color: #000000 !important;
-  border: 0.03rem dashed #008cff !important;
+/* Light */
+
+[data-md-color-scheme="default"] .md-typeset .admonition.tip,
+[data-md-color-scheme="default"] .md-typeset details.tip {
+  background: #ffffff !important;
+  border: 1px solid #07a17695 !important;
 }
 
-.md-typeset .admonition.tip > .admonition-title,
-.md-typeset details.tip > summary {
-  background-color: #d9ecff !important;
-  color: #005fcc !important;
+/* Dark */
+
+[data-md-color-scheme="slate"] .md-typeset .admonition.tip,
+[data-md-color-scheme="slate"] .md-typeset details.tip {
+  background: rgba(255,255,255,0.02) !important;
+  border: 1px solid #07a17695 !important;
+}
+
+/* Title */
+
+[data-md-color-scheme="slate"] .md-typeset .admonition.tip > .admonition-title,
+[data-md-color-scheme="slate"] .md-typeset details.tip > summary {
+  background: rgba(62,166,255,.08) !important;
 }
 
 /* =====================================================
