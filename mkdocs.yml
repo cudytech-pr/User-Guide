@@ -20,7 +20,6 @@
       - search.highlight
       - navigation.indexes
       - navigation.tabs
-      - navigation.tabs.sticky
       - navigation.top
       - navigation.tracking
       - navigation.sections
@@ -140,4 +139,3 @@
           - Networking: glossary/networking.md      
           - Router: glossary/router.md  
           - Switch: glossary/switch.md
-    - About: about/index.md

@@ -15,7 +15,7 @@ Follow step-by-step tutorials to set up, configure, and use Cudy products with e
 - [How to change the NAT type on the Cudy router for game console?](10006_How_to_change_the_NAT_type_on_the_Cudy_router_for_game_console.md)
 
 ## Switch
-- [How to manage your cloud easy-managed switch anywhere anytime?](how_to_cloud_manage_switch.md)
+- [How to manage your Cudy cloud easy-managed switch remotely? ](how_to_remote_manage_cloud_switch.md)
 
 
 !!! Tip
