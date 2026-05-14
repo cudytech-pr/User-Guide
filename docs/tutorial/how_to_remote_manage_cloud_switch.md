@@ -2,13 +2,13 @@
 # How to manage Cudy cloud easy-managed switch remotely? 
 
 ???+ Tip
-    - Before you start, confirm that [your model supports Cudy Cloud](https://www.cudy.com/en-apac/collections/easy-managed-switches?filter.p.m.custom.filters_cudy_cloud_status=gid%3A%2F%2Fshopify%2FFilterSettingGroup%2F109281524#banner-165292998900) and its firmware is up-to-date (if not [upgrade it](https://www.cudy.com/blogs/faq/how-to-upgrade-firmware-for-cudy-easy-managed-switch-to-support-cudy-app-cloud-management) first). More information on [Cudy Official Website](https://www.cudy.com/collections/easy-managed-switches).
+    - Before you start, confirm that [your model supports Cudy Cloud](https://www.cudy.com/en-apac/collections/easy-managed-switches?filter.p.m.custom.filters_cudy_cloud_status=gid%3A%2F%2Fshopify%2FFilterSettingGroup%2F109281524#banner-165292998900) and its firmware is up-to-date (otherwise [upgrade it](https://www.cudy.com/blogs/faq/how-to-upgrade-firmware-for-cudy-easy-managed-switch-to-support-cudy-app-cloud-management) first). View more information on [Cudy Official Website](https://www.cudy.com/collections/easy-managed-switches).
     - GS1026EPS2 is used as an example below. Refer to your actual product for more details.
 
 ### Step 1. Connect the Switch
 
 - Connect your Cudy cloud easy-managed switch to a network with Internet access (usually connect to a router or gateway). Connect your computer to the switch.
-    <img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/tutorial/topo.webp" width="700px" style="display: block; margin: 0 auto;">   
+    <img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/tutorial/topology.webp" width="700px" style="display: block; margin: 0 auto;">   
 
 ### Step 2. Configure on the webpage
 
