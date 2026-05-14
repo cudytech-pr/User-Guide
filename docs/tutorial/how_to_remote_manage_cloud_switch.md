@@ -8,7 +8,7 @@
 ### Step 1. Connect the Switch
 
 - Connect your Cudy cloud easy-managed switch to a network with Internet access (usually connect to a router or gateway). Connect your computer to the switch.
-    <img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/tutorial/topology.webp" width="700px" style="display: block; margin: 0 auto;">   
+    <img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/tutorial/topo2.webp" width="600px" style="display: block; margin: 0 auto;">   
 
 ### Step 2. Configure on the webpage
 
