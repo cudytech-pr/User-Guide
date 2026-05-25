@@ -8,34 +8,33 @@
 
 Make sure you have [connected your AP controller](../user_guide/ap_controller/connection.md) and powered it on.
 
-### Step 2. Enable *Cloud Management* on the [management webpage](http://cudyac.net).
+### Step 2. Enable *Cloud Management* on [cudyac.net](http://cudyac.net).
 
-- If this is your first login to *[cudyac.net](http://cudyac.net)*, just follow the [Quick Setup](../user_guide/ap_controller/quick_setup.md) and enable *Cloud Management* at the step for *System* settings. 
-    <img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/ap_controller/qs5.webp" width="700px" style="display: block; margin: 0 auto;">   
-    <img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/ap_controller/qsa4.webp" width="700px" style="display: block; margin: 0 auto;">       
+- If this is your first login to [cudyac.net](http://cudyac.net), just follow the [Quick Setup](../user_guide/ap_controller/quick_setup.md) and enable *Cloud Management* in the *System* step.
+    <img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/ap_controller/qs5.webp" width="700px" style="border:  2px solid #eee;display: block; margin: 0 auto;">   
+    <img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/ap_controller/qsa4.webp" width="700px" style="border:  2px solid #eee;display: block; margin: 0 auto;">       
 
-- If you have already completed [Quick Setup](../user_guide/ap_controller/quick_setup.md) before, log in to *[cudyac.net](http://cudyac.net)* with your password and go to Advanced Settings -> System -> Cloud Management to enable *Cloud Management* and click *Save & Apply*. 
-    <img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/ap_controller/advanced_cloud.webp" width="700px" style="display: block; margin: 0 auto;">   
+- If you have already completed Quick Setup before, just log in to [cudyac.net](http://cudyac.net) with your password, and go to *Advanced Settings >> System >> Cloud Management* to enable *Cloud Management* and click *Save & Apply*. 
+    <img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/ap_controller/advanced_cloud.webp" width="700px" style="border:  2px solid #eee;display: block; margin: 0 auto;" >   
 
 ???+ Note
-    - Make sure the *Cloud Status* is *Ready to bind* before proceeding. If it is *Offline*, please check your Internet connectivity.
-    - Note down the *Serial Number* for later use. Sure you may also find it on the product label.
+    - Before proceeding, ensure that the *Cloud Status* is **Ready to Bind**. If it is *Offline*, check your Internet connection.
+    - Note down the *Serial Number* for later use. It is also available on the product label.
 
-### Step 3. Bind the AP controller with your Cudy cloud account.
+### Step 3. Bind the AP controller with your Cudy account.
 
-- Go to [Cudy Cloud](http://cloud.cudy.com) at the website *http://cloud.cudy.com*, log in your Cudy account (*Create* first if you don't have one).
-    <img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/ap_controller/cloud_log.webp" width="700px" style="display: block; margin: 0 auto;">   
+- Go to [Cudy Cloud](http://cloud.cudy.com) at [cloud.cudy.com](http://cloud.cudy.com), log in your Cudy account. *Create account* first if you don't have one.
+    <img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/ap_controller/cloud_log.webp" width="700px" style="border:  2px solid #eee;display: block; margin: 0 auto;" >   
 
-- Click *Add* or *Add Device* to start binding.
-    <img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/ap_controller/cloud_add.webp" width="700px" style="display: block; margin: 0 auto;">
+- Click *Add* or *Add Device*.
+    <img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/ap_controller/cloud_add.webp" width="700px" style="border:  2px solid #eee;display: block; margin: 0 auto;" >
 
 
-- Enter the *Serial Number* and *Password* (that is the web management page login password). Click *Confirm* to bind it. 
-    <img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/ap_controller/sn_pw.webp" width="700px" style="display: block; margin: 0 auto;">
+- Enter the AP controller's *Serial Number* and its web login *Password*. Click *Confirm* to bind it. 
+    <img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/ap_controller/sn_pw.webp" width="400px" style="border:  2px solid #eee;display: block; margin: 0 auto;" >
 
-    <img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/ap_controller/bound.webp" width="700px" style="display: block; margin: 0 auto;">   
+- Once bound successfully, you can remotely manage the AP in [Cudy Cloud](http://cloud.cudy.com) by clicking its device name or the operation icon <img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/ap_controller/config.webp" width="25px">. 
+    <img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/ap_controller/bond.webp" width="700px" style="border:  2px solid #eee;display: block; margin: 0 auto;" >   
 
-- When it is successfully bound, click on its device name or the operation icon <img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/ap_controller/config.webp" width="30px"> to start management. 
-
-???+ Tips
-    You may check the successful binding status on the management webpage, either on the upper right conner or *Advanced Settings -> System -> Cloud Management*, as well as here the Cudy Cloud Device List. These are also where to operate if your want to unbind it or change another Cudy account to manage it.
+    ???+ Tips
+        You can check the binding status on [cudyac.net](http://cudyac.net), either in the upper-right corner or under *Advanced Settings >> System >> Cloud Management*, as well as in the [Cudy Cloud](http://cloud.cudy.com) Device List. You can also unbind the device or switch to another Cudy account there.
