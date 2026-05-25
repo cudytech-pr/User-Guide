@@ -6,13 +6,12 @@
 
 ### Step 1. Connect the AP controller.
 
-Make sure you have [connected your AP controller](../user_guide/ap_controller/connection.md) and powered it on.
+Make sure you have [connected your AP controller](../user_guide/ap_controller/connection.md) to the Internet and powered it on.
 
 ### Step 2. Enable *Cloud Management* on [cudyac.net](http://cudyac.net).
 
 - If this is your first login to [cudyac.net](http://cudyac.net), just follow the [Quick Setup](../user_guide/ap_controller/quick_setup.md) and enable *Cloud Management* in the *System* step.
     <img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/ap_controller/qs5.webp" width="700px" style="border:  2px solid #eee;display: block; margin: 0 auto;">   
-    <img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/ap_controller/qsa4.webp" width="700px" style="border:  2px solid #eee;display: block; margin: 0 auto;">       
 
 - If you have already completed Quick Setup before, just log in to [cudyac.net](http://cudyac.net) with your password, and go to *Advanced Settings >> System >> Cloud Management* to enable *Cloud Management* and click *Save & Apply*. 
     <img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/ap_controller/advanced_cloud.webp" width="700px" style="border:  2px solid #eee;display: block; margin: 0 auto;" >   
