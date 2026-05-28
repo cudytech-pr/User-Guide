@@ -26,7 +26,7 @@
 6. Select the AP(s) you want to manage, and click *Next*.
 <img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/ap_controller/qs4.webp" alt="" width="800px" style="border:  2px solid #eee;display: block; margin: 0 auto;" />
 
-7. Select your Time Zone, and click *Next*.
+7. Select your *Time Zone* and enable *Cloud Management*. Click *Next*.
 <img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/ap_controller/qs5.webp" alt="" width="800px" style="border:  2px solid #eee;display: block; margin: 0 auto;" />
 
 8. Confirm your settings, and click *Save & Apply*. Otherwise, click *Back* to modify the settings.
@@ -54,7 +54,7 @@
 5. Select the AP(s) you want to manage, and click *Next*.
 <img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/ap_controller/qsa3.webp" alt="" width="800px" style="border:  2px solid #eee;display: block; margin: 0 auto;" />
 
-6. Select your Time Zone, and click *Next*.
+6. Select your *Time Zone* and enable *Cloud Management*. Click *Next*.
 <img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/ap_controller/qsa4.webp" alt="" width="800px" style="border:  2px solid #eee;display: block; margin: 0 auto;" />
 
 7. Confirm your settings, and click *Save & Apply*. Otherwise, click *Back* to modify the settings.
