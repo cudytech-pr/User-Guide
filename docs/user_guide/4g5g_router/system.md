@@ -4,8 +4,9 @@ System is to manage the router’s systematic features. It includes System Time,
 
 !!! Note
     P2 is used as an example in this guide. Refer to your actual product for more details.
+
 ---
-## System Time
+## System Time/Time Zone
 is the time displayed while the router is running. The system time you configure here will be used for other time-based functions like WiFi schedule, parental control, etc. 
 
 **To configure the system time, please follow the steps below.**

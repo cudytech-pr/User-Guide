@@ -1,5 +1,8 @@
 ﻿# Devices
 
+!!! Note
+    P2 is used as an example in this guide. Refer to your actual product for more details.
+
 - *Status* shows the number of devices connected to this Router, via Ethernet cable or 2.4G WiFi or 5G WiFi. 
     <img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/4g5g_router/devices-status.webp" alt="" width="800px" style="border: 1px solid #eee;" />
 

@@ -2,6 +2,9 @@
 
 Follow the instructions below to get your router ready for use fast and easy.
 
+!!! Note
+    P2 is used as an example in this guide. Refer to your actual product for more details.
+
 1. Insert your nano SlM card into the SIM slot (on the bottom) according to the engraved direction, until you hear a clicking sound.
     <img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/4g5g_router/qig.webp" alt="" width="500px" style="display: block; margin: 0 auto;"/>
 

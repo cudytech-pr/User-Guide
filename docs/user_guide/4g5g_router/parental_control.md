@@ -2,7 +2,8 @@
 It helps to set up unique restrictions on Internet access for each member of your family via Parental Control feature. You can block inappropriate content, set daily limits for the total time spent online and restrict Internet access to certain time of the day, etc. 
 
 !!!Note
-    This feature only works in Wireless Router mode.
+    - This feature only works in Wireless Router mode.
+    - P2 is used as an example in this guide. Refer to your actual product for more details.
 
 <img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/wireless_router/parent-control.webp" alt="" width="800px" style="border: 1px solid #eee; display: block; margin: 0 auto;" />
 

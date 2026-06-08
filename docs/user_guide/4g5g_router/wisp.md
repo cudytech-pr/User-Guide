@@ -1,5 +1,8 @@
 # WISP
 
+!!! Note
+    P2 is used as an example in this guide. Refer to your actual product for more details.
+
 On the *General Settings -> WISP* page, you can enable the router to wirelessly connect to a distant Wi-Fi network and share that connection locally via Ethernet/Wi-Fi, acting as a client bridge.  Please follow the steps below.
 
 1. Turn on *Enabled* to activate the WISP function.

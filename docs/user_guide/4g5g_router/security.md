@@ -1,5 +1,9 @@
 # Security
+
  To enhance your home network security with a kit of features built in Cudy Router. In Wireless Router mode, it includes Firewall, MAC filter, IP filter, Domain Filter, IP/MAC Binding, WPS, Wi-Fi Schedule, and ALG; while in Wireless Access Point mode, it consists of WPS and Wi-Fi Schedule.
+
+!!! Note
+    P2 is used as an example in this guide. Refer to your actual product for more details.
 
 ---
 ## Firewall
@@ -108,6 +112,28 @@ allows the Router’s wireless network to turn on or off automatically at a spec
 
 !!! Note
     The effective time schedule is based on the time of the Router. You can go to Advanced Settings -> System -> System Time to modify the time.
+
+----
+## Remote Web
+
+Remote Web is a management feature that allows users to access and control the router's web-based administration interface over the Internet (WAN) instead of only within the local network (LAN).
+
+With Remote Web enabled, you can log in to the router’s admin page from a remote location, monitor network status and traffic, change configuration settings (e.g., APN, Wi-Fi, firewall rules) and perform troubleshooting without being physically present.
+
+!!! Note
+    This feature is not available on all models. Please refer to your specific model for availability.
+
+*To configure the WiFi Schedule, please follow the steps below.*
+
+1. Toggle *Enable* to activate this feature.
+    <img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/4g5g_router/remote_web1.webp" alt="" width="500px" style="border: 1px solid #eee;display: block; margin: 0 auto;" />
+
+2. Set a value for *Listen Port* (8080, 8443, or 10443 recommended) for the external access. Set a specific *Remote IPv4 Address (optional)* to allow an access only from this IP an access (Example: 203.0.113.10). Leaving this field empty will allow access from any IP, which is not recommended.
+    <img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/4g5g_router/remote_web2.webp" alt="" width="500px" style="border: 1px solid #eee;display: block; margin: 0 auto;" />
+
+3.  Click *Save & Apply*, and wait for the configuration to take effect.
+
+4. From an external network, open a browser and enter *https://<Public_IP>:<Listen_Port>* to access the router remotely.
 
 ----
 ## ALG

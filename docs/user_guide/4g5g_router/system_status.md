@@ -1,5 +1,8 @@
 ﻿# System
 
+!!! Note
+    P2 is used as an example in this guide. Refer to your actual product for more details.
+    
 - *Status* shows the Router info about firmware version, model, hardware version, local time and uptime.
     <img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/4g5g_router/system_status_1.webp" alt="" width="800px" style="border: 1px solid #eee;" />
 

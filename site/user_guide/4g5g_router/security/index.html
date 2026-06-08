@@ -948,6 +948,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#remote-web" class="md-nav__link">
+    Remote Web
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#alg" class="md-nav__link">
     ALG
   </a>
@@ -980,6 +987,10 @@
   <!-- Markdown content -->
   <h1 id="security">Security<a class="headerlink" href="#security" title="Permanent link">&para;</a></h1>
 <p>To enhance your home network security with a kit of features built in Cudy Router. In Wireless Router mode, it includes Firewall, MAC filter, IP filter, Domain Filter, IP/MAC Binding, WPS, Wi-Fi Schedule, and ALG; while in Wireless Access Point mode, it consists of WPS and Wi-Fi Schedule.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>P2 is used as an example in this guide. Refer to your actual product for more details.</p>
+</div>
 <hr />
 <h2 id="firewall">Firewall<a class="headerlink" href="#firewall" title="Permanent link">&para;</a></h2>
 <p>is a security system that monitors and controls incoming and outgoing network traffic based on predetermined security rules. It serves as a barrier between a trusted internal network and untrusted external networks, such as the Internet. This function is enabled by default. It is highly recommended to keep the default settings.</p>
@@ -1093,6 +1104,31 @@ You might want to use WPS to let someone else connect to your WiFi network witho
 <p class="admonition-title">Note</p>
 <p>The effective time schedule is based on the time of the Router. You can go to Advanced Settings -&gt; System -&gt; System Time to modify the time.</p>
 </div>
+<hr />
+<h2 id="remote-web">Remote Web<a class="headerlink" href="#remote-web" title="Permanent link">&para;</a></h2>
+<p>Remote Web is a management feature that allows users to access and control the router's web-based administration interface over the Internet (WAN) instead of only within the local network (LAN).</p>
+<p>With Remote Web enabled, you can log in to the router’s admin page from a remote location, monitor network status and traffic, change configuration settings (e.g., APN, Wi-Fi, firewall rules) and perform troubleshooting without being physically present.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This feature is not available on all models. Please refer to your specific model for availability.</p>
+</div>
+<p><em>To configure the WiFi Schedule, please follow the steps below.</em></p>
+<ol>
+<li>
+<p>Toggle <em>Enable</em> to activate this feature.
+    <a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/4g5g_router/remote_web1.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/4g5g_router/remote_web1.webp" alt="" width="500px" style="border: 1px solid #eee;display: block; margin: 0 auto;" /></a></p>
+</li>
+<li>
+<p>Set a value for <em>Listen Port</em> (8080, 8443, or 10443 recommended) for the external access. Set a specific <em>Remote IPv4 Address (optional)</em> to allow an access only from this IP an access (Example: 203.0.113.10). Leaving this field empty will allow access from any IP, which is not recommended.
+    <a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/4g5g_router/remote_web2.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/4g5g_router/remote_web2.webp" alt="" width="500px" style="border: 1px solid #eee;display: block; margin: 0 auto;" /></a></p>
+</li>
+<li>
+<p>Click <em>Save &amp; Apply</em>, and wait for the configuration to take effect.</p>
+</li>
+<li>
+<p>From an external network, open a browser and enter <em>https://<Public_IP>:<Listen_Port></em> to access the router remotely.</p>
+</li>
+</ol>
 <hr />
 <h2 id="alg">ALG<a class="headerlink" href="#alg" title="Permanent link">&para;</a></h2>
 <p>ALG (Application Layer Gateway) allows customized NAT traversal filters to be plugged into the gateway to support address and port translation for certain application layer “control/data” protocols such as FTP, TFTP, H323 etc. All ALG is enabled by default and recommended.</p>

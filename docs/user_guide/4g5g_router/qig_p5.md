@@ -2,6 +2,9 @@
 
 Follow the instructions below to get your router ready for use fast and easy.
 
+!!! Note
+    P5 is used as an example in this guide. Refer to your actual product for more details.
+
 1. Install the cellular antennas if there are detachable ones.
     <img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/4g5g_router/qig-p51.webp" alt="" width="500px" style="display: block; margin: 0 auto;"/>
 

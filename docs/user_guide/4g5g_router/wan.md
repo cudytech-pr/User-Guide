@@ -2,6 +2,9 @@
 
 *WAN Mode* is to set your Internet connection. Select your Internet connection type from the drop-down list of Protocol. Follow the instructions on the page to continue the configuration. Parameters on the figures are just used for demonstration.
 
+!!! Note
+    P2 is used as an example in this guide. Refer to your actual product for more details.
+
 ## DHCP
 <img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/4g5g_router/wan-dhcp.webp" alt="" width="800px" style="border: 1px solid #eee;" />
 

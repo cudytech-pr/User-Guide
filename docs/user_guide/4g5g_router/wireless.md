@@ -19,3 +19,6 @@ You may go to *General Settings -> Wireless* or *System Status -> Wireless 2.4G/
 6. Enable *Hidden Network*, if you don’t want your SSID to display automatically. Then you need to manually join the network.
 7. Enable *Separate Clients* to isolate the wireless clients from each other.
 8. Click *Save & Apply* to apply your new settings.
+
+!!! Note
+    P2 is used as an example in this guide. Refer to your actual product for more details.

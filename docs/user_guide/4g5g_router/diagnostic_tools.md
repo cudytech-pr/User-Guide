@@ -1,5 +1,8 @@
 # Diagnostic Tools
 
+!!! Note
+    P2 is used as an example in this guide. Refer to your actual product for more details.
+
 ## Diagnosis
 
 <img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/wireless_router/diagnosis.webp" alt="" width="800px" style="border: 1px solid #eee;" />

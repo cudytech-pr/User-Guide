@@ -40,7 +40,8 @@
         <td>The Router’s Internet port is unplugged or no Internet available.</td>
 </tr>
 <tr>
-    <td rowspan="2" style="text-align: left; vertical-align: middle;">    <img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/wireless_router/lan-led.webp" alt="LAN Icon" width="20" height="20"><br>(LAN)</td>
+    <td rowspan="2" style="text-align: left; vertical-align: middle;">    
+    <img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/wireless_router/lan-led.webp" alt="LAN Icon" width="20" height="20"><br>(LAN)</td>
         <td><strong>On</strong></td>
         <td>1~4 powered-on device is connected to the Router’s LAN port.</td>
 </tr>
