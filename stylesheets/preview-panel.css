@@ -11,6 +11,7 @@
   height: 100%;
   background: #ffffff;              
   border-left: 2px solid #008cff90;  
+  border-bottom: 2px solid #008cff90;
   border-radius: 4px 0 0 4px;
   box-shadow: 0 2px 12px rgba(255, 255, 255, 0.12);
   overflow: hidden;
