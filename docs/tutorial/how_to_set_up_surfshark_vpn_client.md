@@ -10,49 +10,62 @@
 
 1. Connect your phone to the router's Wi-Fi network. 
 
-2. Open the Cudy App on your phone. Scan the QR code to download first if you didn't have one.
-    <img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/faq/10007/1_Cudy_APP_QR.webp" width="700px" style="border:  2px solid #eee;display: block; margin: 0 auto;">   
+2. Open the Cudy App on your phone. Tick *I agree with ...* and select *Local Management*.
+    <img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/tutorial/cudy1.webp" width="300px" style="display: block; margin: 0 auto;">   
 
-3. Select *Wi-Fi Device* as your Device Type.
-    <img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/tutorial/select_device_type.webp" width="700px" style="border:  2px solid #eee;display: block; margin: 0 auto;">   
+    ???+ Tip
+        Scan the QR code to download it first if needed.
 
-4. Tap on the router. 
-    <img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/tutorial/tap_on_tr3000.webp" width="700px" style="border:  2px solid #eee;display: block; margin: 0 auto;">   
+        <img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/faq/10007/1_Cudy_APP_QR.webp" width="200px" style="display: block; margin: 0 auto;">   
 
-5. Enter the router's administrator password. Create one for an initial log in to the management page including via web interface or Cudy App.
-    <img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/tutorial/password.webp" width="700px" style="border:  2px solid #eee;display: block; margin: 0 auto;">  
+3. Select *Wi-Fi Device*. 
+    <img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/tutorial/select_device_type.webp" width="300px" style="border:  2px solid #eee;display: block; margin: 0 auto;">   
 
-6. Pull down the page and tap on *More*.
-    <img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/tutorial/more.webp" width="700px" style="border:  2px solid #eee;display: block; margin: 0 auto;">   
+    ???+ Tip
+        If you have before managed other type of devices on Cudy App, you may need to tap the menu icon (☰) on the left of Dashboard to switch to *Wi-Fi Device*.
 
-7. Tap on *VPN*.
-    <img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/tutorial/vpn.webp" width="700px" style="border:  2px solid #eee;display: block; margin: 0 auto;">   
+4. Tap the router. 
+    <img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/tutorial/tap_on_tr3000.webp" width="300px" style="border:  2px solid #eee;display: block; margin: 0 auto;">   
 
-8. Tap on *VPN Client*.
-    <img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/tutorial/vpn_client.webp" width="700px" style="border:  2px solid #eee;display: block; margin: 0 auto;">   
+5. Enter the router's administrator password. (Create one for an initial login to the management page either via web interface or Cudy App.)
+    <img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/tutorial/password.webp" width="300px" style="border:  2px solid #eee;display: block; margin: 0 auto;">  
 
-9. Tap on *Add*.
-    <img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/tutorial/add_vc.webp" width="700px" style="border:  2px solid #eee;display: block; margin: 0 auto;">   
+6. Scroll down and tap *More*.
+    <img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/tutorial/more.webp" width="300px" style="border:  2px solid #eee;display: block; margin: 0 auto;">   
 
-10. Tap on *Surfshark*.
-    <img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/tutorial/add_surfshark.webp" width="700px" style="border:  2px solid #eee;display: block; margin: 0 auto;">   
+7. Find and tap *VPN*.
+    <img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/tutorial/vpn.webp" width="300px" style="border:  2px solid #eee;display: block; margin: 0 auto;">   
 
-11. Enter your Surfshark account *Username* and *Password*  and click *Continue*. 
-    <img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/tutorial/surfshark_account.webp" width="700px" style="border:  2px solid #eee;display: block; margin: 0 auto;">   
+8. Tap *VPN Client*.
+    <img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/tutorial/vpn_client.webp" width="300px" style="border:  2px solid #eee;display: block; margin: 0 auto;">   
+
+9. Tap *Add*.
+    <img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/tutorial/add_vc.webp" width="300px" style="border:  2px solid #eee;display: block; margin: 0 auto;">   
+
+10. Tap *Surfshark*.
+    <img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/tutorial/add_surfshark.webp" width="300px" style="border:  2px solid #eee;display: block; margin: 0 auto;">   
+
+11. Enter your Surfshark account *Username* and *Password*, and click *Continue*. 
+    <img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/tutorial/surfshark_account.webp" width="300px" style="border:  2px solid #eee;display: block; margin: 0 auto;">   
     
-    ???+ Note
-        - If you don't have Surfshark account yet, click *Get Started* to go to the Surfshark website and sign up for one. Get exclusive discounts through our partner links at [https://surfshark.com/](https://get.surfshark.net/aff_c?offer_id=1941&aff_id=46950).
+    ???+ Tip
+        - If you don't have Surfshark account yet, click *Get Started* to sign up for one. Get exclusive discounts through our partner links at [https://surfshark.com/](https://get.surfshark.net/aff_c?offer_id=1941&aff_id=46950).
 
         - You may be required to enter a 2FA code, if 2FA is enabled on your Surfshark account. Find it in your email or authenticator app.
-            <img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/tutorial/2fac.webp" width="200px" style="border:  2px solid #eee;display: block; margin: 0 auto;">   
 
-12. Create a *Description*, select a *Default Rule* and *VPN Policy*. Search and select a server. Tap the ✔ icon at the top right to save and apply.
-    <img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/tutorial/surfshark_config.webp" width="700px" style="border:  2px solid #eee;display: block; margin: 0 auto;">   
+12. Select a *Default Rule* and *VPN Policy*. Search and select a server. Tap the ✔ icon at the top right to save and apply.
+    <img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/tutorial/surfshark_config.webp" width="300px" style="border:  2px solid #eee;display: block; margin: 0 auto;">   
+
+    ???+ Explanation
+        - *Allow All Devices*: by default allows all devices to use the VPN connection unless a policy rule specifies otherwise. 
+        - *Ban All Devices*: by default prevents all devices from using the VPN connection unless a policy rule explicitly allows them to use it.
+        - *Disable*: disables the VPN policy rule, then traffic matching this rule is not affected by the policy. 
+        - *VPN Kill Switch*: blocks internet access if the VPN connection is lost, preventing traffic from being sent outside the VPN tunnel. 
+        - *Domain*: applies the VPN policy to specific domain names, and you need to enter one or more domains, such as `example.com`. 
+        - *Remote Subnet*: applies the VPN policy to a specific destination network, and you need to enter the subnet in CIDR notation, such as `192.168.10.0/24`.
 
 13. Toggle on to activate this VPN client profile. You can view, edit, or delete this profile as needed.
-    <img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/tutorial/surfshark_toggle.webp" width="700px" style="border:  2px solid #eee;display: block; margin: 0 auto;">   
-
-    <img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/tutorial/surfshark_connected.webp" width="700px" style="border:  2px solid #eee;display: block; margin: 0 auto;">   
+    <img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/tutorial/surfshark_connected.webp" width="300px" style="border:  2px solid #eee;display: block; margin: 0 auto;">   
 
 
 ## Using Web Interface
@@ -65,23 +78,23 @@
 3. Click *Surfshark* in the VPN Client pop-up window.
     <img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/tutorial/vpn2.webp" width="700px" style="border:  2px solid #eee;display: block; margin: 0 auto;">   
 
-4. Enter the *Username* and *Password* of your Surfshark account, and click *Continue*. 
+4. Enter your Surfshark account *Username* and *Password*, and click *Continue*. 
     <img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/tutorial/vpn3.webp" width="700px" style="border:  2px solid #eee;display: block; margin: 0 auto;">   
 
-    ???+ Note
-        - If you don't have Surfshark account yet, click *Get Started* to go to the Surfshark website and sign up for one. Get exclusive discounts through our partner links at [https://surfshark.com/](https://get.surfshark.net/aff_c?offer_id=1941&aff_id=46950).
+    ???+ Tip
+        - If you don't have Surfshark account yet, click *Get Started* to sign up for one. Get exclusive discounts through our partner links at [https://surfshark.com/](https://get.surfshark.net/aff_c?offer_id=1941&aff_id=46950).
         - You may be required to enter a 2FA code, if 2FA is enabled on your Surfshark account. Find it in your email or authenticator app.
 
 5. Create a *Description*, select a *Default Rule* and *VPN Policy*. Search and select a server. Click *Save & Apply*.
     <img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/tutorial/vpn5.webp" width="700px" style="border:  2px solid #eee;display: block; margin: 0 auto;">   
 
-    - *Allow All Devices* by default allow all devices to use the VPN connection unless a policy rule specifies otherwise. 
-    - *Ban All Devices* by default prevent all devices from using the VPN connection unless a policy rule explicitly allows them to use it.
-    
-    - *Disable* disables the VPN policy rule, then traffic matching this rule is not affected by the policy. 
-    - *VPN Kill Switch* blocks internet access if the VPN connection is lost, preventing traffic from being sent outside the VPN tunnel. 
-    - *Domain* applies the VPN policy to specific domain names, and you need to enter one or more domains, such as `example.com`. 
-    - *Remote Subnet* applies the VPN policy to a specific destination network, and you need to enter the subnet in CIDR notation, such as `192.168.10.0/24`.
+    ???+ Explanation
+        - *Allow All Devices*: by default allows all devices to use the VPN connection unless a policy rule specifies otherwise. 
+        - *Ban All Devices*: by default prevents all devices from using the VPN connection unless a policy rule explicitly allows them to use it.
+        - *Disable*: disables the VPN policy rule, then traffic matching this rule is not affected by the policy. 
+        - *VPN Kill Switch*: blocks internet access if the VPN connection is lost, preventing traffic from being sent outside the VPN tunnel. 
+        - *Domain*: applies the VPN policy to specific domain names, and you need to enter one or more domains, such as `example.com`. 
+        - *Remote Subnet*: applies the VPN policy to a specific destination network, and you need to enter the subnet in CIDR notation, such as `192.168.10.0/24`.
 
 6. Toggle *Enable* to activate this VPN client profile. You can view, edit, or delete this profile as needed.
     <img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/tutorial/vpn7.webp" width="700px" style="border:  2px solid #eee;display: block; margin: 0 auto;">   
