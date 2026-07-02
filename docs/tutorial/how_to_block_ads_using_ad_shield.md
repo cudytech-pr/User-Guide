@@ -26,7 +26,7 @@
 4. Tap the router. 
     <img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/tutorial/ad/tap_on_tr3000.webp" width="300px" style="border:  2px solid #eee;display: block; margin: 0 auto;">   
 
-5. Enter the router's administrator password. Create one if this is your initial login.
+5. Enter the router's administrator password. Create one if this is your login for the first time.
     <img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/tutorial/ad/password.webp" width="300px" style="border:  2px solid #eee;display: block; margin: 0 auto;">   
 
 6. Tap *Ad Shield*.
