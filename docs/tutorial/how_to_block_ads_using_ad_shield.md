@@ -26,7 +26,7 @@
 4. Tap the router. 
     <img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/tutorial/tap_on_tr3000.webp" width="300px" style="border:  2px solid #eee;display: block; margin: 0 auto;">   
 
-5. Enter the router's administrator password. (Create one for an initial login to the management page either via web interface or Cudy App.)
+5. Enter the router's administrator password. Create one if this is your initial login.
     <img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/tutorial/password.webp" width="300px" style="border:  2px solid #eee;display: block; margin: 0 auto;">   
 
 6. Tap *Ad Shield*.
@@ -64,11 +64,10 @@
     <img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/tutorial/shiild01.webp" width="300px" style="border:  2px solid #eee;display: block; margin: 0 auto;">   
 
 (2) Enter your email and click *Send verification email* to keep Shiild Security Free active.
-
-(4) Check the *Enabled* status on *System Status > Ad Shield*. *Upgrade to Pro* if needed.
-
-(3) Now Shiild is working to help block ads or other unwanted contents. You may upgrade to Pro or tap *Go to Dashboard* for more settings on your Shiild account.
     <img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/tutorial/shiild02.webp" width="300px" style="border:  2px solid #eee;display: block; margin: 0 auto;">   
+
+(3) Now Shiild is working to help block ads or other unwanted contents. You may tap *Go to Dashboard* to upgrade to Pro or for more settings on your Shiild account.
+    <img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/tutorial/shiild03.webp" width="300px" style="border:  2px solid #eee;display: block; margin: 0 auto;">   
 
 -----
 
