@@ -1,9 +1,8 @@
-
 # How to Use Ad Shield to Block Ads and Trackers?
 
 ???+ Info
     - Ad Shield leverages AdGuard DNS and Shiild to provide network-level filtering of ads, trackers, and other unwanted content. Running at the router level, it protects all connected devices and improves privacy across browsing, streaming, and app usage.
-    - This feature is available for Cudy routers with firmware version 2.5.0+ and Cudy App version 1.5.2+.
+    - This feature is available for Cudy routers with firmware version 2.5.0+.
     - TR3000 is shown as an example in this tutorial.
 
 ## Using Cudy App
@@ -22,7 +21,7 @@
     <img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/tutorial/select_device_type.webp" width="300px" style="border:  2px solid #eee;display: block; margin: 0 auto;">   
 
     ???+ Tip
-        If you have before managed other type of devices on Cudy App, you may need to tap the menu icon (☰) on the left of Dashboard to switch to *Wi-Fi Device*.
+        If you have managed other type of devices on Cudy App before, you may need to tap the menu icon (☰) on the left of Dashboard to switch to *Wi-Fi Device*.
 
 4. Tap the router. 
     <img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/tutorial/tap_on_tr3000.webp" width="300px" style="border:  2px solid #eee;display: block; margin: 0 auto;">   
@@ -39,6 +38,9 @@
 8. Select a *Service Provider*, and continue with the following steps accordingly.
     <img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/tutorial/select.webp" width="300px" style="border:  2px solid #eee;display: block; margin: 0 auto;">   
 
+    ???+Note
+        *AdGuard DNS* requires Cudy App V1.5.5+; *Shiild* requires Cudy App V1.5.2+. 
+
 ### If selecting *AdGuard DNS*:
 
 (1) Tick *I agree to...*, and click *Confirm*.
@@ -48,7 +50,7 @@
     <img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/tutorial/adguard_account.webp" width="300px" style="border:  2px solid #eee;display: block; margin: 0 auto;">   
 
 ???+ Tip
-    Tap *Sign Up* to register for an account if you don't have one. Get exclusive discounts through our partner links at [https://adguard-dns.io/](https://adguard-dns.io?aid=137741).
+    Don't have an account yet? Click *Sign Up* to create one. Visit our partner link [https://adguard-dns.io/](https://adguard-dns.io?aid=137741) to learn more about available offers.
 
 (3) Set a *Device Name*, keep *DNS Server* as *Default*, and tap the ✔ icon at the top right.
     <img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/tutorial/adguard_settings.webp" width="300px" style="border:  2px solid #eee;display: block; margin: 0 auto;">   
@@ -84,7 +86,7 @@
     <img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/tutorial/ad03.webp" width="700px" style="border:  2px solid #eee;display: block; margin: 0 auto;">  
     
 ???+ Tip
-    Click *Sign Up* to register for an account if you don't have one. Get exclusive discounts through our partner links at [https://adguard-dns.io/](https://adguard-dns.io?aid=137741).
+    Don't have an account yet? Click *Sign Up* to create one. Visit our partner link [https://adguard-dns.io/](https://adguard-dns.io?aid=137741) to learn more about available offers.
 
 (3) Set a *Device Name*, select *Default* as the DNS Server, and click *Save & Apply*.
     <img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/tutorial/ad04.webp" width="700px" style="border:  2px solid #eee;display: block; margin: 0 auto;">   

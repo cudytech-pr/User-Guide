@@ -1,9 +1,8 @@
-
 # How to set up Surfshark VPN clients?
 
 ???+ Info
     - Cudy routers provide a dedicated Surfshark VPN client interface. You can configure your Surfshark VPN account directly on the router to establish a secure VPN connection for all devices connected to the network.
-    - This feature is available for Cudy routers with firmware version 2.5.0+ and Cudy App version 1.5.2+. 
+    - This feature is available for Cudy routers with firmware version 2.5.0+ and Cudy App version 1.5.5+. 
     - TR3000 is shown as an example in this tutorial.
 
 ## Using Cudy App
@@ -49,8 +48,7 @@
     <img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/tutorial/surfshark_account.webp" width="300px" style="border:  2px solid #eee;display: block; margin: 0 auto;">   
     
     ???+ Tip
-        - If you don't have Surfshark account yet, click *Get Started* to sign up for one. Get exclusive discounts through our partner links at [https://surfshark.com/](https://get.surfshark.net/aff_c?offer_id=1941&aff_id=46950).
-
+        - Don't have an account yet? Click *Get Started* to create one. Visit our partner link [https://surfshark.com/](https://get.surfshark.net/aff_c?offer_id=1941&aff_id=46950) to learn more about available offers.
         - You may be required to enter a 2FA code, if 2FA is enabled on your Surfshark account. Find it in your email or authenticator app.
 
 12. Select a *Default Rule* and *VPN Policy*. Search and select a server. Tap the ✔ icon at the top right to save and apply.
@@ -82,7 +80,8 @@
     <img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/tutorial/vpn3.webp" width="700px" style="border:  2px solid #eee;display: block; margin: 0 auto;">   
 
     ???+ Tip
-        - If you don't have Surfshark account yet, click *Get Started* to sign up for one. Get exclusive discounts through our partner links at [https://surfshark.com/](https://get.surfshark.net/aff_c?offer_id=1941&aff_id=46950).
+        - Don't have an account yet? Click *Get Started* to create one. Visit our partner link [https://surfshark.com/](https://get.surfshark.net/aff_c?offer_id=1941&aff_id=46950) to learn more about available offers.
+
         - You may be required to enter a 2FA code, if 2FA is enabled on your Surfshark account. Find it in your email or authenticator app.
 
 5. Create a *Description*, select a *Default Rule* and *VPN Policy*. Search and select a server. Click *Save & Apply*.
