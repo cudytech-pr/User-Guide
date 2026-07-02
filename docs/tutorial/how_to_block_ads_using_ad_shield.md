@@ -63,7 +63,11 @@
 (1) Tick *I agree to...*, and click *Confirm*.
     <img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/tutorial/shiild01.webp" width="300px" style="border:  2px solid #eee;display: block; margin: 0 auto;">   
 
-(2) Now Shiild is working to help block ads or other unwanted contents. You may upgrade to Pro or tap *Go to Dashboard* for more settings on your Shiild account.
+(2) Enter your email and click *Send verification email* to keep Shiild Security Free active.
+
+(4) Check the *Enabled* status on *System Status > Ad Shield*. *Upgrade to Pro* if needed.
+
+(3) Now Shiild is working to help block ads or other unwanted contents. You may upgrade to Pro or tap *Go to Dashboard* for more settings on your Shiild account.
     <img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/tutorial/shiild02.webp" width="300px" style="border:  2px solid #eee;display: block; margin: 0 auto;">   
 
 -----
