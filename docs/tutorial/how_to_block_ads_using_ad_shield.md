@@ -85,7 +85,7 @@
 (1) Tick *I agree to ...*, and click *Save & Apply*.
     <img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/tutorial/ad/ad022.webp" width="700px" style="border:  2px solid #eee;display: block; margin: 0 auto;">   
 
-(2) Sign in your *Adguards DNS* account with the username and password, and click *Continue*. 
+(2) Sign in your *Adguard DNS* account with the username and password, and click *Continue*. 
     <img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/tutorial/ad/ad03.webp" width="700px" style="border:  2px solid #eee;display: block; margin: 0 auto;">  
     
 ???+ Tip
