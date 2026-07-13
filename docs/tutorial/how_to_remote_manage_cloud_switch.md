@@ -30,7 +30,7 @@
 ### Step 3. Configure on Cudy App
 
 - On your smart device (phone or tablet), scan the QR code or search in the App store to download the Cudy App. 
-    <img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/tutorial/downloadapp.webp" width="500px" style="display: block; margin: 0 auto;"> 
+    <img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/downloadapp01.webp" width="500px" style="display: block; margin: 0 auto;"> 
 
 - Open the Cudy App, tick *I agree with...* and tap **Cloud Management**.
     <img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/tutorial/cudy1.webp" width="300px" style="display: block; margin: 0 auto;border: 1px solid #eee;"> 

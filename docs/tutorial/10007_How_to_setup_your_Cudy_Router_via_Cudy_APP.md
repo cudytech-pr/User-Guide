@@ -1,7 +1,7 @@
 # How to setup your Cudy Router via Cudy APP?
 This article will guide you to configure Cudy Router via Cudy APP step by step. Please install the Cudy APP from Apple APP store or Android Google Play first. 
 
-<img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/faq/10007/1_Cudy_APP_QR.webp" alt="CudyAPP" width="300px" style="display: block; margin: 0 auto;">
+<img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/downloadapp01.webp" alt="CudyAPP" width="300px" style="display: block; margin: 0 auto;">
 
 We suggest you to register and login a Cudy APP account which can be used to manage the router remotely via internet if your router support cloud management.
 
