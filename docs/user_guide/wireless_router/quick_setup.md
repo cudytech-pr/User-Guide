@@ -37,7 +37,7 @@ With a web-based utility, it is easy to configure and manage the router. The web
 Cudy App runs on iOS and Android devices, such as smart phones and tablets.
 
 1. Scan the QR code on the product box or Quick Installation Guide, or search *Cudy* in the Apple App Store or Google Play store to download the *Cudy App*.
-    <img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/downloadapp01.webp" alt="" width="400px" style="border: 1px solid #eee; display: block; margin: 0 auto;" />
+    <img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/downloadapp.svg" alt="" width="400px" style="border: 1px solid #eee; display: block; margin: 0 auto;" />
 
 2. Connect your device to the router’s default wireless network. (Default 2.4G/5G SSID and password are printed on the product label.)
 3. Launch the Cudy App. Click the router you have connected to. Create a management password to log in. Then You will see the management interface. 

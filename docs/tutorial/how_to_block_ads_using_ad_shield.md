@@ -15,7 +15,7 @@
     ???+ Tip
         Scan the QR code to download it first if needed.
 
-        <img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/downloadapp01.webp" width="200px" style="display: block; margin: 0 auto;">   
+        <img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/downloadapp.svg" width="300px" style="display: block; margin: 0 auto;">   
 
 3. Select *Wi-Fi Device*. 
     <img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/tutorial/ad/select_device_type.webp" width="300px" style="border:  2px solid #eee;display: block; margin: 0 auto;">   
