@@ -252,6 +252,34 @@
 </div>
 
 
+
+## [Range Extender](range_extender/index.md)
+
+<div class="product-grid">
+
+  <a href="range_extender/re3600/" class="product-card">
+    <div class="product-img" style="background-image:url('//www.cudy.com/cdn/shop/files/RE1800-L1_fb95dd34-e2e9-4956-9374-6ce239b44406.png?v=1763974272&width=1445')"></div>
+    <div class="product-name">RE3600</div>
+  </a>
+
+  <a href="range_extender/re3000/" class="product-card">
+    <div class="product-img" style="background-image:url('//www.cudy.com/cdn/shop/files/RE1800-L1_fb95dd34-e2e9-4956-9374-6ce239b44406.png?v=1763974272&width=1445')"></div>
+    <div class="product-name">RE3000</div>
+  </a>
+
+</div>
+
+## [AP Controller](ap_controller/index.md)
+
+<div class="product-grid">
+
+  <a href="ap_controller/c200p/" class="product-card">
+    <div class="product-img" style="background-image:url('http://cdn.shopify.com/s/files/1/0673/4748/0820/files/C200P-1.png?v=1743583768')"></div>
+    <div class="product-name">C200P</div>
+  </a>
+
+</div>
+
 ## [Switch](switch/index.md)
 
 <div class="product-grid">
@@ -268,13 +296,4 @@
 
 </div>
 
-## [AP Controller](ap_controller/index.md)
 
-<div class="product-grid">
-
-  <a href="ap_controller/c200p/" class="product-card">
-    <div class="product-img" style="background-image:url('http://cdn.shopify.com/s/files/1/0673/4748/0820/files/C200P-1.png?v=1743583768')"></div>
-    <div class="product-name">C200P</div>
-  </a>
-
-</div>

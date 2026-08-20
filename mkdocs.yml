@@ -128,8 +128,9 @@
         - 4G/5G Router: user_guide/4g5g_router/index.md
         - Industrial Router: user_guide/industrial_router/index.md
         - xPON Router: user_guide/pon_router/index.md
-        - Switch: user_guide/switch/index.md
+        - Range Extender:  user_guide/range_extender/index.md
         - AP Controller: user_guide/ap_controller/index.md
+        - Switch: user_guide/switch/index.md
     - Tutorial:
         - Tutorial: tutorial/index.md    
     - FAQ:
