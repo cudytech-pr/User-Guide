@@ -1,13 +1,11 @@
-﻿# System Status
+# System Status
 
 !!! Note
     RE3600 is used as an example in this guide. Refer to your actual product for more details.
 
 <img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/range_extender/system_status.webp" alt="" width="800px" style="border: 2px solid #eee; display: block; margin: 0 auto;" />
 
----
-
-## Device 
+## Devices 
 Shows the number of devices connected to this range extender, via Ethernet cable or 2.4G WiFi or 5G WiFi. Click *More Details* to know more information about these devices.
 
 <img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/range_extender/device_status.webp" alt="" width="800px" style="border: 2px solid #eee; display: block; margin: 0 auto;" />
@@ -19,8 +17,6 @@ Shows the number of devices connected to this range extender, via Ethernet cable
 - *Real-time Rate:* The current data transmission rate of the device.
 - *Signal:* The signal strength between the Range Extender and the device.
 - *Duration:* The length of time the device has been connected.
-
----
 
 ## Host Network
 Shows the status, SSID and signal about the Host Network being extended by this Range Extender. Click *More Details* to know more information about it or make changes. 
@@ -37,8 +33,6 @@ Shows more details about the host network.
 If you want to change the host network, click *Scan* to find more available network, and click *Connect*.
 
 <img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/range_extender/host_network_connect.webp" alt="" width="800px" style="border: 2px solid #eee; display: block; margin: 0 auto;" />
-
----
 
 ## Wireless 2.4G
 Shows the extended Wireless 2.4G status, SSID and channel. Click *More Details* to know more information about it or make changes. 
@@ -75,8 +69,6 @@ On the *System Status -> Wireless 5G -> Settings* or *General Settings -> Wirele
 !!! Note
     When *Smart Connect* is enabled, 2.4GHz and 5GHz networks share the same network name and password (only one SSID will be displayed). Your wireless devices will automatically switch to connect to the Wi-Fi band that provides the fastest speed.
 
----
-
 ## LAN
 Shows the LAN port status, IP address and subnet mask. Click *More Details* to know more information about it or make changes.
 
@@ -100,8 +92,6 @@ If you do need to assign a fixed IP address, you may go to *System Status -> LAN
     It is recommended to keep this setting unless you need to assign a fixed IP address for network management. 
     Incorrect settings may prevent the Range Extender from accessing the network or being reachable for management.
 
----
-
 ## System
 Shows the system firmware version, local time and uptime. Click *More Details* to view more information about it or make changes.
 
@@ -116,3 +106,5 @@ Shows the system firmware version, local time and uptime. Click *More Details* t
 
 - *System Log* tracks all the range extender behaviors. It is used for [*technical support*](mailto:support@cudy.com) to diagnose and troubleshoot for the range extender.
     <img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/range_extender/system_s.l.webp" alt="" width="800px" style="border: 1px solid #eee; display: block; margin: 0 auto;" />
+
+---

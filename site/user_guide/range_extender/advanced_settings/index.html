@@ -12,7 +12,7 @@
         <meta name="author" content="Cudy Docs">
       
       
-        <link rel="canonical" href="https://docs.cudy.com/user_guide/range_extender/advanced_system/">
+        <link rel="canonical" href="https://docs.cudy.com/user_guide/range_extender/advanced_settings/">
       
       
       
@@ -22,7 +22,7 @@
     
     
       
-        <title>System - Docs</title>
+        <title>Advanced Settings - Docs</title>
       
     
     
@@ -100,7 +100,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#system" class="md-skip">
+        <a href="#advanced-settings" class="md-skip">
           Skip to content
         </a>
       
@@ -133,7 +133,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              System
+              Advanced Settings
             
           </span>
         </div>
@@ -923,65 +923,98 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#network" class="md-nav__link">
+    Network
+  </a>
+  
+    <nav class="md-nav" aria-label="Network">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#lan" class="md-nav__link">
+    LAN
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#system" class="md-nav__link">
+    System
+  </a>
+  
+    <nav class="md-nav" aria-label="System">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#system-time" class="md-nav__link">
     System Time
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#firmware" class="md-nav__link">
     Firmware
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#backuprestore" class="md-nav__link">
     Backup/Restore
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#admin-account" class="md-nav__link">
     Admin Account
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#language" class="md-nav__link">
     Language
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#timed-reboot" class="md-nav__link">
     Timed Reboot
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#reboot" class="md-nav__link">
     Reboot
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#reset" class="md-nav__link">
     Reset
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#led-control" class="md-nav__link">
     LED Control
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1009,14 +1042,46 @@
   
 
   <!-- Markdown content -->
-  <h1 id="system">System<a class="headerlink" href="#system" title="Permanent link">&para;</a></h1>
+  <h1 id="advanced-settings">Advanced Settings<a class="headerlink" href="#advanced-settings" title="Permanent link">&para;</a></h1>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>RE3600 is used as an example in this guide. Refer to your actual product for more details.</p>
 </div>
-<p>System is to manage the range extender's systematic features. It includes System Time, Firmware, Backup/Restore, Admin Account, Language, Timed Reboot, Reboot, Reset, and LED Control.</p>
+<h2 id="network">Network<a class="headerlink" href="#network" title="Permanent link">&para;</a></h2>
+<h3 id="lan">LAN<a class="headerlink" href="#lan" title="Permanent link">&para;</a></h3>
+<p>Range Extender automatically obtains an IP address from the main router by default. It is recommended to keep this setting unless you need to assign a fixed IP address for network management. Incorrect settings may prevent the Range Extender from accessing the network or being reachable for management.</p>
+<p><a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/range_extender/network_lan.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/range_extender/network_lan.webp" alt="" width="400px" style="border: 1px solid #eee; display: block; margin: 0 auto;" /></a></p>
+<p>If you do need to assign a fixed IP address, please follow the steps below.</p>
+<ol>
+<li>Enable <em>Static address</em>. </li>
+<li>Set an unused <em>IP address</em> in the same subnet as the main router. For example, if the main router is 192.168.1.1, you can use 192.168.1.250.</li>
+<li>Select a <em>subnet mask</em> from the drop-down list or customize it. Usually the same as the main router's subnet mask, such as 255.255.255.0.</li>
+<li>Enter the IP address of the main router in the <em>Default Gateway</em> field, such as 192.168.1.1.</li>
+<li>Enter a <em>preferred DNS server</em>, such as the main router's IP address or a public DNS server.</li>
+<li>Enter an <em>alternate DNS server</em> as backup if needed.</li>
+<li>It is recommended to keep the default <em>MTU</em> value unless your ISP or network administrator specifies otherwise.</li>
+<li>Click <em>Save &amp; Apply</em>.</li>
+</ol>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<p>If the main router's network settings are:</p>
+<ul>
+<li><em>Router IP:</em> <code>192.168.1.1</code></li>
+<li><em>Subnet Mask:</em> <code>255.255.255.0</code></li>
+</ul>
+<p>You can configure the Range Extender as:</p>
+<div class="highlight"><pre><span></span><code>IP Address:        192.168.1.250
+Subnet Mask:       255.255.255.0
+Default Gateway:   192.168.1.1
+Preferred DNS:     192.168.1.1
+Alternate DNS:     Optional
+MTU:               Keep the default value
+</code></pre></div>
+</div>
 <hr />
-<h2 id="system-time">System Time<a class="headerlink" href="#system-time" title="Permanent link">&para;</a></h2>
+<h2 id="system">System<a class="headerlink" href="#system" title="Permanent link">&para;</a></h2>
+<p>System is to manage the range extender's systematic features. It includes System Time, Firmware, Backup/Restore, Admin Account, Language, Timed Reboot, Reboot, Reset, and LED Control.</p>
+<h3 id="system-time">System Time<a class="headerlink" href="#system-time" title="Permanent link">&para;</a></h3>
 <p>Is the time displayed while the range extender is running. The system time you configure here will be used for other time-based functions like WiFi schedule, parental control, etc. </p>
 <p><strong>To configure the system time, please follow the steps below.</strong></p>
 <ol>
@@ -1042,8 +1107,7 @@
 <p>Click <em>Save &amp; Apply</em>.</p>
 </li>
 </ol>
-<hr />
-<h2 id="firmware">Firmware<a class="headerlink" href="#firmware" title="Permanent link">&para;</a></h2>
+<h3 id="firmware">Firmware<a class="headerlink" href="#firmware" title="Permanent link">&para;</a></h3>
 <p>The current firmware version and hardware version will be displayed. Click <em>Browse...</em> to locate and upload the latest firmware file you have already downloaded from www.cudy.com. Wait a few minutes for the update and reboot to complete.</p>
 <p><a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/range_extender/firmware.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/range_extender/firmware.webp" alt="" width="500px" style="border: 1px solid #eee; display: block; margin: 0 auto;" /></a></p>
 <p>For more about firmware upgrading, please refer to <em>General Settings-&gt; Firmware</em>.</p>
@@ -1051,8 +1115,7 @@
 <p class="admonition-title">Note</p>
 <p>If you fail to update the firmware for the range extender, please contact our technical support <a href="mailto:support@cudy.com">support@cudy.com</a>.</p>
 </div>
-<hr />
-<h2 id="backuprestore">Backup/Restore<a class="headerlink" href="#backuprestore" title="Permanent link">&para;</a></h2>
+<h3 id="backuprestore">Backup/Restore<a class="headerlink" href="#backuprestore" title="Permanent link">&para;</a></h3>
 <p>The settings are stored as a configuration file in the range extender. You can back up the configuration file in your computer for future use, or restore the range extender to a previous settings from the backup file when needed. Moreover, if necessary you can erase the current settings and reset the range extender to the default factory settings.</p>
 <p><a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/wireless_router/backup.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/wireless_router/backup.webp" alt="" width="500px" style="border: 1px solid #eee; display: block; margin: 0 auto;" /></a></p>
 <p><strong>To configure the system backup and restore, please follow the steps below.</strong></p>
@@ -1068,8 +1131,7 @@
 </li>
 </ol>
 <p><a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/range_extender/backup2.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/range_extender/backup2.webp" alt="" width="500px" style="border: 1px solid #eee; display: block; margin: 0 auto;" /></a></p>
-<hr />
-<h2 id="admin-account">Admin Account<a class="headerlink" href="#admin-account" title="Permanent link">&para;</a></h2>
+<h3 id="admin-account">Admin Account<a class="headerlink" href="#admin-account" title="Permanent link">&para;</a></h3>
 <p>Changes your login password for the range extender's web management page.</p>
 <p><a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/wireless_router/admin-account.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/wireless_router/admin-account.webp" alt="" width="500px" style="border: 1px solid #eee; display: block; margin: 0 auto;" /></a></p>
 <ol>
@@ -1087,13 +1149,11 @@
 <p class="admonition-title">Note</p>
 <p>The password should be a value between 8 and 64 characters long.</p>
 </div>
-<hr />
-<h2 id="language">Language<a class="headerlink" href="#language" title="Permanent link">&para;</a></h2>
+<h3 id="language">Language<a class="headerlink" href="#language" title="Permanent link">&para;</a></h3>
 <p>Customizes the range extender's web management language. Otherwise, the range extender will auto-detect your system language and synchronize it. </p>
 <p><a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/wireless_router/language.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/wireless_router/language.webp" alt="" width="500px" style="border: 1px solid #eee; display: block; margin: 0 auto;" /></a></p>
 <p>If any change, please click <em>Save &amp; Apply</em> for the settings to take effect.</p>
-<hr />
-<h2 id="timed-reboot">Timed Reboot<a class="headerlink" href="#timed-reboot" title="Permanent link">&para;</a></h2>
+<h3 id="timed-reboot">Timed Reboot<a class="headerlink" href="#timed-reboot" title="Permanent link">&para;</a></h3>
 <p>Will clean the cache to enhance the running performance of the range extender as scheduled. 
 <a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/wireless_router/timed-reboot.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/wireless_router/timed-reboot.webp" alt="" width="500px" style="border: 1px solid #eee; display: block; margin: 0 auto;" /></a></p>
 <p>To set the reboot schedule, please follow the steps below.</p>
@@ -1103,8 +1163,7 @@
 <li>Set the specific Hour and Minute when the range extender should reboot on the specified day.</li>
 <li>Click <em>Save &amp; Apply</em> for the settings to take effect.</li>
 </ol>
-<hr />
-<h2 id="reboot">Reboot<a class="headerlink" href="#reboot" title="Permanent link">&para;</a></h2>
+<h3 id="reboot">Reboot<a class="headerlink" href="#reboot" title="Permanent link">&para;</a></h3>
 <p>Rebooting the range extender after working for a long periods of time can release some storage space in the Random Access Memory (RAM) and improve system performance, making the operation of the range extender smoother. Rebooting does not affect any settings of the range extender.</p>
 <p><a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/wireless_router/reboot.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/wireless_router/reboot.webp" alt="" width="500px" style="border: 1px solid #eee; display: block; margin: 0 auto;" /></a>
 <a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/wireless_router/rebooting.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/wireless_router/rebooting.webp" alt="" width="500px" style="border: 1px solid #eee; display: block; margin: 0 auto;" /></a></p>
@@ -1113,8 +1172,7 @@
 <p class="admonition-title">Note</p>
 <p>You may also reboot the range extender by turning off its power supply.</p>
 </div>
-<hr />
-<h2 id="reset">Reset<a class="headerlink" href="#reset" title="Permanent link">&para;</a></h2>
+<h3 id="reset">Reset<a class="headerlink" href="#reset" title="Permanent link">&para;</a></h3>
 <p>Will help you erase all the current settings and restore the range extender to its factory defaults. Alternatively, you may reset the range extender via the <em>RESET</em> button on the range extender panel, or on this web management page.</p>
 <p><a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/range_extender/reset.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/range_extender/reset.webp" alt="" width="500px" style="border: 1px solid #eee; display: block; margin: 0 auto;" /></a></p>
 <p>On this page, it will display the range extender's default information, including its IP address and SSID. Before you click <em>OK</em> to reset it, you may note them down for your renewal connection to the range extender. Also these defaults are on the product label for your reference.</p>
@@ -1126,8 +1184,7 @@
 <li>We strongly recommend you to back up the current configuration settings before resetting the range extender.</li>
 </ul>
 </div>
-<hr />
-<h2 id="led-control">LED Control<a class="headerlink" href="#led-control" title="Permanent link">&para;</a></h2>
+<h3 id="led-control">LED Control<a class="headerlink" href="#led-control" title="Permanent link">&para;</a></h3>
 <p>The LEDs indicate the range extender's activities and status. <em>LED Control</em> allows you to turn them on or off when necessary. If turned off, the LEDs will not light up unless manually turned on or triggered by a special event.</p>
 <p><a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/wireless_router/led-control.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/wireless_router/led-control.webp" alt="" width="500px" style="border: 1px solid #eee; display: block; margin: 0 auto;" /></a></p>
 

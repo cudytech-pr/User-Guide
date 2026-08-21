@@ -36,3 +36,5 @@ Follow the instructions below to get your range extender ready for use fast and 
 
 4. Relocate the extender between the Wi-Fi coverage area and the area where you want to expand the Wi-Fi signal.
     <img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/range_extender/qig04.webp" alt="" width="500px" style="display: block; margin: 0 auto;"/>
+
+---

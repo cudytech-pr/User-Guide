@@ -1,13 +1,52 @@
-# System
+# Advanced Settings
 
 !!! Note
     RE3600 is used as an example in this guide. Refer to your actual product for more details.
 
-System is to manage the range extender's systematic features. It includes System Time, Firmware, Backup/Restore, Admin Account, Language, Timed Reboot, Reboot, Reset, and LED Control.
+## Network
+
+### LAN
+
+Range Extender automatically obtains an IP address from the main router by default. It is recommended to keep this setting unless you need to assign a fixed IP address for network management. Incorrect settings may prevent the Range Extender from accessing the network or being reachable for management.
+
+<img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/range_extender/network_lan.webp" alt="" width="400px" style="border: 1px solid #eee; display: block; margin: 0 auto;" />
+
+If you do need to assign a fixed IP address, please follow the steps below.
+
+1. Enable *Static address*. 
+2. Set an unused *IP address* in the same subnet as the main router. For example, if the main router is 192.168.1.1, you can use 192.168.1.250.
+3. Select a *subnet mask* from the drop-down list or customize it. Usually the same as the main router's subnet mask, such as 255.255.255.0.
+4. Enter the IP address of the main router in the *Default Gateway* field, such as 192.168.1.1.
+5. Enter a *preferred DNS server*, such as the main router's IP address or a public DNS server.
+6. Enter an *alternate DNS server* as backup if needed.
+7. It is recommended to keep the default *MTU* value unless your ISP or network administrator specifies otherwise.
+8. Click *Save & Apply*.
+
+!!! example "Example"
+
+    If the main router's network settings are:
+
+    - *Router IP:* `192.168.1.1`
+    - *Subnet Mask:* `255.255.255.0`
+
+    You can configure the Range Extender as:
+
+    ```text
+    IP Address:        192.168.1.250
+    Subnet Mask:       255.255.255.0
+    Default Gateway:   192.168.1.1
+    Preferred DNS:     192.168.1.1
+    Alternate DNS:     Optional
+    MTU:               Keep the default value
+    ```
 
 ---
 
-## System Time
+## System
+
+System is to manage the range extender's systematic features. It includes System Time, Firmware, Backup/Restore, Admin Account, Language, Timed Reboot, Reboot, Reset, and LED Control.
+
+### System Time
 Is the time displayed while the range extender is running. The system time you configure here will be used for other time-based functions like WiFi schedule, parental control, etc. 
 
 **To configure the system time, please follow the steps below.**
@@ -26,8 +65,7 @@ Is the time displayed while the range extender is running. The system time you c
 
 3. Click *Save & Apply*.
 
----
-## Firmware
+### Firmware
 The current firmware version and hardware version will be displayed. Click *Browse...* to locate and upload the latest firmware file you have already downloaded from www.cudy.com. Wait a few minutes for the update and reboot to complete.
 
 <img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/range_extender/firmware.webp" alt="" width="500px" style="border: 1px solid #eee; display: block; margin: 0 auto;" />
@@ -37,8 +75,7 @@ For more about firmware upgrading, please refer to *General Settings-> Firmware*
 !!! Note 
     If you fail to update the firmware for the range extender, please contact our technical support [support@cudy.com](mailto:support@cudy.com).
 
----
-## Backup/Restore
+### Backup/Restore
 The settings are stored as a configuration file in the range extender. You can back up the configuration file in your computer for future use, or restore the range extender to a previous settings from the backup file when needed. Moreover, if necessary you can erase the current settings and reset the range extender to the default factory settings.
 
 <img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/wireless_router/backup.webp" alt="" width="500px" style="border: 1px solid #eee; display: block; margin: 0 auto;" />
@@ -53,8 +90,7 @@ The settings are stored as a configuration file in the range extender. You can b
 
 <img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/range_extender/backup2.webp" alt="" width="500px" style="border: 1px solid #eee; display: block; margin: 0 auto;" />
 
----
-## Admin Account
+### Admin Account
 Changes your login password for the range extender's web management page.
 
 <img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/wireless_router/admin-account.webp" alt="" width="500px" style="border: 1px solid #eee; display: block; margin: 0 auto;" />
@@ -68,16 +104,14 @@ Changes your login password for the range extender's web management page.
 !!! Note 
     The password should be a value between 8 and 64 characters long.
 
----
-## Language
+### Language
 Customizes the range extender's web management language. Otherwise, the range extender will auto-detect your system language and synchronize it. 
 
 <img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/wireless_router/language.webp" alt="" width="500px" style="border: 1px solid #eee; display: block; margin: 0 auto;" />
 
 If any change, please click *Save & Apply* for the settings to take effect.
 
----
-## Timed Reboot
+### Timed Reboot
 Will clean the cache to enhance the running performance of the range extender as scheduled. 
 <img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/wireless_router/timed-reboot.webp" alt="" width="500px" style="border: 1px solid #eee; display: block; margin: 0 auto;" />
 
@@ -88,8 +122,7 @@ To set the reboot schedule, please follow the steps below.
 3. Set the specific Hour and Minute when the range extender should reboot on the specified day.
 4. Click *Save & Apply* for the settings to take effect.
 
-----
-## Reboot 
+### Reboot 
 Rebooting the range extender after working for a long periods of time can release some storage space in the Random Access Memory (RAM) and improve system performance, making the operation of the range extender smoother. Rebooting does not affect any settings of the range extender.
 
 <img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/wireless_router/reboot.webp" alt="" width="500px" style="border: 1px solid #eee; display: block; margin: 0 auto;" />
@@ -100,8 +133,7 @@ Click *OK* to reboot the system immediately. Wait a few minutes for the system t
 !!! Note 
     You may also reboot the range extender by turning off its power supply.
 
----
-## Reset
+### Reset
 Will help you erase all the current settings and restore the range extender to its factory defaults. Alternatively, you may reset the range extender via the *RESET* button on the range extender panel, or on this web management page.
 
 <img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/range_extender/reset.webp" alt="" width="500px" style="border: 1px solid #eee; display: block; margin: 0 auto;" />
@@ -114,8 +146,7 @@ Please wait a moment for it to reboot and reset.
     - During the rebooting process, do not turn off or reset the router.
     - We strongly recommend you to back up the current configuration settings before resetting the range extender.
 
----
-## LED Control
+### LED Control
 The LEDs indicate the range extender's activities and status. *LED Control* allows you to turn them on or off when necessary. If turned off, the LEDs will not light up unless manually turned on or triggered by a special event.
 
 <img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/wireless_router/led-control.webp" alt="" width="500px" style="border: 1px solid #eee; display: block; margin: 0 auto;" />
