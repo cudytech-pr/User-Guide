@@ -1,7 +1,7 @@
 # Diagnostic Tools
 
 ## PING
-is used to test the connectivity between the range extender and the tested host, and measure the round-trip time. 
+Tests the connectivity between the range extender and the tested host, and measure the round-trip time. 
 
 <img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/range_extender/ping.webp" alt="" width="800px" style="border: 1px solid #eee;" />
 
@@ -16,7 +16,7 @@ The figure below indicates the proper connection between the range extender and 
 <img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/range_extender/ping2.webp" alt="" width="800px" style="border: 1px solid #eee;" />
 
 ## TRACEROUTE
-is used to test the route (path) your range extender has passed to reach the tested host, and measure transit delays of packets across an Internet Protocol network.
+Tests the route (path) your range extender has passed to reach the tested host, and measure transit delays of packets across an Internet Protocol network.
 
 <img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/range_extender/traceroute.webp" alt="" width="800px" style="border: 1px solid #eee;" />
 
@@ -32,7 +32,7 @@ The figure below indicates the proper connection between the range extender and 
 
 
 ## NSLOOKUP
-is to check if the DNS IP address of the WAN can work normally.
+Checks if the DNS IP address of the WAN can work normally.
 
 <img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/range_extender/nslookup.webp" alt="" width="800px" style="border: 1px solid #eee;" />
 

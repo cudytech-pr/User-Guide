@@ -5,9 +5,9 @@
     
 ## Wireless 2.4G
 
-On the *System Status -> Wireless 2.4G -> Settings* or *General Settings -> Wireless 2.4G*, you may customize the range extender's 2.4GHz wireless settings, including SSID and password, mode, channel, channel width and transmit power, and so on. 
+On the *System Status -> Wireless 2.4G -> Settings* or *General Settings -> Wireless 2.4G*, you may customize the range extender's 2.4GHz wireless settings, including SSID and password, mode, transmit power, and so on. 
 
-<img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/range_extender/general_wireless2.4g.webp" alt="" width="500px" style="display: block; margin: 0 auto;"/>
+<img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/range_extender/general_wireless2.4g.webp" alt="" width="800px" style="border: 1px solid #eee; display: block; margin: 0 auto;" />
 
 1. Enable *Wireless 2.4G*;
 2. Customize your SSID (wireless network name);
@@ -20,9 +20,9 @@ On the *System Status -> Wireless 2.4G -> Settings* or *General Settings -> Wire
 
 ## Wireless 5G
 
-On the *System Status -> Wireless 5G -> Settings* or *General Settings -> Wireless 5G*, you may customize the range extender's 5GHz wireless settings, including SSID and password, mode, channel, channel width and transmit power, and so on. 
+On the *System Status -> Wireless 5G -> Settings* or *General Settings -> Wireless 5G*, you may customize the range extender's 5GHz wireless settings, including SSID and password, mode, transmit power, and so on. 
 
-<img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/range_extender/general_wireless5g.webp" alt="" width="500px" style="display: block; margin: 0 auto;"/>
+<img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/range_extender/general_wireless5g.webp" alt="" width="800px" style="border: 1px solid #eee; display: block; margin: 0 auto;" />
 
 1. Enable *Wireless 5G*;
 2. Customize your SSID (wireless network name);
@@ -36,9 +36,9 @@ On the *System Status -> Wireless 5G -> Settings* or *General Settings -> Wirele
 ## Host Network 
 Shows the current Host Network being extended by this Range Extender. If you want to change the host network, click *Scan* to find more available network, and click *Connect*.
 
-<img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/range_extender/general_host_network.webp" alt="" width="500px" style="display: block; margin: 0 auto;"/>
+<img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/range_extender/general_host_network.webp" alt="" width="800px" style="border: 1px solid #eee; display: block; margin: 0 auto;" />
 
-<img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/range_extender/general_host_network2.webp" alt="" width="500px" style="display: block; margin: 0 auto;"/>
+<img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/range_extender/general_host_network2.webp" alt="" width="800px" style="border: 1px solid #eee; display: block; margin: 0 auto;" />
 
 ## Firmware
 
@@ -64,11 +64,11 @@ The Range Extender will automatically update firmware to the latest version at t
 
 If there is a new firmware available for the Range Extender, a prompt will appear upon your login to the Range Extender web management page. Click <i>Update Now</i> and then <i>Update</i> to upgrade the firmware to the latest version.
 
-<img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/range_extender/online-update.webp" alt="" width="600px" style="border: 1px solid #eee; display: block; margin: 0 auto;" />
+<img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/range_extender/online-update.webp" alt="" width="400px" style="border: 1px solid #eee; display: block; margin: 0 auto;" />
 
 If you miss the prompt, please go to *General Settings -> Firmware* to check for update. If there is one, click *Update* and wait a few minutes for the update and reboot to complete. 
 
-<img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/range_extender/online-update2.webp" alt="" width="500px" style="border: 1px solid #eee; display: block; margin: 0 auto;" />
+<img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/range_extender/online-update2.webp" alt="" width="600px" style="border: 1px solid #eee; display: block; margin: 0 auto;" />
 
 ### Local Update
 

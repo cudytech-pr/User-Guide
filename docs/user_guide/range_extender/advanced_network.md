@@ -2,9 +2,9 @@
 
 ## LAN
 
-By default, the Range Extender automatically obtains an IP address from the main router. It is recommended to keep this setting unless you need to assign a fixed IP address for network management. Incorrect settings may prevent the Range Extender from accessing the network or being reachable for management.
+Range Extender automatically obtains an IP address from the main router by default. It is recommended to keep this setting unless you need to assign a fixed IP address for network management. Incorrect settings may prevent the Range Extender from accessing the network or being reachable for management.
 
-<img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/range_extender/network-lan.webp" alt="" width="400px" style="border: 1px solid #eee; display: block; margin: 0 auto;" />
+<img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/range_extender/network_lan.webp" alt="" width="400px" style="border: 1px solid #eee; display: block; margin: 0 auto;" />
 
 If you do need to assign a fixed IP address, please follow the steps below.
 
@@ -34,7 +34,3 @@ If you do need to assign a fixed IP address, please follow the steps below.
     Alternate DNS:     Optional
     MTU:               Keep the default value
     ```
-  
-!!! Note
-    - If you have configured Port Forwarding, DMZ, or DHCP Address Reservation, and the new LAN IP address is in a different subnet from the old one, you need to reconfigure these settings.
-    - If the new LAN IP address conflicts with the WAN IP address, the LAN IP address will automatically be changed to 10.1.1.1.

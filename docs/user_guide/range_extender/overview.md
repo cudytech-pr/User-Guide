@@ -53,10 +53,10 @@
     <td>Have set up and connected but with weak signal.</td>
     </tr>
     <tr>
-    <td><strong>Blue / White On</strong></td>
+    <td><strong>Pink On</strong></td>
     <td>Have set up and connected with medium signal.</td>
     </tr>
-    <td><strong>Purple / Pink On</strong></td>
+    <td><strong>White On</strong></td>
     <td>(in Wireless Extender mode): Have set up and connected with strong signal.<br> (in Wireless Access Point mode): Wi-Fi is on.</td>
     </tr>
     <td><strong>Off</strong></td>
