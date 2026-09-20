@@ -24,7 +24,7 @@
         - If the password is forgotten, press and hold the Reset button to restore factory settings. 
         - Serial Number here may be needed later if its barcode cannot be scanned.
         - If you didn't enable *Cloud Management* on the login page, you may go to *System Manage -> Cloud Management* and enable it anytime you need.
-            <img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/tutorial/cloudm2.webp" width="300px" style="display: block; margin: 0 auto;border: 1px solid #eee;">    
+            <img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/tutorial/cloudm2.webp" width="800px" style="display: block; margin: 0 auto;border: 1px solid #eee;">    
 
 
 - When it appears *Waits to get DHCP address...*, set your computer to *Obtain an IP address automatically* and *Obtain DNS server address automatically*.
