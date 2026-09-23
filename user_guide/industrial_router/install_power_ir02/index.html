@@ -12,7 +12,7 @@
         <meta name="author" content="Cudy Docs">
       
       
-        <link rel="canonical" href="https://docs.cudy.com/user_guide/industrial_router/IPv6/">
+        <link rel="canonical" href="https://docs.cudy.com/user_guide/industrial_router/install_power_ir02/">
       
       
       
@@ -22,7 +22,7 @@
     
     
       
-        <title>IPv6 - Docs</title>
+        <title>Install & Power - Docs</title>
       
     
     
@@ -100,7 +100,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#ipv6" class="md-skip">
+        <a href="#install-power" class="md-skip">
           Skip to content
         </a>
       
@@ -133,7 +133,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              IPv6
+              Install &amp; Power
             
           </span>
         </div>
@@ -923,50 +923,29 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#relay" class="md-nav__link">
-    Relay:
+  <a href="#install-nano-sim-cards" class="md-nav__link">
+    Install Nano SIM Cards
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#dynamic-ipslaacdhcpv6" class="md-nav__link">
-    Dynamic IP(SLAAC/DHCPv6):
+  <a href="#install-4g-and-wi-fi-antennas" class="md-nav__link">
+    Install 4G and Wi-Fi Antenna(s)
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#staticfixed-lp" class="md-nav__link">
-    Static(Fixed lP):
+  <a href="#install-the-router" class="md-nav__link">
+    Install the Router
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#passthrough" class="md-nav__link">
-    Passthrough:
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#464xlat" class="md-nav__link">
-    464XLAT:
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#map-e" class="md-nav__link">
-    MAP-E:
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#ds-lite" class="md-nav__link">
-    DS-Lite:
+  <a href="#power-supply" class="md-nav__link">
+    Power Supply
   </a>
   
 </li>
@@ -995,102 +974,52 @@
   
 
   <!-- Markdown content -->
-  <h1 id="ipv6">IPv6<a class="headerlink" href="#ipv6" title="Permanent link">&para;</a></h1>
+  <h1 id="install-power">Install &amp; Power<a class="headerlink" href="#install-power" title="Permanent link">&para;</a></h1>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>IR04 is used as an example in this guide. Refer to your actual product for more details.</p>
+<p>Power off the router before installations</p>
 </div>
-<p>IPv6 may not be supported in the current version of the firewall, VPN, block list, etc.Therefore, the IPv6 function can only be used for configuration on this interface. There are 7 types of  IPv6 Internet connection, including Relay, Dynamic IP(SLAAC/DHCPv6), Static (Fixed lP), Passthrough, 464XLAT, MAP-E, and DS-Lite. Please choose the appropriate one and configure the parameters according to your ISP.</p>
-<p><a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/industrial_router/ipv6.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/industrial_router/ipv6.webp" alt="" width="500px" style="border: 1px solid #eee;display:block; margin:0 auto;" /></a></p>
-<ul>
-<li>IPv6: Enable the IPv6 Internet connection.</li>
+<h2 id="install-nano-sim-cards">Install Nano SIM Cards<a class="headerlink" href="#install-nano-sim-cards" title="Permanent link">&para;</a></h2>
+<ol>
 <li>
-<p>Interface: Select an interface for the IPv6 settings.</p>
-<p>◦ 4G: For mobile backup with carrier-assigned IPv6 (dynamic prefix), ideal for remote sites with unstable wired connections.</p>
-<p>◦ WAN: For fixed-line networks requiring static IPv6/DHCPv6-PD, offering full control over routing and firewall rules.</p>
+<p>Press at the SIM1/2 slot to pop out the SIM tray(s).
+    <a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/industrial_router/install-sim-ir021.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/industrial_router/install-sim-ir021.webp"  width="500" alt=""></a></p>
 </li>
 <li>
-<p>Connection Type: Select a type accordingly.</p>
-<h2 id="relay">Relay:<a class="headerlink" href="#relay" title="Permanent link">&para;</a></h2>
-<p>Typically used for IPv6 transition mechanisms. The router will act as a relay between your local IPv6 network and an IPv4-based upstream network provided by your ISP. </p>
-<p><a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/industrial_router/ipv6-relay.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/industrial_router/ipv6-relay.webp" alt="" width="500px" style="border: 1px solid #eee;display:block; margin:0 auto;" /></a></p>
-<p>Select <em>Relay</em> and just click <em>Save &amp; Apply</em> without any additional configuration.</p>
-<h2 id="dynamic-ipslaacdhcpv6">Dynamic IP(SLAAC/DHCPv6):<a class="headerlink" href="#dynamic-ipslaacdhcpv6" title="Permanent link">&para;</a></h2>
-<p>Automatically assigns IPv6 addresses via router advertisements (SLAAC) or DHCPv6 servers, ideal for plug-and-play deployments with changing network topologies.</p>
-<p><a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/industrial_router/ipv6-dynamic.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/industrial_router/ipv6-dynamic.webp" alt="" width="500px" style="border: 1px solid #eee;display:block; margin:0 auto;" /></a></p>
-<p>Select <em>Dynamic IP(SLAAC/DHCPv6)</em>, and configure MAC Clone and MTU as needed.Then click <em>Save &amp; Apply</em>.</p>
-<ul>
-<li>
-<p>MAC Clone: (Optional) Enter the MAC address of the device that is allowed by your ISP. You can usually find this in the device's network settings or on a label on the device.</p>
+<p>Put the Nano SIM card(s) in the SIM tray(s) as diagram shows.
+    <a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/industrial_router/install-sim-ir022.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/industrial_router/install-sim-ir022.webp"  width="500" alt=""></a></p>
 </li>
 <li>
-<p>MTU: Enter the appropriate MTU size (commonly 1500 bytes for compatibility with IPv4). </p>
+<p>Push the SIM tray(s) back into the SIM1/2 slot. Store the pin back into the SlM Pin slot.
+    <a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/industrial_router/install-sim-ir023.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/industrial_router/install-sim-ir023.webp"  width="500" alt=""></a></p>
 </li>
-</ul>
+</ol>
 <hr />
-<h2 id="staticfixed-lp">Static(Fixed lP):<a class="headerlink" href="#staticfixed-lp" title="Permanent link">&para;</a></h2>
-<p>Manually configured IPv6 addresses for critical devices (e.g., PLCs), ensuring stable remote access and firewall rule consistency.</p>
-<p><a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/industrial_router/ipv6-static.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/industrial_router/ipv6-static.webp" alt="" width="500px" style="border: 1px solid #eee;display:block; margin:0 auto;" /></a></p>
-<p>Select <em>Static (Fixed IP)</em> and enter the fixed IPv6 address, gateway, prefix and DNS server address provided by your ISP. Configure MAC Clone and MTU as needed. Then click <em>Save &amp; Apply</em>.</p>
-<ul>
+<h2 id="install-4g-and-wi-fi-antennas">Install 4G and Wi-Fi Antenna(s)<a class="headerlink" href="#install-4g-and-wi-fi-antennas" title="Permanent link">&para;</a></h2>
+<ol>
 <li>
-<p>MAC Clone: (Optional) Enter the MAC address of the device if the ISP requires a specific MAC address for the static IP assignment. You can usually find this in the device's network settings or on a label on the device.</p>
+<p>Assign the 4G antennas to DIV and MAIN connectors, and Wi-Fi antenna to Wi-Fi connector.
+    <a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/industrial_router/install-antennas-ir02.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/industrial_router/install-antennas-ir02.webp"  width="500" alt=""></a></p>
 </li>
 <li>
-<p>MTU: Enter the appropriate MTU size based on the network's physical layer, typically 1500 bytes for Ethernet.</p>
+<p>Screw the Wi-Fi antenna clockwise to tighten it.
+    <a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/industrial_router/install-antennas-ir022.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/industrial_router/install-antennas-ir022.webp"  width="500" alt=""></a></p>
 </li>
-</ul>
+<li>
+<p>Align the connector on 4G antenna with that on the router. Rotate the nut clockwise onto the connector until tight. Then place it on the magnetic base.
+    <a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/industrial_router/install-antennas-ir023.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/industrial_router/install-antennas-ir023.webp"  width="500" alt=""></a></p>
+</li>
+</ol>
 <hr />
-<h2 id="passthrough">Passthrough:<a class="headerlink" href="#passthrough" title="Permanent link">&para;</a></h2>
-<p>Allows an IPv6-enabled device to manage its own IP settings directly from the ISP, bypassing the router's DHCP server. </p>
-<p><a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/industrial_router/ipv6-passthrough.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/industrial_router/ipv6-passthrough.webp" alt="" width="500px" style="border: 1px solid #eee;display:block; margin:0 auto;" /></a></p>
-<p>Select <em>Passthrough</em> and just click <em>Save &amp; Apply</em> without any additional configuration.</p>
+<h2 id="install-the-router">Install the Router<a class="headerlink" href="#install-the-router" title="Permanent link">&para;</a></h2>
+<p>Insert the screws through the four mounting holes and fasten them into the wall.
+    <a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/industrial_router/install-router-ir02.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/industrial_router/install-router-ir02.webp"  width="700" alt=""></a></p>
 <hr />
-<h2 id="464xlat">464XLAT:<a class="headerlink" href="#464xlat" title="Permanent link">&para;</a></h2>
-<p>A stateless translation mechanism that allows IPv4-only devices to communicate over an IPv6 network. </p>
-<p><a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/industrial_router/ipv6-464xlat.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/industrial_router/ipv6-464xlat.webp" alt="" width="500px" style="border: 1px solid #eee;display:block; margin:0 auto;" /></a></p>
-<p>Select <em>464XLAT</em>, and configure MAC Clone and MTU as needed. Then click <em>Save &amp; Apply</em>.</p>
-<ul>
-<li>
-<p>MAC Clone: (Optional) MAP-E usually does not involve MAC address restrictions, so MAC Clone is not typically necessary.</p>
-</li>
-<li>
-<p>MTU: Enter the appropriate MTU size according to the maximum IPv4 packet size, which is typically 1500 bytes minus the headers.</p>
-</li>
-</ul>
-<hr />
-<h2 id="map-e">MAP-E:<a class="headerlink" href="#map-e" title="Permanent link">&para;</a></h2>
-<p>Namely, Mapping of Address and Port with Encapsulation, is a method for translating IPv6 addresses to IPv4 addresses. </p>
-<p><a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/industrial_router/ipv6-mape.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/industrial_router/ipv6-mape.webp" alt="" width="500px" style="border: 1px solid #eee;display:block; margin:0 auto;" /></a></p>
-<p>Select <em>MAP-E</em>, and configure MAC Clone and MTU as needed. Then click <em>Save &amp; Apply</em>.</p>
-<ul>
-<li>
-<p>MAC Clone: (Optional) MAP-E usually does not involve MAC address restrictions, so MAC Clone is not typically necessary.</p>
-</li>
-<li>
-<p>MTU: Enter the appropriate MTU size according to the maximum IPv4 packet size, which is typically 1500 bytes minus the headers.</p>
-</li>
-</ul>
-<hr />
-<h2 id="ds-lite">DS-Lite:<a class="headerlink" href="#ds-lite" title="Permanent link">&para;</a></h2>
-<p>A technology that allows ISPs to provide IPv4 service over an IPv6 network. </p>
-<p><a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/industrial_router/ipv6-dslite.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/industrial_router/ipv6-dslite.webp" alt="" width="500px" style="border: 1px solid #eee;display:block; margin:0 auto;" /></a></p>
-<p>Select <em>DS-Lite</em>, and configure MAC Clone and MTU as needed. Then click <em>Save &amp; Apply</em>.</p>
-<ul>
-<li>
-<p>MAC Clone: (Optional) DS-Lite usually does not involve MAC address restrictions, so MAC Clone is not typically necessary.</p>
-</li>
-<li>
-<p>MTU: Enter the MTU value based on your network's requirements. The value should be within the range of 1280 to 1582 bytes. The MTU setting is important to ensure that the encapsulated IPv4 packets can be transmitted over the IPv6 network without fragmentation. </p>
-</li>
-</ul>
-</li>
-</ul>
-<p><a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/noteicon.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/noteicon.webp"></a> </p>
-<ul>
-<li>If the current version of the firewall (or VPN, block list, and etc.) does not support IPv6, you may enable and configure the IPv6 function on this page.</li>
-<li>If you use VPN and IPv6 functions at the same time, it's likely to cause IPv6 data leakage.</li>
-</ul>
+<h2 id="power-supply">Power Supply<a class="headerlink" href="#power-supply" title="Permanent link">&para;</a></h2>
+<p>Method A: Connect a switching power supply to the 2-pin terminal block installed on the router (5~36 VDC).
+    <a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/industrial_router/power-ir02-a.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/industrial_router/power-ir02-a.webp"  width="500" alt=""></a></p>
+<p>Method B: Connect the provided power adapter to the 2-pin terminal block installed on the router via the provided DC-to-terminal power cable.
+    <a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/industrial_router/power-ir02-b.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/industrial_router/power-ir02-b.webp"  width="500" alt=""></a></p>
 
   <!-- Last update of source file -->
   

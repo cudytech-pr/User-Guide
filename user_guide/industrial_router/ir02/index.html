@@ -12,7 +12,7 @@
         <meta name="author" content="Cudy Docs">
       
       
-        <link rel="canonical" href="https://docs.cudy.com/user_guide/industrial_router/IPv6/">
+        <link rel="canonical" href="https://docs.cudy.com/user_guide/industrial_router/ir02/">
       
       
       
@@ -22,7 +22,7 @@
     
     
       
-        <title>IPv6 - Docs</title>
+        <title>Ir02 - Docs</title>
       
     
     
@@ -100,7 +100,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#ipv6" class="md-skip">
+        <a href="#ir02" class="md-skip">
           Skip to content
         </a>
       
@@ -133,7 +133,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              IPv6
+              Ir02
             
           </span>
         </div>
@@ -923,51 +923,71 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#relay" class="md-nav__link">
-    Relay:
+  <a href="#overview" class="md-nav__link">
+    Overview
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#dynamic-ipslaacdhcpv6" class="md-nav__link">
-    Dynamic IP(SLAAC/DHCPv6):
+  <a href="#install" class="md-nav__link">
+    Install
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#staticfixed-lp" class="md-nav__link">
-    Static(Fixed lP):
+  <a href="#power" class="md-nav__link">
+    Power
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#passthrough" class="md-nav__link">
-    Passthrough:
+  <a href="#quick-setup" class="md-nav__link">
+    Quick Setup
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#464xlat" class="md-nav__link">
-    464XLAT:
+  <a href="#manage" class="md-nav__link">
+    Manage
+  </a>
+  
+    <nav class="md-nav" aria-label="Manage">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#i-system-status" class="md-nav__link">
+    I. System Status
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#map-e" class="md-nav__link">
-    MAP-E:
+        
+          <li class="md-nav__item">
+  <a href="#ii-general-settings" class="md-nav__link">
+    II. General Settings
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#ds-lite" class="md-nav__link">
-    DS-Lite:
+        
+          <li class="md-nav__item">
+  <a href="#iii-advanced-settings" class="md-nav__link">
+    III. Advanced Settings
   </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#iv-diagnostic-tools" class="md-nav__link">
+    IV. Diagnostic Tools
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -995,102 +1015,108 @@
   
 
   <!-- Markdown content -->
-  <h1 id="ipv6">IPv6<a class="headerlink" href="#ipv6" title="Permanent link">&para;</a></h1>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>IR04 is used as an example in this guide. Refer to your actual product for more details.</p>
-</div>
-<p>IPv6 may not be supported in the current version of the firewall, VPN, block list, etc.Therefore, the IPv6 function can only be used for configuration on this interface. There are 7 types of  IPv6 Internet connection, including Relay, Dynamic IP(SLAAC/DHCPv6), Static (Fixed lP), Passthrough, 464XLAT, MAP-E, and DS-Lite. Please choose the appropriate one and configure the parameters according to your ISP.</p>
-<p><a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/industrial_router/ipv6.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/industrial_router/ipv6.webp" alt="" width="500px" style="border: 1px solid #eee;display:block; margin:0 auto;" /></a></p>
+  <p><a href="../">&lt;&lt;&lt; Back to Industrial Router</a></p>
+<h1 id="ir02">IR02<a class="headerlink" href="#ir02" title="Permanent link">&para;</a></h1>
+<h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h2>
 <ul>
-<li>IPv6: Enable the IPv6 Internet connection.</li>
-<li>
-<p>Interface: Select an interface for the IPv6 settings.</p>
-<p>◦ 4G: For mobile backup with carrier-assigned IPv6 (dynamic prefix), ideal for remote sites with unstable wired connections.</p>
-<p>◦ WAN: For fixed-line networks requiring static IPv6/DHCPv6-PD, offering full control over routing and firewall rules.</p>
-</li>
-<li>
-<p>Connection Type: Select a type accordingly.</p>
-<h2 id="relay">Relay:<a class="headerlink" href="#relay" title="Permanent link">&para;</a></h2>
-<p>Typically used for IPv6 transition mechanisms. The router will act as a relay between your local IPv6 network and an IPv4-based upstream network provided by your ISP. </p>
-<p><a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/industrial_router/ipv6-relay.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/industrial_router/ipv6-relay.webp" alt="" width="500px" style="border: 1px solid #eee;display:block; margin:0 auto;" /></a></p>
-<p>Select <em>Relay</em> and just click <em>Save &amp; Apply</em> without any additional configuration.</p>
-<h2 id="dynamic-ipslaacdhcpv6">Dynamic IP(SLAAC/DHCPv6):<a class="headerlink" href="#dynamic-ipslaacdhcpv6" title="Permanent link">&para;</a></h2>
-<p>Automatically assigns IPv6 addresses via router advertisements (SLAAC) or DHCPv6 servers, ideal for plug-and-play deployments with changing network topologies.</p>
-<p><a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/industrial_router/ipv6-dynamic.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/industrial_router/ipv6-dynamic.webp" alt="" width="500px" style="border: 1px solid #eee;display:block; margin:0 auto;" /></a></p>
-<p>Select <em>Dynamic IP(SLAAC/DHCPv6)</em>, and configure MAC Clone and MTU as needed.Then click <em>Save &amp; Apply</em>.</p>
+<li>Check the <a data-preview="data-preview" href="../overview_ir02/#package-content">package content</a>.</li>
+<li>View the router's <a data-preview="data-preview" href="../overview_ir02/#appearance">appearance</a>.</li>
+<li>View the <a data-preview="data-preview" href="../overview_ir02/#interfaces">interfaces</a> layout. </li>
+<li>Check the <a data-preview="data-preview" href="../overview_ir02/#leds">LED indicators</a> status.</li>
+</ul>
+<h2 id="install">Install<a class="headerlink" href="#install" title="Permanent link">&para;</a></h2>
 <ul>
-<li>
-<p>MAC Clone: (Optional) Enter the MAC address of the device that is allowed by your ISP. You can usually find this in the device's network settings or on a label on the device.</p>
-</li>
-<li>
-<p>MTU: Enter the appropriate MTU size (commonly 1500 bytes for compatibility with IPv4). </p>
-</li>
+<li><a data-preview="data-preview" href="../install_power_ir02/#install-sim-cards">Install</a> nano SIM card(s).</li>
+<li><a data-preview="data-preview" href="../install_power_ir02/#install-antennas">Install</a> 4G and WiFi antenna(s).</li>
+<li><a data-preview="data-preview" href="../install_power_ir02/#install-router">Mount</a> the router on the wall or DIN-rail.</li>
+</ul>
+<h2 id="power">Power<a class="headerlink" href="#power" title="Permanent link">&para;</a></h2>
+<ul>
+<li>There are two methods to provide <a data-preview="data-preview" href="../install_power_ir02/#power-supply">power supply</a> for the router.</li>
+</ul>
+<h2 id="quick-setup">Quick Setup<a class="headerlink" href="#quick-setup" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Connect the router to the Internet with Web-based <a data-preview="data-preview" href="../quick_setup/">Quick Setup</a> wizard.</li>
 </ul>
 <hr />
-<h2 id="staticfixed-lp">Static(Fixed lP):<a class="headerlink" href="#staticfixed-lp" title="Permanent link">&para;</a></h2>
-<p>Manually configured IPv6 addresses for critical devices (e.g., PLCs), ensuring stable remote access and firewall rule consistency.</p>
-<p><a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/industrial_router/ipv6-static.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/industrial_router/ipv6-static.webp" alt="" width="500px" style="border: 1px solid #eee;display:block; margin:0 auto;" /></a></p>
-<p>Select <em>Static (Fixed IP)</em> and enter the fixed IPv6 address, gateway, prefix and DNS server address provided by your ISP. Configure MAC Clone and MTU as needed. Then click <em>Save &amp; Apply</em>.</p>
+<h2 id="manage">Manage<a class="headerlink" href="#manage" title="Permanent link">&para;</a></h2>
+<h3 id="i-system-status">I. System Status<a class="headerlink" href="#i-system-status" title="Permanent link">&para;</a></h3>
+<p>On the <a href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/industrial_router/status.webp"><strong>System Status</strong></a> page, you can check the status of the router system, including Mesh, Cellular, Wireless 2.4G and so on.</p>
 <ul>
-<li>
-<p>MAC Clone: (Optional) Enter the MAC address of the device if the ISP requires a specific MAC address for the static IP assignment. You can usually find this in the device's network settings or on a label on the device.</p>
-</li>
-<li>
-<p>MTU: Enter the appropriate MTU size based on the network's physical layer, typically 1500 bytes for Ethernet.</p>
-</li>
+<li><em>Status</em> shows whether the router has connected to the Internet or not, and its work mode and interface. Click <a data-preview="data-preview" href="../quick_setup/"><em>Quick Setup</em></a> to redirect to the <em>Quick Setup</em> page.</li>
+<li><em>Mesh</em> shows the router’s Mesh network status (SOLE or MESH), the mesh device name and the amount of mesh units. Click <a data-preview="data-preview" href="../mesh/"><em>More Details</em></a> to know more information or add/manage mesh unit(s).</li>
+<li><em>Devices</em> shows the amount of devices connected to this router, and the connection method being 2.4G WiFi or Wired; while the Mesh device will be not be displayed here but on the <a data-preview="data-preview" href="../status/#devices"><em>More Details</em></a> page.</li>
+<li><em>Cellular</em> shows whether the router has connected to the cellular network, its network type and upload/download rate. Click <a data-preview="data-preview" href="../cellular/"><em>More Details</em></a> to know more information on the <em>Status</em> and <em>Statistics</em> sub-pages, or configure some <em>settings</em>.</li>
+<li><em>LAN</em> shows whether the router has connected to the cellular network, its network type and upload/download rate. Click <a data-preview="data-preview" href="../network/#lan"><em>More Details</em></a> to know more information on the <em>Status</em> and <em>Statistics</em> sub-pages, or configure some <em>settings</em>.</li>
+<li><em>Wireless 2.4G</em> shows whether the router has connected to the cellular network, its network type and upload/download rate. Click <a DATA-PREVIEW="DATA-PREVIEW" href="../wireless_2.4g/"><em>More Details</em></a> to know more information on the <em>Status</em> and <em>Statistics</em> sub-pages, or configure some <em>settings</em>.</li>
+<li><em>DHCP Server</em> shows whether the router has connected to the cellular network, its network type and upload/download rate. Click <a data-preview="data-preview" href="../network/#dhcp-server"><em>More Details</em></a> to know more information on the <em>Status</em> and <em>Statistics</em> sub-pages, or configure some <em>settings</em>.</li>
+<li><em>System</em> shows whether the router has connected to the cellular network, its network type and upload/download rate. Click <a data-preview="data-preview" href="../status/#system"><em>More Details</em></a> to know more information on the <em>Status</em> and <em>Statistics</em> sub-pages, or configure some <em>settings</em>.</li>
 </ul>
-<hr />
-<h2 id="passthrough">Passthrough:<a class="headerlink" href="#passthrough" title="Permanent link">&para;</a></h2>
-<p>Allows an IPv6-enabled device to manage its own IP settings directly from the ISP, bypassing the router's DHCP server. </p>
-<p><a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/industrial_router/ipv6-passthrough.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/industrial_router/ipv6-passthrough.webp" alt="" width="500px" style="border: 1px solid #eee;display:block; margin:0 auto;" /></a></p>
-<p>Select <em>Passthrough</em> and just click <em>Save &amp; Apply</em> without any additional configuration.</p>
-<hr />
-<h2 id="464xlat">464XLAT:<a class="headerlink" href="#464xlat" title="Permanent link">&para;</a></h2>
-<p>A stateless translation mechanism that allows IPv4-only devices to communicate over an IPv6 network. </p>
-<p><a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/industrial_router/ipv6-464xlat.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/industrial_router/ipv6-464xlat.webp" alt="" width="500px" style="border: 1px solid #eee;display:block; margin:0 auto;" /></a></p>
-<p>Select <em>464XLAT</em>, and configure MAC Clone and MTU as needed. Then click <em>Save &amp; Apply</em>.</p>
+<h3 id="ii-general-settings">II. General Settings<a class="headerlink" href="#ii-general-settings" title="Permanent link">&para;</a></h3>
 <ul>
-<li>
-<p>MAC Clone: (Optional) MAP-E usually does not involve MAC address restrictions, so MAC Clone is not typically necessary.</p>
-</li>
-<li>
-<p>MTU: Enter the appropriate MTU size according to the maximum IPv4 packet size, which is typically 1500 bytes minus the headers.</p>
-</li>
+<li><a data-preview="data-preview" href="../cellular/#APN">Cellular</a>: Configure the cellular network features, including APN, SMS, Data Settings, AT Command and Modem Reset.</li>
+<li><a data-preview="data-preview" href="../serial_service/">Serial Service</a>: Configure <a data-preview="data-preview" href="../serial_service/#db9rs-232422485">DB9</a> and <a data-preview="data-preview" href="../serial_service/#6pinrs-422485">6PIN</a> serial ports for legacy PLC/SCADA communication.</li>
+<li><a data-preview="data-preview" href="../input_output/">Input/Output</a>: Check the status and configure the rules/schedules, for Digital/Analog ports to monitor sensors or trigger relays.</li>
+<li><a data-preview="data-preview" href="../wisp/">WISP</a>: Enable the router to wirelessly connect to a distant Wi-Fi network and share that connection locally via Ethernet/Wi-Fi, acting as a client bridge.</li>
+<li><a DATA-PREVIEW="DATA-PREVIEW" href="../wireless_2.4g/">Wireless 2.4G</a>: Customize the router's 2.4G wireless network, including SSID and password, mode, channel, channel width and transmit power, and so on.</li>
+<li><a DATA-PREVIEW="DATA-PREVIEW" href="../vpn/">VPN</a>: Help to access the Internet remotely, securely, and privately through tunneling technology which encrypts your personal information and hides your IP address from the public.</li>
+<li><a DATA-PREVIEW="DATA-PREVIEW" href="../firmware/">Firmware</a>: Update the router's <a data-preview="data-preview" href="../firmware/">firmware</a> to be the latest version.</li>
 </ul>
-<hr />
-<h2 id="map-e">MAP-E:<a class="headerlink" href="#map-e" title="Permanent link">&para;</a></h2>
-<p>Namely, Mapping of Address and Port with Encapsulation, is a method for translating IPv6 addresses to IPv4 addresses. </p>
-<p><a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/industrial_router/ipv6-mape.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/industrial_router/ipv6-mape.webp" alt="" width="500px" style="border: 1px solid #eee;display:block; margin:0 auto;" /></a></p>
-<p>Select <em>MAP-E</em>, and configure MAC Clone and MTU as needed. Then click <em>Save &amp; Apply</em>.</p>
+<h3 id="iii-advanced-settings">III. Advanced Settings<a class="headerlink" href="#iii-advanced-settings" title="Permanent link">&para;</a></h3>
+<p><strong><a data-preview="data-preview" href="../network/">Network</a></strong></p>
 <ul>
-<li>
-<p>MAC Clone: (Optional) MAP-E usually does not involve MAC address restrictions, so MAC Clone is not typically necessary.</p>
-</li>
-<li>
-<p>MTU: Enter the appropriate MTU size according to the maximum IPv4 packet size, which is typically 1500 bytes minus the headers.</p>
-</li>
+<li><a data-preview="data-preview" href="../network/#lanwan-switch">LAN/WAN Switch</a>: Switch the WAN/LAN port between local network switching (LAN mode) and wide-area routing (WAN mode).</li>
+<li><a data-preview="data-preview" href="../network/#lan">LAN</a>: Modify the router's LAN IP address, when necessary.</li>
+<li><a data-preview="data-preview" href="../network/#guest-network">Guest Network</a>: Create a guest network without disturbing the main network's security and privacy.</li>
+<li><a data-preview="data-preview" href="../network/#dhcp-server">DHCP Server</a>: Specify the IP address for client devices by the router as a DHCP Server.</li>
+<li><a data-preview="data-preview" href="../IPv6/">IPv6</a>: Set up an IPv6 Connection.</li>
+<li><a data-preview="data-preview" href="../network/#igmp">IGMP</a>:  Manage and optimize multicast traffic for the client devices, like IPTV.</li>
+<li><a data-preview="data-preview" href="../network/#qos">QoS</a>: Prioritize connection of specific devices for a certain duration. </li>
+<li><a data-preview="data-preview" href="../network/#custom-dns">Custom DNS</a>: Customize a DNS server to be resolved through for DNS names.</li>
+<li><a data-preview="data-preview" href="../network/#ddns">DDNS</a>: Map a domain name to the dynamic IP address of a network device.</li>
+<li><a data-preview="data-preview" href="../network/#static-routing">Static Routing</a>: Manually configure routings for data forwarding.</li>
+<li><a data-preview="data-preview" href="../network/#port-forwards">Port Forwards</a>: Set up public services on your local network with higher security.</li>
+<li><a data-preview="data-preview" href="../network/#port-trigger">Port Trigger</a>: Specify a triggering port and its corresponding external ports.</li>
+<li><a data-preview="data-preview" href="../network/#dmz">DMZ</a>: Disable DMZ unless necessary.</li>
+<li><a data-preview="data-preview" href="../network/#online-detection">Online Detection</a>: Ensure your network always online and operational.</li>
+<li><a data-preview="data-preview" href="../network/#ttl">TTL</a>: Set the maximum time for packets to survive in the network.</li>
+<li><a data-preview="data-preview" href="../network/#wake-on-lan">Wake on LAN</a>: Allow a computer to be turned on or awakened by a network message.</li>
+<li><a data-preview="data-preview" href="../network/#upnp">UPnP</a>: Allow applications or host devices to automatically find the front-end NAT device.</li>
+<li><a data-preview="data-preview" href="../network/#usb-sharing">USB Sharing</a>: Allow network-connected devices to access the shared files in the USB devices connected to the router.</li>
 </ul>
-<hr />
-<h2 id="ds-lite">DS-Lite:<a class="headerlink" href="#ds-lite" title="Permanent link">&para;</a></h2>
-<p>A technology that allows ISPs to provide IPv4 service over an IPv6 network. </p>
-<p><a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/industrial_router/ipv6-dslite.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/industrial_router/ipv6-dslite.webp" alt="" width="500px" style="border: 1px solid #eee;display:block; margin:0 auto;" /></a></p>
-<p>Select <em>DS-Lite</em>, and configure MAC Clone and MTU as needed. Then click <em>Save &amp; Apply</em>.</p>
+<p><strong><a data-preview="data-preview" href="../security/">Security</a></strong></p>
 <ul>
-<li>
-<p>MAC Clone: (Optional) DS-Lite usually does not involve MAC address restrictions, so MAC Clone is not typically necessary.</p>
-</li>
-<li>
-<p>MTU: Enter the MTU value based on your network's requirements. The value should be within the range of 1280 to 1582 bytes. The MTU setting is important to ensure that the encapsulated IPv4 packets can be transmitted over the IPv6 network without fragmentation. </p>
-</li>
+<li><a data-preview="data-preview" href="../security/#firewall">Firewall</a>: Monitor and control incoming and outgoing network traffic based on predetermined security rules.</li>
+<li><a data-preview="data-preview" href="../security/#mac-filter">MAC Filter</a>: Prevent unauthorized devices with certain MAC address from accessing the network.</li>
+<li><a data-preview="data-preview" href="../security/#ip-filter">IP Filter</a>: Block or allow traffic to your network or system based on the IP addresses. </li>
+<li><a data-preview="data-preview" href="../security/#domain-filter">Domain Filter</a>: Control or limit access to specific websites or Internet services by filtering domain name requests. </li>
+<li><a data-preview="data-preview" href="../security/#ipmac-binding">IP/MAC Binding</a>: Bind network device's IP address to its MAC address. </li>
+<li><a data-preview="data-preview" href="../security/#wps">WPS</a>: Set up a security-protected Wi-Fi connection without sharing/entering credentials. </li>
+<li><a data-preview="data-preview" href="../security/#wifi-schedule">WiFi Schedule</a>: Turn on/off the router's wireless network automatically at a specific time.</li>
+<li><a data-preview="data-preview" href="../security/#alg">ALG</a>: Inspect and modify application-layer data in network traffic to allow it to pass through firewalls and other security devices more easily.</li>
 </ul>
-</li>
-</ul>
-<p><a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/noteicon.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/noteicon.webp"></a> </p>
+<p><strong><a data-preview="data-preview" href="../system/">System</a></strong></p>
 <ul>
-<li>If the current version of the firewall (or VPN, block list, and etc.) does not support IPv6, you may enable and configure the IPv6 function on this page.</li>
-<li>If you use VPN and IPv6 functions at the same time, it's likely to cause IPv6 data leakage.</li>
+<li><a data-preview="data-preview" href="../system/#system-time">System Time</a>: Configure the router's system time, necessary for some time-based functions.</li>
+<li><a data-preview="data-preview" href="../system/#firmware">Firmware</a>: Upgrade the firmware to the latest version.</li>
+<li><a data-preview="data-preview" href="../system/#backuprestore">Backup/Restore</a>: Backup the configuration file or restore it.</li>
+<li><a data-preview="data-preview" href="../system/#administration">Administration</a>: Access and manage the router from the local or remote devices.</li>
+<li><a data-preview="data-preview" href="../system/#admin-account">Admin Account</a>: Change the router's login password.</li>
+<li><a data-preview="data-preview" href="../system/#language">Language</a>: Customize the router's web management language.</li>
+<li><a data-preview="data-preview" href="../system/#timed-reboot">Timed Reboot</a>: Schedule for the router rebooting.</li>
+<li><a data-preview="data-preview" href="../system/#reboot">Reboot</a>: Reboot the router for the settings or changes to take effect.</li>
+<li><a data-preview="data-preview" href="../system/#reset">Reset</a>: Restore the router to its factory default settings.</li>
+<li><a data-preview="data-preview" href="../system/#tr069">TR069</a>: Configure the router's TR069 (CPE WAN Management).</li>
 </ul>
+<h3 id="iv-diagnostic-tools">IV. Diagnostic Tools<a class="headerlink" href="#iv-diagnostic-tools" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a data-preview="data-preview" href="../diagnostic_tools/#diagnosis">Diagnosis</a>: The diagnosis result will indicate the status of Internet, Wireless, Devices, Services and System. You can click Download to reserve the diagnosis bin file.</li>
+<li><a data-preview="data-preview" href="../diagnostic_tools/#ping">PING</a>: Used to test the connectivity between the router and the tested host, and measure the round-trip time.</li>
+<li><a data-preview="data-preview" href="../diagnostic_tools/#traceroute">TRACEROUTE</a>: Used to test the route (path) your router has passed to reach the tested host, and measure transit delays of packets across an Internet Protocol network.</li>
+<li><a data-preview="data-preview" href="../diagnostic_tools/#nslookup">NSLOOKUP</a>: Checks if the DNS IP address of the WAN can work normally.</li>
+<li><a data-preview="data-preview" href="../diagnostic_tools/#system-log">System Log</a>: Tracks all the router behaviors. When the router does not work normally, download the system log and send it to our Technical Support for troubleshooting.</li>
+</ul>
+<p><a href="../">&lt;&lt;&lt; Back to Industrial Router</a></p>
 
   <!-- Last update of source file -->
   
