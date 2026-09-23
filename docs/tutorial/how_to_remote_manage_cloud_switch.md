@@ -3,7 +3,7 @@
 
 ???+ Tip
     - Before you start, confirm that [your model supports Cudy Cloud](https://www.cudy.com/en-apac/collections/easy-managed-switches?filter.p.m.custom.filters_cudy_cloud_status=gid%3A%2F%2Fshopify%2FFilterSettingGroup%2F109281524#banner-165292998900) and its firmware is up-to-date (otherwise [upgrade it](https://www.cudy.com/blogs/faq/how-to-upgrade-firmware-for-cudy-easy-managed-switch-to-support-cudy-app-cloud-management) first). View more information on [Cudy Official Website](https://www.cudy.com/collections/easy-managed-switches).
-    - GS1026EPS2 is used as an example below. Refer to your actual product for more details.
+    - GS1028EPS2 is used as an example below. Refer to your actual product for more details.
 
 ### Step 1. Connect the Switch
 
@@ -23,6 +23,9 @@
     ???+ note
         - If the password is forgotten, press and hold the Reset button to restore factory settings. 
         - Serial Number here may be needed later if its barcode cannot be scanned.
+        - If you didn't enable *Cloud Management* on the login page, you may go to *System Manage -> Cloud Management* and enable it anytime you need.
+            <img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/tutorial/cloudm2.webp" width="800px" style="display: block; margin: 0 auto;border: 1px solid #eee;">    
+
 
 - When it appears *Waits to get DHCP address...*, set your computer to *Obtain an IP address automatically* and *Obtain DNS server address automatically*.
     <img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/tutorial/login3.webp" width="300px" style="display: block; margin: 0 auto;border: 1px solid #eee;">    

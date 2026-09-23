@@ -1,5 +1,8 @@
 # Quick Setup
 
+!!!Note
+    IR04 is used as an example in this guide. Refer to your actual product for more details.
+    
 1. Connect the management device to the router via an Ethernet cable or Wi-Fi (default SSID and Password are printed on the product label).
 
     <img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/industrial_router/quick_setup.webp"  width="800" alt="" style="display: block; margin: 0 auto; border: 0.5px solid #eee;">

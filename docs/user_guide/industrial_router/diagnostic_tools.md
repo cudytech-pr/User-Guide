@@ -1,5 +1,8 @@
 # Diagnostic Tools
 
+!!!Note
+    IR04 is used as an example in this guide. Refer to your actual product for more details.
+
 ## Diagnosis
 <img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/industrial_router/diagnosis.webp" alt="" width="800px" style="border: 1px solid #eee;" />
 Click *GO* to make a diagnosis. It may take some while to process. Please wait patiently. 

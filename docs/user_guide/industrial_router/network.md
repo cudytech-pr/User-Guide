@@ -1,4 +1,8 @@
 # Network
+
+!!!Note
+    IR04 is used as an example in this guide. Refer to your actual product for more details.
+    
 Network section allows you to manage and configure a series of network features for the router. 
 
 ## LAN/WAN Switch

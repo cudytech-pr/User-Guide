@@ -1,4 +1,8 @@
 # WISP
+
+!!!Note
+    IR04 is used as an example in this guide. Refer to your actual product for more details.
+    
 <img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/industrial_router/WISP1.webp" alt="" width="800px" style="border:1px solid #eee; display:block; margin:0 auto;" />
 
 On the **General Settings >> WISP** page, you can enable the router to wirelessly connect to a distant Wi-Fi network and share that connection locally via Ethernet/Wi-Fi, acting as a client bridge.  Please follow the steps below.

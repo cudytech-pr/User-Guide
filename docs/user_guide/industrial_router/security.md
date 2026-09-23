@@ -1,6 +1,9 @@
 # Security
  To enhance your home network security with a kit of features built in Cudy router. In Wireless router mode, it includes Firewall, MAC filter, IP filter, Domain Filter, IP/MAC Binding, WPS, Wi-Fi Schedule, and ALG; while in Wireless Access Point mode, it consists of WPS and Wi-Fi Schedule.
 
+!!!Note
+    IR04 is used as an example in this guide. Refer to your actual product for more details.
+    
 ---
 ## Firewall
 is a security system that monitors and controls incoming and outgoing network traffic based on predetermined security rules. It serves as a barrier between a trusted internal network and untrusted external networks, such as the Internet. This function is enabled by default. It is highly recommended to keep the default settings.

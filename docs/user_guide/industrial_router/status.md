@@ -1,11 +1,15 @@
 # System Status
+
+!!!Note
+    IR04 is used as an example in this guide. Refer to your actual product for more details.
+
 <img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/industrial_router/status.webp" alt="" width="800px" style="border: 1px solid #eee;" />
 
 ## Status
-shows whether the router has connected to the Internet or not, and its work mode and interface. Click *Quick Setup* to redirect to the [Quick Setup](quick_setup.md){ data-preview }.
+shows whether the router has connected to the Internet or not, and its work mode and interface. Click *Quick Setup* to redirect to the *Quick Setup*.
 
 ## Mesh
-shows the router’s Mesh network status (SOLE or MESH), the mesh device name and the amount of mesh units. Click *More Details* to know more or configure some *settings* (refer to [Mesh](mesh.md){ data-preview }).
+shows the router’s Mesh network status (SOLE or MESH), the mesh device name and the amount of mesh units. Click *More Details* to know more or configure some *settings*.
 
 <img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/industrial_router/status-mesh1.webp" alt="" width="800px" style="border: 1px solid #eee;" />
 
@@ -58,7 +62,7 @@ shows whether the router's LAN network connection is enabled or not, its IP addr
 <img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/industrial_router/status-lan1.webp" alt="" width="800px" style="border: 1px solid #eee; display: block; margin: 0 auto;" />
 
 ## Wireless 2.4G
-shows whether the router's Wireless 2.4G network is enabled or not, its SSID and channel. Click *More Details* to know more information on the *Status* sub-page, or configure some *settings* (refer to [Wireless 2.4G](wireless_2.4g.md){ data-preview }).
+shows whether the router's Wireless 2.4G network is enabled or not, its SSID and channel. Click *More Details* to know more information on the *Status* sub-page, or configure some *settings* (refer to *General Settings > Wireless 2.4G*).
 
 <img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/industrial_router/status-2.4g.webp" alt="" width="800px" style="border: 1px solid #eee; display: block; margin: 0 auto;" />
 
@@ -70,7 +74,7 @@ shows whether the router's Wireless 2.4G network is enabled or not, its SSID and
 - Channel Width: Bandwidth allocated, wider channels offer higher speed but may increase interference.
 
 ## DHCP Server
-shows whether the DHCP Server is enabled or not, and its starting/ending IP. Click *More Details* to know more information on the *Status* and *DHCP Leases* sub-pages, or configure some *settings* (refer to [DHCP Server](network.md#dhcp-server){ data-preview }).
+shows whether the DHCP Server is enabled or not, and its starting/ending IP. Click *More Details* to know more information on the *Status* and *DHCP Leases* sub-pages, or configure some *settings* (refer to *Advanced Settings > Network > DHCP Server*).
 
 <img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/industrial_router/status-dhcp.webp" alt="" width="800px" style="border: 1px solid #eee; display: block; margin: 0 auto;" />
 
@@ -81,7 +85,7 @@ shows whether the DHCP Server is enabled or not, and its starting/ending IP. Cli
 - Lease Time: Duration an assigned IP address remains valid before renewal is required. 
 
 ## System
-shows the router's firmware version, current local time and uptime. Click *More Details* to know more information on the *Status*, *Statistics*, *ARP*, *Active IP Routes* and *[System Log](diagnostic_tools.md#system-log){ data-preview }* sub-pages.
+shows the router's firmware version, current local time and uptime. Click *More Details* to know more information on the *Status*, *Statistics*, *ARP*, *Active IP Routes* and *System Log* (refer to *Diagnostic Tools > System Log*) sub-pages.
 
 <img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/industrial_router/status-system1.webp" alt="" width="800px" style="border: 1px solid #eee; display: block; margin: 0 auto;" />
 
@@ -119,5 +123,5 @@ shows the router's firmware version, current local time and uptime. Click *More 
 - Table: The routing table type where this route is stored.
 - Interface: The physical/virtual port used for this route's traffic.
 
-**[System Log](diagnostic_tools.md#system-log){ data-preview }** records timestamped system events, errors, and operational messages for diagnostics and auditing.
+**System Log** (refer to *Diagnostic Tools > System Log*) records timestamped system events, errors, and operational messages for diagnostics and auditing.
 

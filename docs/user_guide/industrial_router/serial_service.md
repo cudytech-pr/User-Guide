@@ -1,5 +1,8 @@
 # Serial Service
 
+!!!Note
+    IR04 is used as an example in this guide. Refer to your actual product for more details.
+
 ## DB9(RS-232/422/485)
 
 <img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/industrial_router/db9-rs232-tcp-server.webp" alt="" width="800px" style="border:   2px solid #eee;" />

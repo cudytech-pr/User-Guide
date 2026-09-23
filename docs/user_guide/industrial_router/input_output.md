@@ -1,5 +1,8 @@
 # Input/Output 
 
+!!!Note
+    IR04 is used as an example in this guide. Refer to your actual product for more details.
+
 ## Status 
 <img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/industrial_router/in-out-status.webp" alt="" width="800px" style="border:1px solid #eee; display:block; margin:0 auto;" />
 

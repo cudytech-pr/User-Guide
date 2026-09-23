@@ -1,5 +1,8 @@
 # Firmware
 
+!!!Note
+    IR04 is used as an example in this guide. Refer to your actual product for more details.
+    
 <img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/industrial_router/firmware.webp" alt="" width="800px" style="border: 1px solid #eee;" />
 
 On the **General Settings >> Firmware** page, you can update the router's firmware to the latest version for better performance. Please choose an appropriate update method and follow the instructions.

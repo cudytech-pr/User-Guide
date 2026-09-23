@@ -1,5 +1,8 @@
 # Install & Power
 
+!!!Note
+    IR04 is used as an example in this guide. Refer to your actual product for more details.
+
 ## Install Router
 ### Method A. Wall-Mount
 Insert four screws (not provided) through the mounting holes and fasten them into the wall.

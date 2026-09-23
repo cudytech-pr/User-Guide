@@ -1,5 +1,8 @@
 # Mesh
 
+!!!Note
+    IR04 is used as an example in this guide. Refer to your actual product for more details.
+
 On the **System Status -> Mesh** page to add or manage a Mesh Unit, please follow the steps:
 
 <img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/industrial_router/mesh.webp" alt="" width="800px" style="border: 1px solid #eee; display: block; margin: 0 auto;"/>

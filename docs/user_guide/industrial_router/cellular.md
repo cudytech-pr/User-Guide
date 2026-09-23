@@ -1,5 +1,8 @@
 # Cellular
 
+!!!Note
+    IR04 is used as an example in this guide. Refer to your actual product for more details.
+
 ## Status
 
 On **System Status >> Cellular >> Status/Statistics** section, you can check the current status and statistics of the cellular network.
