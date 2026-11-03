@@ -29,20 +29,22 @@
       
     palette:
       # Light Mode
-      - scheme: default 
-        primary: "#008CFF"  
-        accent: "#008CFF"  
+      - scheme: default
+        primary: "#008CFF"
+        accent: "#008CFF"
         toggle:
-          icon: material/toggle-switch-off-outline 
-          name: Switch to dark mode 
-      # Dark Mode 
-      - scheme: slate 
-        primary: "#006BB3"  
-        accent: "#006BB3"  
+          icon: material/weather-night
+          name: Switch to dark mode
+
+      # Dark Mode
+      - scheme: slate
+        primary: "#006BB3"
+        accent: "#006BB3"
         toggle:
-          icon: material/toggle-switch 
-          name: Switch to light mode 
-    favicon: images/favicon.ico 
+          icon: material/weather-sunny
+          name: Switch to light mode
+
+    favicon: images/favicon.ico
 
 
   # Plugins

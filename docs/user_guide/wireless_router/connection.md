@@ -1,4 +1,4 @@
-# Connect 
+# Hardware Connection
 
 ## Position the router
 - Generally, the router is placed on a horizontal surface, such as on a shelf or desktop. The device also can be mounted on the wall.

@@ -1,7 +1,7 @@
 # Install & Power
 
 !!!Note
-    Power off the router before installations
+    Power off the router before installations.
 
 ## Install Nano SIM Cards
 
@@ -32,7 +32,7 @@
 ## Install the Router
 
 Insert the screws through the four mounting holes and fasten them into the wall.
-    <img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/industrial_router/install-router-ir02.webp"  width="700" alt="">
+    <img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/industrial_router/install-router-ir02.webp"  width="500" alt="">
 
 ---
 

@@ -1,16 +1,17 @@
+
 :root {
-  --preview-width: 50%; /* 初始宽度 */
+  --preview-width: 50%;
 }
 
 /* 面板基础样式 */
 #preview-panel {
   position: fixed;
-  top: 0; 
+  top: 0;
   right: 0;
   width: var(--preview-width);
   height: 100%;
-  background: #ffffff;              
-  border-left: 2px solid #008cff90;  
+  background: #ffffff;
+  border-left: 2px solid #008cff90;
   border-bottom: 2px solid #008cff90;
   border-radius: 4px 0 0 4px;
   box-shadow: 0 2px 12px rgba(255, 255, 255, 0.12);
@@ -27,9 +28,9 @@
   transform: translateX(0);
 }
 
-/* header */
+/* 顶部栏 */
 .preview-header {
-  background:#00000012;
+  background: #00000012;
   color: #ffffff;
   font-family: var(--md-font-sans);
   font-size: 15px;
@@ -38,15 +39,38 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 12px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.013);
 }
 
-/* header title */
+/* 标题：浅色模式 */
 .preview-header .title {
-  color: #008cff;      /* 黑色 */
+  color: #008cff;
   font-family: var(--md-font-sans);
   font-weight: 500;
   letter-spacing: 0.5px;
+}
+
+/* 顶部操作区 */
+.preview-header-actions {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-shrink: 0;
+}
+
+/* 全页面打开链接：浅色模式 */
+#preview-full-page {
+  color: #008cff;
+  font-family: var(--md-font-sans);
+  font-size: 13px;
+  font-weight: 500;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+#preview-full-page:hover {
+  text-decoration: underline;
 }
 
 /* 关闭按钮 */
@@ -57,8 +81,10 @@
   cursor: pointer;
   font-size: 20px;
   line-height: 1;
+  flex-shrink: 0;
   transition: color 0.2s;
 }
+
 #preview-close:hover {
   color: #bbdefb;
 }
@@ -96,7 +122,7 @@ body.preview-open .md-content {
   vertical-align: top;
 }
 
-/* 拖拽时 cursor */
+/* 拖拽时的鼠标样式 */
 body.resizing {
   cursor: col-resize !important;
 }
@@ -114,6 +140,17 @@ body.resizing {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.081);
 }
 
+/* 深色模式：标题和链接均为白色 */
+[data-md-color-scheme="slate"] .preview-header .title,
+[data-md-color-scheme="slate"] #preview-full-page {
+  color: #ffffff;
+}
+
+[data-md-color-scheme="slate"] #preview-full-page:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
 [data-md-color-scheme="slate"] #preview-close:hover {
   color: #bbdefb;
 }
@@ -123,24 +160,18 @@ body.resizing {
   color: var(--md-default-fg-color);
 }
 
-/* ------------------------------------------ */
-/* 移动端禁用预览面板 (小于 960px)            */
-/* ------------------------------------------ */
-
+/* 移动端禁用预览面板 */
 @media screen and (max-width: 960px) {
-    /* 强制隐藏面板，以防 JS 逻辑出错 */
-    #preview-panel {
-        display: none !important;
-    }
+  #preview-panel {
+    display: none !important;
+  }
 
-    /* 强制主内容区宽度恢复 100%，即使 body 上有 preview-open 类 */
-    body.preview-open .md-content {
-        width: 100% !important;
-        transition: none; /* 移除过渡效果 */
-    }
+  body.preview-open .md-content {
+    width: 100% !important;
+    transition: none;
+  }
 
-    /* 禁用拖拽时的鼠标样式 */
-    body.resizing {
-        cursor: default !important;
-    }
+  body.resizing {
+    cursor: default !important;
+  }
 }

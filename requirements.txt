@@ -30,3 +30,10 @@ urllib3==2.0.6
 watchdog==3.0.0
 zipp==3.17.0
 mkdocs-glightbox==0.4.0
+mkdocs-include-markdown-plugin
+
+# PDF Exporter dependencies
+playwright
+pypdf
+reportlab
+pillow

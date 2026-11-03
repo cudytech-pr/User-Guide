@@ -1,0 +1,16 @@
+# General Settings - Wireless 2.4G
+
+**Wireless 2.4G** is to customize the Router’s 2.4GHz wireless settings, including SSID and password, mode, channel, channel width and transmit power, and so on. 
+
+You may go to *General Settings -> Wireless 2.4G* or *System Status -> Wireless 2.4G -> More Details -> Settings* to configure this feature. Then follow the steps below.
+
+<img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/wireless_router/wireless_2.4g.webp" alt="" width="800px" style="border: 1px solid #eee;" />
+
+1. Enable *Wireless 2.4G*;
+2. Customize your SSID (wireless network name);
+3. Select a strong *Encryption* and create a secure *Password* for your wireless network. Click *Save & Apply* to save these basic settings, or *Advanced* to continue with more and advanced settings.
+4. Select a proper *Mode*, *Channel*, *Channel Width* and *Transmit Power*;
+5. (Optional) Enter the maximum number of devices you want to allow on your network in the *Max Stations* field.
+6. Enable *Hidden Network*, if you don’t want your SSID to display automatically. Then you need to manually join the network.
+7. (If any) Enable *Separate Clients* to isolate the wireless clients from each other. 
+8. Click *Save & Apply* to apply your new settings.

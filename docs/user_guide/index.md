@@ -11,12 +11,12 @@
 
   <a href="wireless_router/wr6500_h" class="product-card">
     <div class="product-img" style="background-image:url('https://www.cudy.com/cdn/shop/files/WR11000_1.0.png?v=1719212885')"></div>
-    <div class="product-name">WR6500(H)</div>
+    <div class="product-name">WR6500<br>WR6500H</div>
   </a>
 
   <a href="wireless_router/wr3600_h" class="product-card">
     <div class="product-img" style="background-image:url('https://www.cudy.com/cdn/shop/files/WR3600_1.0_WR3600H_1.0_4d1e8f65-209c-4236-b36c-d8b09b9ee6b0.png?v=1726274018')"></div>
-    <div class="product-name">WR3600(H)</div>
+    <div class="product-name">WR3600<br>WR3600H</div>
   </a>
 
   <a href="wireless_router/wr3600e" class="product-card">
@@ -36,18 +36,8 @@
 
   <a href="wireless_router/wr3000h_p_s" class="product-card">
     <div class="product-img" style="background-image:url('http://www.cudy.com/cdn/shop/files/WR3000H-A_f2944199-6b77-4769-a669-1267dfec08ba.png?v=1717136882')"></div>
-    <div class="product-name">WR3000H_P_S</div>
+    <div class="product-name">WR3000H<br>WR3000P<br>WR3000S</div>
   </a>
-
-  <a href="wireless_router/wr3000h_p_s" class="product-card">
-    <div class="product-img" style="background-image:url('http://www.cudy.com/cdn/shop/files/WR3000H-A_f2944199-6b77-4769-a669-1267dfec08ba.png?v=1717136882')"></div>
-    <div class="product-name">WR3000H_P_S</div>
-  </a>
-
-  <a href="wireless_router/wr3000h_p_s" class="product-card">
-    <div class="product-img" style="background-image:url('http://www.cudy.com/cdn/shop/files/WR3000H-A_f2944199-6b77-4769-a669-1267dfec08ba.png?v=1717136882')"></div>
-    <div class="product-name">WR3000H_P_S</div>
-  </a> 
 
   <a href="wireless_router/wr1500" class="product-card">
     <div class="product-img" style="background-image:url('http://www.cudy.com/cdn/shop/files/WR1500-A1.png?v=1762823649')"></div>
@@ -123,6 +113,11 @@
   <a href="mesh_system/m3000" class="product-card">
     <div class="product-img" style="background-image:url('http://www.cudy.com/cdn/shop/files/M3000-V2.0-Pack-1.png?v=1710205295')"></div>
     <div class="product-name">M3000</div>
+  </a>
+
+  <a href="mesh_system/m3000s" class="product-card">
+    <div class="product-img" style="background-image:url('https://www.cudy.com/cdn/shop/files/huanfang-KIT1_…c74-a266-3b2ef7ca03a3.png?v=1760488303')"></div>
+    <div class="product-name">M3000S</div>
   </a>
 
   <a href="mesh_system/m1500" class="product-card">
@@ -237,6 +232,11 @@
     <div class="product-name">IR04</div>
   </a>
 
+  <a href="industrial_router/ir02/" class="product-card">
+    <div class="product-img" style="background-image:url('http://www.cudy.com/cdn/shop/files/IR02-1.png?v=1754532485')"></div>
+    <div class="product-name">IR02</div>
+  </a>
+
 </div>
 
 
@@ -246,11 +246,15 @@
 
   <a href="pon_router/gp1200_v/" class="product-card">
     <div class="product-img" style="background-image:url('https://www.cudy.com/cdn/shop/files/GP1200_1.1_-A.png?v=1741934941')"></div>
-    <div class="product-name">GP1200(V)</div>
+    <div class="product-name">GP1200<br>GP1200V</div>
   </a>
 
-</div>
+  <a href="pon_router/gp3000_v/" class="product-card">
+    <div class="product-img" style="background-image:url('https://www.cudy.com/cdn/shop/files/GP3000_2.0_-0.png?v=1766458170')"></div>
+    <div class="product-name">GP3000<br>GP3000V</div>
+  </a>  
 
+</div>
 
 
 ## [Range Extender](range_extender/index.md)
@@ -284,6 +288,21 @@
 
 <div class="product-grid">
 
+  <a href="switch/gs1028eps2/" class="product-card">
+    <div class="product-img" style="background-image:url('https://www.cudy.com/cdn/shop/files/GS1028EPS2-0.png?v=1760172216&')"></div>
+    <div class="product-name">GS1028EPS2</div>
+  </a>
+
+  <a href="switch/gs1016eps2/" class="product-card">
+    <div class="product-img" style="background-image:url('https://www.cudy.com/cdn/shop/files/GS1016EPS2-1.png?v=1752202576&')"></div>
+    <div class="product-name">GS1016EPS2</div>
+  </a>  
+
+  <a href="switch/gs1016es2/" class="product-card">
+    <div class="product-img" style="background-image:url('https://www.cudy.com/cdn/shop/files/GS1016ES2-1.png?v=1758274041')"></div>
+    <div class="product-name">GS1016ES2</div>
+  </a>  
+
   <a href="switch/gs1024e/" class="product-card">
     <div class="product-img" style="background-image:url('https://www.cudy.com/cdn/shop/files/GS1024E_1.0_-A_d169bc99-8a4b-46c9-9376-98c3d47ec283.png?v=1724919688')"></div>
     <div class="product-name">GS1024E</div>
@@ -295,5 +314,3 @@
   </a>
 
 </div>
-
-

@@ -1,5 +1,8 @@
 # Diagnostic Tools
 
+!!! Note
+    Images of WR3600 are for reference only; details may vary by model.
+
 ## Diagnosis
 
 <img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/wireless_router/diagnosis.webp" alt="" width="800px" style="border: 1px solid #eee;" />

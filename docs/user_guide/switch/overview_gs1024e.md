@@ -1,14 +1,15 @@
 # GS1024E
-## Package Content
-<img src="https://cdn.shopify.com/s/files/1/0673/4748/0820/files/GS1024E.jpg?v=1749630613">
 
----
+## Package Content
+
+<img src="https://cdn.shopify.com/s/files/1/0673/4748/0820/files/GS1024E.jpg?v=1749630613">
 
 ## Appearance
 
 <img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/switch/gs1024e.webp" width="800" alt="">
 
 ## LED & DIP
+
 <table>
     <tr>
         <th>LED</th>
@@ -53,9 +54,9 @@
         <td>Toggle the switch from left to right and back within 2 seconds to restore the factory defaults.</td>
     </tr>
 </table>
----
 
 ## Topology
+
 <img src="https://cdn.shopify.com/s/files/1/0673/4748/0820/files/GS1024E-A_-EN_650x350-1.jpg?v=1731032340">
 
 <img src="https://cdn.shopify.com/s/files/1/0673/4748/0820/files/GS1024E-A_-EN_650x350-2.jpg?v=1731032341">
