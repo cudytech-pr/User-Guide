@@ -353,3 +353,42 @@ details.glossary-item > .admonition-content {
   opacity: 0;
   pointer-events: none;
 }
+
+
+/* Tooltip term */
+.tooltip-term {
+  position: relative;
+  color: inherit;
+  border-bottom: 1px dashed currentColor;
+  cursor: help;
+}
+
+/* Tooltip box */
+.tooltip-term::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  top: 100%;
+  left: 0;
+  margin-top: 6px;
+
+  background: #008CFF;
+  color: #FFFFFF;
+  padding: 6px 10px;
+  border-radius: 5px;
+
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 1.5;
+  white-space: nowrap;
+
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  z-index: 100;
+}
+
+/* Hover */
+.tooltip-term:hover::after {
+  opacity: 1;
+  visibility: visible;
+}
