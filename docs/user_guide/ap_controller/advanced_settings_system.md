@@ -142,7 +142,7 @@ instructions.
 
 ## Operation Mode
 
-<img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/ap_controller/operation_mode.webp" alt="" width="200px" style="border: 1px solid #eee;display:block; margin:0 auto;" />
+<img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/ap_controller/operation_mode2.webp" alt="" width="500px" style="border: 1px solid #eee;display:block; margin:0 auto;" />
 
 Displays the current operation mode. Select to switch to the other operation mode from the drop-down list, and click *Save & Apply* .
 
@@ -150,7 +150,7 @@ Displays the current operation mode. Select to switch to the other operation mod
 
 Cloud Management allows you to remotely manage your AP through Cudy Cloud. Enable this feature to prepare the AP for binding to a Cudy Cloud account. Once bound, you can manage the AP remotely through the cloud platform.
 
-<img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/ap_controller/cloud_management.webp" alt="" width="200px" style="border: 1px solid #eee;display:block; margin:0 auto;" />
+<img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/ap_controller/cloud_management.webp" alt="" width="500px" style="border: 1px solid #eee;display:block; margin:0 auto;" />
 
 - Cloud Status: Displays the current cloud management status of the AP.
 - Serial Number: Displays the AP's serial number, which can be used to identify the device when binding it to Cudy Cloud.
@@ -164,4 +164,4 @@ SSH (Secure Shell) is a secure protocol that allows to remotely access and manag
 
 Enable SSH to allow secure remote access to the AP through an SSH client. Disable it to prevent new SSH connections. Only enable this when requested by technical support.
 
-<img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/ap_controller/ssh.webp" alt="" width="200px" style="border: 1px solid #eee;display:block; margin:0 auto;" />
+<img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/ap_controller/ssh.webp" alt="" width="500px" style="border: 1px solid #eee;display:block; margin:0 auto;" />
