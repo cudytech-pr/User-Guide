@@ -12,7 +12,7 @@
         <meta name="author" content="Cudy Docs">
       
       
-        <link rel="canonical" href="https://docs.cudy.com/user_guide/ap_controller/dhcp/">
+        <link rel="canonical" href="https://docs.cudy.com/user_guide/ap_controller/system_status/">
       
       
       
@@ -22,7 +22,7 @@
     
     
       
-        <title>DHCP Server - Docs</title>
+        <title>System Status - Docs</title>
       
     
     
@@ -100,7 +100,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#dhcp-server" class="md-skip">
+        <a href="#system-status" class="md-skip">
           Skip to content
         </a>
       
@@ -133,7 +133,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              DHCP Server
+              System Status
             
           </span>
         </div>
@@ -923,22 +923,84 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#port-status" class="md-nav__link">
+    Port Status
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#status" class="md-nav__link">
+    Status
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ap-management" class="md-nav__link">
+    AP Management
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#devices" class="md-nav__link">
+    Devices
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wan" class="md-nav__link">
+    WAN
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lan" class="md-nav__link">
+    LAN
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dhcp-server" class="md-nav__link">
+    DHCP Server
+  </a>
+  
+    <nav class="md-nav" aria-label="DHCP Server">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#dhcp-status" class="md-nav__link">
     DHCP Status
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#dhcp-leases" class="md-nav__link">
     DHCP Leases
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#dhcp-settings" class="md-nav__link">
     DHCP Settings
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#system" class="md-nav__link">
+    System
   </a>
   
 </li>
@@ -967,10 +1029,49 @@
   
 
   <!-- Markdown content -->
-  <h1 id="dhcp-server">DHCP Server<a class="headerlink" href="#dhcp-server" title="Permanent link">&para;</a></h1>
+  <h1 id="system-status">System Status<a class="headerlink" href="#system-status" title="Permanent link">&para;</a></h1>
+<ul>
+<li>
+<p>System Status in Main Router and AP Controller Mode
+<a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/ap_controller/status.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/ap_controller/status.webp" alt="" width="800px" style="border: 1px solid #eee;" /></a></p>
+</li>
+<li>
+<p>System Status in AP Controller Mode
+<a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/ap_controller/status-ap.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/ap_controller/status-ap.webp" alt="" width="800px" style="border: 1px solid #eee;" /></a></p>
+</li>
+</ul>
+<h2 id="port-status">Port Status<a class="headerlink" href="#port-status" title="Permanent link">&para;</a></h2>
+<p>shows real-time port connection status, data speed, PoE power in/out, as well as dashboard for real-time CPU usage (%) and memory utilization (%) of the ports. </p>
+<h2 id="status">Status<a class="headerlink" href="#status" title="Permanent link">&para;</a></h2>
+<p>shows whether it has connected to the Internet or not, and its work mode and interface (or gateway). Click <a href="../quick_setup/">Quick Setup</a> to redirect to the Quick Setup page.</p>
+<h2 id="ap-management">AP Management<a class="headerlink" href="#ap-management" title="Permanent link">&para;</a></h2>
+<p>shows the amount of APs in the management and amount of them being online or offline. Click <em>More Details</em> for more configurations (refer to <a href="general_settings_ap_management.md">AP Management</a>).</p>
+<h2 id="devices">Devices<a class="headerlink" href="#devices" title="Permanent link">&para;</a></h2>
+<p>shows the amount of devices connected to the controller, via 2.4G WiFi or 5G WiFi, or Wired which is only viewable on the <em>More Details -&gt; (Devices) Status</em> page.</p>
+<p><a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/ap_controller/status-device.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/ap_controller/status-device.webp" alt="" width="800px" style="border: 1px solid #eee;" /></a></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>In <em>Main Router and AP Controller</em> mode, here will display the WiFi and Wired devices connected in the LAN; in <em>AP Controller</em> mode, it will only display those connected to the controlled AP.</p>
+</div>
+<p>View the Device information about hostname, IP/MAC address, real-time rate, signal and connection duration.</p>
+<p><a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/ap_controller/status-device2.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/ap_controller/status-device2.webp" alt="" width="800px" style="border: 1px solid #eee;" /></a></p>
+<ul>
+<li>Enable or disable the Internet connection.</li>
+<li>Edit the device name by clicking on <a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/ap_controller/status-device-action.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/ap_controller/status-device-action.webp" alt=""/></a>.</li>
+</ul>
+<p><a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/ap_controller/status-device-settings-operation.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/ap_controller/status-device-settings-operation.webp" alt="" width="400px" style="border: 1px solid #eee; display: block; margin: 0 auto;" /></a></p>
+<h2 id="wan">WAN<a class="headerlink" href="#wan" title="Permanent link">&para;</a></h2>
+<p>(Only for Main Router and AP Controller Mode) shows whether the controller's WAN port is connected or not, its protocol and IP address. Click <em>More Details</em> to know more information on the <em>Status</em> sub-page, or configure some <em>settings</em> (refer to <a href="general_settings_wan.md">WAN Mode</a>).</p>
+<p><a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/ap_controller/status-wan.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/ap_controller/status-wan.webp" alt="" width="800px" style="border: 1px solid #eee; display: block; margin: 0 auto;" /></a></p>
+<h2 id="lan">LAN<a class="headerlink" href="#lan" title="Permanent link">&para;</a></h2>
+<p>shows whether the controller's LAN network connection is enabled or not, its IP address and MAC address. Click <em>More Details</em> to know more information on the <em>Status</em> sub-page, or configure some <em>settings</em> (refer to <a href="../advanced_settings_network/#lan">LAN</a>).</p>
+<p><a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/ap_controller/status-lan.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/ap_controller/status-lan.webp" alt="" width="800px" style="border: 1px solid #eee; display: block; margin: 0 auto;" /></a></p>
+<h2 id="dhcp-server">DHCP Server<a class="headerlink" href="#dhcp-server" title="Permanent link">&para;</a></h2>
+<p>(Only for Main Router and AP Controller Mode) shows whether the DHCP Server is enabled or not, and its starting/ending IP. Click <em>More Details</em> to know more information on the <em>Status</em> and <em>DHCP Leases</em> sub-pages, or configure some <em>settings</em>.</p>
+<p><a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/ap_controller/status-dhcp.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/ap_controller/status-dhcp.webp" alt="" width="800px" style="border: 1px solid #eee; display: block; margin: 0 auto;" /></a></p>
 <p>When the controller works in the mode of <em>Main Router and AP Controller</em>, it could also acts as a DHCP (Dynamic Host Configuration Protocol) server to dynamically assign TCP/IP parameters to client devices from the IP Address Pool. DO NOT disable DHCP server unless you have another DHCP server, or you want to manually assign the TCP/IP parameters to every client device on the network. </p>
 <p>Go to <em>Advanced Settings -&gt; Network -&gt; DHCP Server</em> or <em>System Status-&gt; DHCP Server -&gt; More Details</em> to see if it is <em>Enabled</em> or <em>Disabled</em> as well as its IP address and subnet mask. Click <em>More Details</em> to know more information about it or make changes on Settings page.</p>
-<h2 id="dhcp-status">DHCP Status<a class="headerlink" href="#dhcp-status" title="Permanent link">&para;</a></h2>
+<h3 id="dhcp-status">DHCP Status<a class="headerlink" href="#dhcp-status" title="Permanent link">&para;</a></h3>
 <p><a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/ap_controller/status-dhcp.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/ap_controller/status-dhcp.webp" alt="" width="800px" style="border: 1px solid #eee;" /></a></p>
 <ul>
 <li>Status: Indicates whether the DHCP service is active (enabled) or inactive (disabled) on the network.</li>
@@ -980,21 +1081,82 @@
 <li>Default Gateway: Display the router/firewall IP that devices use to access external networks.</li>
 <li>Lease time: Display the duration a device retains an assigned IP before renewal.</li>
 </ul>
-<h2 id="dhcp-leases">DHCP Leases<a class="headerlink" href="#dhcp-leases" title="Permanent link">&para;</a></h2>
+<h3 id="dhcp-leases">DHCP Leases<a class="headerlink" href="#dhcp-leases" title="Permanent link">&para;</a></h3>
 <p><a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/ap_controller/status-dhcp2.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/ap_controller/status-dhcp2.webp" alt="" width="800px" style="border: 1px solid #eee;" /></a></p>
 <p>The DHCP Leases will show a list of clients which the Router being a DHCP server has allocated an IP address to, including such information as IP address, MAC address and Host name.</p>
-<h2 id="dhcp-settings">DHCP Settings<a class="headerlink" href="#dhcp-settings" title="Permanent link">&para;</a></h2>
+<h3 id="dhcp-settings">DHCP Settings<a class="headerlink" href="#dhcp-settings" title="Permanent link">&para;</a></h3>
 <p><a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/ap_controller/status-dhcp3.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/ap_controller/status-dhcp3.webp" alt="" width="800px" style="border: 1px solid #eee;" /></a></p>
 <p><strong>To specify the IP address that the Router assigns, please follow the steps below.</strong></p>
-<p>1.Enable the DHCP Server.</p>
-<p>2.Enter the starting IP addresses and the Limit number to create the IP Address Pool.</p>
-<p>3.(Optional) Enter the DNS if the ISP offers. </p>
-<p>4.Enter the Lease time.</p>
-<p>5.Click <em>Save &amp; Apply</em>.</p>
+<ol>
+<li>Enable the DHCP Server.</li>
+<li>Enter the starting IP addresses and the Limit number to create the IP Address Pool.</li>
+<li>(Optional) Enter the DNS if the ISP offers. </li>
+<li>Enter the Lease time.</li>
+<li>Click <em>Save &amp; Apply</em>.</li>
+</ol>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>If you want to reserve for a specified client device an IP address, which is assigned by the router as a DHCP server, you may use the <a href="../security/#ipmac-binding">IP/MAC binding</a> function.</p>
+<p>If you want to reserve for a specified client device an IP address, which is assigned by the router as a DHCP server, you may use the <a href="../advanced_settings_security/#ipmac-binding">IP/MAC binding</a> function.</p>
 </div>
+<h2 id="system">System<a class="headerlink" href="#system" title="Permanent link">&para;</a></h2>
+<p>shows the controller's firmware version, current local time and uptime. Click <em>More Details</em> to know more information on the <em>Status</em>, <em>Statistics</em>, <em>ARP</em>, <em>Active IP Routes</em> and <em>System Log</em> sub-pages (refer to <a href="status_advanced_settings_system.md">System</a>).</p>
+<p><a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/ap_controller/status-system1.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/ap_controller/status-system1.webp" alt="" width="800px" style="border: 1px solid #eee; display: block; margin: 0 auto;" /></a></p>
+<ul>
+<li>
+<p>Status: Displays real-time operational states to provide a snapshot of system health and configuration baseline for troubleshooting.</p>
+<ul>
+<li>Firmware Version: Current software version installed on the controller, critical for updates and compatibility.</li>
+<li>Model: Controller's product model, used for identifying hardware specifications.</li>
+<li>Hardware: Physical components/revision, indicating the device's internal build.</li>
+<li>Local Time: Controller's configured time, essential for time-based operations and logs.</li>
+<li>Uptime: Duration since the last reboot, reflecting system stability and reliability.</li>
+</ul>
+</li>
+<li>
+<p>Statistics: Tracks network performance metrics per interface (WLAN or LAN) to identify bandwidth bottlenecks, packet loss, or hardware faults.</p>
+<p><a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/ap_controller/status-system2.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/ap_controller/status-system2.webp" alt="" width="800px" style="border: 1px solid #eee; display: block; margin: 0 auto;" /></a></p>
+<ul>
+<li>Interface: The network port or connection type being monitored.</li>
+<li>Tx Bytes: Total data transmitted.</li>
+<li>Tx Pkts: Number of packets sent.</li>
+<li>Tx Errs: Transmission errors.</li>
+<li>Tx Drop: Packets dropped due to congestion or faults.</li>
+<li>Rx Bytes: Total data received.</li>
+<li>Rx Pkts: Number of packets received.</li>
+<li>Rx Errs: Reception errors.</li>
+<li>Rx Drop: Packets dropped during reception.</li>
+</ul>
+</li>
+<li>
+<p>ARP: Maps IP addresses to MAC addresses for local network communication to detect IP conflicts and monitors connected devices in the LAN.</p>
+<p><a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/ap_controller/status-system3.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/ap_controller/status-system3.webp" alt="" width="800px" style="border: 1px solid #eee; display: block; margin: 0 auto;" /></a></p>
+<ul>
+<li>IP Address: Network-layer address assigned to a device in the local network.</li>
+<li>MAC-Address: Physical hardware address uniquely identifying a device at the data-link layer.</li>
+<li>Hostname: Device name associated with the IP/MAC address, typically obtained via DNS reverse lookup or local host mapping.</li>
+<li>Interface: Network interface through which the ARP entry is learned or associated.</li>
+</ul>
+</li>
+<li>
+<p>Active IP Routes: Shows path selection rules for data forwarding to optimize traffic routing and diagnoses connectivity issues between networks.</p>
+<p><a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/ap_controller/status-system4.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/ap_controller/status-system4.webp" alt="" width="800px" style="border: 1px solid #eee; display: block; margin: 0 auto;" /></a></p>
+<ul>
+<li>Network/Target: Destination network address that the route applies to.</li>
+<li>Gateway: Next-hop IP address used to reach the target network.</li>
+<li>Metric: A numerical value indicating route priority (lower=preferred), calculated from hop count/bandwidth.</li>
+<li>Table: Routing table type where this route is stored.</li>
+</ul>
+</li>
+<li>
+<p>System Log: Tracks all the router behaviors. When the router does not work normally, download the system log and send it to our  <a href="mailto:support@cudy.com">Technical Support</a> for troubleshooting. </p>
+<p><a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/ap_controller/status-system5.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/ap_controller/status-system5.webp" alt="" width="800px" style="border: 1px solid #eee; display: block; margin: 0 auto;" /></a></p>
+<ul>
+<li>Update: Click to refresh the system log.</li>
+<li>Clear: Click to erase all the system log up till now.</li>
+<li>Download: Click to download the system log for technical support.</li>
+</ul>
+</li>
+</ul>
 
   <!-- Last update of source file -->
   

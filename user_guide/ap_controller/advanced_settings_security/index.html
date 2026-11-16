@@ -12,7 +12,7 @@
         <meta name="author" content="Cudy Docs">
       
       
-        <link rel="canonical" href="https://docs.cudy.com/user_guide/ap_controller/status_system/">
+        <link rel="canonical" href="https://docs.cudy.com/user_guide/ap_controller/advanced_settings_security/">
       
       
       
@@ -22,7 +22,7 @@
     
     
       
-        <title>System Status - Docs</title>
+        <title>Advanced Settings - Security - Docs</title>
       
     
     
@@ -100,7 +100,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#system-status" class="md-skip">
+        <a href="#advanced-settings-security" class="md-skip">
           Skip to content
         </a>
       
@@ -133,7 +133,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              System Status
+              Advanced Settings - Security
             
           </span>
         </div>
@@ -923,36 +923,50 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#status" class="md-nav__link">
-    Status
+  <a href="#firewall" class="md-nav__link">
+    Firewall
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#statistics" class="md-nav__link">
-    Statistics
+  <a href="#mac-filter" class="md-nav__link">
+    MAC Filter
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#arp" class="md-nav__link">
-    ARP
+  <a href="#ip-filter" class="md-nav__link">
+    IP Filter
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#active-ip-routes" class="md-nav__link">
-    Active IP Routes
+  <a href="#domain-filter" class="md-nav__link">
+    Domain Filter
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#system-log" class="md-nav__link">
-    System Log
+  <a href="#ipmac-binding" class="md-nav__link">
+    IP/MAC Binding
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#alg" class="md-nav__link">
+    ALG
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wifi-schedule" class="md-nav__link">
+    WiFi Schedule
   </a>
   
 </li>
@@ -981,58 +995,117 @@
   
 
   <!-- Markdown content -->
-  <h1 id="system-status">System Status<a class="headerlink" href="#system-status" title="Permanent link">&para;</a></h1>
-<p>Go to <em>System Status-&gt; System -&gt; More Details</em> to know more information on the <em>Status</em>, <em>Statistics</em>, <em>ARP</em>, <em>Active IP Routes</em> and <em>System Log</em>.</p>
-<p><a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/ap_controller/status-system1.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/ap_controller/status-system1.webp" alt="" width="800px" style="border: 1px solid #eee; display: block; margin: 0 auto;" /></a></p>
-<h2 id="status">Status<a class="headerlink" href="#status" title="Permanent link">&para;</a></h2>
-<p>Displays real-time operational states to provide a snapshot of system health and configuration baseline for troubleshooting.</p>
+  <h1 id="advanced-settings-security">Advanced Settings - Security<a class="headerlink" href="#advanced-settings-security" title="Permanent link">&para;</a></h1>
+<p>To enhance your home network security with a kit of features built in Cudy router. In Wireless router mode, it includes Firewall, MAC filter, IP filter, Domain Filter, IP/MAC Binding, WPS, Wi-Fi Schedule, and ALG; while in Wireless Access Point mode, it consists of WPS and Wi-Fi Schedule.</p>
 <ul>
-<li>Firmware Version: Current software version installed on the controller, critical for updates and compatibility.</li>
-<li>Model: Controller's product model, used for identifying hardware specifications.</li>
-<li>Hardware: Physical components/revision, indicating the device's internal build.</li>
-<li>Local Time: Controller's configured time, essential for time-based operations and logs.</li>
-<li>Uptime: Duration since the last reboot, reflecting system stability and reliability.</li>
+<li>
+<p>For <em>Main Router and AP Controller</em> mode
+    <a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/ap_controller/advanced-mc.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/ap_controller/advanced-mc.webp" alt="" width="800px" style="border: 1px solid #eee;display:block; margin:0 auto;" /></a></p>
+</li>
+<li>
+<p>For <em>AP Controller</em> mode
+    <a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/ap_controller/advanced-ac.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/ap_controller/advanced-ac.webp" alt="" width="800px" style="border: 1px solid #eee;display:block; margin:0 auto;" /></a></p>
+</li>
 </ul>
-<h2 id="statistics">Statistics<a class="headerlink" href="#statistics" title="Permanent link">&para;</a></h2>
-<p>Tracks network performance metrics per interface (WLAN or LAN) to identify bandwidth bottlenecks, packet loss, or hardware faults.</p>
-<p><a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/ap_controller/status-system2.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/ap_controller/status-system2.webp" alt="" width="800px" style="border: 1px solid #eee; display: block; margin: 0 auto;" /></a></p>
+<h2 id="firewall">Firewall<a class="headerlink" href="#firewall" title="Permanent link">&para;</a></h2>
+<p><strong>This is only available in Main Router and AP Controller mode.</strong></p>
+<p>Firewall is a security system that monitors and controls incoming and outgoing network traffic based on predetermined security rules. It serves as a barrier between a trusted internal network and untrusted external networks, such as the Internet. This function is enabled by default. It is highly recommended to keep the default settings.</p>
+<p><a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/industrial_router/firewall.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/industrial_router/firewall.webp" alt="" width="500px" style="border: 1px solid #eee;display:block; margin:0 auto;" /></a></p>
 <ul>
-<li>Interface: The network port or connection type being monitored.</li>
-<li>Tx Bytes: Total data transmitted.</li>
-<li>Tx Pkts: Number of packets sent.</li>
-<li>Tx Errs: Transmission errors.</li>
-<li>Tx Drop: Packets dropped due to congestion or faults.</li>
-<li>Rx Bytes: Total data received.</li>
-<li>Rx Pkts: Number of packets received.</li>
-<li>Rx Errs: Reception errors.</li>
-<li>Rx Drop: Packets dropped during reception.</li>
+<li>SPI Firewall: SPI (Stateful Packet Inspection) Firewall is a sophisticated network firewall that goes beyond basic packet filtering to provide deeper inspection and control over network traffic, offering better security and more intelligent traffic management.</li>
+<li>DoS Protection: DoS (Denial of Service) Protection is a security feature that defends your network or online services against DoS attacks. It works by identifying and mitigating traffic that is intended to overwhelm your network or online services, rendering them unavailable to legitimate users. </li>
+<li>Respond to PING: It is the act of a network device acknowledging and replying to a PING request, which is a fundamental tool for testing network connectivity and performance.</li>
 </ul>
-<h2 id="arp">ARP<a class="headerlink" href="#arp" title="Permanent link">&para;</a></h2>
-<p>Maps IP addresses to MAC addresses for local network communication to detect IP conflicts and monitors connected devices in the LAN.</p>
-<p><a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/ap_controller/status-system3.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/ap_controller/status-system3.webp" alt="" width="800px" style="border: 1px solid #eee; display: block; margin: 0 auto;" /></a></p>
-<ul>
-<li>IP Address: Network-layer address assigned to a device in the local network.</li>
-<li>MAC-Address: Physical hardware address uniquely identifying a device at the data-link layer.</li>
-<li>Hostname: Device name associated with the IP/MAC address, typically obtained via DNS reverse lookup or local host mapping.</li>
-<li>Interface: Network interface through which the ARP entry is learned or associated.</li>
+<h2 id="mac-filter">MAC Filter<a class="headerlink" href="#mac-filter" title="Permanent link">&para;</a></h2>
+<p><strong>This is only available in Main Router and AP Controller mode.</strong></p>
+<p>MAC Filter is a technology used in wireless routers to prevent unauthorized access to networks. MAC address is a unique identifier assigned to each device on a network. A wireless router uses MAC address to identify the device and determine which network it should connect to. </p>
+<p><em>To configure the MAC filter, please follow the steps below.</em></p>
+<p><a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/industrial_router/mac-filter2.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/industrial_router/mac-filter2.webp" alt="" width="500px" style="border: 1px solid #eee;display:block; margin:0 auto;" /></a></p>
+<ol>
+<li>Select a MAC Filter rule.<ul>
+<li>Disable: To disable the MAC Filter function. No MAC Address will be filtered.</li>
+<li>Allow all except listed: To block the device(s) with the listed MAC address from the Internet access.</li>
+<li>Allow listed only: To allow only the device(s) with the listed MAC address to access the Internet.</li>
 </ul>
-<h2 id="active-ip-routes">Active IP Routes<a class="headerlink" href="#active-ip-routes" title="Permanent link">&para;</a></h2>
-<p>Shows path selection rules for data forwarding to optimize traffic routing and diagnoses connectivity issues between networks.</p>
-<p><a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/ap_controller/status-system4.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/ap_controller/status-system4.webp" alt="" width="800px" style="border: 1px solid #eee; display: block; margin: 0 auto;" /></a></p>
-<ul>
-<li>Network/Target: Destination network address that the route applies to.</li>
-<li>Gateway: Next-hop IP address used to reach the target network.</li>
-<li>Metric: A numerical value indicating route priority (lower=preferred), calculated from hop count/bandwidth.</li>
-<li>Table: Routing table type where this route is stored.</li>
+</li>
+<li>Click <em>Add</em> to add entries. </li>
+<li>Select the <em>MAC-Address</em> and make a comment for the devices you want to filter.</li>
+<li>Click <em>Save &amp; Apply</em>.</li>
+</ol>
+<h2 id="ip-filter">IP Filter<a class="headerlink" href="#ip-filter" title="Permanent link">&para;</a></h2>
+<p><strong>This is only available in Main Router and AP Controller mode.</strong></p>
+<p>IP Filter is a technique utilized in cyber security to control and protect a network or system from unauthorized or harmful access. IP stands for Internet Protocol, which includes the rules governing online data sent and received. Every device that connects to the Internet has an IP address, a unique numerical label just like a digital fingerprint. IP filtering acts by blocking or allowing traffic to your network or system based on these IP addresses. </p>
+<p><em>To configure the IP filter, please follow the steps below.</em></p>
+<p><a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/industrial_router/ip-filter2.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/industrial_router/ip-filter2.webp" alt="" width="500px" style="border: 1px solid #eee;display:block; margin:0 auto;" /></a></p>
+<ol>
+<li>Select an IP Filter rule.<ul>
+<li>Disable: To disable the IP Filter function. All devices are allowed to access the entire Internet.</li>
+<li>Allow all except listed: To allow any other devices except for those with the listed IP address(es) to access the Internet; or allow the devices to access the Internet except for those website with the listed IP address.</li>
+<li>Allow listed only: To allow only the device(s) with the listed IP address(es) to access the Internet; or allow the devices to access only the website with the listed IP address.</li>
 </ul>
-<h2 id="system-log">System Log<a class="headerlink" href="#system-log" title="Permanent link">&para;</a></h2>
-<p>Tracks all the router behaviors. When the router does not work normally, download the system log and send it to our  <a href="mailto:support@cudy.com">Technical Support</a> for troubleshooting. </p>
-<p><a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/ap_controller/status-system5.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/ap_controller/status-system5.webp" alt="" width="800px" style="border: 1px solid #eee; display: block; margin: 0 auto;" /></a></p>
-<ul>
-<li>Update: Click to refresh the system log.</li>
-<li>Clear: Click to erase all the system log up till now.</li>
-<li>Download: Click to download the system log for technical support.</li>
+</li>
+<li>Click <em>Add</em> to add entries, and set the following parameters.<ul>
+<li>IP address: Enter the IP address you would like to filter. </li>
+<li>Subnet Mask: Select or customize the Subnet Mask as needed.</li>
+<li>Comment: Make a comment for this entry.</li>
+<li>Delete: To delete the entry easily as desired.</li>
 </ul>
+</li>
+<li>Click <em>Save &amp; Apply</em>.</li>
+</ol>
+<h2 id="domain-filter">Domain Filter<a class="headerlink" href="#domain-filter" title="Permanent link">&para;</a></h2>
+<p><strong>This is only available in Main Router and AP Controller mode.</strong></p>
+<p>Domain Filter is a technique to control or limit access to specific websites or Internet services by filtering domain name requests. It intercepts and analyzes DNS requests and either allows or blocks access based on predefined rules or policies. </p>
+<p><em>To configure the domain filter, please follow the steps below.</em></p>
+<p><a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/industrial_router/domain-filter2.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/industrial_router/domain-filter2.webp" alt="" width="500px" style="border: 1px solid #eee;display:block; margin:0 auto;" /></a></p>
+<ol>
+<li>Select a Domain Filter rule.<ul>
+<li>Disable: To disable the Domain Filter function. No devices will be filtered.</li>
+<li>Allow all except listed: To block the device(s) with the listed Domain from the Internet access.</li>
+<li>Allow listed only: To allow only the device(s) with the listed Domain to access the Internet.</li>
+</ul>
+</li>
+<li>Click <em>Add</em> to add entries.</li>
+<li>Enter the <em>Domain</em> and <em>comment</em> of the devices you want to filter. Delete as needed.</li>
+<li>Click <em>Save &amp; Apply</em>.</li>
+</ol>
+<h2 id="ipmac-binding">IP/MAC Binding<a class="headerlink" href="#ipmac-binding" title="Permanent link">&para;</a></h2>
+<p><strong>This is only available in Main Router and AP Controller mode.</strong></p>
+<p>IP/MAC Binding, namely, ARP (Address Resolution Protocol) Binding, is used to bind network device's IP address to its MAC address. This will prevent ARP Spoofing and other ARP attacks by denying network access to an device with matching IP address in the Binding list, but unrecognized MAC address.</p>
+<p><em>To configure the IP &amp; MAC Binding, please follow the steps below.</em></p>
+<p><a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/industrial_router/ip-mac-binding2.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/industrial_router/ip-mac-binding2.webp" alt="" width="800px" style="border: 1px solid #eee;display:block; margin:0 auto;" /></a></p>
+<ol>
+<li>Click <em>Add</em> to add entries.</li>
+<li>Enter the <em>IP Address</em> and bind it with a <em>MAC-Address</em> (select from the list or enter manually), and make a comment. Delete if needed.</li>
+<li>Click <em>Save &amp; Apply</em>.</li>
+</ol>
+<p>Now you don't need to worry about ARP spoofing and ARP attacks.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The IP/MAC Binding also can work as an IP reservation. The device will get the IP address via DHCP.</p>
+</div>
+<h2 id="alg">ALG<a class="headerlink" href="#alg" title="Permanent link">&para;</a></h2>
+<p><strong>This is only available in Main Router and AP Controller mode.</strong></p>
+<p>ALG (Application Layer Gateway) allows customized NAT traversal filters to be plugged into the gateway to support address and port translation for certain application layer “control/data” protocols such as FTP, TFTP, H323 etc. All ALG is enabled by default and recommended.</p>
+<p>You may need to disable SIP ALG when you are using voice and video applications to create and accept a call through the router, since some voice and video communication applications do not work well with SIP ALG.</p>
+<p><a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/industrial_router/alg.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/industrial_router/alg.webp" alt="" width="500px" style="border: 1px solid #eee;display:block; margin:0 auto;" /></a></p>
+<h2 id="wifi-schedule">WiFi Schedule<a class="headerlink" href="#wifi-schedule" title="Permanent link">&para;</a></h2>
+<p>It allows the router's wireless network to turn on or off automatically at a specific time.</p>
+<p><em>To configure the WiFi Schedule, please follow the steps below.</em></p>
+<p><a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/industrial_router/wifi-schedule2.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/industrial_router/wifi-schedule2.webp" alt="" width="800px" style="border: 1px solid #eee;display:block; margin:0 auto;" /></a></p>
+<ol>
+<li>Click <em>Add</em> to add entries.</li>
+<li>Specify the schedules, including <em>Week Days</em>, <em>Start Wi-Fi</em>, <em>Stop Wi-Fi</em>. <ul>
+<li>Enable <em>Disabled wifi forced</em> to force WiFi to shut off even if stations are associated. </li>
+<li>Toggle <em>Enable</em> to easily enable or disable the entry;</li>
+</ul>
+</li>
+<li>Click <em>Save &amp; Apply</em>.</li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The effective time schedule is based on the time of the router. You can go to Advanced Settings -&gt; System -&gt; System Time to modify the time.</p>
+</div>
 
   <!-- Last update of source file -->
   
