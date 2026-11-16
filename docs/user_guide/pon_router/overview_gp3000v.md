@@ -1,11 +1,10 @@
 # Overview
 
 ## Package Content
-<img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/pon_router/package_content.webp"  width="500" alt="">
+<img src="https://www.cudy.com/cdn/shop/files/GP3000V-2.0.jpg?v=1766456329&width=1445"  width="500" alt="">
 
----
 ## Front Panel
-<img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/pon_router/front-panel.webp"  width="500" alt="">
+<img src="https://www.cudy.com/cdn/shop/files/GP3000V_3.0_-A1-1200x1200.png?v=1792743559&width=1445"  width="500" alt="">
 
 ## LED
 <table>
@@ -124,14 +123,14 @@
     </tr>
   </tbody>
 </table>
-----
 
 ## Interfaces
 | Interface | Description |
 |-----------|-------------|
-| <img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/pon_router/back.webp" width="400" alt=""> |  |
+| <img src="https://www.cudy.com/cdn/shop/files/GP3000V_3.0_-B-1200x1200.png?v=1792743559&width=1445" width="400" alt=""> |  |
 | **ON/OFF Button**| Press to turn on/off the PON router. |
 | **Power Jack**| Plug the provided power adapter to supply power. |
+| **Phone Port**| Connect an analog telephone using an RJ11 telephone cable. |
 | **LAN4/WAN Port**| Connect to an Ethernet device or Internet. |
 | **LAN1/2/3 Port**| Connect to an Ethernet device. |
 | <img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/pon_router/side.webp" width="400" alt=""> |  |

@@ -49,7 +49,7 @@
 <img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/ap_controller/qsa2.webp" alt="" width="800px" style="border:  2px solid #eee;display: block; margin: 0 auto;" />
 
     !!! Note
-        You may click *Skip* if you don't want to configure it currently, and later configure it on [General Settings -> Wireless](wireless.md) page.
+        You may click *Skip* if you don't want to configure it currently, and later configure it on [General Settings -> Wireless](general_settings_wireless.md) page.
 
 5. Select the AP(s) you want to manage, and click *Next*.
 <img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/ap_controller/qsa3.webp" alt="" width="800px" style="border:  2px solid #eee;display: block; margin: 0 auto;" />

@@ -1,0 +1,1976 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Documentation for Cudy Products">
+      
+      
+        <meta name="author" content="Cudy Docs">
+      
+      
+        <link rel="canonical" href="https://docs.cudy.com/user_guide/ap_controller/general_settings/">
+      
+      
+      
+      
+      <link rel="icon" href="../../../images/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.4.6">
+    
+    
+      
+        <title>General Settings - Docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.35e1ed30.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.356b1318.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.css">
+    
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/default-skin/default-skin.min.css">
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@3.0.1/dist/cookieconsent.css">
+    
+      <link rel="stylesheet" href="../../../stylesheets/theme-tokens.css">
+    
+      <link rel="stylesheet" href="../../../stylesheets/admonitions.css">
+    
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
+      <link rel="stylesheet" href="../../../stylesheets/preview-panel.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+   <link href="../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../../assets/javascripts/glightbox.min.js"></script></head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="#008CFF" data-md-color-accent="#008CFF">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#general-settings" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="Docs" class="md-header__button md-logo" aria-label="Docs" data-md-component="logo">
+      
+  <img src="../../../images/cudyicon.webp" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Docs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              General Settings
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="#008CFF" data-md-color-accent="#008CFF"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3 3.19.09m3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95 2.06.05m-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="#006BB3" data-md-color-accent="#006BB3"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5c-.84 0-1.65.15-2.39.42L12 2M3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29L3.34 7m.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14L3.36 17M20.65 7l-1.77 3.79a7.023 7.023 0 0 0-2.38-4.15l4.15.36m-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29L20.64 17M12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44L12 22Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/cudytech-pr/User-Guide" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Cudy-docs
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../.." class="md-tabs__link">
+        
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../" class="md-tabs__link">
+          
+  
+    
+  
+  User Guide
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../tutorial/" class="md-tabs__link">
+          
+  
+    
+  
+  Tutorial
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../faq/" class="md-tabs__link">
+          
+  
+    
+  
+  FAQ
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../glossary/" class="md-tabs__link">
+          
+  
+    
+  
+  Glossary
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Docs" class="md-nav__button md-logo" aria-label="Docs" data-md-component="logo">
+      
+  <img src="../../../images/cudyicon.webp" alt="logo">
+
+    </a>
+    Docs
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/cudytech-pr/User-Guide" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Cudy-docs
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    User Guide
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            User Guide
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../wireless_router/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Wireless Router
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../mesh_system/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Mesh Wi-Fi System
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../4g5g_router/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    4G/5G Router
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../industrial_router/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Industrial Router
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../pon_router/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    xPON Router
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../range_extender/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Range Extender
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    AP Controller
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../switch/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Switch
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../tutorial/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Tutorial
+  </span>
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Tutorial
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../faq/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    FAQ
+  </span>
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            FAQ
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../glossary/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Glossary
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_5" id="__nav_5_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Glossary
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../glossary/networking/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Networking
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../glossary/router/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Router
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../glossary/switch/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Switch
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#ap-management" class="md-nav__link">
+    AP Management
+  </a>
+  
+    <nav class="md-nav" aria-label="AP Management">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ap-list" class="md-nav__link">
+    AP List
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ap-group" class="md-nav__link">
+    AP Group
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wireless" class="md-nav__link">
+    Wireless
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#captive-portal" class="md-nav__link">
+    Captive Portal
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wan-mode" class="md-nav__link">
+    WAN Mode
+  </a>
+  
+    <nav class="md-nav" aria-label="WAN Mode">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#dhcp" class="md-nav__link">
+    DHCP
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pppoe" class="md-nav__link">
+    PPPoE
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#static-fixed-ip" class="md-nav__link">
+    Static (Fixed IP)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#l2tp-pptp" class="md-nav__link">
+    L2TP / PPTP
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lan" class="md-nav__link">
+    LAN
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#poe" class="md-nav__link">
+    PoE
+  </a>
+  
+    <nav class="md-nav" aria-label="PoE">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#poe-utilization" class="md-nav__link">
+    PoE Utilization
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#poe-setting" class="md-nav__link">
+    PoE Setting
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vpn" class="md-nav__link">
+    VPN
+  </a>
+  
+    <nav class="md-nav" aria-label="VPN">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pptp-vpn" class="md-nav__link">
+    PPTP VPN
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#l2tp-vpn" class="md-nav__link">
+    L2TP VPN
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#openvpn" class="md-nav__link">
+    OpenVPN
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wireguard-vpn" class="md-nav__link">
+    WireGuard VPN
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#zerotier-vpn" class="md-nav__link">
+    ZeroTier VPN
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ipsec-site-to-site-vpn" class="md-nav__link">
+    IPSec (site-to-site) VPN
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#firmware" class="md-nav__link">
+    Firmware
+  </a>
+  
+    <nav class="md-nav" aria-label="Firmware">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#auto-update" class="md-nav__link">
+    Auto Update
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#online-update" class="md-nav__link">
+    Online Update
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#local-update" class="md-nav__link">
+    Local Update
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+
+  <!-- Edit button -->
+  
+
+  <!--
+    Hack: check whether the content contains a h1 headline. If it
+    doesn't, the page title (or respectively site name) is used
+    as the main headline.
+  -->
+  
+
+  <!-- Markdown content -->
+  <h1 id="general-settings">General Settings<a class="headerlink" href="#general-settings" title="Permanent link">&para;</a></h1>
+<h2 id="ap-management">AP Management<a class="headerlink" href="#ap-management" title="Permanent link">&para;</a></h2>
+<p>This enables centralized control, configuration, and monitoring of wireless APs (Access Points), including auto-discovery, group policies, and real-time status tracking.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>A maximum of 10 APs or 100 clients are allowed in <em>Main Router and AP Controller</em> mode; while a maximum of 200 APs are allowed in <em>AP Controller</em> mode.</p>
+</div>
+<h3 id="ap-list">AP List<a class="headerlink" href="#ap-list" title="Permanent link">&para;</a></h3>
+<p>Enables individual configuration and management for the APs, which are in the factory default state and connected in the same subnet with the AP controller.</p>
+<p><a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/ap_controller/ap-list.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/ap_controller/ap-list.webp" alt="" width="800px" style="border: 1px solid #eee; display:block; margin:0 auto;" /></a></p>
+<ul>
+<li>Name: Displays the AP's name - user-defined identifier for the AP. Edit in <em>Config</em>.</li>
+<li>Model: Displays the AP's hardware model. Auto-detected; used for compatibility checks.</li>
+<li>Version: Displays the AP's firmware version. Use <em>Upgrade</em> to update if outdated.</li>
+<li>IP Address: Displays the AP's static or Dynamic IP address. Configure in <em>Config</em>.</li>
+<li>MAC Address: Displays the AP's physical address. Immutable; useful for filtering/tracking.</li>
+<li>Status: Shows Online/Offline/Adopting. Troubleshoot if <em>Offline</em>.</li>
+<li>LED: Monitors AP status through indicator lights. Turn it <em>OFF</em> in <em>Config</em> when light interference needs to be avoided.</li>
+<li>Description: Optional notes for the AP. Add in <em>Config</em>. </li>
+<li>Channel: Displays the AP's current frequency channel, in the format of <em>XX(2.4G),XX(5G)</em>. Adjust in Config.</li>
+<li>Clients: Shows the amount of connected devices. Check in <em>View-Clients</em> for details.</li>
+<li>
+<p>Tx/Rx Bytes: Shows data transmitted/received. Monitor bandwidth usage.</p>
+</li>
+<li>
+<p>Action</p>
+<ul>
+<li><a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/ap_controller/view.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/ap_controller/view.webp" alt=""/></a>: View AP details, including Overview, Radio, Clients and SSID.</li>
+<li><a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/ap_controller/config.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/ap_controller/config.webp" alt=""/></a>: Configure the settings, including Name, LED Status, and 2.4GHz/5GHz channel, etc.</li>
+<li><a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/ap_controller/forget.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/ap_controller/forget.webp" alt=""/></a>: Forget and remove AP from controller but still in the network.</li>
+<li><a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/ap_controller/reboot.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/ap_controller/reboot.webp" alt=""/></a>: Reboot the AP system remotely for fixes/updates.</li>
+</ul>
+</li>
+<li>Refresh: Update real-time stats.</li>
+<li>Adopt: Authorize unmanaged APs to join controller.</li>
+<li>Upgrade: Install firmware updates.</li>
+</ul>
+<h3 id="ap-group">AP Group<a class="headerlink" href="#ap-group" title="Permanent link">&para;</a></h3>
+<p>Enables batch configuration for the APs in the same AP group, which can be created and customized. </p>
+<p><a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/ap_controller/ap-group.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/ap_controller/ap-group.webp" alt="" width="800px" style="border: 1px solid #eee; display:block; margin:0 auto;" /></a></p>
+<p><strong>How to create an AP Group?</strong></p>
+<ol>
+<li>
+<p>Click <a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/ap_controller/ap-group-add.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/ap_controller/ap-group-add.webp" alt="" width="50px"/></a> and create a name for the group. Click <em>Save &amp; Apply</em>.
+<a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/ap_controller/ap-group-create.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/ap_controller/ap-group-create.webp" alt="" width="500px" style="border: 1px solid #eee; display:block; margin:0 auto;" /></a></p>
+</li>
+<li>
+<p>Click <a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/ap_controller/view.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/ap_controller/view.webp" alt="" width="15px"/></a> and then <a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/ap_controller/ap-group-add.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/ap_controller/ap-group-add.webp" alt="" width="50px"/></a>, select a groupable AP to add it into the group. Click <em>Save &amp; Apply</em>.
+<a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/ap_controller/ap-group-create4.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/ap_controller/ap-group-create4.webp" alt="" width="500px" style="border: 1px solid #eee; display:block; margin:0 auto;" /></a></p>
+</li>
+</ol>
+<p><strong>How to manage the APs in the same AP group?</strong></p>
+<ul>
+<li>
+<p><a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/ap_controller/config.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/ap_controller/config.webp" alt=""/></a>: Batch-configure the APs in the same group.</p>
+<p><a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/ap_controller/apgroup-config.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/ap_controller/apgroup-config.webp" alt="" width="500px" style="border: 1px solid #eee; display:block; margin:0 auto;" /></a></p>
+<ul>
+<li>LED: <em>Keep Existing</em>, or select <em>ON</em> for visibility or <em>OFF</em> for power saving.</li>
+<li>IGMP Snooping: <em>Keep Existing</em>, or select <em>ON</em> to optimize multicast traffic by filtering unnecessary streams to reduce network load.</li>
+<li>AP Group: <em>Keep Existing</em>, or assigns APs to other group.</li>
+<li>Description: Add notes for easy AP Group identification.</li>
+<li>(2.4G/5G) Status: <em>Keep Existing</em>, or select to turn <em>ON</em> or <em>OFF</em> the AP's 2.4G/5G Wi-Fi.</li>
+<li>(2.4G/5G) Channel Width: <em>Keep Existing</em>, or select <em>Auto</em> to adjust bandwidth for optimal speed and interference balance.</li>
+<li>(2.4G/5G) Channel:  <em>Keep Existing</em>, or select <em>Auto</em> for automatic channel selection to avoid congestion.</li>
+<li>(2.4G/5G) Transmit Power: <em>Keep Existing</em>, or select <em>Maximum/Medium/Minimum</em> signal strength for coverage control.</li>
+<li>(2.4G/5G) Max Stations: <em>Keep Existing</em>, or select <em>Custom</em> to limit client connections per AP to prevent overload.</li>
+</ul>
+</li>
+<li>
+<p><a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/ap_controller/upgrade.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/ap_controller/upgrade.webp" alt=""/></a>: Upgrade the firmwares of the APs in the group.</p>
+</li>
+<li>
+<p><a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/ap_controller/forget.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/ap_controller/forget.webp" alt=""/></a>: Forget and remove AP groups from controller but still in the network.</p>
+</li>
+<li>
+<p><a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/ap_controller/reboot.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/ap_controller/reboot.webp" alt=""/></a>: Reboot the AP systems remotely for fixes/updates.</p>
+</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>APs in the same AP group will share an identical SSID, while different AP groups should have different SSIDs. Refer to <a href="general_settings_wireless.md">General Settings -&gt; Wireless</a> for more detailed configurations.</p>
+</div>
+<h2 id="wireless">Wireless<a class="headerlink" href="#wireless" title="Permanent link">&para;</a></h2>
+<p>To configure and manage wireless network settings for the controlled APs.</p>
+<p><a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/ap_controller/general-wireless.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/ap_controller/general-wireless.webp" alt="" width="800px" style="border: 1px solid #eee;" /></a></p>
+<ul>
+<li>
+<p>Name: Displays the wireless network name (SSID) visible to wireless clients.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+</div>
+<p>APs in the same AP group will share an identical SSID, while different AP groups should have different SSIDs.</p>
+</li>
+<li>
+<p>Broadcasting AP Group: Displays the AP Group of access points sharing this wireless configuration.</p>
+</li>
+<li>Security: Displays the encryption and authentication methods for network protection.</li>
+<li>Band: Displays the frequency range used for wireless transmission.</li>
+<li>VLAN: Displays this AP group's VLAN ID for traffic segregation. Wireless client data frames are encapsulated with the configured 802.1Q VLAN tag upon egress from the AP's LAN interface.</li>
+<li>
+<p>Modify: Click <a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/ap_controller/edit.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/ap_controller/edit.webp" alt="" width="20px"/></a> to edit the entry or <a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/ap_controller/delete.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/ap_controller/delete.webp" alt="" width="20px"/></a> to delete the entry.</p>
+</li>
+<li>
+<p><a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/ap_controller/add.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/ap_controller/add.webp" alt="" width="50px"/></a>: Click to add a new entry for an AP group's wireless configuration.</p>
+<p><a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/ap_controller/general-wireless-add.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/ap_controller/general-wireless-add.webp" alt="" width="500px" style="border: 1px solid #eee;display: block; margin: 0 auto;"/></a></p>
+<ul>
+<li>Name: Modify or customize the wireless network name.</li>
+<li>Band: Enable or disable 2.4GHz/5GHz to specify the frequency range.</li>
+<li>Encryption: Select a security protocol to prevent unauthorized access.<ul>
+<li>WPA-PSK: Legacy TKIP encryption, vulnerable to attacks, deprecated.</li>
+<li>WPA2-PSK: AES-based standard, secure but susceptible to brute-force.</li>
+<li>WPA-PSK/WPA2-PSK: Mixed mode for backward compatibility, weakest link dictates security.</li>
+<li>WPA2-PSK/WPA3-SAE: Transitional mode, AES+SAE for future-proofing.</li>
+<li>WPA3-SAE: Quantum-resistant, SAE protocol, ideal for critical infrastructure.</li>
+</ul>
+</li>
+<li>Password: Set a password for the wireless network.</li>
+<li>Broadcasting AP Group: Select an AP Group for the access points.</li>
+<li>VLAN: (Optional) Assign a VLAN ID (10-4094) to this AP group/SSID to enable traffic segregation. Then ensure the connected switch port is configured as an 802.1Q trunk with the corresponding VLAN allowed.</li>
+<li>Hidden Network: Enable to avoid SSID broadcast and hide the network from casual scans but offers minimal security. Use only with WPA3 for industrial IoT.</li>
+<li>Separate Clients: Enable to isolate connected devices and block their communication, critical for IoT security in shared networks.</li>
+<li>Captive Portal: Enable a login/authentication gateway to control access. It is editable only when <em><a href="general_settings_captive_portal.md">General Settings -&gt; Captive Portal</a></em> is enabled.</li>
+</ul>
+</li>
+</ul>
+<h2 id="captive-portal">Captive Portal<a class="headerlink" href="#captive-portal" title="Permanent link">&para;</a></h2>
+<p>Allows you to design a portal page for network access verification. Customers are directed to view an advertisement or accept set terms before being granted Internet access. In this way, it offers unique marketing opportunities for small businesses to improve brand awareness and deliver marketing messages. </p>
+<p><a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/ap_controller/general-captive.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/ap_controller/general-captive.webp" alt="" width="800px" style="border: 1px solid #eee;" /></a></p>
+<ul>
+<li>Enable: Toggle to activate the Captive Portal feature for the APs.</li>
+<li>Authentication Type: Select to define the login method.<ul>
+<li>No Authentication: Open network with no login required (e.g., public Wi-Fi).</li>
+<li>Local Password: Uses a pre-shared key (PSK) stored on the AP/controller (e.g., WPA2-Personal for simple private networks). When selected, it is required to set a password.</li>
+<li>External Portal Server: Redirects authentication to an external system.</li>
+</ul>
+</li>
+</ul>
+<p><strong>Continue to configure the below parameters if No Authentication/Local Password is selected as the Authentication Type:</strong></p>
+<ul>
+<li>Authentication Timeout: Sets the maximum time in seconds for users to complete authentication.</li>
+<li>Landing Page: Enable it and enter the URL you would like to redirect the clients/users to see before logging in.</li>
+<li>Portal Customization: Customize the portal's visual design and content.<ul>
+<li>Logo: Enable to display a logo on the login page.</li>
+<li>Logo Picture: Click <em>Browse...</em> to locate and upload the logo image file, e.g., company logo.</li>
+<li>Background Picture: Click <em>Browse...</em> to locate and upload a background image for the portal.</li>
+<li>Title Text: Edit the main heading, e.g., "Welcome to Guest Wi-Fi".</li>
+<li>Title Color: Adjust the color of the title text.</li>
+<li>Welcome Text: Customize the secondary greeting message.</li>
+<li>Welcome Color: Change the color of the welcome text.</li>
+<li>Button Text: Modify the login button label.</li>
+<li>Button Color: Set the button's background/text color.</li>
+<li>Term of Service: Enable it and customize legal terms users must accept.</li>
+<li>Copyright: Enable it and set the copyright info at the page footer.</li>
+</ul>
+</li>
+</ul>
+<p><strong>Continue to configure the below parameters if External Portal Server is selected as the Authentication Type:</strong></p>
+<p><a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/ap_controller/general-captive2.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/ap_controller/general-captive2.webp" alt="" width="800px" style="border: 1px solid #eee;" /></a></p>
+<ul>
+<li>Authentication Type: Select External Portal Server to delegate authentication to an external system.</li>
+<li>Local Network: Define the VLAN/IP range for unauthenticated clients. Set the field to an unused /24 private subnet that matches the guest VLAN on your switch or firewall; if none exists, keep the default 10.1.30.0/24 and ensure the upstream port carries the corresponding VLAN tag.</li>
+<li>Captive Portal URL: (Optional) Specify the redirect URL for authentication.</li>
+<li>
+<p>Profile: Choose a pre-configured portal template or custom profile for branding.</p>
+<ul>
+<li>HotspotSystem: A commercial-grade portal for monetized or branded guest Wi-Fi, configured via cloud dashboard with payment/voucher options.</li>
+<li>Iron Wi-Fi: Social media-focused authentication (e.g., Facebook login), set up by API integration and splash page customization.</li>
+<li>ObiFi: SIM-like secure access for enterprises, configured with data plans and RADIUS/SSO integration.</li>
+<li>VulaCoin: Blockchain-based Wi-Fi with crypto payments, requiring wallet integration and token rules.</li>
+<li>WorldSpot.net: Geo-fenced portals for location-based content, set up via GPS zones and local ads.</li>
+<li>WiFiMAX: Carrier-scale Wi-Fi management (ISPs), deployed with RADIUS and bandwidth throttling.</li>
+<li>Manual: Fully customizable (HTML/CSS), ideal for developers or unique protocols.</li>
+</ul>
+</li>
+<li>
+<p>RADIUS NAS ID: (Optional) For HotspotSystem/lron Wi-Fi/WorldSpot.net/WiFiMAX only. Enter a unique identifier for the AP/controller in RADIUS logs.</p>
+</li>
+<li>Lease time: Set session duration before re-authentication.</li>
+<li>CoA Port: RADIUS Change of Authorization port (default 3799) for dynamic policy updates.</li>
+<li>UAM Secret: (Optional) For Iron Wi-Fi/WorldSpot.net only. Enter a shared key for secure communication between the portal and authentication server.</li>
+<li>UAM Server: (Optional) For VulaCoin/WiFiMAX only. A dedicated service handling authentication (e.g., payment verification for VulaCoin or RADIUS-coordinated access control for WiFiMAX).</li>
+<li>RADIUS Secret: (Optional) For Iron Wi-Fi/WorldSpot.net only. Enter the password used to encrypt RADIUS protocol exchanges.</li>
+</ul>
+<h2 id="wan-mode">WAN Mode<a class="headerlink" href="#wan-mode" title="Permanent link">&para;</a></h2>
+<p>This is only available in <em>Main Router and AP Controller</em> mode.</p>
+<p>It defines how the AP controller (working in <em>Main Router and AP Controller</em> mode) connects to the Internet or an external network. Proper setup ensures seamless integration with the main router and ISP requirements. Select an appropriate type of Internet connection and configure the required parameters.</p>
+<h3 id="dhcp">DHCP<a class="headerlink" href="#dhcp" title="Permanent link">&para;</a></h3>
+<p>Automatically obtains IP address, subnet, and DNS from ISP's DHCP server (plug-and-play).
+<a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/ap_controller/general-wan1.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/ap_controller/general-wan1.webp" alt="" width="800px" style="border: 1px solid #eee;" /></a></p>
+<ul>
+<li>Hostname: Customize the device's network identifier, used for management and DNS resolution. </li>
+<li>MAC Clone: Spoof a custom MAC address on the WAN interface.</li>
+<li>MTU: Maximum Transmission Unit (bytes) for WAN packets. Keep it default or adjust max packet size to avoid fragmentation.</li>
+</ul>
+<p>Click <em>Save &amp; Apply</em> to save and activate the settings or changes.</p>
+<h3 id="pppoe">PPPoE<a class="headerlink" href="#pppoe" title="Permanent link">&para;</a></h3>
+<p>Requires username/password to authenticate with ISP (common for DSL/cable), encapsulating data in PPP frames.</p>
+<p><a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/ap_controller/general-wan2.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/ap_controller/general-wan2.webp" alt="" width="800px" style="border: 1px solid #eee;" /></a></p>
+<ul>
+<li>Username: Enter the ISP-provided login ID for PPPoE authentication.</li>
+<li>Password: Enter the ISP-provided secret key paired with the username to establish a PPPoE connection.</li>
+<li>Secondary Connection: Optional backup Static/DHCP link for failover (if primary fails).</li>
+<li>Access Concentrator: Leave it empty for auto-detection, or manually enter the ISP's PPPoE server name.</li>
+<li>Service Name: Leave it empty for auto-detection, or manually enter the ISP-specific PPPoE service identifier.</li>
+<li>MAC Clone: Spoof a WAN MAC address to match ISP-registered devices.</li>
+<li>MTU: Maximum Transmission Unit (bytes) for WAN packets. Keep it default or adjust max packet size to avoid fragmentation.</li>
+</ul>
+<p>Click <em>Save &amp; Apply</em> to save and activate the settings or changes.</p>
+<h3 id="static-fixed-ip">Static (Fixed IP)<a class="headerlink" href="#static-fixed-ip" title="Permanent link">&para;</a></h3>
+<p>Manually configure IP, gateway, and DNS (for servers/VoIP needing consistent addressing).</p>
+<p><a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/ap_controller/general-wan3.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/ap_controller/general-wan3.webp" alt="" width="800px" style="border: 1px solid #eee;" /></a></p>
+<ul>
+<li>IP Address: Enter the unique public or private IPv4 address assigned to your AP's WAN interface.</li>
+<li>Subnet Mask: Defines the network segment, e.g., 255.255.255.0 for a /24 range.</li>
+<li>Default Gateway: Enter the AP's IP where traffic exits to the wider network.</li>
+<li>Preferred DNS: Enter a primary DNS server for domain resolution.</li>
+<li>Alternate DNS: (Optional but recommended) Enter a backup DNS server if the primary fails.</li>
+<li>MAC Clone: Spoof a custom MAC address on the WAN interface.</li>
+<li>MTU: Maximum Transmission Unit (bytes) for WAN packets. Keep it default or adjust max packet size to avoid fragmentation.</li>
+</ul>
+<p>Click <em>Save &amp; Apply</em> to save and activate the settings or changes.</p>
+<h3 id="l2tp-pptp">L2TP / PPTP<a class="headerlink" href="#l2tp-pptp" title="Permanent link">&para;</a></h3>
+<p>VPN tunneling protocol (often paired with IPsec) for secure remote site connections over public networks.
+<a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/ap_controller/general-wan4.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/ap_controller/general-wan4.webp" alt="" width="800px" style="border: 1px solid #eee;" /></a></p>
+<ul>
+<li>Server Address: Enter the IP/hostname of your L2TP VPN server.</li>
+<li>Username/Password: Enter the credentials for L2TP authentication (often paired with IPsec pre-shared keys).</li>
+<li>Addressing Type: Choose between Dynamic IP (DHCP-assigned) or Static IP (manual WAN IP for VPN).</li>
+<li>MAC Clone: Override the WAN interface MAC address.</li>
+<li>MTU: Maximum Transmission Unit (bytes) for WAN packets. Keep it default or adjust the packet size to avoid fragmentation.</li>
+</ul>
+<p>Click <em>Save &amp; Apply</em> to save and activate the settings or changes.</p>
+<h2 id="lan">LAN<a class="headerlink" href="#lan" title="Permanent link">&para;</a></h2>
+<p>The AP controller is preset with a default LAN IP 192.168.10.1, which you can use to log in to its web management page. The LAN IP address together with the Subnet Mask also defines the subnet that the connected devices are on. If the IP address conflicts with another device on your local network or your network requires a specific IP subnet, you can change it.</p>
+<p><a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/industrial_router/lan2.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/industrial_router/lan2.webp" alt="" width="500px" style="border: 1px solid #eee;display:block; margin:0 auto;" /></a></p>
+<ol>
+<li>Enter a new IP Address appropriate to your need. </li>
+<li>Set the Subnet Mask or keep it as default. </li>
+<li>Enable IP Routed Subnet as needed. If it is enabled, you need to enter the IP Address and Subnet Mask as well.</li>
+<li>Click <em>Save &amp; Apply</em>.</li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ul>
+<li>If you have set the Port Forwarding, DMZ or DHCP address reservation, and the new LAN IP address is not in the same subnet with the old one, then you should reconfigure these features.</li>
+<li>If in conflict with the WAN IP address, the LAN IP will automatically change into 10.1.1.1.</li>
+</ul>
+</div>
+<h2 id="poe">PoE<a class="headerlink" href="#poe" title="Permanent link">&para;</a></h2>
+<p>Allows remote control of power delivery to connected access points via Ethernet cables.</p>
+<p><a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/ap_controller/general-poe2.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/ap_controller/general-poe2.webp" alt="" width="800px" style="border:  2px solid #eee;display: block; margin: 0 auto;" /></a></p>
+<h3 id="poe-utilization">PoE Utilization<a class="headerlink" href="#poe-utilization" title="Permanent link">&para;</a></h3>
+<ul>
+<li>LAN 1/2/3/4: Displays PoE-capable Ethernet ports and their real-time power consumption and allocation status.</li>
+<li>Power Capacity: Displays real-time usage (e.g., 2W/55W, 4%), showing current draw vs. max capacity to monitor load balance and prevent overloads.</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>When the device is powered via PoE, PoE output is not available.  The maximum power is 50W if the USB port is used.</p>
+</div>
+<h3 id="poe-setting">PoE Setting<a class="headerlink" href="#poe-setting" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Port: Displays the specific LAN 1~4 ports for configuration.</li>
+<li>PoE Enable: Toggle to disable or enable PoE power delivery for the specified port.</li>
+<li>PoE Recovery: Click to restore power to the port after a reboot or fault condition.</li>
+</ul>
+<h2 id="vpn">VPN<a class="headerlink" href="#vpn" title="Permanent link">&para;</a></h2>
+<p>This is only available in <em>Main Router and AP Controller</em> mode.</p>
+<p>VPN (Virtual Private Network) helps you access Internet resources remotely, securely, and privately through tunneling technology. When you access the Internet, VPN encrypts your personal information and hides your IP address from the public. For VPN users, it looks like the devices are directly connected. Cudy Router supports 6 types of VPN connections: PPTP, L2TP, OpenVPN, WireGuard, ZeroTier, IPSec (site-to-site). Please choose an appropriate VPN according to your needs and circumstances.</p>
+<p><a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/ap_controller/general-vpn2.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/ap_controller/general-vpn2.webp" alt="" width="800px" style="display: block; margin: 0 auto;"/></a> </p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ul>
+<li>Here demonstrates with AP controller working in <em>Main Router and AP Controller</em> mode as Router A (VPN server) and the other router as Router B (VPN Client). </li>
+<li>Before you enable VPN server, it is recommended to configure Dynamic DNS service or assign a static IP address for router's WAN port and synchronize your system time with Internet. </li>
+</ul>
+</div>
+<h3 id="pptp-vpn">PPTP VPN<a class="headerlink" href="#pptp-vpn" title="Permanent link">&para;</a></h3>
+<p>PPTP VPN is used to create a PPTP VPN connection for remote devices to access your home network. Fast connection/disconnection and simple configuration satisfy the needs for users who is apt to frequently switch VPN environments. Please follow the steps below to set up a PPTP VPN connection.</p>
+<p><strong>STEP 1. Configure the PPTP Server on Router A:</strong>
+<a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/ap_controller/vpn-pptp-server.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/ap_controller/vpn-pptp-server.webp" alt="" width="800px" style="border: 1px solid #eee; display: block; margin: 0 auto;" /></a></p>
+<ol>
+<li>Log into the AP controller's management web page <a href="http://Cudyac.net">Cudyac.net</a> or <a href="http://192.168.10.1">192.168.10.1</a>.</li>
+<li>Go to <em>General Settings -&gt; VPN</em>. Toggle to enable VPN, and select <em>PPTP Server</em> as Protocol. </li>
+<li>Select an appropriate type of <em>Client Access</em>.<ul>
+<li>Internet and Local Network: Allows simultaneous access to both public internet and private LAN resources through the VPN tunnel.</li>
+<li>Internet Only: Routes all traffic through the VPN, masking the client's real IP but blocking local LAN access.</li>
+<li>Local Network Only: Restricts access solely to private network resources, leaving internet traffic to bypass the VPN.</li>
+</ul>
+</li>
+<li>Configure the PPTP Server.<ul>
+<li>MPPE Encryption: Enable to encrypt the data transmitted via PPTP VPN, thus improve the communication security.</li>
+<li>Server IP/IP Start/Limit: Set to assign IP address for the VPN Clients.</li>
+<li>Username/Password: Set for the VPN client to access the VPN Server.</li>
+</ul>
+</li>
+<li>Click <em>Save &amp; Apply</em>.    </li>
+</ol>
+<p><strong>STEP 2. Configure PPTP Client on Router B:</strong>
+<a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/wireless_router/wr3600 (86).webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/wireless_router/wr3600 (86).webp" alt="" width="800px" style="border: 1px solid #eee; display: block; margin: 0 auto;" /></a></p>
+<ol>
+<li>Log into the Router B's management web page <em>http://cudy.net</em> or <em>192.168.10.1</em>. </li>
+<li>Go to <em>General Settings -&gt; VPN</em>. Enable VPN, and select <em>PPTP Client</em> as Protocol. </li>
+<li>Select Allow all devices or Ban all devices as <em>Default Rule</em>.<ul>
+<li>Allow all devices: Permits all VPN-connected devices to access the local network by default. Convenient but less secure.</li>
+<li>Ban all devices: Blocks all devices by default, requiring manual exceptions. More secure but needs configuration.</li>
+</ul>
+</li>
+<li>Enable <em>Site-to-Site</em> to allow communication between VPN server and Clients.</li>
+<li>Select an appropriate <em>VPN Policy</em>. <ul>
+<li>Disable: VPN Policy is disabled. No restriction.</li>
+<li>VPN kill switch: Internet access will be disconnected upon VPN disconnection. It is highly recommended for users who transmit data all through VPN. Preferred (and optionally Alternate) DNS is required. </li>
+<li>Domain: Select and configure to allow specified domain(s) to transmit data through VPN or not. DNS and Domain are required.</li>
+<li>Remote Subnet: Select and configure to allow devices with the specified subnet to transmit data through VPN. IP address and Subnet mask are required.</li>
+</ul>
+</li>
+<li>Configure the PPTP Client:<ul>
+<li>Server Address/Username/Password: Enter the parameters provided by the PPTP Server.</li>
+<li>Encryption: Enable to ensure the data security for the PPTP clients.  </li>
+</ul>
+</li>
+<li>Click <em>Save &amp; Apply</em>.</li>
+</ol>
+<h3 id="l2tp-vpn">L2TP VPN<a class="headerlink" href="#l2tp-vpn" title="Permanent link">&para;</a></h3>
+<p>L2TP VPN Server is used to create a L2TP VPN connection for remote devices to access your home network. Compared with PPTP, L2TP supports multi-tunnel with authentication between two endpoints, thus users can set up different tunnels with various service quality. Please follow the steps below to set up a L2TP VPN connection.</p>
+<p><strong>STEP 1. Configure the L2TP Server on Router A:</strong>
+<a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/ap_controller/vpn-l2tp-server.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/ap_controller/vpn-l2tp-server.webp" alt="" width="800px" style="border: 1px solid #eee; display: block; margin: 0 auto;" /></a></p>
+<ol>
+<li>Log into the AP controller's management web page <a href="http://Cudyac.net">Cudyac.net</a> or <a href="http://192.168.10.1">192.168.10.1</a>. </li>
+<li>Go to <em>General Settings -&gt; VPN</em>. Enable VPN, and select <em>L2TP Server</em> as Protocol. </li>
+<li>Select an appropriate type of <em>Client Access</em>.<ul>
+<li>Internet and Local Network: Allows simultaneous access to both public internet and private LAN resources through the VPN tunnel.</li>
+<li>Internet Only: Routes all traffic through the VPN, masking the client's real IP but blocking local LAN access.</li>
+<li>Local Network Only: Restricts access solely to private network resources, leaving internet traffic to bypass the VPN.</li>
+</ul>
+</li>
+<li>Configure the L2TP Server.<ul>
+<li>Server IP/IP Start/Limit: Set to assign IP address for the VPN Clients.</li>
+<li>Tunnel Secret (Optional): To set a L2TP VPN encryption as needed.</li>
+<li>Pre-shared Key (Optional): To set a IPSec encryption as needed.</li>
+<li>MTU: Maximum Transmission Unit is 1400 by default. You may change it if necessary.</li>
+<li>Username/Password: Set to authenticate the VPN clients to access the VPN Server.</li>
+</ul>
+</li>
+<li>Click <em>Save &amp; Apply</em>.</li>
+</ol>
+<p><strong>STEP 2. Configure L2TP Client on Router B:</strong>
+<a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/wireless_router/wr3600 (87).webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/wireless_router/wr3600 (87).webp" alt="" width="800px" style="border: 1px solid #eee; display: block; margin: 0 auto;" /></a></p>
+<ol>
+<li>Log into the Router B's management web page https://cudy.net (or 192.168.10.1). </li>
+<li>Go to <em>General Settings -&gt; VPN</em>. Enable VPN, and select <em>L2TP Client</em> as Protocol. </li>
+<li>Select Allow all devices or Ban all devices as <em>Default Rule</em>.<ul>
+<li>Allow all devices: Permits all VPN-connected devices to access the local network by default. Convenient but less secure.</li>
+<li>Ban all devices: Blocks all devices by default, requiring manual exceptions. More secure but needs configuration.</li>
+</ul>
+</li>
+<li>Enable <em>Site-to-Site</em> to allow communication between VPN server and Clients.</li>
+<li>Select an appropriate <em>VPN Policy</em>.<ul>
+<li>Disable: VPN Policy is disabled. No restriction.</li>
+<li>VPN kill switch: Internet access will be disconnected upon VPN disconnection. It is highly recommended for users who transmit data all through VPN. Preferred (and optionally Alternate) DNS is required. </li>
+<li>Domain: Select and configure to allow specified domain(s) to transmit data through VPN or not. DNS and Domain are required.</li>
+<li>Remote Subnet: Select and configure to allow devices with the specified subnet to transmit data through VPN. IP address and Subnet mask are required.</li>
+</ul>
+</li>
+<li>Configure the L2TP Client:<ul>
+<li>Server Address/Username/Password: Enter the parameters provided by the PPTP Server.</li>
+<li>Local Hostname: Customize or keep it as default.</li>
+<li>Tunnel Secret/Pre-shared Key: Enter the encryption if the L2TP Server has set it.</li>
+<li>MTU: Maximum Transmission Unit is 1400 by default, you may change it if necessary.</li>
+<li>Use custom tunnel IP: Enable and enter it if the L2TP Server provides a tunnel IP bound with the account.</li>
+</ul>
+</li>
+<li>Click <em>Save &amp; Apply</em>.</li>
+</ol>
+<h3 id="openvpn">OpenVPN<a class="headerlink" href="#openvpn" title="Permanent link">&para;</a></h3>
+<p>OpenVPN Server is used to create an OpenVPN connection for remote devices to access your home network. </p>
+<p>OpenVPN server requires a public IP. You can confirm whether the router has a public IP on the router management page <em>System Status -&gt; WAN -&gt; More details -&gt; Status</em>. If the public IP displayed is consistent with the IP address of the router's WAN port, it means that the router has a public IP. Please follow the steps below to set up an OpenVPN connection.</p>
+<p><strong>STEP 1. Configure the OpenVPN Server on Router A:</strong>
+<a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/ap_controller/vpn-openvpn-server.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/ap_controller/vpn-openvpn-server.webp" alt="" width="800px" style="border: 1px solid #eee; display: block; margin: 0 auto;" /></a></p>
+<ol>
+<li>Log into the AP controller's management web page <a href="http://Cudyac.net">Cudyac.net</a> or <a href="http://192.168.10.1">192.168.10.1</a>. </li>
+<li>Go to <em>General Settings -&gt; VPN</em>. Enable VPN, and select <em>OpenVPN Server</em> as Protocol. </li>
+<li>Select an appropriate type of <em>Client Access</em>.<ul>
+<li>Internet and Local Network: Allows simultaneous access to both public internet and private LAN resources through the VPN tunnel.</li>
+<li>Internet Only: Routes all traffic through the VPN, masking the client's real IP but blocking local LAN access.</li>
+<li>Local Network Only: Restricts access solely to private network resources, leaving internet traffic to bypass the VPN.</li>
+</ul>
+</li>
+<li>Configure the OpenVPN Server.<ul>
+<li>OpenVPN Protocol: Select UDP or TCP as desired.</li>
+<li>Service Port: 1194 by default, keep it or change it as needed.</li>
+<li>VPN Subnet: Set up a VPN subnet segment.</li>
+<li>Subnet Mask: Select or customize as needed.</li>
+</ul>
+</li>
+<li>Click <em>Save &amp; Apply</em>.</li>
+<li>Click <em>EXPORT</em> to export the configuration file, for the OpenVPN Client to upload.</li>
+</ol>
+<p><strong>STEP 2. Configure OpenVPN Client on Router B:</strong>
+<a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/wireless_router/wr3600 (89).webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/wireless_router/wr3600 (89).webp" alt="" width="800px" style="border: 1px solid #eee; display: block; margin: 0 auto;" /></a></p>
+<ol>
+<li>Log into the Router B's management web page https://cudy.net (or 192.168.10.1). </li>
+<li>Go to <em>General Settings -&gt; VPN</em>. Enable VPN, and select <em>OpenVPN Client</em> as Protocol. </li>
+<li>Select Allow all devices or Ban all devices as <em>Default Rule</em>.<ul>
+<li>Allow all devices: Permits all VPN-connected devices to access the local network by default. Convenient but less secure.</li>
+<li>Ban all devices: Blocks all devices by default, requiring manual exceptions. More secure but needs configuration.</li>
+</ul>
+</li>
+<li>Enable <em>Site-to-Site</em> to allow communication between VPN server and Clients.</li>
+<li>Select an appropriate <em>VPN Policy</em>.<ul>
+<li>Disable: VPN Policy is disabled. No restriction.</li>
+<li>VPN kill switch: Internet access will be disconnected upon VPN disconnection. It is highly recommended for users who transmit data all through VPN. Preferred (and optionally Alternate) DNS is required. </li>
+<li>Domain: Select and configure to allow specified domain(s) to transmit data through VPN or not. DNS and Domain are required.</li>
+<li>Remote Subnet: Select and configure to allow devices with the specified subnet to transmit data through VPN. IP address and Subnet mask are required.</li>
+</ul>
+</li>
+<li>Click <em>Browse...</em> to locate the Configuration file (client.ovpn) you exported previously from the OpenVPN Server. The uploaded configuration file will be automatically read and the Server IP will be displayed.  </li>
+<li>Click <em>Save &amp; Apply</em>.</li>
+</ol>
+<h3 id="wireguard-vpn">WireGuard VPN<a class="headerlink" href="#wireguard-vpn" title="Permanent link">&para;</a></h3>
+<p>WireGuard VPN Server is used to create a Wire Guard VPN connection for remote devices to access your home network. </p>
+<p>WireGuard VPN server requires a public IP. You can confirm whether the router has a public IP on the router management page <em>System Status -&gt; WAN -&gt; More details -&gt; Status</em>. If the public IP displayed is consistent with the IP address of the router's WAN port, it means that the router has a public IP. Please follow the steps below to set up a WireGuard VPN connection.</p>
+<p><strong>STEP 1. Configure the WireGuard Server on Router A:</strong>
+<a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/ap_controller/vpn-wiredguard-server.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/ap_controller/vpn-wiredguard-server.webp" alt="" width="800px" style="border: 1px solid #eee; display: block; margin: 0 auto;" /></a></p>
+<ol>
+<li>Log into the AP controller's management web page <a href="http://Cudyac.net">Cudyac.net</a> or <a href="http://192.168.10.1">192.168.10.1</a>. </li>
+<li>Go to <em>General Settings -&gt; VPN</em>. Enable VPN, and select <em>WireGuard Server</em> as Protocol. </li>
+<li>Select an appropriate type of <em>Client Access</em>.<ul>
+<li>Internet and Local Network: Allows simultaneous access to both public internet and private LAN resources through the VPN tunnel.</li>
+<li>Internet Only: Routes all traffic through the VPN, masking the client's real IP but blocking local LAN access.</li>
+<li>Local Network Only: Restricts access solely to private network resources, leaving internet traffic to bypass the VPN.</li>
+</ul>
+</li>
+<li>
+<p>Configure the WireGuard Server:</p>
+<ul>
+<li>Endpoint Host: Public domain/IP for VPN clients to connect. Configure with either your public IP or a DNS domain, and ensure port forwarding/NAT rules on your router direct traffic to the AP controller's local IP.</li>
+<li>Listen Port: Designated port for VPN service to receive connections. Keep default unless port conflict/ISP blocking occurs.</li>
+<li>IP Address: Private LAN IP of the VPN server. Keep default unless subnet changes or IP conflicts arise.</li>
+<li>MTU: Packet size limit to optimize tunnel performance. 1420 by default. Keep default unless experiencing packet loss then reduce slightly.</li>
+</ul>
+</li>
+<li>
+<p>Click <em>Save &amp; Apply</em>. </p>
+</li>
+<li>Then you will be required to configure the Client parameters. Click <em>Edit Item</em>.
+    <a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/ap_controller/vpn-wiredguard-server-client.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/ap_controller/vpn-wiredguard-server-client.webp" alt="" width="700px" style="border: 1px solid #eee; display: block; margin: 0 auto;" /></a></li>
+<li>Click <em>Add</em> to add entries. Enter the required parameters and then click <em>Save</em>.
+    <a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/ap_controller/vpn-wiredguard-server-client2.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/ap_controller/vpn-wiredguard-server-client2.webp" alt="" width="500px" style="border: 1px solid #eee; display: block; margin: 0 auto;" /></a><ul>
+<li>IP Address: Assign a static LAN IP to the client (e.g., 192.168.1.101) for stable access. Do ensure it's outside DHCP range.</li>
+<li>Remote Subnet: Specify the client's local subnet (e.g., 10.8.0.0/24) to enable cross-network access. Used for site-to-site VPNs.</li>
+<li>Hostname: Optional identifier (e.g., Branch-Office-1) for easier management.</li>
+</ul>
+</li>
+<li>Click to export the configuration file, which is to be uploaded on the client for connection.
+    <a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/ap_controller/vpn-wiredguard-server-confile.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/ap_controller/vpn-wiredguard-server-confile.webp" alt="" width="700px" style="border: 1px solid #eee; display: block; margin: 0 auto;" /></a></li>
+</ol>
+<p><strong>STEP 2. Configure WireGuard Client on Router B:</strong>
+<a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/wireless_router/wr3600 (95).webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/wireless_router/wr3600 (95).webp" alt="" width="800px" style="border: 1px solid #eee; display: block; margin: 0 auto;" /></a></p>
+<ol>
+<li>Log into the Router B's management web page https://cudy.net (or 192.168.10.1).</li>
+<li>Go to <em>General Settings -&gt; VPN</em>. Enable VPN, and select <em>WireGuard Client</em> as Protocol. </li>
+<li>Select Allow all devices or Ban all devices as <em>Default Rule</em>.</li>
+<li>Enable <em>Site-to-Site</em> to allow communication between VPN server and Clients.</li>
+<li>
+<p>Select an appropriate <em>VPN Policy</em>.</p>
+<ul>
+<li>Disable: VPN Policy is disabled. No restriction.</li>
+<li>VPN kill switch: Internet access will be disconnected upon VPN disconnection. It is highly recommended for users who transmit data all through VPN. Preferred (and optionally Alternate) DNS is required. </li>
+<li>Domain: Select and configure to allow specified domain(s) to transmit data through VPN or not. DNS and Domain are required.</li>
+<li>Remote Subnet: Select and configure to allow devices with the specified subnet to transmit data through VPN. IP address and Subnet mask are required.</li>
+</ul>
+</li>
+<li>
+<p>Click <em>Browse...</em> to locate the Configuration file (wg-client-x.conf) you exported previously from the WireGuard Server. The uploaded configuration file will be automatically read and such parameters as below will be displayed.  </p>
+</li>
+<li>Confirm the parameters and then click <em>Save &amp; Apply</em>.</li>
+</ol>
+<h3 id="zerotier-vpn">ZeroTier VPN<a class="headerlink" href="#zerotier-vpn" title="Permanent link">&para;</a></h3>
+<p>Zerotier is a third-party cloud platform for VPN connections. It can establish a VPN connection without any public IP address node to achieve secure and remote access. It is free for use with less than 50 nodes. It is simple and convenient to set up. Please follow the steps below to set up a ZeroTier VPN connection.</p>
+<p><strong>STEP 1. Register for a ZeroTier Account and Obtain a Network ID.</strong></p>
+<ol>
+<li>Visit Zerotier website <a href="http://my.zerotier.com/">http://my.zerotier.com/</a>, sign up for an account and log in.
+    <a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/wireless_router/wr3600 (96).webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/wireless_router/wr3600 (96).webp" alt="" width="600px" style="border: 1px solid #eee; display: block; margin: 0 auto;" /></a></li>
+<li>Click <em>Network - &gt; Create A Network</em>. 
+    <a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/wireless_router/wr3600 (97).webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/wireless_router/wr3600 (97).webp" alt="" width="600px" style="border: 1px solid #eee; display: block; margin: 0 auto;" /></a></li>
+<li>Zerotier will create a new network and assign a NETWORK ID for you. Then click on the assigned NETWORK ID, and its setting page will display.
+    <a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/wireless_router/wr3600 (99).webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/wireless_router/wr3600 (99).webp" alt="" width="600px" style="border: 1px solid #eee; display: block; margin: 0 auto;" /></a></li>
+<li>
+<p>Set <em>Access Control</em> to be Public for later convenient settings, and note down the Network ID.
+    <a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/wireless_router/wr3600 (100).webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/wireless_router/wr3600 (100).webp" alt="" width="600px" style="border: 1px solid #eee; display: block; margin: 0 auto;" /></a></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+</div>
+<p>Private Access Control requires authorization for the terminal or router to access the network, which is more secure but inconvenient. While Public Access Control allows for a direct the network access with authentication rather than authorization. You may choose either one accordingly.</p>
+</li>
+</ol>
+<p><strong>STEP 2. Configure ZeroTier Master on Router A.</strong>
+<a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/ap_controller/vpn-zerotier-master.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/ap_controller/vpn-zerotier-master.webp" alt="" width="800px" style="border: 1px solid #eee; display: block; margin: 0 auto;" /></a></p>
+<ol>
+<li>Log into the AP controller's management web page <a href="http://Cudyac.net">Cudyac.net</a> or <a href="http://192.168.10.1">192.168.10.1</a>. </li>
+<li>Go to <em>General Settings -&gt; VPN</em>. Enable VPN, and select <em>ZeroTier Master</em> as Protocol. </li>
+<li>Select an appropriate type of <em>Client Access</em>.<ul>
+<li>Internet and Local Network: Allows simultaneous access to both public internet and private LAN resources through the VPN tunnel.</li>
+<li>Internet Only: Routes all traffic through the VPN, masking the client's real IP but blocking local LAN access.</li>
+<li>Local Network Only: Restricts access solely to private network resources, leaving internet traffic to bypass the VPN.</li>
+</ul>
+</li>
+<li>Enter the ZeroTier Network ID noted down previously.</li>
+<li>Click <em>Save &amp; Apply</em>. Then it will display the Device ID.</li>
+<li>Back to the ZeroTier web page, you will see One device has joined this network.
+<a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/wireless_router/wr3600 (103).webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/wireless_router/wr3600 (103).webp" alt="" width="600px" style="border: 1px solid #eee; display: block; margin: 0 auto;" /></a></li>
+</ol>
+<p><strong>STEP 3. Join ZeroTier Network on your device.</strong></p>
+<ol>
+<li>Download and Install ZeroTier Software from <a href="https://www.zerotier.com/download/">https://www.zerotier.com/download/</a>.
+    <a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/wireless_router/wr3600 (104).webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/wireless_router/wr3600 (104).webp" alt="" width="400px" style="border: 1px solid #eee; display: block; margin: 0 auto;" /></a></li>
+<li>Click the ZeroTier icon and then <em>Join New Network...</em>, enter the Network ID and click <em>Join</em>.
+    <a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/wireless_router/wr3600 (108).webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/wireless_router/wr3600 (108).webp" alt="" width="400px" style="border: 1px solid #eee; display: block; margin: 0 auto;" /></a></li>
+<li>Back to the ZeroTier web page, you will see this new device and its Managed IP.
+    <a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/wireless_router/wr3600 (111).webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/wireless_router/wr3600 (111).webp" alt="" width="600px" style="border: 1px solid #eee; display: block; margin: 0 auto;" /></a></li>
+</ol>
+<p><strong>STEP 4. Configure the Static Route.</strong></p>
+<p>Go to <em>Settings -&gt; Advanced</em> on the ZeroTier web page. Under <em>Add Routes</em>, enter Router A's LAN IP segment 192.168.10.0/24 in Destination field and its Managed IP in <em>Via</em> field, and then click <em>Submit</em>.</p>
+<p><a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/wireless_router/wr3600 (106).webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/wireless_router/wr3600 (106).webp" alt="" width="600px" style="border: 1px solid #eee; display: block; margin: 0 auto;" /></a></p>
+<p>Now your client devices can directly access the AP controller's management web page via 192.168.10.1 as well as the server via its IP address.</p>
+<h3 id="ipsec-site-to-site-vpn">IPSec (site-to-site) VPN<a class="headerlink" href="#ipsec-site-to-site-vpn" title="Permanent link">&para;</a></h3>
+<p>It is a secure tunneling protocol used to connect two different networks, typically a corporate network and a remote branch office network, over the Internet. It allows multiple users at the remote site to access resources on the main office network as if they were directly connected to it. Please follow the steps below to set up an IPSec (site-to-site) VPN connection.</p>
+<p><strong>STEP 1. Get both Routers in the Headquarter and Branch Office ready.</strong></p>
+<ol>
+<li>Make sure both Routers are connected to the Internet, but two network can not be in the same LAN segment. 
+For example, if the headquarter is in the LAN segment 192.168.10.0/24, then the branches should be in a different LAN segment, say, 192.168.20.0/24.</li>
+<li>Check and note down the WAN and LAN IP addresses of the Headquarter Router and Branch Office Router on their management Status page. WAN IP of the headquarters router is the remote gateway of the branch offices, and its LAN IP is the remote subnet of the branch offices; and vice versa.</li>
+</ol>
+<p><strong>STEP 2: Configure the IPSec VPN on the Router in the Headquarter.</strong>
+<a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/ap_controller/vpn-ipsec.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/ap_controller/vpn-ipsec.webp" alt="" width="800px" style="border: 1px solid #eee; display: block; margin: 0 auto;" /></a></p>
+<ol>
+<li>Log into the AP controller's management web page <a href="http://Cudyac.net">Cudyac.net</a> or <a href="http://192.168.10.1">192.168.10.1</a>. </li>
+<li>Go to <em>General Settings -&gt; VPN</em>. Enable VPN, and select <em>IPSec (site-to-site)</em> as Protocol. </li>
+<li>
+<p>Click <em>Add</em> to add IPSec Policies.
+    <a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/ap_controller/vpn-ipsec-settings.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/ap_controller/vpn-ipsec-settings.webp" alt="" width="500px" style="border: 1px solid #eee; display: block; margin: 0 auto;" /></a></p>
+<ul>
+<li>Policy Name: Name the policy as desired. </li>
+<li>Remote Gateway: Enter the WAN IP of the Router in branch office.</li>
+<li>Local Subnet: Auto-filled the LAN segment of the local router.</li>
+<li>Remote Subnet: Enter the LAN segment of the Router in branch office.</li>
+<li>Pre-shared key: Set an encryption key as desired.</li>
+<li>Dead Peer Detection: Enable to detect whether the peer end is alive or not.</li>
+<li>Check Interval: Keep 30 seconds as default or change as needed.</li>
+<li>DPD Timeout: Set when to perform PDP checking again. Keep 2 Minutes as default or change it as needed.</li>
+<li>DPD Action: Decide what to do after DPD detection failure, Restart, Hold or Clear. It is recommended to keep Restart as default.</li>
+</ul>
+</li>
+<li>
+<p>Click <em>Save &amp; Apply</em>. </p>
+</li>
+</ol>
+<p><strong>STEP 3: Configure the IPSec VPN on the Router in the Branch Office.</strong></p>
+<ol>
+<li>Log into the Router B's management web page https://cudy.net (or 192.168.10.1). </li>
+<li>Go to <em>General Settings -&gt; VPN</em>. Enable VPN, and select <em>IPSec (site-to-site)</em> as Protocol. </li>
+<li>
+<p>Click <em>Add</em> to add IPSec Policies.</p>
+<ul>
+<li>Policy Name: Name the policy as desired. </li>
+<li>Remote Gateway: Enter the WAN IP of the Router in the Headquarter.</li>
+<li>Local Subnet: Auto-filled the LAN segment of the local router.</li>
+<li>Remote Subnet: Enter the LAN segment of the Router in the Headquarter.</li>
+<li>Pre-shared key: Enter the encryption key set on the headquarter Router.</li>
+<li>Dead Peer Detection: Set all the settings, including Dead Peer Detection, Check Interval, DPD Timeout, DPD Action, the same as the headquarter Router.</li>
+</ul>
+</li>
+<li>
+<p>Click <em>Save &amp; Apply</em>. </p>
+</li>
+</ol>
+<p>Then, you can go confirm the connection between Headquarter Router and Branch Router.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ul>
+<li>If one of the routers does not have a public IP address, for instance the Branch Router, but the Headquarter Router has a public IP address, you can: </li>
+<li>Set Branch Router in the Initiator Mode and change the Headquarter Router from Initiator Mode to Responder Mode.</li>
+<li>Change the remote gateway on the Headquarter Router to be 0.0.0.0.</li>
+</ul>
+</div>
+<h2 id="firmware">Firmware<a class="headerlink" href="#firmware" title="Permanent link">&para;</a></h2>
+<p>The latest firmware will be released at the Cudy official website <a href="http://www.cudy.com">www.cudy.com</a>, and you can download it from <a href="http://www.cudy.com/download">www.cudy.com/download</a>. Please choose an appropriate update method and follow the instructions.</p>
+<p><a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/ap_controller/general-firmware.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/ap_controller/general-firmware.webp" alt="" width="800px" style="border: 1px solid #eee; display: block; margin: 0 auto;" /></a></p>
+<h3 id="auto-update">Auto Update<a class="headerlink" href="#auto-update" title="Permanent link">&para;</a></h3>
+<p>It allows the AP controller to automatically update firmware to the latest version at the specified time.</p>
+<ol>
+<li>Enable <em>Auto Update</em>.</li>
+<li>Specify the <em>Update Time</em></li>
+<li>Click <em>Save &amp; Apply</em>.</li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ul>
+<li>Backup your AP controller’s configurations before firmware update. Do NOT turn off the AP controller during the firmware update.</li>
+</ul>
+</div>
+<h3 id="online-update">Online Update<a class="headerlink" href="#online-update" title="Permanent link">&para;</a></h3>
+<ul>
+<li>If there is a new firmware available for the AP controller, a prompt will appear upon your login to the AP controller web management page. Click <em>Update Now</em> and then <em>Update</em> to upgrade the firmware to the latest version.</li>
+<li>If you miss the prompt, please go to <em>General Settings -&gt; Firmware</em> to check for update. If there is one, click <em>Update</em> and wait a few minutes for the update and reboot to complete. </li>
+</ul>
+<h3 id="local-update">Local Update<a class="headerlink" href="#local-update" title="Permanent link">&para;</a></h3>
+<p>Click <em>Browse...</em> to locate and upload the latest firmware file you’ve downloaded from <a href="http://www.cudy.com">www.cudy.com</a>. Wait a few minutes for the update and reboot to complete.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ul>
+<li>If you fail to update the firmware for the AP controller, please contact our <a href="mailto:support@cudy.com">technical support</a>.</li>
+</ul>
+</div>
+
+  <!-- Last update of source file -->
+  
+
+  <!-- Root element of PhotoSwipe. Must have class pswp. -->
+  <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe. 
+        It's a separate element, as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+        <!-- Container that holds slides. PhotoSwipe keeps only 3 slides in DOM to save memory. -->
+        <!-- don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+          <div class="pswp__item"></div>
+          <div class="pswp__item"></div>
+          <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+          <div class="pswp__top-bar">
+            <!--  Controls are self-explanatory. Order can be changed. -->
+            <div class="pswp__counter"></div>
+            <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+            <!-- <button class="pswp__button pswp__button--share" title="Share"></button> -->
+            <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+            <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+            <!-- Preloader demo https://codepen.io/dimsemenov/pen/yyBWoR -->
+            <!-- element will get class pswp__preloader--active when preloader is running -->
+            <div class="pswp__preloader">
+              <div class="pswp__preloader__icn">
+              <div class="pswp__preloader__cut">
+                <div class="pswp__preloader__donut"></div>
+              </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+            <div class="pswp__share-tooltip"></div> 
+          </div>
+
+          <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+          </button>
+
+          <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+          </button>
+
+          <div class="pswp__caption">
+            <div class="pswp__caption__center"></div>
+          </div>
+        </div>
+    </div>
+</div>
+
+              </article>
+            </div>
+          
+          
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+  
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      © 2026, Shenzhen Cudy Technology Co., Ltd.
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+    <a href="mailto:support@cudy.com" target="_blank" rel="noopener" title="" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4l217.6 163.2c11.4 8.5 27 8.5 38.4 0l217.6-163.2c12.1-9.1 19.2-23.3 19.2-38.4 0-26.5-21.5-48-48-48H48zM0 176v208c0 35.3 28.7 64 64 64h384c35.3 0 64-28.7 64-64V176L294.4 339.2a63.9 63.9 0 0 1-76.8 0L0 176z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.cudy.com" target="_blank" rel="noopener" title="www.cudy.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M352 256c0 22.2-1.2 43.6-3.3 64H163.3c-2.2-20.4-3.3-41.8-3.3-64s1.2-43.6 3.3-64h185.4c2.2 20.4 3.3 41.8 3.3 64zm28.8-64h123.1c5.3 20.5 8.1 41.9 8.1 64s-2.8 43.5-8.1 64H380.8c2.1-20.6 3.2-42 3.2-64s-1.1-43.4-3.2-64zm112.6-32H376.7c-10-63.9-29.8-117.4-55.3-151.6 78.3 20.7 142 77.5 171.9 151.6zm-149.1 0H167.7c6.1-36.4 15.5-68.6 27-94.7 10.5-23.6 22.2-40.7 33.5-51.5C239.4 3.2 248.7 0 256 0s16.6 3.2 27.8 13.8c11.3 10.8 23 27.9 33.5 51.5 11.6 26 20.9 58.2 27 94.7zm-209 0H18.6c30-74.1 93.6-130.9 172-151.6-25.5 34.2-45.3 87.7-55.3 151.6zM8.1 192h123.1c-2.1 20.6-3.2 42-3.2 64s1.1 43.4 3.2 64H8.1C2.8 299.5 0 278.1 0 256s2.8-43.5 8.1-64zm186.6 254.6c-11.6-26-20.9-58.2-27-94.6h176.6c-6.1 36.4-15.5 68.6-27 94.6-10.5 23.6-22.2 40.7-33.5 51.5-11.2 10.7-20.5 13.9-27.8 13.9s-16.6-3.2-27.8-13.8c-11.3-10.8-23-27.9-33.5-51.5zM135.3 352c10 63.9 29.8 117.4 55.3 151.6-78.4-20.7-142-77.5-172-151.6h116.7zm358.1 0c-30 74.1-93.6 130.9-171.9 151.6 25.5-34.2 45.2-87.7 55.3-151.6h116.6z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/Cudytech-pr" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.facebook.com/Cudytech/" target="_blank" rel="noopener" title="www.facebook.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.linkedin.com/company/Cudytech" target="_blank" rel="noopener" title="www.linkedin.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.youtube.com/channel/UCi9XeBubGtEazL6KxO8In6w" target="_blank" rel="noopener" title="www.youtube.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.instagram.com/Cudytech" target="_blank" rel="noopener" title="www.instagram.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+        <!-- 确保保留super()调用 -->
+
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["search.highlight", "navigation.indexes", "navigation.tabs", "navigation.top", "navigation.tracking", "navigation.sections", "navigation.expand", "footer.social", "content.admonition"], "search": "../../../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.aecac24b.min.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe-ui-default.min.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@3.0.1/dist/cookieconsent.umd.js"></script>
+      
+        <script src="../../../javascripts/analytics.js"></script>
+      
+        <script src="../../../javascripts/extra.js"></script>
+      
+        <script src="../../../javascripts/cookieconsent.js"></script>
+      
+        <script src="../../../javascripts/lazyload.js"></script>
+      
+        <script src="../../../javascripts/preview-panel.js"></script>
+      
+        <script src="../../../javascripts/nav-toggle.js"></script>
+      
+    
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
+</html>
