@@ -40,7 +40,6 @@ The figure below indicates the proper connection between the Router and the Cudy
 
 <img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/wireless_router/traceroute2.webp" alt="" width="800px" style="border: 1px solid #eee;" />
 
-
 ## NSLOOKUP
 is to check if the DNS IP address of the WAN can work normally.
 
@@ -52,6 +51,33 @@ is to check if the DNS IP address of the WAN can work normally.
 2. Click *NSLOOKUP* to start the diagnosis. The result will show as below.
 
 <img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/wireless_router/nslookup2.webp" alt="" width="800px" style="border: 1px solid #eee;" />    
+
+## Packet Capture
+
+Captures network packets on a selected interface for traffic monitoring and troubleshooting.
+
+<img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/wireless_router/packet_capture.webp" alt="" width="800px" style="border: 1px solid #eee;" />    
+
+1. Select the network interface on which to capture packets.
+
+    - LAN: Captures packets transmitted or received on the local network.
+    - WAN: Captures packets transmitted or received through the Internet connection.
+    - WISP: Captures packets transmitted or received through the wireless WAN connection.
+    - VPN: Captures packets transmitted or received through the VPN tunnel.
+
+2. (Optional) Enter a MAC address to capture packets from or to a specific device.
+3. (Optional) Enter an IP address to filter packets by source or destination.
+4. Select the network protocol to capture.
+    
+    - ALL: Captures packets of all supported protocols.
+    - TCP: Captures TCP packets, commonly used for web browsing, email, and file transfers.
+    - UDP: Captures UDP packets, commonly used for DNS queries, streaming, and online gaming.
+    - ICMP: Captures ICMP packets, commonly used for network diagnostics, such as ping.
+    - ARP: Captures ARP packets, used to map IP addresses to MAC addresses within a local network.
+
+5. (Optional) Enter a port number to filter packets by port.
+6. Set the maximum number of packets to capture. The default is 10000.
+7. Click *Start* to begin capturing packets.
 
 ## System Log
 Tracks all the Router behaviors. When the Router does not work normally, download the system log and send it to our [Technical Support](mailto:support@cudy.com) for troubleshooting. 

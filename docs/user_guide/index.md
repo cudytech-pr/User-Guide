@@ -116,7 +116,7 @@
   </a>
 
   <a href="mesh_system/m3000s" class="product-card">
-    <div class="product-img" style="background-image:url('https://www.cudy.com/cdn/shop/files/huanfang-KIT1_…c74-a266-3b2ef7ca03a3.png?v=1760488303')"></div>
+    <div class="product-img" style="background-image:url('http://www.cudy.com/cdn/shop/files/huanfang-KIT1_5dccac73-3f4d-4021-bf27-9314728c9a56.png?v=1760488463')"></div>
     <div class="product-name">M3000S</div>
   </a>
 
