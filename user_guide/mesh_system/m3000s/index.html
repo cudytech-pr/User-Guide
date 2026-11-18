@@ -12,7 +12,7 @@
         <meta name="author" content="Cudy Docs">
       
       
-        <link rel="canonical" href="https://docs.cudy.com/user_guide/mesh_system/security/">
+        <link rel="canonical" href="https://docs.cudy.com/user_guide/mesh_system/m3000s/">
       
       
       
@@ -22,7 +22,7 @@
     
     
       
-        <title>Security - Docs</title>
+        <title>M3000s - Docs</title>
       
     
     
@@ -100,7 +100,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#security" class="md-skip">
+        <a href="#m3000s" class="md-skip">
           Skip to content
         </a>
       
@@ -133,7 +133,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Security
+              M3000s
             
           </span>
         </div>
@@ -923,58 +923,91 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#firewall" class="md-nav__link">
-    Firewall
+  <a href="#overview" class="md-nav__link">
+    Overview
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#mac-filter" class="md-nav__link">
-    MAC Filter
+  <a href="#quick-installation-guide" class="md-nav__link">
+    Quick Installation Guide
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#ip-filter" class="md-nav__link">
-    IP Filter
+  <a href="#manage" class="md-nav__link">
+    Manage
+  </a>
+  
+    <nav class="md-nav" aria-label="Manage">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-system-status" class="md-nav__link">
+    1. System Status
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#domain-filter" class="md-nav__link">
-    Domain Filter
+        
+          <li class="md-nav__item">
+  <a href="#2-general-settings" class="md-nav__link">
+    2. General Settings
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#ipmac-binding" class="md-nav__link">
-    IP/MAC Binding
+        
+          <li class="md-nav__item">
+  <a href="#3-parental-control" class="md-nav__link">
+    3. Parental Control
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#wps" class="md-nav__link">
-    WPS
+        
+          <li class="md-nav__item">
+  <a href="#4-advanced-settings" class="md-nav__link">
+    4. Advanced Settings
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Advanced Settings">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#-network" class="md-nav__link">
+    - Network
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#wifi-schedule" class="md-nav__link">
-    WiFi Schedule
+        
+          <li class="md-nav__item">
+  <a href="#-security" class="md-nav__link">
+    - Security
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#alg" class="md-nav__link">
-    ALG
+        
+          <li class="md-nav__item">
+  <a href="#-system" class="md-nav__link">
+    - System
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-diagnostic-tools" class="md-nav__link">
+    5. Diagnostic Tools
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1002,130 +1035,94 @@
   
 
   <!-- Markdown content -->
-  <h1 id="security">Security<a class="headerlink" href="#security" title="Permanent link">&para;</a></h1>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>M1200 is used as an example in this guide. Refer to your actual product for more details.</p>
-</div>
-<p>To enhance your home network security with a kit of features built in Cudy Router. In Wireless Router mode, it includes Firewall, MAC filter, IP filter, Domain Filter, IP/MAC Binding, WPS, Wi-Fi Schedule, and ALG; while in Wireless Access Point mode, it consists of WPS and Wi-Fi Schedule.</p>
-<hr />
-<h2 id="firewall">Firewall<a class="headerlink" href="#firewall" title="Permanent link">&para;</a></h2>
-<p>is a security system that monitors and controls incoming and outgoing network traffic based on predetermined security rules. It serves as a barrier between a trusted internal network and untrusted external networks, such as the Internet. This function is enabled by default. It is highly recommended to keep the default settings.</p>
-<p><a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/wireless_router/firewall.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/wireless_router/firewall.webp" alt="" width="500px" style="border: 1px solid #eee;display: block; margin: 0 auto;" /></a></p>
+  <p><a href="../">&lt;&lt;&lt; Back to Mesh Wi-Fi System</a></p>
+<h1 id="m3000s">M3000S<a class="headerlink" href="#m3000s" title="Permanent link">&para;</a></h1>
+<h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h2>
 <ul>
-<li>SPI Firewall: SPI (Stateful Packet Inspection) Firewall is a sophisticated network firewall that goes beyond basic packet filtering to provide deeper inspection and control over network traffic, offering better security and more intelligent traffic management.</li>
-<li>DoS Protection: DoS (Denial of Service) Protection is a security feature that defends your network or online services against DoS attacks. It works by identifying and mitigating traffic that is intended to overwhelm your network or online services, rendering them unavailable to legitimate users. </li>
-<li>Respond to PING: It is the act of a network device acknowledging and replying to a PING request, which is a fundamental tool for testing network connectivity and performance.</li>
+<li>View the Mesh's appearance — <a data-preview="data-preview" href="../overview_m3000s/#front-panel">front</a> and <a data-preview="data-preview" href="../overview_m3000s/#back-panel">back</a>.</li>
+<li>Check the <a data-preview="data-preview" href="../overview_m3000s/#front-panel">LED</a> status and indication.</li>
+<li>Check the <a data-preview="data-preview" href="../overview_m3000s/#back-panel">interfaces</a> layout and instructions. </li>
 </ul>
-<hr />
-<h2 id="mac-filter">MAC Filter<a class="headerlink" href="#mac-filter" title="Permanent link">&para;</a></h2>
-<p>is a technology used in wireless Routers to prevent unauthorized access to networks. MAC address is a unique identifier assigned to each device on a network. A wireless Router uses MAC address to identify the device and determine which network it should connect to. </p>
-<p><strong>To configure the MAC filter, please follow the steps below.</strong></p>
-<p><a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/wireless_router/mac-filter.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/wireless_router/mac-filter.webp" alt="" width="500px" style="border: 1px solid #eee;display: block; margin: 0 auto;" /></a></p>
-<ol>
-<li>Select a MAC Filter rules: Disable, or Allow all except listed, or Allow listed only.<ul>
-<li>Disable: To disable the MAC Filter function. No MAC Address will be filtered.</li>
-<li>Allow all except listed: To block the device(s) with the listed MAC address from the Internet access.</li>
-<li>Allow listed only: To allow only the device(s) with the listed MAC address to access the Internet.</li>
-</ul>
-</li>
-<li>Click Add to add entries. </li>
-<li>Select the MAC-Address and make a comment for the devices you want to filter.</li>
-<li>Click <em>Save &amp; Apply</em>.</li>
-</ol>
-<hr />
-<h2 id="ip-filter">IP Filter<a class="headerlink" href="#ip-filter" title="Permanent link">&para;</a></h2>
-<p>is a technique utilized in cyber security to control and protect a network or system from unauthorized or harmful access. IP stands for Internet Protocol, which includes the rules governing online data sent and received. Every device that connects to the Internet has an IP address, a unique numerical label just like a digital fingerprint. IP filtering acts by blocking or allowing traffic to your network or system based on these IP addresses. </p>
-<p><strong>To configure the IP filter, please follow the steps below.</strong></p>
-<p><a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/wireless_router/ip-filter.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/wireless_router/ip-filter.webp" alt="" width="500px" style="border: 1px solid #eee;display: block; margin: 0 auto;" /></a></p>
-<ol>
-<li>Select your IP Filter rules: Disable, or Allow all except listed, or Allow listed only.<ul>
-<li>Disable: To disable the IP Filter function. All devices are allowed to access the entire Internet.</li>
-<li>Allow all except listed: To allow any other devices except for those with the listed IP       address(es) to access the Internet; or allow the devices to access the Internet except for      those website with the listed IP address.</li>
-<li>Allow listed only: To allow only the device(s) with the listed IP address(es) to access the   Internet; or allow the devices to access only the website with the listed IP address.</li>
-</ul>
-</li>
-<li>Click Add to add entries, and set the following parameters.<ul>
-<li>IP address: Enter the IP address you would like to filter. </li>
-<li>Subnet Mask: Select or customize the Subnet Mask as needed.</li>
-<li>Comment: Make a comment for this entry.</li>
-<li>Delete: To delete the entry easily as desired.</li>
-</ul>
-</li>
-<li>Click <em>Save &amp; Apply</em>.</li>
-</ol>
-<hr />
-<h2 id="domain-filter">Domain Filter<a class="headerlink" href="#domain-filter" title="Permanent link">&para;</a></h2>
-<p>is a technique to control or limit access to specific websites or Internet services by filtering domain name requests. It intercepts and analyzes DNS requests and either allows or blocks access based on predefined rules or policies. </p>
-<p><strong>To configure the IP filter, please follow the steps below.</strong></p>
-<p><a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/wireless_router/domain-filter.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/wireless_router/domain-filter.webp" alt="" width="500px" style="border: 1px solid #eee;display: block; margin: 0 auto;" /></a></p>
-<ol>
-<li>
-<p>Select your Domain Filter rules: Disable, or Allow all except listed, or Allow listed only.</p>
+<h2 id="quick-installation-guide">Quick Installation Guide<a class="headerlink" href="#quick-installation-guide" title="Permanent link">&para;</a></h2>
 <ul>
-<li>Disable: To disable the Domain Filter function. No devices will be filtered.</li>
-<li>Allow all except listed: To block the device(s) with the listed Domain from the Internet access.</li>
-<li>Allow listed only: To allow only the device(s) with the listed Domain to access the Internet.</li>
+<li><a data-preview="data-preview" href="../qig/#scenario-1-set-up-main-unit-for-a-new-mesh-network">Scenario 1</a>: Set up main unit for a New Mesh Network.</li>
+<li><a data-preview="data-preview" href="../qig/#scenario-2-add-a-new-unit-to-an-existing-mesh-network">Scenario 2</a>: Add a new unit to an existing Mesh Network.</li>
 </ul>
-</li>
-<li>
-<p>Click Add to add entries.</p>
-</li>
-<li>Enter the Domain and comment of the devices you want to filter. Delete as needed.</li>
-<li>Click <em>Save &amp; Apply</em>.</li>
-</ol>
-<hr />
-<h2 id="ipmac-binding">IP/MAC Binding<a class="headerlink" href="#ipmac-binding" title="Permanent link">&para;</a></h2>
-<p>namely, ARP (Address Resolution Protocol) Binding, is used to bind network device’s IP address to its MAC address. This will prevent ARP Spoofing and other ARP attacks by denying network access to an device with matching IP address in the Binding list, but unrecognized MAC address.</p>
-<p><strong>To configure the IP &amp; MAC Binding, please follow the steps below.</strong></p>
-<p><a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/wireless_router/ipmac-binding.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/wireless_router/ipmac-binding.webp" alt="" width="800px" style="border: 1px solid #eee;display: block; margin: 0 auto;" /></a></p>
-<ol>
-<li>Click Add to add entries.</li>
-<li>Enter the IP Address and bind it with a MAC-Address (select from the list or enter manually), and make a comment. Delete as needed.</li>
-<li>Click <em>Save &amp; Apply</em>.</li>
-</ol>
-<div class="admonition success">
-<p class="admonition-title">Success</p>
-<p>Now you don't need to worry about ARP spoofing and ARP attacks.</p>
-</div>
-<div class="admonition tip">
-<p class="admonition-title">Tip</p>
-<p>The IP/MAC Binding also can work as an IP reservation. The device will get the IP address via DHCP.</p>
-</div>
-<hr />
-<h2 id="wps">WPS<a class="headerlink" href="#wps" title="Permanent link">&para;</a></h2>
-<p>Wi-Fi Protected Setup (WPS) provides an easier approach to set up a security-protected Wi-Fi connection without selecting network name (SSID) and entering password on each device. 
-You might want to use WPS to let someone else connect to your WiFi network without sharing your credentials, or if you want to connect a WiFi device like a printer or TV that is frustrating to enter credentials into. Not all WiFi devices support WPS connection. We recommend that you check your devices’ WiFi connection capabilities before proceeding.</p>
-<p><a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/wireless_router/wps.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/wireless_router/wps.webp" alt="" width="500px" style="border: 1px solid #eee;display: block; margin: 0 auto;" /></a></p>
-<p>You may click <strong>Start WPS</strong> on the web management page or directly press the <strong>WPS</strong> button on the Router panel. Within 2 minutes, enable WPS on your personal device. Success will appear on the screen, indicating successful WPS connection.</p>
-<hr />
-<h2 id="wifi-schedule">WiFi Schedule<a class="headerlink" href="#wifi-schedule" title="Permanent link">&para;</a></h2>
-<p>allows the Router’s wireless network to turn on or off automatically at a specific time.</p>
-<p><strong>To configure the WiFi Schedule, please follow the steps below.</strong></p>
-<p><a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/wireless_router/wifi-schedule.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/wireless_router/wifi-schedule.webp" alt="" width="500px" style="border: 1px solid #eee;display: block; margin: 0 auto;" /></a></p>
-<ol>
-<li>Toggle <em>Enable WiFi Schedule</em> to activate this feature.</li>
-<li>
-<p>You may Modify/Delete/Add the entries. To specify the schedule, you need to set the <em>Week Days</em>, <em>Start WiFi</em> and <em>Stop WiFi</em> time. Enable <em>Disabled wifi forced</em> to force WiFi to shut off even if stations are associated. </p>
+<h2 id="manage">Manage<a class="headerlink" href="#manage" title="Permanent link">&para;</a></h2>
+<h3 id="1-system-status">1. <a data-preview="data-preview" href="../system_status/">System Status</a><a class="headerlink" href="#1-system-status" title="Permanent link">&para;</a></h3>
 <ul>
-<li>Modify: Simply modify the existing entries to your desired settings. </li>
-<li>Delete: Delete the existing entries as you like.</li>
-<li>Add: Add more or new entries as needed.</li>
+<li>In Mesh Wi-Fi Router mode, it includes Status, Mesh, Devices, WAN, LAN, WISP, Wireless 2.4G, Wireless 5G, VPN, DHCP Server, and System;</li>
+<li>In Mesh Access Point mode, it includes Status, Devices, LAN, Wireless 2.4G, Wireless 5G, DHCP Server, and System.</li>
 </ul>
-</li>
-<li>
-<p>Click <em>Save &amp; Apply</em>.</p>
-</li>
-</ol>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>The effective time schedule is based on the time of the Router. You can go to Advanced Settings -&gt; System -&gt; System Time to modify the time.</p>
-</div>
-<hr />
-<h2 id="alg">ALG<a class="headerlink" href="#alg" title="Permanent link">&para;</a></h2>
-<p>ALG (Application Layer Gateway) allows customized NAT traversal filters to be plugged into the gateway to support address and port translation for certain application layer “control/data” protocols such as FTP, TFTP, H323 etc. All ALG is enabled by default and recommended.</p>
-<p>You may need to disable SIP ALG when you are using voice and video applications to create and accept a call through the Router, since some voice and video communication applications do not work well with SIP ALG.</p>
-<p><a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/wireless_router/alg.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/wireless_router/alg.webp" alt="" width="500px" style="border: 1px solid #eee;display: block; margin: 0 auto;" /></a></p>
+<h3 id="2-general-settings">2. <a data-preview="data-preview" href="../general_settings/">General Settings</a><a class="headerlink" href="#2-general-settings" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a data-preview="data-preview" href="../general_settings/#wan-mode">WAN Mode</a>: is to set your Internet connection. Select your Internet connection type from the drop-down list of Protocol. Follow the instructions on the page to complete the configuration.</li>
+<li><a data-preview="data-preview" href="../general_settings/#wisp">WISP</a>: Enable the Mesh router to wirelessly connect to a distant Wi-Fi network and share that connection locally via Ethernet/Wi-Fi, acting as a client bridge.</li>
+<li><a data-preview="data-preview" href="../general_settings/#wireless">Wireless</a>: is to customize the Mesh router's wireless settings, including SSID and password, mode, channel, channel width and transmit power, and so on.</li>
+<li><a data-preview="data-preview" href="../general_settings/#guest-network">Guest Network</a>: Create a guest network without disturbing the main network's security and privacy.</li>
+<li><a data-preview="data-preview" href="../general_settings/#iptvvlan">IPTV/VLAN</a>:  Enjoy IPTV or VoIP service.</li>
+<li><a data-preview="data-preview" href="../general_settings/#vpn">VPN</a>: namely, Virtual Private Network, helps you access Internet resources remotely, securely, and privately through tunneling technology. When you access the Internet, VPN encrypts your personal information and hides your IP address from the public. For VPN users, it looks like the devices are directly connected. </li>
+<li><a data-preview="data-preview" href="../general_settings/#firmware">Firmware</a>: Update the Mesh router's firmware to be the latest version.</li>
+</ul>
+<h3 id="3-parental-control">3. Parental Control<a class="headerlink" href="#3-parental-control" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a data-preview="data-preview" href="../parental_control/">Parental Control</a> helps to set up unique restrictions on Internet access for each member of your family via Parental Control feature. You can block inappropriate content, set daily limits for the total time spent online and restrict Internet access to certain time of the day, etc. <strong>This feature only works in Wireless router mode.</strong></li>
+</ul>
+<h3 id="4-advanced-settings">4. Advanced Settings<a class="headerlink" href="#4-advanced-settings" title="Permanent link">&para;</a></h3>
+<h4 id="-network"><a data-preview="data-preview" href="../advanced_settings_network/">- Network</a><a class="headerlink" href="#-network" title="Permanent link">&para;</a></h4>
+<ul>
+<li><a data-preview="data-preview" href="../advanced_settings_network/#lan">LAN</a>: Modify the Mesh router's LAN IP address, when necessary.</li>
+<li><a data-preview="data-preview" href="../advanced_settings_network/#dhcp-server">DHCP Server</a>: Specify the IP address for client devices by the Mesh router as a DHCP Server.</li>
+<li><a data-preview="data-preview" href="../advanced_settings_network/#ipv6">IPv6</a>: Set up an IPv6 Connection.</li>
+<li><a data-preview="data-preview" href="../advanced_settings_network/#igmp">IGMP</a>:  Manage and optimize multicast traffic for the client devices, like IPTV.</li>
+<li><a data-preview="data-preview" href="../advanced_settings_network/#qos">QoS</a>: Prioritize connection of specific devices for a certain duration. </li>
+<li><a data-preview="data-preview" href="../advanced_settings_network/#custom-dns">Custom DNS</a>: Customize a DNS server to be resolved through for DNS names.</li>
+<li><a data-preview="data-preview" href="../advanced_settings_network/#ddns">DDNS</a>: Map a domain name to the dynamic IP address of a network device.</li>
+<li><a data-preview="data-preview" href="../advanced_settings_network/#static-routing">Static Routing</a>: Manually configure routings for data forwarding.</li>
+<li><a data-preview="data-preview" href="../advanced_settings_network/#port-forwards">Port Forwards</a>: Set up public services on your local network with higher security.</li>
+<li><a data-preview="data-preview" href="../advanced_settings_network/#port-trigger">Port Trigger</a>: Specify a triggering port and its corresponding external ports.</li>
+<li><a data-preview="data-preview" href="../advanced_settings_network/#dmz">DMZ</a>: Disable DMZ unless necessary.</li>
+<li><a data-preview="data-preview" href="../advanced_settings_network/#online-detection">Online Detection</a>: Ensure your network always online and operational.</li>
+<li><a data-preview="data-preview" href="../advanced_settings_network/#ttl">TTL</a>: Set the maximum time for packets to survive in the network.</li>
+<li><a data-preview="data-preview" href="../advanced_settings_network/#wake-on-lan">Wake on LAN</a>: Allow a computer to be turned on or awakened by a network message.</li>
+<li><a data-preview="data-preview" href="../advanced_settings_network/#upnp">UPnP</a>: Allow applications or host devices to automatically find the front-end NAT device.</li>
+<li><a data-preview="data-preview" href="../advanced_settings_network/#captive-portal">Captive Portal</a>: allows you to design a portal page for network access verification. </li>
+</ul>
+<h4 id="-security"><a data-preview="data-preview" href="../advanced_settings_security/">- Security</a><a class="headerlink" href="#-security" title="Permanent link">&para;</a></h4>
+<ul>
+<li><a data-preview="data-preview" href="../advanced_settings_security/#firewall">Firewall</a>: Monitor and control incoming and outgoing network traffic based on predetermined security rules.</li>
+<li><a data-preview="data-preview" href="../advanced_settings_security/#mac-filter">MAC Filter</a>: Prevent unauthorized devices with certain MAC address from accessing the network.</li>
+<li><a data-preview="data-preview" href="../advanced_settings_security/#ip-filter">IP Filter</a>: Block or allow traffic to your network or system based on the IP addresses. </li>
+<li><a data-preview="data-preview" href="../advanced_settings_security/#domain-filter">Domain Filter</a>: Control or limit access to specific websites or Internet services by filtering domain name requests. </li>
+<li><a data-preview="data-preview" href="../advanced_settings_security/#ipmac-binding">IP/MAC Binding</a>: Bind network device's IP address to its MAC address. </li>
+<li><a data-preview="data-preview" href="../advanced_settings_security/#wps">WPS</a>: Set up a security-protected Wi-Fi connection without sharing/entering credentials. </li>
+<li><a data-preview="data-preview" href="../advanced_settings_security/#wifi-schedule">WiFi Schedule</a>: Turn on/off the Mesh router's wireless network automatically at a specific time.</li>
+<li><a data-preview="data-preview" href="../advanced_settings_security/#alg">ALG</a>: Inspect and modify application-layer data in network traffic to allow it to pass through firewalls and other security devices more easily.</li>
+<li><a data-preview="data-preview" href="../advanced_settings_security/#alg">Ad Shield</a>: Provide network-level filtering of ads, trackers, and other unwanted content to protect all connected devices.</li>
+</ul>
+<h4 id="-system"><a data-preview="data-preview" href="../advanced_settings_system/">- System</a><a class="headerlink" href="#-system" title="Permanent link">&para;</a></h4>
+<ul>
+<li><a data-preview="data-preview" href="../advanced_settings_system/#system-time">System Time</a>: Configure the Mesh router's system time, necessary for some time-based functions.</li>
+<li><a data-preview="data-preview" href="../advanced_settings_system/#backuprestore">Backup/Restore</a>: Backup the configuration file or restore it.</li>
+<li><a data-preview="data-preview" href="../advanced_settings_system/#administration">Administration</a>: Access and manage the Mesh router from the local or remote devices.</li>
+<li><a data-preview="data-preview" href="../advanced_settings_system/#admin-account">Admin Account</a>: Change the Mesh router's login password.</li>
+<li><a data-preview="data-preview" href="../advanced_settings_system/#language">Language</a>: Customize the Mesh router's web management language.</li>
+<li><a data-preview="data-preview" href="../advanced_settings_system/#timed-reboot">Timed Reboot</a>: Schedule for the Mesh router rebooting.</li>
+<li><a data-preview="data-preview" href="../advanced_settings_system/#reboot">Reboot</a>: Reboot the Mesh router for the settings or changes to take effect.</li>
+<li><a data-preview="data-preview" href="../advanced_settings_system/#reset">Reset</a>: Restore the Mesh router to its factory default settings.</li>
+<li><a data-preview="data-preview" href="../advanced_settings_system/#led-control">LED Control</a>: Control the Mesh router's LED.</li>
+<li><a data-preview="data-preview" href="../advanced_settings_system/#tr069">TR069</a>: Configure the Mesh router's TR069 (CPE WAN Management).</li>
+</ul>
+<h3 id="5-diagnostic-tools">5. Diagnostic Tools<a class="headerlink" href="#5-diagnostic-tools" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a data-preview="data-preview" href="../diagnostic_tools/#diagnosis">Diagnosis</a>: The diagnosis result will indicate the status of Internet, Wireless, Devices, Services and System. You can click Download to reserve the diagnosis bin file. </li>
+<li><a data-preview="data-preview" href="../diagnostic_tools/#ping">PING</a>: Used to test the connectivity between the Mesh router and the tested host, and measure the round-trip time. </li>
+<li><a data-preview="data-preview" href="../diagnostic_tools/#traceroute">TRACEROUTE</a>: Used to test the route (path) your Mesh router has passed to reach the tested host, and measure transit delays of packets across an Internet Protocol network. </li>
+<li><a data-preview="data-preview" href="../diagnostic_tools/#nslookup">NSLOOKUP</a>: Check if the DNS IP address of the WAN can work normally. </li>
+<li><a data-preview="data-preview" href="../diagnostic_tools/#nslookup">Packet Capture</a>: Captures network packets on a selected interface for traffic monitoring and troubleshooting. </li>
+<li><a data-preview="data-preview" href="../diagnostic_tools/#system-log">System Log</a>: Track all the Mesh router behaviors. When the Mesh router does not work normally, download the system log and send it to our Technical Support for troubleshooting.</li>
+</ul>
+<p><a href="../">&lt;&lt;&lt; Back to Mesh Wi-Fi System</a></p>
 
   <!-- Last update of source file -->
   

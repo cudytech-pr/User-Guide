@@ -12,7 +12,7 @@
         <meta name="author" content="Cudy Docs">
       
       
-        <link rel="canonical" href="https://docs.cudy.com/user_guide/mesh_system/wan/">
+        <link rel="canonical" href="https://docs.cudy.com/user_guide/mesh_system/overview_m3000s/">
       
       
       
@@ -22,7 +22,7 @@
     
     
       
-        <title>WAN Mode - Docs</title>
+        <title>Overview - Docs</title>
       
     
     
@@ -100,7 +100,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#wan-mode" class="md-skip">
+        <a href="#overview" class="md-skip">
           Skip to content
         </a>
       
@@ -133,7 +133,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              WAN Mode
+              Overview
             
           </span>
         </div>
@@ -923,36 +923,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#dhcp" class="md-nav__link">
-    DHCP
+  <a href="#front-panel" class="md-nav__link">
+    Front Panel
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#pppoe" class="md-nav__link">
-    PPPoE
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#static-fixed-ip" class="md-nav__link">
-    Static (Fixed IP)
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#l2tp" class="md-nav__link">
-    L2TP
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#pptp" class="md-nav__link">
-    PPTP
+  <a href="#back-panel" class="md-nav__link">
+    Back Panel
   </a>
   
 </li>
@@ -981,23 +960,97 @@
   
 
   <!-- Markdown content -->
-  <h1 id="wan-mode">WAN Mode<a class="headerlink" href="#wan-mode" title="Permanent link">&para;</a></h1>
-<p><em>WAN Mode</em> is to set your Internet connection. Select your Internet connection type from the drop-down list of Protocol. Follow the instructions on the page to continue the configuration. Parameters on the figures are just used for demonstration.</p>
-<h2 id="dhcp">DHCP<a class="headerlink" href="#dhcp" title="Permanent link">&para;</a></h2>
-<p><a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/mesh_system/wan-dhcp.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/mesh_system/wan-dhcp.webp" alt="" width="800px" style="border: 1px solid #eee;" /></a></p>
-<p>If you choose <em>DHCP</em>, keep MTU as default unless your ISP provides differently. The Host name and MAC address Clone are optional. Then <em>Save &amp; Apply</em> your configurations.</p>
-<h2 id="pppoe">PPPoE<a class="headerlink" href="#pppoe" title="Permanent link">&para;</a></h2>
-<p><a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/wireless_router/wan-pppoe.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/wireless_router/wan-pppoe.webp" alt="" width="800px" style="border: 1px solid #eee;" /></a></p>
-<p>If you choose <em>PPPoE</em>, enter the Username and Password provided by your ISP. Then <em>Save &amp; Apply</em> your configurations.</p>
-<h2 id="static-fixed-ip">Static (Fixed IP)<a class="headerlink" href="#static-fixed-ip" title="Permanent link">&para;</a></h2>
-<p><a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/wireless_router/wan-staticip.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/wireless_router/wan-staticip.webp" alt="" width="800px" style="border: 1px solid #eee;" /></a></p>
-<p>If you choose <em>Static (Fixed IP)</em>, enter the parameters provided by your ISP, including IP Address / Subnet Mask / Default Gateway / Preferred DNS. Keep MTU as default unless your ISP provides differently. Then <em>Save &amp; Apply</em> your configurations.</p>
-<h2 id="l2tp">L2TP<a class="headerlink" href="#l2tp" title="Permanent link">&para;</a></h2>
-<p><a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/wireless_router/wan-l2tp.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/wireless_router/wan-l2tp.webp" alt="" width="800px" style="border: 1px solid #eee;" /></a></p>
-<p>If you  choose  <em>L2TP</em>,  enter parameters for Server Address/Username/Password. And then select Addressing Type provided by your ISP, and configure the required parameters. Keep MTU as default unless your ISP provides differently. Then <em>Save &amp; Apply</em> your configurations.</p>
-<h2 id="pptp">PPTP<a class="headerlink" href="#pptp" title="Permanent link">&para;</a></h2>
-<p><a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/wireless_router/wan-pptp.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/wireless_router/wan-pptp.webp" alt="" width="800px" style="border: 1px solid #eee;" /></a></p>
-<p>If you choose <em>PPTP</em>,  enter parameters for Server Address/Username/Password. And then select Addressing Type provided by your ISP, and configure the required parameters. Keep MTU as default unless your ISP provides differently. Then <em>Save &amp; Apply</em> your configurations.</p>
+  <h1 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h1>
+<h2 id="front-panel">Front Panel<a class="headerlink" href="#front-panel" title="Permanent link">&para;</a></h2>
+<p><a class="glightbox" href="https://cdn.shopify.com/s/files/1/0673/4748/0820/files/huanfang-KIT1_5dccac73-3f4d-4021-bf27-9314728c9a56.png?v=1760488463" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.shopify.com/s/files/1/0673/4748/0820/files/huanfang-KIT1_5dccac73-3f4d-4021-bf27-9314728c9a56.png?v=1760488463" width="400" alt=""></a></p>
+
+<table style="border-collapse: collapse; width:100%; text-align:center; table-layout: fixed;">
+<colgroup>
+<col style="width:12%">
+<col style="width:18%">
+<col style="width:30%">
+<col style="width:40%">
+</colgroup>
+
+<tr>
+<th colspan="2" style="border:1px solid #ccc; padding:8px; background:#f5f5f5; text-align: center; vertical-align: middle;">SYS LED Status</th>
+<th style="border:1px solid #ccc; padding:8px; background:#f5f5f5;text-align: center; vertical-align: middle;">Main Mesh Unit(s)</th>
+<th style="border:1px solid #ccc; padding:8px; background:#f5f5f5;text-align: center; vertical-align: middle;">Satellite Mesh Unit(s)</th>
+</tr>
+
+<tr>
+<td colspan="2" style="border:1px solid #ccc; padding:8px; text-align: center; vertical-align: middle;">OFF</td>
+<td colspan="2" style="border:1px solid #ccc; padding:8px; vertical-align: middle;">Power is off.</td>
+</tr>
+
+<tr>
+<td rowspan="3" style="border:1px solid #ccc; padding:8px;text-align: center; vertical-align: middle;">RED</td>
+<td style="border:1px solid #ccc; padding:8px;text-align: center; vertical-align: middle;">Slow Flash</td>
+<td colspan="2" style="border:1px solid #ccc; padding:8px; vertical-align: middle;">System is initializing.</td>
+</tr>
+
+<tr>
+<td style="border:1px solid #ccc; padding:8px;text-align: center; vertical-align: middle;">Quick Flash</td>
+<td colspan="2" style="border:1px solid #ccc; padding:8px; vertical-align: middle;">System is resetting.</td>
+</tr>
+
+<tr>
+<td style="border:1px solid #ccc; padding:8px;text-align: center; vertical-align: middle;">Solid On</td>
+<td colspan="2" style="border:1px solid #ccc; padding:8px; vertical-align: middle;">System has started but without Internet.</td>
+</tr>
+
+<tr>
+<td rowspan="3" style="border:1px solid #ccc; padding:8px;text-align: center; vertical-align: middle;">WHITE</td>
+<td style="border:1px solid #ccc; padding:8px;text-align: center; vertical-align: middle;">Slow Flash</td>
+<td style="border:1px solid #ccc; padding:8px;text-align: center; vertical-align: middle;">/</td>
+<td style="border:1px solid #ccc; padding:8px;vertical-align: middle;">Satellite Unit(s) is connected to the Main Unit with Internet of weak signal.</td>
+</tr>
+
+<tr>
+<td style="border:1px solid #ccc; padding:8px;text-align: center; vertical-align: middle;">Quick Flash</td>
+<td colspan="2" style="border:1px solid #ccc; padding:8px; vertical-align: middle;">Satellite Unit(s) is connecting to the Main Unit or they are in WPS process.</td>
+</tr>
+
+<tr>
+<td style="border:1px solid #ccc; padding:8px; text-align: center; vertical-align: middle;">Solid On</td>
+<td style="border:1px solid #ccc; padding:8px; vertical-align: middle;">System has started with Internet.</td>
+<td style="border:1px solid #ccc; padding:8px; vertical-align: middle;">Satellite Unit(s) is connected to the Main Unit with Internet of strong signal.</td>
+</tr>
+
+<tr>
+<td colspan="2" style="border:1px solid #ccc; padding:8px;text-align: center; vertical-align: middle;">Red and White Alternate</td>
+<td colspan="2" style="border:1px solid #ccc; padding:8px; vertical-align: middle;">System is upgrading.</td>
+</tr>
+
+</table>
+
+<h2 id="back-panel">Back Panel<a class="headerlink" href="#back-panel" title="Permanent link">&para;</a></h2>
+<p><a class="glightbox" href="https:////cdn.shopify.com/s/files/1/0673/4748/0820/files/huanfang-KIT2-3_39c9373e-13cc-425a-9a76-1f1447ec1a9c.png?v=1778295442" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https:////cdn.shopify.com/s/files/1/0673/4748/0820/files/huanfang-KIT2-3_39c9373e-13cc-425a-9a76-1f1447ec1a9c.png?v=1778295442" width="400" alt=""></a></p>
+<div>
+<table>
+<tr>
+<th>Interface</th>
+<th>Instruction</th>
+</tr>
+<tr>
+    <td>DC Power Jack</td>
+    <td>Plug the provided power adapter to supply power.</td>
+</tr>
+<tr>
+    <td>Ethernet Port 1/2 </td>
+    <td>Connect to an Ethernet device or other Mesh unit(s).</td>
+</tr>
+<tr>
+    <td>RST Button</td>
+    <td>Press for 5 seconds to restore factory defaults.</td>
+</tr>
+<tr>
+    <td>WPS Button</td>
+    <td>Press this button on each Mesh unit simultaneously for an instant pairing.<br>Press for 1 second to authorize WPS connection.</td>
+</tr>
+
+</table>
+</div>
 
   <!-- Last update of source file -->
   

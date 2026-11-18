@@ -12,7 +12,7 @@
         <meta name="author" content="Cudy Docs">
       
       
-        <link rel="canonical" href="https://docs.cudy.com/user_guide/mesh_system/overview/">
+        <link rel="canonical" href="https://docs.cudy.com/user_guide/mesh_system/advanced_settings_security/">
       
       
       
@@ -22,7 +22,7 @@
     
     
       
-        <title>Overview - Docs</title>
+        <title>Security - Docs</title>
       
     
     
@@ -100,7 +100,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#overview" class="md-skip">
+        <a href="#security" class="md-skip">
           Skip to content
         </a>
       
@@ -133,7 +133,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Overview
+              Security
             
           </span>
         </div>
@@ -923,22 +923,64 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#package-content" class="md-nav__link">
-    Package Content
+  <a href="#firewall" class="md-nav__link">
+    Firewall
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#front-panel" class="md-nav__link">
-    Front Panel
+  <a href="#mac-filter" class="md-nav__link">
+    MAC Filter
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#back-panel" class="md-nav__link">
-    Back Panel
+  <a href="#ip-filter" class="md-nav__link">
+    IP Filter
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#domain-filter" class="md-nav__link">
+    Domain Filter
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ipmac-binding" class="md-nav__link">
+    IP/MAC Binding
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wps" class="md-nav__link">
+    WPS
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wifi-schedule" class="md-nav__link">
+    WiFi Schedule
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#alg" class="md-nav__link">
+    ALG
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ad-shield" class="md-nav__link">
+    Ad Shield
   </a>
   
 </li>
@@ -967,138 +1009,134 @@
   
 
   <!-- Markdown content -->
-  <h1 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h1>
-<h2 id="package-content">Package Content<a class="headerlink" href="#package-content" title="Permanent link">&para;</a></h2>
-<p><a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/wireless_router/package-content.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/wireless_router/package-content.webp" width="500" alt=""></a></p>
-<h2 id="front-panel">Front Panel<a class="headerlink" href="#front-panel" title="Permanent link">&para;</a></h2>
-<p><a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/wireless_router/frontpanel.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/wireless_router/frontpanel.webp" width="500" alt=""></a></p>
-<div>
-<table>
-    <thead>
-    <tr>
-    <th>LED</th>
-    <th>Status</th>
-    <th>Indication</th>
-    </tr>
-    </thead>
-<tbody>
-    <tr>
-    <td rowspan="3" style="text-align: left; vertical-align: middle;">
-    <a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/wireless_router/system-led.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/wireless_router/system-led.webp" alt="System Icon" width="20" height="20"></a><br>(System)</td>
-    <td><strong>On</strong></td>
-    <td>The system has started up successfully.</td>
-    </tr>
-    <tr>
-    <td><strong>Flash</strong></td>
-    <td>The system is starting up or the firmware is being upgraded. Do not disconnect or power off your Router in the process.</td>
-    </tr>
-    <tr>
-    <td><strong>Off</strong></td>
-    <td>Power is off.</td>
-    </tr>
-    <tr>
-    <td rowspan="2" style="text-align: left; vertical-align: middle;">
-    <a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/wireless_router/internet-led.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/wireless_router/internet-led.webp" alt="Internet Icon" width="20" height="20"></a><br>(Internet)</td>
-    <td><strong>On</strong></td>
-    <td>Internet service is available.</td>
-    </tr>
-    <tr>
-    <td><strong>Off</strong></td>
-    <td>The Router’s Internet port is unplugged or no Internet available.</td>
-    </tr>
-    <tr>
-    <td rowspan="2" style="text-align: left; vertical-align: middle;">    <a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/wireless_router/lan-led.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/wireless_router/lan-led.webp" alt="LAN Icon" width="20" height="20"></a><br>(LAN)</td>
-    <td><strong>On</strong></td>
-    <td>1~4 powered-on device is connected to the Router’s LAN port.</td>
-    </tr>
-    <tr>
-    <td><strong>Off</strong></td>
-    <td>No powered-on device is connected to the Router’s LAN port.</td>
-    </tr>
-    <tr>
-    <td rowspan="2" style="text-align: left; vertical-align: middle;">
-    <a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/wireless_router/wan-led.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/wireless_router/wan-led.webp" alt="WAN Icon" width="20" height="20"></a><br>(WAN)</td>
-    <td><strong>On</strong></td>
-    <td>The Router’s WAN port is connected.</td>
-    </tr>
-    <tr>
-    <td><strong>Off</strong></td>
-    <td>The Router’s WAN port is not connected.</td>
-    </tr>
-    <tr>
-    <td rowspan="3" style="text-align: left; vertical-align: middle;">
-    <a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/wireless_router/2.4g-led.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/wireless_router/2.4g-led.webp" alt="2.4G" width="20" height="20"></a><br>(2.4GHz Wireless)</td>
-    <td><strong>On</strong></td>
-    <td>2.4GHz Wireless Band is enabled.</td>
-    </tr>
-    <tr>
-    <td><strong>Flash</strong></td>
-    <td>2.4GHz WPS Connection is in process.</td>
-    </tr>
-    <tr>
-    <td><strong>Off</strong></td>
-    <td>2.4GHz Wireless Band is disabled.</td>
-    </tr>
-    <tr>
-    <td rowspan="3" style="text-align: left; vertical-align: middle;">
-    <a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/wireless_router/5g-led.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/wireless_router/5g-led.webp" alt="5G" width="20" height="20"></a><br>(5GHz Wireless)</td>
-    <td><strong>On</strong></td>
-    <td>5GHz Wireless Band is enabled.</td>
-    </tr>
-    <tr>
-    <td><strong>Flash</strong></td>
-    <td>5GHz WPS Connection is in process.</td>
-    </tr>
-    <tr>
-    <td><strong>Off</strong></td>
-    <td>5GHz Wireless Band is disabled.</td>
-    </tr>
-</tbody>
-    </table>
+  <h1 id="security">Security<a class="headerlink" href="#security" title="Permanent link">&para;</a></h1>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>M1200 is used as an example in this guide. Refer to your actual product for more details.</p>
 </div>
-
-<h2 id="back-panel">Back Panel<a class="headerlink" href="#back-panel" title="Permanent link">&para;</a></h2>
-<p><a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/wireless_router/back-panel.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/wireless_router/back-panel.webp" width="500" alt=""></a></p>
-<div>
-<table>
-    <tr>
-<th>Interface</th>
-<th>Description</th>
-    </tr>
-    <tr>
-<td>ON/OFF Button</td>
-<td>Press to turn on/off the PON Router.</td>
-    </tr>
-    <tr>
-<td>Power Jack</td>
-<td>Plug the provided power adapter to supply power.</td>
-    </tr>
-    <tr>
-<td>LAN1/2/3 Port</td>
-<td>Connect to an Ethernet device.</td>
-    </tr>
-    <tr>
-<td>LAN4/WAN Port</td>
-<td>Connect to an Ethernet device or Internet. </td>
-    </tr>
-    <tr>
-<td>WPS Button</td>
-<td>Press for 1 second to authorize WPS connection.</td>
-    </tr>
-    <tr>
-<td>WLAN Button</td>
-<td>Press for 2 seconds to turn on/off Wi-Fi.</td>
-    </tr>
-    <tr>
-<td>RESET Button</td>
-<td>Press for 5 seconds to restore factory defaults.</td>
-    </tr>
-    <tr>
-<td>PON Port</td>
-<td>Connect to the Internet with an optical fiber.</td>
-    </tr>
-</table>
+<p>To enhance your home network security with a kit of features built in Cudy Router. In Mesh Wi-Fi Router mode, it includes Firewall, MAC filter, IP filter, Domain Filter, IP/MAC Binding, WPS, Wi-Fi Schedule, and ALG; while In Mesh Access Point mode, it consists of WPS and Wi-Fi Schedule.</p>
+<h2 id="firewall">Firewall<a class="headerlink" href="#firewall" title="Permanent link">&para;</a></h2>
+<p>is a security system that monitors and controls incoming and outgoing network traffic based on predetermined security rules. It serves as a barrier between a trusted internal network and untrusted external networks, such as the Internet. This function is enabled by default. It is highly recommended to keep the default settings.</p>
+<p><a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/wireless_router/firewall.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/wireless_router/firewall.webp" alt="" width="500px" style="border: 1px solid #eee;display: block; margin: 0 auto;" /></a></p>
+<ul>
+<li>SPI Firewall: SPI (Stateful Packet Inspection) Firewall is a sophisticated network firewall that goes beyond basic packet filtering to provide deeper inspection and control over network traffic, offering better security and more intelligent traffic management.</li>
+<li>DoS Protection: DoS (Denial of Service) Protection is a security feature that defends your network or online services against DoS attacks. It works by identifying and mitigating traffic that is intended to overwhelm your network or online services, rendering them unavailable to legitimate users. </li>
+<li>Respond to PING: It is the act of a network device acknowledging and replying to a PING request, which is a fundamental tool for testing network connectivity and performance.</li>
+</ul>
+<h2 id="mac-filter">MAC Filter<a class="headerlink" href="#mac-filter" title="Permanent link">&para;</a></h2>
+<p>is a technology used in wireless Routers to prevent unauthorized access to networks. MAC address is a unique identifier assigned to each device on a network. A wireless Router uses MAC address to identify the device and determine which network it should connect to. </p>
+<p><strong>To configure the MAC filter, please follow the steps below.</strong></p>
+<p><a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/wireless_router/mac-filter.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/wireless_router/mac-filter.webp" alt="" width="500px" style="border: 1px solid #eee;display: block; margin: 0 auto;" /></a></p>
+<ol>
+<li>Select a MAC Filter rules: Disable, or Allow all except listed, or Allow listed only.<ul>
+<li>Disable: To disable the MAC Filter function. No MAC Address will be filtered.</li>
+<li>Allow all except listed: To block the device(s) with the listed MAC address from the Internet access.</li>
+<li>Allow listed only: To allow only the device(s) with the listed MAC address to access the Internet.</li>
+</ul>
+</li>
+<li>Click Add to add entries. </li>
+<li>Select the MAC-Address and make a comment for the devices you want to filter.</li>
+<li>Click <em>Save &amp; Apply</em>.</li>
+</ol>
+<h2 id="ip-filter">IP Filter<a class="headerlink" href="#ip-filter" title="Permanent link">&para;</a></h2>
+<p>is a technique utilized in cyber security to control and protect a network or system from unauthorized or harmful access. IP stands for Internet Protocol, which includes the rules governing online data sent and received. Every device that connects to the Internet has an IP address, a unique numerical label just like a digital fingerprint. IP filtering acts by blocking or allowing traffic to your network or system based on these IP addresses. </p>
+<p><strong>To configure the IP filter, please follow the steps below.</strong></p>
+<p><a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/wireless_router/ip-filter.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/wireless_router/ip-filter.webp" alt="" width="500px" style="border: 1px solid #eee;display: block; margin: 0 auto;" /></a></p>
+<ol>
+<li>Select your IP Filter rules: Disable, or Allow all except listed, or Allow listed only.<ul>
+<li>Disable: To disable the IP Filter function. All devices are allowed to access the entire Internet.</li>
+<li>Allow all except listed: To allow any other devices except for those with the listed IP       address(es) to access the Internet; or allow the devices to access the Internet except for      those website with the listed IP address.</li>
+<li>Allow listed only: To allow only the device(s) with the listed IP address(es) to access the   Internet; or allow the devices to access only the website with the listed IP address.</li>
+</ul>
+</li>
+<li>Click Add to add entries, and set the following parameters.<ul>
+<li>IP address: Enter the IP address you would like to filter. </li>
+<li>Subnet Mask: Select or customize the Subnet Mask as needed.</li>
+<li>Comment: Make a comment for this entry.</li>
+<li>Delete: To delete the entry easily as desired.</li>
+</ul>
+</li>
+<li>Click <em>Save &amp; Apply</em>.</li>
+</ol>
+<h2 id="domain-filter">Domain Filter<a class="headerlink" href="#domain-filter" title="Permanent link">&para;</a></h2>
+<p>is a technique to control or limit access to specific websites or Internet services by filtering domain name requests. It intercepts and analyzes DNS requests and either allows or blocks access based on predefined rules or policies. </p>
+<p><strong>To configure the IP filter, please follow the steps below.</strong></p>
+<p><a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/wireless_router/domain-filter.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/wireless_router/domain-filter.webp" alt="" width="500px" style="border: 1px solid #eee;display: block; margin: 0 auto;" /></a></p>
+<ol>
+<li>
+<p>Select your Domain Filter rules: Disable, or Allow all except listed, or Allow listed only.</p>
+<ul>
+<li>Disable: To disable the Domain Filter function. No devices will be filtered.</li>
+<li>Allow all except listed: To block the device(s) with the listed Domain from the Internet access.</li>
+<li>Allow listed only: To allow only the device(s) with the listed Domain to access the Internet.</li>
+</ul>
+</li>
+<li>
+<p>Click Add to add entries.</p>
+</li>
+<li>Enter the Domain and comment of the devices you want to filter. Delete as needed.</li>
+<li>Click <em>Save &amp; Apply</em>.</li>
+</ol>
+<h2 id="ipmac-binding">IP/MAC Binding<a class="headerlink" href="#ipmac-binding" title="Permanent link">&para;</a></h2>
+<p>namely, ARP (Address Resolution Protocol) Binding, is used to bind network device’s IP address to its MAC address. This will prevent ARP Spoofing and other ARP attacks by denying network access to an device with matching IP address in the Binding list, but unrecognized MAC address.</p>
+<p><strong>To configure the IP &amp; MAC Binding, please follow the steps below.</strong></p>
+<p><a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/wireless_router/ipmac-binding.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/wireless_router/ipmac-binding.webp" alt="" width="800px" style="border: 1px solid #eee;display: block; margin: 0 auto;" /></a></p>
+<ol>
+<li>Click Add to add entries.</li>
+<li>Enter the IP Address and bind it with a MAC-Address (select from the list or enter manually), and make a comment. Delete as needed.</li>
+<li>Click <em>Save &amp; Apply</em>.</li>
+</ol>
+<div class="admonition success">
+<p class="admonition-title">Success</p>
+<p>Now you don't need to worry about ARP spoofing and ARP attacks.</p>
 </div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>The IP/MAC Binding also can work as an IP reservation. The device will get the IP address via DHCP.</p>
+</div>
+<h2 id="wps">WPS<a class="headerlink" href="#wps" title="Permanent link">&para;</a></h2>
+<p>Wi-Fi Protected Setup (WPS) provides an easier approach to set up a security-protected Wi-Fi connection without selecting network name (SSID) and entering password on each device. 
+You might want to use WPS to let someone else connect to your WiFi network without sharing your credentials, or if you want to connect a WiFi device like a printer or TV that is frustrating to enter credentials into. Not all WiFi devices support WPS connection. We recommend that you check your devices’ WiFi connection capabilities before proceeding.</p>
+<p><a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/wireless_router/wps.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/wireless_router/wps.webp" alt="" width="500px" style="border: 1px solid #eee;display: block; margin: 0 auto;" /></a></p>
+<p>You may click <strong>Start WPS</strong> on the web management page or directly press the <strong>WPS</strong> button on the Router panel. Within 2 minutes, enable WPS on your personal device. Success will appear on the screen, indicating successful WPS connection.</p>
+<h2 id="wifi-schedule">WiFi Schedule<a class="headerlink" href="#wifi-schedule" title="Permanent link">&para;</a></h2>
+<p>allows the Router’s wireless network to turn on or off automatically at a specific time.</p>
+<p><strong>To configure the WiFi Schedule, please follow the steps below.</strong></p>
+<p><a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/wireless_router/wifi-schedule.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/wireless_router/wifi-schedule.webp" alt="" width="500px" style="border: 1px solid #eee;display: block; margin: 0 auto;" /></a></p>
+<ol>
+<li>Toggle <em>Enable WiFi Schedule</em> to activate this feature.</li>
+<li>
+<p>You may Modify/Delete/Add the entries. To specify the schedule, you need to set the <em>Week Days</em>, <em>Start WiFi</em> and <em>Stop WiFi</em> time. Enable <em>Disabled wifi forced</em> to force WiFi to shut off even if stations are associated. </p>
+<ul>
+<li>Modify: Simply modify the existing entries to your desired settings. </li>
+<li>Delete: Delete the existing entries as you like.</li>
+<li>Add: Add more or new entries as needed.</li>
+</ul>
+</li>
+<li>
+<p>Click <em>Save &amp; Apply</em>.</p>
+</li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The effective time schedule is based on the time of the Router. You can go to Advanced Settings -&gt; System -&gt; System Time to modify the time.</p>
+</div>
+<h2 id="alg">ALG<a class="headerlink" href="#alg" title="Permanent link">&para;</a></h2>
+<p>ALG (Application Layer Gateway) allows customized NAT traversal filters to be plugged into the gateway to support address and port translation for certain application layer “control/data” protocols such as FTP, TFTP, H323 etc. All ALG is enabled by default and recommended.</p>
+<p>You may need to disable SIP ALG when you are using voice and video applications to create and accept a call through the Router, since some voice and video communication applications do not work well with SIP ALG.</p>
+<p><a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/wireless_router/alg.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/wireless_router/alg.webp" alt="" width="500px" style="border: 1px solid #eee;display: block; margin: 0 auto;" /></a></p>
+<h2 id="ad-shield">Ad Shield<a class="headerlink" href="#ad-shield" title="Permanent link">&para;</a></h2>
+<p>Ad Shield leverages AdGuard DNS and Shiild to provide network-level filtering of ads, trackers, and other unwanted content. Running at the router level, it protects all connected devices and improves privacy across browsing, streaming, and app usage. This feature is available for Cudy routers with firmware version 2.5.0+.</p>
+<ol>
+<li>Enable <em>Ad Shield</em>, select <em>Shiild</em> as the service provider.
+    <a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/tutorial/ad/as01.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/tutorial/ad/as01.webp" alt="" width="500px" style="border: 1px solid #eee;display: block; margin: 0 auto;" /></a></li>
+<li>Tick <em>I agree to ...</em>, and click <em>Save &amp; Apply</em>.</li>
+<li>Click <em>Continue</em> and go to the Shiild Security page.
+    <a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/tutorial/ad/as02.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/tutorial/ad/as02.webp" alt="" width="500px" style="border: 1px solid #eee;display: block; margin: 0 auto;" /></a></li>
+<li>Enter your email and click Send verification email to keep it active.
+    <a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/tutorial/ad/as03.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/tutorial/ad/as03.webp" alt="" width="500px" style="border: 1px solid #eee;display: block; margin: 0 auto;" /></a></li>
+<li>Check the Enabled status on <em>System Status &gt; Ad Shield</em>. Upgrade to <em>Pro</em> if needed.</li>
+</ol>
 
   <!-- Last update of source file -->
   
