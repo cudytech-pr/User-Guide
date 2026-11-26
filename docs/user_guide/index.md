@@ -223,6 +223,17 @@
 
 </div>
 
+## [xPON Router](pon_router/index.md)
+
+<div class="product-grid">
+
+  <a href="pon_router/gp3000v/" class="product-card">
+    <div class="product-img" style="background-image:url('https://www.cudy.com/cdn/shop/files/GP3000_2.0_-0.png?v=1766458170')"></div>
+    <div class="product-name">GP3000V</div>
+  </a>  
+
+</div>
+
 ## [Industrial Router](industrial_router/index.md)
 
 <div class="product-grid">
@@ -239,18 +250,16 @@
 
 </div>
 
-
-## [xPON Router](pon_router/index.md)
+## [VPN Router](vpn_router/index.md)
 
 <div class="product-grid">
 
-  <a href="pon_router/gp3000v/" class="product-card">
-    <div class="product-img" style="background-image:url('https://www.cudy.com/cdn/shop/files/GP3000_2.0_-0.png?v=1766458170')"></div>
-    <div class="product-name">GP3000V</div>
-  </a>  
+  <a href="vpn_router/r700" class="product-card">
+    <div class="product-img" style="background-image:url('https://www.cudy.com/cdn/shop/files/R700-A1.png?v=1711423037')"></div>
+    <div class="product-name">R700</div>
+  </a>
 
 </div>
-
 
 ## [Range Extender](range_extender/index.md)
 

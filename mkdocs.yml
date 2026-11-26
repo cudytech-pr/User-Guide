@@ -128,8 +128,9 @@
         - Wireless Router: user_guide/wireless_router/index.md
         - Mesh Wi-Fi System: user_guide/mesh_system/index.md
         - 4G/5G Router: user_guide/4g5g_router/index.md
-        - Industrial Router: user_guide/industrial_router/index.md
         - xPON Router: user_guide/pon_router/index.md
+        - Industrial Router: user_guide/industrial_router/index.md
+        - VPN Router: user_guide/vpn_router/index.md
         - Range Extender:  user_guide/range_extender/index.md
         - AP Controller: user_guide/ap_controller/index.md
         - Switch: user_guide/switch/index.md

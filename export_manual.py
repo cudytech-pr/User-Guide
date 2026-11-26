@@ -3,7 +3,7 @@
 # -*- coding: utf-8 -*-
 
 """
-Cudy Modular Manual PDF Exporter
+Cudy Modular User Guide PDF Exporter
 
 Features:
 1. Extract hierarchical Contents from the product index page.
@@ -41,6 +41,64 @@ from dataclasses import dataclass, field
 from io import BytesIO
 from pathlib import Path
 from urllib.parse import urljoin, urlparse, urldefrag
+
+# ==================================================
+# Automatic dependency setup
+# ==================================================
+
+import importlib.util
+import subprocess
+
+REQUIRED_PACKAGES = {
+    "PIL": "Pillow",
+    "playwright": "playwright",
+    "pypdf": "pypdf",
+    "reportlab": "reportlab",
+}
+
+
+def ensure_python_packages():
+    """Install missing Python packages automatically."""
+    missing = [
+        package for module, package in REQUIRED_PACKAGES.items()
+        if importlib.util.find_spec(module) is None
+    ]
+
+    if not missing:
+        print("[Setup] Python dependencies are already installed.")
+        return
+
+    print("[Setup] Installing missing dependencies:", ", ".join(missing))
+    command = [sys.executable, "-m", "pip", "install", "--upgrade", *missing]
+    try:
+        subprocess.check_call(command)
+    except subprocess.CalledProcessError:
+        print("\nFailed to install Python dependencies.")
+        print("Check your network connection and Python/pip installation.")
+        raise
+
+
+def ensure_playwright_chromium():
+    """Install the Chromium browser required by Playwright when missing."""
+    try:
+        from playwright.sync_api import sync_playwright
+        with sync_playwright() as playwright:
+            browser_path = Path(playwright.chromium.executable_path)
+        if browser_path.exists():
+            print("[Setup] Playwright Chromium is already installed.")
+            return
+    except Exception:
+        pass
+
+    print("[Setup] Installing Playwright Chromium. This may take several minutes...")
+    subprocess.check_call([
+        sys.executable, "-m", "playwright", "install", "chromium"
+    ])
+    print("[Setup] Chromium installation completed.")
+
+
+# Install dependencies before importing third-party modules.
+ensure_python_packages()
 
 from PIL import Image
 
@@ -761,6 +819,42 @@ async def extract_front_panel(
 # Extract cover assets and model name
 # ==================================================
 
+def get_model_name_from_url(index_url: str) -> str:
+    """Get the product model from the final URL path segment.
+
+    Cudy index pages sometimes use a generic H1 such as 'User Manual' or
+    'User Guide'. In that case, the product URL slug is a more reliable
+    source for the model name (for example, wr3600_h -> WR3600_H).
+    """
+    path_parts = [part for part in urlparse(index_url).path.split("/") if part]
+    ignored = {
+        "index", "index.html", "user_manual", "user-manual",
+        "user_guide", "user-guide", "overview",
+    }
+
+    for part in reversed(path_parts):
+        stem = part.rsplit(".", 1)[0] if "." in part else part
+        if stem.lower() in ignored:
+            continue
+        # Product model slugs commonly contain letters, digits, '_' or '-'.
+        if re.fullmatch(r"[A-Za-z0-9][A-Za-z0-9_-]*", stem):
+            return stem.replace("-", "_").upper()
+
+    return ""
+
+
+def normalize_model_heading(heading: str) -> str:
+    """Reject generic page headings that are not actual product models."""
+    value = clean_title(heading)
+    generic = {
+        "user manual", "user guide", "manual", "overview",
+        "product overview", "cudy user manual", "cudy user guide",
+    }
+    if value.lower() in generic:
+        return ""
+    return value
+
+
 async def extract_cover_assets(
     browser,
     index_url: str,
@@ -802,17 +896,25 @@ async def extract_cover_assets(
             timeout=60000,
         )
 
-        model_name = clean_title(
-            await page.locator(
-                "article.md-content__inner h1"
-            ).first.text_content() or ""
-        )
+        # Prefer the model encoded in the product URL. Some documentation
+        # index pages expose a generic H1 (for example, "User Manual"),
+        # which must not replace the actual model on the cover/header.
+        url_model = get_model_name_from_url(index_url)
 
-        if not model_name:
-            slug = urlparse(index_url).path.rstrip("/").split("/")[-1]
-            model_name = slug.replace("_", " ").upper()
+        try:
+            raw_heading = (
+                await page.locator("article.md-content__inner h1").first.text_content()
+                or ""
+            )
+        except Exception:
+            raw_heading = ""
+
+        heading_model = normalize_model_heading(raw_heading)
+        model_name = url_model or heading_model or "Cudy Product"
 
         print(f"\nModel: {model_name}")
+        if raw_heading and not heading_model:
+            print(f"  Ignored generic page heading: {clean_title(raw_heading)}")
 
         return model_name, logo, front_panel_path
 
@@ -1672,7 +1774,7 @@ async def export_manual(
     merged_path = temp_dir / "merged.pdf"
 
     print("\n" + "=" * 60)
-    print("CUDY MODULAR MANUAL PDF EXPORTER")
+    print("CUDY MODULAR USER GUIDE PDF EXPORTER")
     print("=" * 60)
 
     async with async_playwright() as p:
@@ -1841,19 +1943,19 @@ async def export_manual(
 def main():
 
     parser = argparse.ArgumentParser(
-        description="Cudy Modular Manual PDF Exporter"
+        description="Cudy Modular User Guide PDF Exporter"
     )
 
     parser.add_argument(
         "--url",
-        required=True,
-        help="Product index page URL",
+        required=False,
+        help="Product index page URL (if omitted, you will be prompted)",
     )
 
     parser.add_argument(
         "--output",
-        default="User_Manual.pdf",
-        help="Output PDF file",
+        default=None,
+        help="Output PDF file (default: <MODEL>_User_Guide.pdf)",
     )
 
     parser.add_argument(
@@ -1864,11 +1966,38 @@ def main():
 
     args = parser.parse_args()
 
+    index_url = (args.url or "").strip()
+    if not index_url:
+        print("\nEnter the product User Guide index URL.")
+        print('Example: https://docs.cudy.com/user_guide/wireless_router/wr3600_h/')
+        try:
+            index_url = input("URL: ").strip()
+        except (EOFError, KeyboardInterrupt):
+            print("\nNo URL entered. Export cancelled.")
+            sys.exit(1)
+
+    if not index_url:
+        print("\nERROR: URL cannot be empty.", file=sys.stderr)
+        sys.exit(1)
+
+    if not re.match(r"^https?://", index_url, re.IGNORECASE):
+        print("\nERROR: Please enter a complete URL starting with http:// or https://", file=sys.stderr)
+        sys.exit(1)
+
+    # By default, name the PDF after the product model in the URL.
+    # The model extractor used during export follows the same URL-first rule.
+    output_path = (
+        Path(args.output)
+        if args.output
+        else Path(f"{get_model_name_from_url(index_url) or 'Cudy_Product'}_User_Guide.pdf")
+    )
+
     try:
+        ensure_playwright_chromium()
         asyncio.run(
             export_manual(
-                args.url,
-                Path(args.output),
+                index_url,
+                output_path,
                 args.keep_temp,
             )
         )
