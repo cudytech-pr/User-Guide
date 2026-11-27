@@ -1109,28 +1109,47 @@
   <!-- Markdown content -->
   <h1 id="general-settings">General Settings<a class="headerlink" href="#general-settings" title="Permanent link">&para;</a></h1>
 <h2 id="wan-mode">WAN Mode<a class="headerlink" href="#wan-mode" title="Permanent link">&para;</a></h2>
-<p><a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/vpn_router/wan-mode.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/vpn_router/wan-mode.webp" alt="" width="800px" style="border: 1px solid #eee;" /></a></p>
+<p>R700 supports connecting to the internet via ethernet cable. Please connect the WAN port of R700 to the LAN port of ONT, Modem or the main router.  </p>
+<p><a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/vpn_router/general_settings_wan_mode.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/vpn_router/general_settings_wan_mode.webp" alt="" width="800px" style="border: 1px solid #eee;" /></a></p>
 <p>Configure the number of WAN ports. When a WAN port is added, the port-related entries are automatically added in WAN Settings page. When a WAN port is deleted, the port-related entries are automatically deleted. Any change to the number of WAN ports may lead your current configurations to be lost. Make sure you have backed up your configurations before proceeding.</p>
 <p>Any change needs to click <em>Save &amp; Apply</em>.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>The three WAN/LAN ports are LAN status by default. You can change them to WAN status on the Then, you can set the <em>WAN2</em> connection on the <em>WAN Settings</em> page.</p>
+<p>The three WAN/LAN ports are LAN status by default. You can change them to WAN status here, and then you can set the <em>WAN2</em> connection on the <em>WAN Settings</em> page.</p>
 </div>
 <h2 id="wan-settings">WAN Settings<a class="headerlink" href="#wan-settings" title="Permanent link">&para;</a></h2>
 <p><em>WAN Settings</em> is to set your Internet connection. Select your Internet connection type from the drop-down list of Protocol. Follow the instructions on the page to continue the configuration. Parameters on the figures are just used for demonstration.</p>
+<p><a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/vpn_router/general_settings_wan_settings.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/vpn_router/general_settings_wan_settings.webp" alt="" width="800px" style="border: 1px solid #eee;" /></a></p>
 <h3 id="dhcp">DHCP<a class="headerlink" href="#dhcp" title="Permanent link">&para;</a></h3>
-<p><a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/mesh_system/wan-dhcp.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/mesh_system/wan-dhcp.webp" alt="" width="800px" style="border: 1px solid #eee;" /></a></p>
-<p>If you choose <em>DHCP</em>, keep MTU as default unless your ISP provides differently. The Host name and MAC address Clone are optional. Then <em>Save &amp; Apply</em> your configurations.</p>
+<p>DHCP is the default and most common protocol. It is a network management protocol used on Internet Protocol (IP) networks for automatically assigning IP addresses and other communication parameters to devices connected to the network using a client–server architecture.</p>
+<p><a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/vpn_router/wan_settings_dhcp.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/vpn_router/wan_settings_dhcp.webp" alt="" width="800px" style="border: 1px solid #eee;" /></a></p>
+<p>If you choose <em>DHCP</em>, keep MTU as default unless your ISP provides differently. The <em>Hostname</em> and MAC address Clone are optional. Then <em>Save &amp; Apply</em> your configurations.</p>
+<ul>
+<li>MAC Clone: If your broadband ISP binds the MAC address, you can enter the bound MAC address here..</li>
+<li>MTU: The default value is 1500.</li>
+</ul>
 <h3 id="pppoe">PPPoE<a class="headerlink" href="#pppoe" title="Permanent link">&para;</a></h3>
-<p><a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/wireless_router/wan-pppoe.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/wireless_router/wan-pppoe.webp" alt="" width="800px" style="border: 1px solid #eee;" /></a></p>
+<p>PPPoE is required by many Internet Service Providers (ISP). Generally, your ISP will give you a modem and provide you a username &amp; password that you needed when you are creating the Internet connection.</p>
+<p><a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/vpn_router/wan_settings_pppoe.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/vpn_router/wan_settings_pppoe.webp" alt="" width="800px" style="border: 1px solid #eee;" /></a></p>
 <p>If you choose <em>PPPoE</em>, enter the Username and Password provided by your ISP. Then <em>Save &amp; Apply</em> your configurations.</p>
+<ul>
+<li>Access Concentrator: If you broadband ISP need you to input this, you can enter the Access Concentrator name here.</li>
+<li>Service Name: If your broadband ISP binds the Service Name, you can enter the Service Name here. </li>
+<li>MAC Clone: If your broadband ISP binds the MAC address, you can enter the bound MAC address here.</li>
+<li>MTU: The default value is 1500.</li>
+</ul>
 <h3 id="static-fixed-ip">Static (Fixed IP)<a class="headerlink" href="#static-fixed-ip" title="Permanent link">&para;</a></h3>
-<p><a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/wireless_router/wan-staticip.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/wireless_router/wan-staticip.webp" alt="" width="800px" style="border: 1px solid #eee;" /></a></p>
+<p>Static is required if your Internet Service Provider (ISP) has provided a fixed IP address for you or you want to configure the network information such as IP address, Gateway, Netmask manually.</p>
+<p><a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/vpn_router/wan_settings_staticip.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/vpn_router/wan_settings_staticip.webp" alt="" width="800px" style="border: 1px solid #eee;" /></a></p>
 <p>If you choose <em>Static (Fixed IP)</em>, enter the parameters provided by your ISP, including IP Address / Subnet Mask / Default Gateway / Preferred DNS. Keep MTU as default unless your ISP provides differently. Then <em>Save &amp; Apply</em> your configurations.</p>
+<ul>
+<li>MAC Clone: If your broadband ISP binds the MAC address, you can enter the bound MAC address here..</li>
+<li>MTU: The default value is 1500.</li>
+</ul>
 <h2 id="load-balancing">Load balancing<a class="headerlink" href="#load-balancing" title="Permanent link">&para;</a></h2>
 <p>It is the load distribution of network traffic across multiple back-end servers. It needs a minimum of two WAN interfaces to work effectively.</p>
 <h3 id="interface">Interface<a class="headerlink" href="#interface" title="Permanent link">&para;</a></h3>
-<p><a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images//vpn_router/load_balancing_interface.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images//vpn_router/load_balancing_interface.webp" alt="" width="800px" style="border: 1px solid #eee;" /></a></p>
+<p><a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images//vpn_router/general_settings_load_balancing.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images//vpn_router/general_settings_load_balancing.webp" alt="" width="800px" style="border: 1px solid #eee;" /></a></p>
 <ul>
 <li>Interface: For each WAN interface configure an interface section and define how each WAN interface is tested for up/down status. Each interface section must have a name that corresponds with the interface name in WAN Settings.  </li>
 <li>Tracking reliability: Number of track_ip hosts that must reply for the test to be considered as successful. Ensure there are at least this many track_ip hosts defined or the interface will always<br />
@@ -1142,7 +1161,7 @@ be considered down. </li>
 </ul>
 <h3 id="member">Member<a class="headerlink" href="#member" title="Permanent link">&para;</a></h3>
 <p>Each member represents an interface with a metric and a weight value. Members are referenced in policies to define a pool of interfaces with corresponding metric and load-balancing weight. Members can't be used for rules directly.  </p>
-<p><a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images//vpn_router/load_balancing_interface.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images//vpn_router/load_balancing_interface.webp" alt="" width="800px" style="border: 1px solid #eee;" /></a></p>
+<p><a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images//vpn_router/general_settings_load_balancing_member.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images//vpn_router/general_settings_load_balancing_member.webp" alt="" width="800px" style="border: 1px solid #eee;" /></a></p>
 <ul>
 <li>Name: The name of this member configuration, which is then referenced in policies. (eg. WAN1_M1_W3 means metric 1, weight 3 for WAN 1).</li>
 <li>Interface: Member applies to this interface.  </li>
@@ -1152,12 +1171,13 @@ be considered down. </li>
 </ul>
 <h3 id="policy">Policy<a class="headerlink" href="#policy" title="Permanent link">&para;</a></h3>
 <p>Policies define how traffic is routed through the different WAN interface(s). Every policy has to have one or more members assigned to it, which defines the policy's traffic behavior. If a policy has a single member, traffic will only go out of that member. If a policy has more than one member, it will either load-balance among members or use one member but fail-over to another, depending on how the members are configured.</p>
-<p><a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images//vpn_router/load_balancing_interface.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images//vpn_router/load_balancing_interface.webp" alt="" width="800px" style="border: 1px solid #eee;" /></a></p>
+<p><a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images//vpn_router/general_settings_load_balancing_policy.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images//vpn_router/general_settings_load_balancing_policy.png" alt="" width="800px" style="border: 1px solid #eee;" /></a></p>
 <ul>
 <li>Name: Unique name for the policy.  </li>
 <li>Member Used: One or more members assigned to this policy.  </li>
-<li>
-<p>Last resort: Determine the fallback routing behavior if all WAN members in the policy are down. </p>
+<li>Last resort: Determine the fallback routing behavior if all WAN members in the policy are down. </li>
+<li>Edit: If you want to edit all the policies, you can click it.</li>
+</ul>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <ul>
@@ -1167,14 +1187,9 @@ be considered down. </li>
 <li>The policy has one member and traffic will only go out of that member. </li>
 </ul>
 </div>
-</li>
-<li>
-<p>Edit: If you want to edit all the policies, you can click it.</p>
-</li>
-</ul>
 <h3 id="rule">Rule<a class="headerlink" href="#rule" title="Permanent link">&para;</a></h3>
 <p>Rules specify which traffic will use a particular policy. </p>
-<p><a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images//vpn_router/load_balancing_interface.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images//vpn_router/load_balancing_interface.webp" alt="" width="800px" style="border: 1px solid #eee;" /></a></p>
+<p><a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images//vpn_router/general_settings_load_balancing_rule.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images//vpn_router/general_settings_load_balancing_rule.webp" alt="" width="800px" style="border: 1px solid #eee;" /></a></p>
 <ul>
 <li>Name: The unique name of the rule.  </li>
 <li>Source address: Match traffic from the specified source IP address.  </li>
@@ -1197,15 +1212,15 @@ be considered down. </li>
 <p><strong>VPN (Virtual Private Network)</strong> helps you access Internet resources remotely, securely, and privately through tunneling technology. When you access the Internet, VPN encrypts your personal information and hides your IP address from the public. For VPN users, it looks like the devices are directly connected. Cudy Router supports 6 types of VPN connections: PPTP, L2TP, OpenVPN, WireGuard, ZeroTier, IPSec (site-to-site). Please choose an appropriate VPN according to your needs and circumstances.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Before you enable VPN Server, it is recommended to configure Dynamic DNS Service or assign a Static IP Address for router’s WAN port and synchronize your System Time with Internet. </p>
+<p>Before you enable VPN Server, it is recommended to configure Dynamic DNS Service or assign a Static IP Address for router's WAN port and synchronize your System Time with Internet. </p>
 </div>
-<p><a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/mesh_system/vpn.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/mesh_system/vpn.webp" alt="" width="800px" style="display: block; margin: 0 auto;" /></a></p>
+<p><a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/vpn_router/vpn_topology.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/vpn_router/vpn_topology.webp" alt="" width="800px" style="display: block; margin: 0 auto;" /></a></p>
 <h3 id="pptp-vpn">PPTP VPN<a class="headerlink" href="#pptp-vpn" title="Permanent link">&para;</a></h3>
-<p><strong>PPTP VPN</strong> is used to create a PPTP VPN connection for remote devices to access your home network. Fast connection/disconnection and simple configuration satisfy the needs for users who is apt to frequently switch VPN environments. Please follow the steps below to set up a PPTP VPN connection.</p>
-<p><strong>STEP 1. Configure the PPTP Server on Mesh A:</strong>
-<a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/wireless_router/pptp-server.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/wireless_router/pptp-server.webp" alt="" width="800px" style="border: 1px solid #eee; display: block; margin: 0 auto;" /></a></p>
+<p>PPTP VPN is used to create a PPTP VPN connection for remote devices to access your home network. Fast connection/disconnection and simple configuration satisfy the needs for users who is apt to frequently switch VPN environments. Please follow the steps below to set up a PPTP VPN connection.</p>
+<p><strong>STEP 1. Configure the PPTP Server on Router A:</strong>
+<a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/vpn_router/vpn_pptp_server.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/vpn_router/vpn_pptp_server.webp" alt="" width="600px" style="border: 1px solid #eee; display: block; margin: 0 auto;" /></a></p>
 <ol>
-<li>Log into the Mesh A’s management web page <a href="https://cudy.net">https://cudy.net</a> (or 192.168.10.1). </li>
+<li>Log into the Router A's management web page <a href="https://cudy.net">https://cudy.net</a> (or 192.168.10.1). </li>
 <li>Go to General Settings -&gt;VPN. Enable VPN, and select PPTP Server as Protocol. </li>
 <li>Select Client Access (Internet and Local Network/Internet/Local Network).</li>
 <li>
@@ -1220,10 +1235,10 @@ be considered down. </li>
 <p>Click <em>Save &amp; Apply</em>.    </p>
 </li>
 </ol>
-<p><strong>STEP 2. Configure PPTP Client on Mesh B:</strong>
-<a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/wireless_router/pptp-client.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/wireless_router/pptp-client.webp" alt="" width="800px" style="border: 1px solid #eee; display: block; margin: 0 auto;" /></a></p>
+<p><strong>STEP 2. Configure PPTP Client on Router B:</strong>
+<a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/vpn_router/vpn_pptp_client.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/vpn_router/vpn_pptp_client.webp" alt="" width="600px" style="border: 1px solid #eee; display: block; margin: 0 auto;" /></a></p>
 <ol>
-<li>Log into the Mesh A’s management web page https://cudy.net (or 192.168.10.1). </li>
+<li>Log into the Router A's management web page https://cudy.net (or 192.168.10.1). </li>
 <li>Go to General Settings -&gt;VPN. Enable VPN, and select PPTP Client as Protocol. </li>
 <li>Select Allow all devices or Ban all devices as Default Rule.</li>
 <li>Enable Site-to-Site to allow communication between VPN server and Clients.</li>
@@ -1249,10 +1264,10 @@ be considered down. </li>
 </ol>
 <h3 id="l2tp-vpn">L2TP VPN<a class="headerlink" href="#l2tp-vpn" title="Permanent link">&para;</a></h3>
 <p><strong>L2TP VPN Server</strong> is used to create a L2TP VPN connection for remote devices to access your home network. Compared with PPTP, L2TP supports multi-tunnel with authentication between two endpoints, thus users can set up different tunnels with various service quality. Please follow the steps below to set up a L2TP VPN connection.</p>
-<p><strong>STEP 1. Configure the L2TP Server on Mesh A:</strong>
-<a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/wireless_router/l2tp-server.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/wireless_router/l2tp-server.webp" alt="" width="800px" style="border: 1px solid #eee; display: block; margin: 0 auto;" /></a></p>
+<p><strong>STEP 1. Configure the L2TP Server on Router A:</strong>
+<a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/vpn_router/vpn_l2tp_server.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/vpn_router/vpn_l2tp_server.webp" alt="" width="600px" style="border: 1px solid #eee; display: block; margin: 0 auto;" /></a></p>
 <ol>
-<li>Log into the Mesh A’s management web page https://cudy.net (or 192.168.10.1). </li>
+<li>Log into the Router A's management web page https://cudy.net (or 192.168.10.1). </li>
 <li>Go to General Settings -&gt;VPN. Enable VPN, and select L2TP Server as Protocol. </li>
 <li>Select Client Access (Internet and Local Network/Internet/Local Network).</li>
 <li>
@@ -1269,10 +1284,10 @@ be considered down. </li>
 <p>Click <em>Save &amp; Apply</em>.</p>
 </li>
 </ol>
-<p><strong>STEP 2. Configure L2TP Client on Mesh B:</strong>
-<a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/wireless_router/l2tp-client.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/wireless_router/l2tp-client.webp" alt="" width="800px" style="border: 1px solid #eee; display: block; margin: 0 auto;" /></a></p>
+<p><strong>STEP 2. Configure L2TP Client on Router B:</strong>
+<a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/vpn_router/vpn_l2tp_client.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/vpn_router/vpn_l2tp_client.webp" alt="" width="600px" style="border: 1px solid #eee; display: block; margin: 0 auto;" /></a></p>
 <ol>
-<li>Log into the Mesh A’s management web page https://cudy.net (or 192.168.10.1). </li>
+<li>Log into the Router A's management web page https://cudy.net (or 192.168.10.1). </li>
 <li>Go to General Settings -&gt;VPN. Enable VPN, and select L2TP Client as Protocol. </li>
 <li>Select Allow all devices or Ban all devices as Default Rule.</li>
 <li>Enable Site-to-Site to allow communication between VPN server and Clients.</li>
@@ -1288,7 +1303,7 @@ be considered down. </li>
 <li>
 <p>Configure the L2TP Client:</p>
 <ul>
-<li>Server Address/ Username/Password: Enter the parameters provided by the PPTP Server.</li>
+<li>Server Address/ Username/Password: Enter the parameters provided by the L2TP Server.</li>
 <li>Local Hostname: Customize or keep it as default.</li>
 <li>Tunnel Secret / Pre-shared Key: Enter the encryption if the L2TP Server has set it.</li>
 <li>MTU: Maximum Transmission Unit is 1400 by default, you may change it if necessary.</li>
@@ -1301,10 +1316,10 @@ be considered down. </li>
 </ol>
 <h3 id="openvpn">OpenVPN<a class="headerlink" href="#openvpn" title="Permanent link">&para;</a></h3>
 <p><strong>OpenVPN Server</strong> is used to create an OpenVPN connection for remote devices to access your home network. OpenVPN server requires a public IP. You can confirm whether the router has a public IP on the router management page System Status -&gt; WAN -&gt; More details -&gt; Status. If the public IP displayed is consistent with the IP address of the router's WAN port, it means that the router has a public IP. Please follow the steps below to set up an OpenVPN connection.</p>
-<p><strong>STEP 1. Configure the OpenVPN Server on Mesh A:</strong>
-<a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/wireless_router/openvpn-server.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/wireless_router/openvpn-server.webp" alt="" width="800px" style="border: 1px solid #eee; display: block; margin: 0 auto;" /></a></p>
+<p><strong>STEP 1. Configure the OpenVPN Server on Router A:</strong>
+<a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/vpn_router/vpn_openvpn_server.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/vpn_router/vpn_openvpn_server.webp" alt="" width="600px" style="border: 1px solid #eee; display: block; margin: 0 auto;" /></a></p>
 <ol>
-<li>Log into the Mesh A’s management web page https://cudy.net (or 192.168.10.1). </li>
+<li>Log into the Router A's management web page https://cudy.net (or 192.168.10.1). </li>
 <li>Go to General Settings -&gt;VPN. Enable VPN, and select OpenVPN Server as Protocol. </li>
 <li>Select the Client Access (Internet and Local Network / Internet / Local Network).</li>
 <li>
@@ -1321,10 +1336,10 @@ be considered down. </li>
 </li>
 <li>Click EXPORT to export the configuration file, for the OpenVPN Client to upload.</li>
 </ol>
-<p><strong>STEP 2. Configure OpenVPN Client on Mesh B:</strong>
-<a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/wireless_router/openvpn-client.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/wireless_router/openvpn-client.webp" alt="" width="800px" style="border: 1px solid #eee; display: block; margin: 0 auto;" /></a></p>
+<p><strong>STEP 2. Configure OpenVPN Client on Router B:</strong>
+<a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/vpn_router/vpn_openvpn_client.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/vpn_router/vpn_openvpn_client.webp" alt="" width="600px" style="border: 1px solid #eee; display: block; margin: 0 auto;" /></a></p>
 <ol>
-<li>Log into the Mesh A’s management web page https://cudy.net (or 192.168.10.1). </li>
+<li>Log into the Router A's management web page https://cudy.net (or 192.168.10.1). </li>
 <li>Go to General Settings -&gt;VPN. Enable VPN, and select OpenVPN Client as Protocol. </li>
 <li>Select Allow all devices or Ban all devices as Default Rule.</li>
 <li>Enable Site-to-Site to allow communication between VPN server and Clients.</li>
@@ -1344,10 +1359,10 @@ be considered down. </li>
 </ol>
 <h3 id="wireguard-vpn">WireGuard VPN<a class="headerlink" href="#wireguard-vpn" title="Permanent link">&para;</a></h3>
 <p><strong>WireGuard VPN Server</strong> is used to create a Wire Guard VPN connection for remote devices to access your home network. WireGuard VPN server requires a public IP. You can confirm whether the router has a public IP on the router management page System Status -&gt; WAN -&gt; More details -&gt; Status. If the public IP displayed is consistent with the IP address of the router's WAN port, it means that the router has a public IP. Please follow the steps below to set up a WireGuard VPN connection.</p>
-<p><a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/wireless_router/wireguard-server.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/wireless_router/wireguard-server.webp" alt="" width="800px" style="border: 1px solid #eee; display: block; margin: 0 auto;" /></a></p>
-<p><strong>STEP 1. Configure the WireGuard Server on Mesh A:</strong></p>
+<p><a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/vpn_router/vpn_wireguard_server.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/vpn_router/vpn_wireguard_server.webp" alt="" width="600px" style="border: 1px solid #eee; display: block; margin: 0 auto;" /></a></p>
+<p><strong>STEP 1. Configure the WireGuard Server on Router A:</strong></p>
 <ol>
-<li>Log into the Mesh A’s management web page https://cudy.net (or 192.168.10.1).</li>
+<li>Log into the Router A's management web page https://cudy.net (or 192.168.10.1).</li>
 <li>Go to General Settings -&gt;VPN. Enable VPN, and select WireGuard Server as Protocol. </li>
 <li>Select Client Access (Internet and Local Network / Internet / Local Network).</li>
 <li>
@@ -1374,13 +1389,13 @@ be considered down. </li>
 </li>
 <li>
 <p>Click to export the configuration file, and then upload it on the client for VPN connection.
-<a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/wireless_router/client-export.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/wireless_router/client-export.webp" alt="" width="600px" style="border: 1px solid #eee; display: block; margin: 0 auto;" /></a></p>
+<a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/industrial_router/client-export.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/industrial_router/client-export.webp" alt="" width="600px" style="border: 1px solid #eee; display: block; margin: 0 auto;" /></a></p>
 </li>
 </ol>
-<p><strong>STEP 2. Configure WireGuard Client on Mesh B:</strong>
-<a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/wireless_router/wireguard-client.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/wireless_router/wireguard-client.webp" alt="" width="800px" style="border: 1px solid #eee; display: block; margin: 0 auto;" /></a></p>
+<p><strong>STEP 2. Configure WireGuard Client on Router B:</strong>
+<a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/vpn_router/vpn_wireguard_client.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/vpn_router/vpn_wireguard_client.webp" alt="" width="600px" style="border: 1px solid #eee; display: block; margin: 0 auto;" /></a></p>
 <ol>
-<li>Log into the Mesh A’s management web page https://cudy.net (or 192.168.10.1).</li>
+<li>Log into the Router A's management web page https://cudy.net (or 192.168.10.1).</li>
 <li>Go to General Settings -&gt;VPN. Enable VPN, and select WireGuard Client as Protocol. </li>
 <li>Select Allow all devices or Ban all devices as Default Rule.</li>
 <li>Enable Site-to-Site to allow communication between VPN server and Clients.</li>
@@ -1404,35 +1419,35 @@ be considered down. </li>
 <ol>
 <li>
 <p>Visit Zerotier website http://my.zerotier.com/, sign up for an account and log in.
-<a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/wireless_router/zerotier.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/wireless_router/zerotier.webp" alt="" width="800px" style="border: 1px solid #eee; display: block; margin: 0 auto;" /></a></p>
+<a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/wireless_router/zerotier.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/wireless_router/zerotier.webp" alt="" width="600px" style="border: 1px solid #eee; display: block; margin: 0 auto;" /></a></p>
 </li>
 <li>
 <p>Click Network - &gt; Create A Network. 
-<a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/wireless_router/zerotier2.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/wireless_router/zerotier2.webp" alt="" width="800px" style="border: 1px solid #eee; display: block; margin: 0 auto;" /></a></p>
+<a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/wireless_router/zerotier2.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/wireless_router/zerotier2.webp" alt="" width="600px" style="border: 1px solid #eee; display: block; margin: 0 auto;" /></a></p>
 </li>
 <li>
 <p>Zerotier will create a new network and assign a NETWORK ID for you. Then click on the assigned NETWORK ID, and its setting page will display.
-<a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/wireless_router/zerotier3.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/wireless_router/zerotier3.webp" alt="" width="800px" style="border: 1px solid #eee; display: block; margin: 0 auto;" /></a></p>
+<a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/wireless_router/zerotier3.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/wireless_router/zerotier3.webp" alt="" width="600px" style="border: 1px solid #eee; display: block; margin: 0 auto;" /></a></p>
 </li>
 <li>
 <p>Set Access Control to be Public for later convenient settings, and note down the Network ID.
-<a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/wireless_router/zerotier4.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/wireless_router/zerotier4.webp" alt="" width="800px" style="border: 1px solid #eee; display: block; margin: 0 auto;" /></a></p>
+<a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/wireless_router/zerotier4.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/wireless_router/zerotier4.webp" alt="" width="600px" style="border: 1px solid #eee; display: block; margin: 0 auto;" /></a></p>
 </li>
 </ol>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Private Access Control requires authorization for the terminal or router to access the network, which is more secure but inconvenient. While Public Access Control allows for a direct the network access with authentication rather than authorization. You may choose either one accordingly.</p>
 </div>
-<p><strong>STEP 2. Configure ZeroTier Master on Mesh A.</strong>
-<a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/wireless_router/zerotier-master.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/wireless_router/zerotier-master.webp" alt="" width="800px" style="border: 1px solid #eee; display: block; margin: 0 auto;" /></a></p>
+<p><strong>STEP 2. Configure ZeroTier Master on Router A.</strong>
+<a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/vpn_router/vpn_zerotier_master.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/vpn_router/vpn_zerotier_master.webp" alt="" width="600px" style="border: 1px solid #eee; display: block; margin: 0 auto;" /></a></p>
 <ol>
-<li>Log into the Mesh A’s management web page https://cudy.net (or 192.168.10.1). </li>
+<li>Log into the Router A's management web page https://cudy.net (or 192.168.10.1). </li>
 <li>Go to General Settings -&gt;VPN. Enable VPN, and select ZeroTier Master as Protocol. </li>
 <li>Select Client Access (Internet and Local Network/Internet/Local Network).</li>
 <li>Enter the ZeroTier Network ID noted down previously.</li>
 <li>Click <em>Save &amp; Apply</em>. Then it will display the Device ID.</li>
 <li>Back to the ZeroTier web page, you will see One device has joined this network.
-<a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/wireless_router/zerotier5.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/wireless_router/zerotier5.webp" alt="" width="800px" style="border: 1px solid #eee; display: block; margin: 0 auto;" /></a></li>
+<a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/wireless_router/zerotier5.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/wireless_router/zerotier5.webp" alt="" width="600px" style="border: 1px solid #eee; display: block; margin: 0 auto;" /></a></li>
 </ol>
 <p><strong>STEP 3. Join ZeroTier Network on your device.</strong></p>
 <ol>
@@ -1450,12 +1465,12 @@ be considered down. </li>
 </li>
 </ol>
 <p><strong>STEP 4. Configure the Static Route.</strong></p>
-<p>Go to Settings -&gt; Advanced on the ZeroTier web page. Under Add Routes, enter Router’s LAN IP segment 192.168.10.0/24 in Destination field and its Managed IP in Via field, and then click Submit.
+<p>Go to Settings -&gt; Advanced on the ZeroTier web page. Under Add Routes, enter Router's LAN IP segment 192.168.10.0/24 in Destination field and its Managed IP in Via field, and then click Submit.
 <a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/wireless_router/zerotier9.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/wireless_router/zerotier9.webp" alt="" width="800px" style="border: 1px solid #eee; display: block; margin: 0 auto;" /></a></p>
-<p>Now your client devices can directly access the router's management web page via 192.168.10.1 as well as the server via its IP address.
-<a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/mesh_system/zerotier10.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/mesh_system/zerotier10.webp" alt="" width="800px" style="border: 1px solid #eee; display: block; margin: 0 auto;" /></a></p>
+<p>Now your client devices can directly access the router's management web page via 192.168.10.1 as well as the server via its IP address.</p>
 <h3 id="ipsec-site-to-site-vpn">IPSec (site-to-site) VPN<a class="headerlink" href="#ipsec-site-to-site-vpn" title="Permanent link">&para;</a></h3>
 <p><strong>IPSec (site-to-site) VPN</strong> is a secure tunneling protocol used to connect two different networks, typically a corporate network and a remote branch office network, over the Internet. It allows multiple users at the remote site to access resources on the main office network as if they were directly connected to it. Please follow the steps below to set up an IPSec (site-to-site) VPN connection.</p>
+<p><a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/vpn_router/vpn_ipsec.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/vpn_router/vpn_ipsec.webp" alt="" width="600px" style="border: 1px solid #eee; display: block; margin: 0 auto;" /></a></p>
 <p><strong>STEP 1. Get both Routers in the Headquarter and Branch Office ready.</strong></p>
 <ol>
 <li>Make sure both Routers are connected to the Internet, but two network can not be in the same LAN segment. 
@@ -1464,7 +1479,7 @@ For example, if the headquarter is in the LAN segment 192.168.10.0/24, then the 
 </ol>
 <p><strong>STEP 2: Configure the IPSec VPN on the Router in the Headquarter.</strong></p>
 <ol>
-<li>Log into the  Mesh A’s management web page https://cudy.net (or 192.168.10.1). </li>
+<li>Log into the  Router A's management web page https://cudy.net (or 192.168.10.1). </li>
 <li>Go to General Settings -&gt;VPN. Enable VPN, and select IPSec (site-to-site) as Protocol. </li>
 <li>
 <p>Click Add to add IPSec Policies and configure the required parameters.</p>
@@ -1491,7 +1506,7 @@ For example, if the headquarter is in the LAN segment 192.168.10.0/24, then the 
 </ol>
 <p><strong>STEP 3: Configure the IPSec VPN on the Router in the Branch Office.</strong></p>
 <ol>
-<li>Log into the  Mesh A’s management web page https://cudy.net (or 192.168.10.1). </li>
+<li>Log into the  Router A's management web page https://cudy.net (or 192.168.10.1). </li>
 <li>Go to General Settings -&gt;VPN. Enable VPN, and select IPSec (site-to-site) as Protocol. </li>
 <li>
 <p>Click <em>Add</em> to add IPSec Policies and configure the required parameters.</p>
