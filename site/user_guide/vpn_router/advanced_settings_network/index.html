@@ -997,13 +997,6 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#464xlat" class="md-nav__link">
-    464XLAT
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#map-e" class="md-nav__link">
     MAP-E
   </a>
@@ -1117,7 +1110,7 @@
 
   <!-- Markdown content -->
   <h1 id="advanced-settings-network">Advanced Settings - Network<a class="headerlink" href="#advanced-settings-network" title="Permanent link">&para;</a></h1>
-<p>Network section allows you to manage and configure a series of network features for the AP controller. </p>
+<p>Network section allows you to manage and configure a series of network features for the Router. </p>
 <h2 id="lan">LAN<a class="headerlink" href="#lan" title="Permanent link">&para;</a></h2>
 <p>The router is preset with a default LAN IP 192.168.10.1, which you can use to log in to its web management page. The LAN IP address together with the Subnet Mask also defines the subnet that the connected devices are on. If the IP address conflicts with another device on your local network or your network requires a specific IP subnet, you can change it.</p>
 <p><a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/industrial_router/lan2.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/industrial_router/lan2.webp" alt="" width="500px" style="border: 1px solid #eee;display:block; margin:0 auto;" /></a></p>
@@ -1168,8 +1161,7 @@
 <p>If you want to reserve for a specified client device an IP address, which is assigned by the router as a DHCP server, you may use the <a href="security.md#ipmac-binding">IP/MAC binding</a> function.</p>
 </div>
 <h2 id="ipv6">IPv6<a class="headerlink" href="#ipv6" title="Permanent link">&para;</a></h2>
-<p>AP controller supports 7 types of IPv6 Internet connection, including Relay, Dynamic IP(SLAAC/DHCPv6), Static (Fixed lP), Passthrough, 464XLAT, MAP-E, and DS-Lite. Enable the IPv6 Internet connection, select a connection type accordingly and configure the required parameters provided by the ISP.</p>
-<p><a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/ap_controller/ipv6-2.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/ap_controller/ipv6-2.webp" alt="" width="500px" style="border: 1px solid #eee;display:block; margin:0 auto;" /></a></p>
+<p>The router supports the next-generation Internet Protocol IPv6, providing a vastly expanded IP address space, improved network efficiency, and enhanced connectivity for modern devices.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <ul>
@@ -1177,13 +1169,19 @@
 <li>If you use VPN and IPv6 functions at the same time, it's likely to cause IPv6 data leakage.</li>
 </ul>
 </div>
+<p><a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/vpn_router/ipv6.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/vpn_router/ipv6.webp" alt="" width="500px" style="border: 1px solid #eee;display:block; margin:0 auto;" /></a></p>
+<ol>
+<li>Enable IPv6.</li>
+<li>Select your Interface (WAN port) to be configured.</li>
+<li>Select your connection type from the drop-down list accordingly and configure the required parameters provided by the ISP.</li>
+</ol>
 <h3 id="relay">Relay<a class="headerlink" href="#relay" title="Permanent link">&para;</a></h3>
 <p>Typically used for IPv6 transition mechanisms. The router will act as a relay between your local IPv6 network and an IPv4-based upstream network provided by your ISP. </p>
-<p><a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/ap_controller/ipv6-relay.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/ap_controller/ipv6-relay.webp" alt="" width="500px" style="border: 1px solid #eee;display:block; margin:0 auto;" /></a></p>
+<p><a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/vpn_router/ipv6_relay.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/vpn_router/ipv6_relay.webp" alt="" width="500px" style="border: 1px solid #eee;display:block; margin:0 auto;" /></a></p>
 <p>Select <em>Relay</em> and just click <em>Save &amp; Apply</em> without any additional configuration.</p>
 <h3 id="dynamic-ipslaacdhcpv6">Dynamic IP(SLAAC/DHCPv6)<a class="headerlink" href="#dynamic-ipslaacdhcpv6" title="Permanent link">&para;</a></h3>
 <p>Automatically assigns IPv6 addresses via router advertisements (SLAAC) or DHCPv6 servers, ideal for plug-and-play deployments with changing network topologies.</p>
-<p><a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/ap_controller/ipv6-dhcp.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/ap_controller/ipv6-dhcp.webp" alt="" width="500px" style="border: 1px solid #eee;display:block; margin:0 auto;" /></a></p>
+<p><a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/vpn_router/ipv6_dhcp.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/vpn_router/ipv6_dhcp.webp" alt="" width="500px" style="border: 1px solid #eee;display:block; margin:0 auto;" /></a></p>
 <p>Select <em>Dynamic IP(SLAAC/DHCPv6)</em>, and configure MAC Clone and MTU as needed.Then click <em>Save &amp; Apply</em>.</p>
 <ul>
 <li>MAC Clone: (Optional) Enter the MAC address of the device that is allowed by your ISP. You can usually find this in the device's network settings or on a label on the device.</li>
@@ -1191,10 +1189,10 @@
 </ul>
 <h3 id="staticfixed-lp">Static(Fixed lP)<a class="headerlink" href="#staticfixed-lp" title="Permanent link">&para;</a></h3>
 <p>Manually configured IPv6 addresses for critical devices (e.g., PLCs), ensuring stable remote access and firewall rule consistency.</p>
-<p><a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/ap_controller/ipv6-static.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/ap_controller/ipv6-static.webp" alt="" width="500px" style="border: 1px solid #eee;display:block; margin:0 auto;" /></a></p>
+<p><a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/vpn_router/ipv6_static.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/vpn_router/ipv6_static.webp" alt="" width="500px" style="border: 1px solid #eee;display:block; margin:0 auto;" /></a></p>
 <p>Select <em>Static (Fixed IP)</em> and enter the fixed <em>IPv6 address</em>, <em>gateway</em>, <em>prefix</em> and <em>DNS</em> server address provided by your ISP. Configure MAC Clone and MTU as needed. Then click <em>Save &amp; Apply</em>.</p>
 <ul>
-<li>IPv6-Address: The fixed IPv6 address assigned to the AP controller (e.g., 2001:db8::1).</li>
+<li>IPv6-Address: The fixed IPv6 address assigned to the Router (e.g., 2001:db8::1).</li>
 <li>IPv6-Gateway: The default gateway for IPv6 traffic (e.g., 2001:db8::ff).</li>
 <li>IPv6 prefix: The network prefix length (e.g., /64) defining the subnet scope.</li>
 <li>Preferred DNS: Primary DNS server for IPv6 resolution (e.g., 2001:4860:4860::8888).</li>
@@ -1204,19 +1202,11 @@
 </ul>
 <h3 id="passthrough">Passthrough<a class="headerlink" href="#passthrough" title="Permanent link">&para;</a></h3>
 <p>Allows an IPv6-enabled device to manage its own IP settings directly from the ISP, bypassing the router's DHCP server. </p>
-<p><a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/ap_controller/ipv6-passthrough.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/ap_controller/ipv6-passthrough.webp" alt="" width="500px" style="border: 1px solid #eee;display:block; margin:0 auto;" /></a></p>
+<p><a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/vpn_router/ipv6_passthrough.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/vpn_router/ipv6_passthrough.webp" alt="" width="500px" style="border: 1px solid #eee;display:block; margin:0 auto;" /></a></p>
 <p>Select <em>Passthrough</em> and just click <em>Save &amp; Apply</em> without any additional configuration.</p>
-<h3 id="464xlat">464XLAT<a class="headerlink" href="#464xlat" title="Permanent link">&para;</a></h3>
-<p>A stateless translation mechanism that allows IPv4-only devices to communicate over an IPv6 network. </p>
-<p><a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/ap_controller/ipv6-464xlat.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/ap_controller/ipv6-464xlat.webp" alt="" width="500px" style="border: 1px solid #eee;display:block; margin:0 auto;" /></a></p>
-<p>Select <em>464XLAT</em>, and configure MAC Clone and MTU as needed. Then click <em>Save &amp; Apply</em>.</p>
-<ul>
-<li>MAC Clone: (Optional) MAP-E usually does not involve MAC address restrictions, so MAC Clone is not typically necessary.</li>
-<li>MTU: Enter the appropriate MTU size according to the maximum IPv4 packet size, which is typically 1500 bytes minus the headers.</li>
-</ul>
 <h3 id="map-e">MAP-E<a class="headerlink" href="#map-e" title="Permanent link">&para;</a></h3>
 <p>Namely, Mapping of Address and Port with Encapsulation, is a method for translating IPv6 addresses to IPv4 addresses. </p>
-<p><a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/ap_controller/ipv6-mape.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/ap_controller/ipv6-mape.webp" alt="" width="500px" style="border: 1px solid #eee;display:block; margin:0 auto;" /></a></p>
+<p><a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/vpn_router/ipv6_mape.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/vpn_router/ipv6_mape.webp" alt="" width="500px" style="border: 1px solid #eee;display:block; margin:0 auto;" /></a></p>
 <p>Select <em>MAP-E</em>, and configure MAC Clone and MTU as needed. Then click <em>Save &amp; Apply</em>.</p>
 <ul>
 <li>MAC Clone: (Optional) MAP-E usually does not involve MAC address restrictions, so MAC Clone is not typically necessary.</li>
@@ -1224,7 +1214,7 @@
 </ul>
 <h3 id="ds-lite">DS-Lite<a class="headerlink" href="#ds-lite" title="Permanent link">&para;</a></h3>
 <p>A technology that allows ISPs to provide IPv4 service over an IPv6 network. </p>
-<p><a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/ap_controller/ipv6-dslite.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/ap_controller/ipv6-dslite.webp" alt="" width="500px" style="border: 1px solid #eee;display:block; margin:0 auto;" /></a></p>
+<p><a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/vpn_router/ipv6_dslite.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/vpn_router/ipv6_dslite.webp" alt="" width="500px" style="border: 1px solid #eee;display:block; margin:0 auto;" /></a></p>
 <p>Select <em>DS-Lite</em>, and configure MAC Clone and MTU as needed. Then click <em>Save &amp; Apply</em>.</p>
 <ul>
 <li>MAC Clone: (Optional) DS-Lite usually does not involve MAC address restrictions, so MAC Clone is not typically necessary.</li>
@@ -1232,11 +1222,11 @@
 </ul>
 <h2 id="qos">QoS<a class="headerlink" href="#qos" title="Permanent link">&para;</a></h2>
 <p>QoS (Quality of Service) allows you to prioritize connection of specific devices for a set duration. Devices set as high priority will be allocated more bandwidth and so continue to run smoothly even when there is heavy traffic on the network. You can set the download and upload speed for each client device here. The value can be used to calculate WAN usage. </p>
-<p><em>To set up QoS, please follow the steps below.</em></p>
-<p><a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/industrial_router/qos.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/industrial_router/qos.webp" alt="" width="800px" style="border: 1px solid #eee;display:block; margin:0 auto;" /></a></p>
+<p><a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/vpn_router/qos_wan1.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/vpn_router/qos_wan1.webp" alt="" width="800px" style="border: 1px solid #eee;display:block; margin:0 auto;" /></a></p>
 <ol>
-<li>Click <em>Add</em> to add entries.</li>
-<li>Select the <em>MAC-Address</em> and make a comment to specify the devices, and set its <em>Download/Upload Speed</em>.</li>
+<li>Select the Interface to be configured.</li>
+<li>Click <em>Enable</em>.</li>
+<li>Set a speed for the <em>Download</em> and <em>Upload</em>.</li>
 <li>Click <em>Save &amp; Apply</em>.</li>
 </ol>
 <h2 id="custom-dns">Custom DNS<a class="headerlink" href="#custom-dns" title="Permanent link">&para;</a></h2>
@@ -1247,17 +1237,16 @@
 <p><strong>Rebind protection</strong>: This function may cause private DNS lookup failure. Do not enable it if your network has a captive portal.</p>
 </li>
 <li>
-<p><strong>Override All Clients' DNS</strong>: If Enabled, your AP controller will bypass hard-coded DNS settings on all clients, such as Chrome cast, TV boxes, etc.</p>
+<p><strong>Override All Clients' DNS</strong>: If Enabled, your Router will bypass hard-coded DNS settings on all clients, such as Chrome cast, TV boxes, etc.</p>
 </li>
 <li>
 <p><strong>DNS Settings</strong>: Select a type of DNS settings.</p>
 <ul>
 <li>Default: Uses ISP-provided DNS. Fast but lacks privacy.</li>
 <li>DNS over TLS: Encrypts queries via TLS. Secure but may add 5-10ms latency.<ul>
-<li>Cloudflare: Fast global Anycast (1.1.1.1) with TLS 1.3, ideal for low-latency IoT.</li>
-<li>Google: GCP-integrated (8.8.8.8), avoid in censored regions.</li>
-<li>Quad9: Threat-blocking (9.9.9.9), best for critical infrastructure.</li>
-<li>Custom: Use internal/enterprise DNS (e.g., 10.10.1.53:853) with certificate validation.</li>
+<li>Cloudflare: Provides fast, globally distributed DNS resolution via Anycast (1.1.1.1), with TLS 1.3 support for secure, low-latency connections.</li>
+<li>Google: Provides reliable DNS resolution via Google Public DNS (8.8.8.8).</li>
+<li>NextDNS: Connects to your NextDNS configuration using your NextDNS ID (available on the Setup page of your NextDNS account), providing ad blocking, tracker protection, and parental controls.</li>
 </ul>
 </li>
 <li>Manual: Customize DNS, entering the <em>preferred/alternate DNS</em>.</li>
@@ -1265,10 +1254,10 @@
 </li>
 </ul>
 <h2 id="ddns">DDNS<a class="headerlink" href="#ddns" title="Permanent link">&para;</a></h2>
-<p>Dynamic Domain Name Service (Dynamic DNS or DDNS) is a service used to map a domain name to the dynamic IP address of a network device. Most ISPs assign a dynamic IP address to the AP controller and you can use this IP address to access your AP controller remotely. However, the IP address can change from time to time and you don't know when it changes. In this case, you might apply the DDNS feature on the AP controller to allow you to access your AP controller and local servers (FTP, HTTP, etc.) using a domain name without checking and remembering the IP address.</p>
+<p>Dynamic Domain Name Service (Dynamic DNS or DDNS) is a service used to map a domain name to the dynamic IP address of a network device. Most ISPs assign a dynamic IP address to the Router and you can use this IP address to access your Router remotely. However, the IP address can change from time to time and you don't know when it changes. In this case, you might apply the DDNS feature on the Router to allow you to access your Router and local servers (FTP, HTTP, etc.) using a domain name without checking and remembering the IP address.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>DDNS would not work if the ISP assigns a private WAN IP address (e.g. 192.168.1.x) to the AP controller.  </p>
+<p>DDNS would not work if the ISP assigns a private WAN IP address (e.g. 192.168.1.x) to the Router.  </p>
 </div>
 <p><a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/industrial_router/ddns.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/industrial_router/ddns.webp" alt="" width="500px" style="border: 1px solid #eee;display:block; margin:0 auto;" /></a></p>
 <p><em>To set up DDNS, please follow the steps below.</em></p>
@@ -1289,13 +1278,13 @@
 <li>Click <em>Save &amp; Apply</em>.</li>
 </ol>
 <h2 id="static-routing">Static Routing<a class="headerlink" href="#static-routing" title="Permanent link">&para;</a></h2>
-<p>It is a form of routing that is configured manually by a network administrator or a user by adding entries into a routing table. The manually-configured routing information guides the AP controller in forwarding data packets to the specific destination. </p>
-<p>For example, I want my PC to surf the Internet through AP controller and visit my company's local network at the same time. Now I have a switch and Router B. I connect the devices as shown in the following figure so that the physical connection between my PC and my company's server is established. </p>
+<p>It is a form of routing that is configured manually by a network administrator or a user by adding entries into a routing table. The manually-configured routing information guides the Router in forwarding data packets to the specific destination. </p>
+<p>For example, I want my PC to surf the Internet through Router and visit my company's local network at the same time. Now I have a switch and Router B. I connect the devices as shown in the following figure so that the physical connection between my PC and my company's server is established. </p>
 <p>To configure the static routing so that you can surf the Internet and visit my company's network at the same time, please follow the steps below.</p>
-<p><a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/ap_controller/static-routing.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/ap_controller/static-routing.webp" alt="" width="700px" style="display:block; margin:0 auto;" /></a></p>
+<p><a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/vpn_router/static_routing.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/vpn_router/static_routing.webp" alt="" width="700px" style="display:block; margin:0 auto;" /></a></p>
 <ol>
-<li>Disable Router B's DHCP function. Change the AP controllers' LAN IP addresses to two different IP addresses on the same subnet. </li>
-<li>Log in to AP controller's management web page <a href="http://Cudyac.net">http://Cudyac.net</a>, and go to <em>Advanced Settings -&gt; Network -&gt; Static Routing</em>.</li>
+<li>Disable Router B's DHCP function. Change the Routers' LAN IP addresses to two different IP addresses on the same subnet. </li>
+<li>Log in to Router's management web page <a href="http://Cudyac.net">http://Cudyac.net</a>, and go to <em>Advanced Settings -&gt; Network -&gt; Static Routing</em>.</li>
 <li>
 <p>Click <em>Add</em> and then enter the parameters as required.
     <a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/industrial_router/static-routing2.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/industrial_router/static-routing2.webp" alt="" width="800px" style="border: 1px solid #eee;display:block; margin:0 auto;" /></a></p>
@@ -1307,9 +1296,9 @@
 <li>4G: Cellular failover/Primary WAN (AT&amp;T FirstNet certified for critical infra).</li>
 </ul>
 </li>
-<li>Target: Enter the Host-IP or Network IP address you want to assign to a static route. This IP address cannot be on the same subnet with the WAN IP or LAN IP of AP controller.</li>
+<li>Target: Enter the Host-IP or Network IP address you want to assign to a static route. This IP address cannot be on the same subnet with the WAN IP or LAN IP of Router.</li>
 <li>Subnet Mask: It is required if the Target is a network. It determines the destination network with the destination IP address. If the destination is a single IP address, enter 255.255.255.255; otherwise, enter the subnet mask of the corresponding network IP. </li>
-<li>Gateway: Enter the IP address of the gateway device which the data packets will be sent to. This IP address must be on the same subnet with the AP controller's IP which sends out data. </li>
+<li>Gateway: Enter the IP address of the gateway device which the data packets will be sent to. This IP address must be on the same subnet with the Router's IP which sends out data. </li>
 </ul>
 </li>
 <li>
@@ -1320,7 +1309,7 @@
 <h2 id="port-forwards">Port Forwards<a class="headerlink" href="#port-forwards" title="Permanent link">&para;</a></h2>
 <p>Port Forwards can be used to set up public services on your local network (such as HTTP, FTP, DNS,  POP3/SMTP and Telnet), while keeping the local network safe from the other services that are still invisible on the Internet. </p>
 <p>Different services use different service ports. Port 80 is used in HTTP service, port 21 in FTP service, port 25 in SMTP service and port 110 in POP3 service. Do verify the service port number before the configuration.</p>
-<p>For example, I want to share my personal website I've built on the local network to my friends on the Internet. Say, my personal PC IP address is 192.168.10.100, connecting to the AP controller with WAN IP address 218.18.232.154. Please follow the step-by-step instructions to configure it.</p>
+<p>For example, I want to share my personal website I've built on the local network to my friends on the Internet. Say, my personal PC IP address is 192.168.10.100, connecting to the Router with WAN IP address 218.18.232.154. Please follow the step-by-step instructions to configure it.</p>
 <p><a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/industrial_router/port-forwards.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/industrial_router/port-forwards.webp" alt="" width="800px" style="border: 1px solid #eee;display:block; margin:0 auto;" /></a></p>
 <ol>
 <li>Assign a static IP address to your PC, for example 192.168.10.100.</li>
@@ -1346,7 +1335,7 @@
 </li>
 </ol>
 <p>Now users on the Internet can enter <em>http://WAN IP</em> (in this example: <em>http://218.18.232.154</em>) to visit your personal website.</p>
-<p>If you want to provide several services in a AP controller, please add multiple port forwarding rules.</p>
+<p>If you want to provide several services in a Router, please add multiple port forwarding rules.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <ul>
@@ -1356,7 +1345,7 @@
 </div>
 <h2 id="port-trigger">Port Trigger<a class="headerlink" href="#port-trigger" title="Permanent link">&para;</a></h2>
 <p>Port Trigger can specify a triggering port and its corresponding external ports. When a host on the local network initiates a connection to the triggering port, all the external ports will be opened for subsequent connections. </p>
-<p>The AP controller can record the IP address of the host. When the data from the Internet return to the external ports, the AP controller can forward them to the corresponding host. </p>
+<p>The Router can record the IP address of the host. When the data from the Internet return to the external ports, the Router can forward them to the corresponding host. </p>
 <p>Port Triggering is mainly applied to online games, VoIPs, video players and common applications including MSN Gaming Zone, Dialpad and QuickTime 4 players, etc.</p>
 <p><a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/industrial_router/port-trigger.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/industrial_router/port-trigger.webp" alt="" width="800px" style="border: 1px solid #eee;display:block; margin:0 auto;" /></a></p>
 <p><em>To configure the Port Trigger rules, please follow the steps below.</em></p>
@@ -1394,24 +1383,24 @@
 </ol>
 <p>Now you've set your PC to a DMZ host and now you can make a team to game with other players.</p>
 <h2 id="ttl">TTL<a class="headerlink" href="#ttl" title="Permanent link">&para;</a></h2>
-<p>TTL (Time To Live) sets the maximum time for packets to survive in the network, and is filled in according to the requirements of the operator. By default, the AP controller forwards the TTL of the incoming client device minus one. </p>
+<p>TTL (Time To Live) sets the maximum time for packets to survive in the network, and is filled in according to the requirements of the operator. By default, the Router forwards the TTL of the incoming client device minus one. </p>
 <p><a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/industrial_router/ttl.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/industrial_router/ttl.webp" alt="" width="500px" style="border: 1px solid #eee;display:block; margin:0 auto;" /></a></p>
 <ul>
 <li>Disabled: No TTL values for any specific reason.</li>
 <li>Extend the TTL Value: To increase the TTL of incoming packets.</li>
-<li>Spoof LAN TTL Value: To override outgoing packets' TTL to the AP controller's default value.</li>
+<li>Spoof LAN TTL Value: To override outgoing packets' TTL to the Router's default value.</li>
 <li>Custom: Required to enter a specific IPv4 TTL value.</li>
 </ul>
 <h2 id="wake-on-lan">Wake on LAN<a class="headerlink" href="#wake-on-lan" title="Permanent link">&para;</a></h2>
 <p>Wake-on-LAN (WoL) is an Ethernet or Token ring computer network standard that allows a computer to be turned on or awakened by a network message. The message is usually sent by a program executed on other devices. It is also possible to initiate the message from another network by using subnet directed broadcasts or a WOL gateway service.</p>
 <p>To use this function requires the main board and wired network adapter must support Wake-on-LAN feature. Please follow the steps below to configure it.</p>
-<p><em>STEP 1: Finish your computer settings before configuring the WoL function on the AP controller.</em></p>
+<p><em>STEP 1: Finish your computer settings before configuring the WoL function on the Router.</em></p>
 <ol>
 <li>Enter BIOS when starting up the computer. Then enable Resume by PCI Device and Resume by PCI-E Device. Usually this option is in power management menu.</li>
 <li>Turn on the computer and go to <em>Control Panel -&gt; Network and Internet -&gt; Network and Sharing Center -&gt; Local area connection -&gt; Properties -&gt; Configure -&gt; Advanced</em>. Then enable Shutdown Wake-On-Lan, Wake on Magic Packet and Wake on pattern match.</li>
 <li>Check MAC address of the computer that applies Wake-on-LAN. </li>
 </ol>
-<p><em>STEP 2: Go to configure the AP controller.</em></p>
+<p><em>STEP 2: Go to configure the Router.</em></p>
 <ol>
 <li>Login in to <a href="http://Cudyac.net">http://Cudyac.net</a> and go to <em>Advanced Settings -&gt; Network -&gt; Wake on LAN</em>.</li>
 <li>
@@ -1426,12 +1415,12 @@
 <h2 id="upnp">UPnP<a class="headerlink" href="#upnp" title="Permanent link">&para;</a></h2>
 <p>UPnP  (Universal  Plug  and  Play)  protocol  allows  applications  or  host  devices to automatically find the front-end NAT device and send request to it to open the corresponding ports. With UPnP enabled, the applications or host devices on the local network and the Internet can freely communicate with each other thus realizing the seamless connection of the network. </p>
 <p>Enable UPnP if you want to use applications for multi-player gaming, peer-to-peer connections, real-time communication (such as VoIP or telephone conference) or remote assistance, etc. </p>
-<p>For example, when you connect your Xbox to the AP controller which has connected to the Internet to play online games, UPnP will send request to the AP controller to open the corresponding  ports allowing the following data penetrating the NAT to transmit. Therefore, you can play Xbox online games without a hitch.</p>
+<p>For example, when you connect your Xbox to the Router which has connected to the Internet to play online games, UPnP will send request to the Router to open the corresponding  ports allowing the following data penetrating the NAT to transmit. Therefore, you can play Xbox online games without a hitch.</p>
 <p><a class="glightbox" href="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/industrial_router/upnp.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/industrial_router/upnp.webp" alt="" width="800px" style="border: 1px solid #eee;display:block; margin:0 auto;" /></a></p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <ul>
-<li>UPnP is enabled by default in this AP controller.</li>
+<li>UPnP is enabled by default in this Router.</li>
 <li>Only the application supporting UPnP protocol can use this feature.</li>
 <li>UPnP feature needs the support of operating system. Some operating systems need to install the UPnP components.</li>
 </ul>

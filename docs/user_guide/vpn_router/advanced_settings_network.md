@@ -1,6 +1,6 @@
 # Advanced Settings - Network
 
-Network section allows you to manage and configure a series of network features for the AP controller. 
+Network section allows you to manage and configure a series of network features for the Router. 
 
 ## LAN
 
@@ -43,19 +43,23 @@ DHCP Server is enabled by default and dynamically assigns TCP/lP parameters to c
 
 ## IPv6
 
-AP controller supports 7 types of IPv6 Internet connection, including Relay, Dynamic IP(SLAAC/DHCPv6), Static (Fixed lP), Passthrough, 464XLAT, MAP-E, and DS-Lite. Enable the IPv6 Internet connection, select a connection type accordingly and configure the required parameters provided by the ISP.
-
-<img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/ap_controller/ipv6-2.webp" alt="" width="500px" style="border: 1px solid #eee;display:block; margin:0 auto;" />
+The router supports the next-generation Internet Protocol IPv6, providing a vastly expanded IP address space, improved network efficiency, and enhanced connectivity for modern devices.
 
 !!! Note
     - If the current version of the firewall (or VPN, block list, and etc.) does not support IPv6, you may enable and configure the IPv6 function on this page.
     - If you use VPN and IPv6 functions at the same time, it's likely to cause IPv6 data leakage.
 
+<img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/vpn_router/ipv6.webp" alt="" width="500px" style="border: 1px solid #eee;display:block; margin:0 auto;" />
+
+1. Enable IPv6.
+2. Select your Interface (WAN port) to be configured.
+3. Select your connection type from the drop-down list accordingly and configure the required parameters provided by the ISP.
+
 ### Relay
 
 Typically used for IPv6 transition mechanisms. The router will act as a relay between your local IPv6 network and an IPv4-based upstream network provided by your ISP. 
 
-<img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/ap_controller/ipv6-relay.webp" alt="" width="500px" style="border: 1px solid #eee;display:block; margin:0 auto;" />
+<img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/vpn_router/ipv6_relay.webp" alt="" width="500px" style="border: 1px solid #eee;display:block; margin:0 auto;" />
 
 Select *Relay* and just click *Save & Apply* without any additional configuration.
 
@@ -63,7 +67,7 @@ Select *Relay* and just click *Save & Apply* without any additional configuratio
 
 Automatically assigns IPv6 addresses via router advertisements (SLAAC) or DHCPv6 servers, ideal for plug-and-play deployments with changing network topologies.
 
-<img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/ap_controller/ipv6-dhcp.webp" alt="" width="500px" style="border: 1px solid #eee;display:block; margin:0 auto;" />
+<img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/vpn_router/ipv6_dhcp.webp" alt="" width="500px" style="border: 1px solid #eee;display:block; margin:0 auto;" />
 
 Select *Dynamic IP(SLAAC/DHCPv6)*, and configure MAC Clone and MTU as needed.Then click *Save & Apply*.
 
@@ -74,11 +78,11 @@ Select *Dynamic IP(SLAAC/DHCPv6)*, and configure MAC Clone and MTU as needed.The
 
 Manually configured IPv6 addresses for critical devices (e.g., PLCs), ensuring stable remote access and firewall rule consistency.
 
-<img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/ap_controller/ipv6-static.webp" alt="" width="500px" style="border: 1px solid #eee;display:block; margin:0 auto;" />
+<img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/vpn_router/ipv6_static.webp" alt="" width="500px" style="border: 1px solid #eee;display:block; margin:0 auto;" />
 
 Select *Static (Fixed IP)* and enter the fixed *IPv6 address*, *gateway*, *prefix* and *DNS* server address provided by your ISP. Configure MAC Clone and MTU as needed. Then click *Save & Apply*.
 
-- IPv6-Address: The fixed IPv6 address assigned to the AP controller (e.g., 2001:db8::1).
+- IPv6-Address: The fixed IPv6 address assigned to the Router (e.g., 2001:db8::1).
 - IPv6-Gateway: The default gateway for IPv6 traffic (e.g., 2001:db8::ff).
 - IPv6 prefix: The network prefix length (e.g., /64) defining the subnet scope.
 - Preferred DNS: Primary DNS server for IPv6 resolution (e.g., 2001:4860:4860::8888).
@@ -90,26 +94,15 @@ Select *Static (Fixed IP)* and enter the fixed *IPv6 address*, *gateway*, *prefi
 
 Allows an IPv6-enabled device to manage its own IP settings directly from the ISP, bypassing the router's DHCP server. 
 
-<img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/ap_controller/ipv6-passthrough.webp" alt="" width="500px" style="border: 1px solid #eee;display:block; margin:0 auto;" />
+<img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/vpn_router/ipv6_passthrough.webp" alt="" width="500px" style="border: 1px solid #eee;display:block; margin:0 auto;" />
 
 Select *Passthrough* and just click *Save & Apply* without any additional configuration.
-
-### 464XLAT
-
-A stateless translation mechanism that allows IPv4-only devices to communicate over an IPv6 network. 
-
-<img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/ap_controller/ipv6-464xlat.webp" alt="" width="500px" style="border: 1px solid #eee;display:block; margin:0 auto;" />
-
-Select *464XLAT*, and configure MAC Clone and MTU as needed. Then click *Save & Apply*.
-
-- MAC Clone: (Optional) MAP-E usually does not involve MAC address restrictions, so MAC Clone is not typically necessary.
-- MTU: Enter the appropriate MTU size according to the maximum IPv4 packet size, which is typically 1500 bytes minus the headers.
 
 ### MAP-E
 
 Namely, Mapping of Address and Port with Encapsulation, is a method for translating IPv6 addresses to IPv4 addresses. 
 
-<img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/ap_controller/ipv6-mape.webp" alt="" width="500px" style="border: 1px solid #eee;display:block; margin:0 auto;" />
+<img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/vpn_router/ipv6_mape.webp" alt="" width="500px" style="border: 1px solid #eee;display:block; margin:0 auto;" />
 
 Select *MAP-E*, and configure MAC Clone and MTU as needed. Then click *Save & Apply*.
 
@@ -120,25 +113,23 @@ Select *MAP-E*, and configure MAC Clone and MTU as needed. Then click *Save & Ap
 
 A technology that allows ISPs to provide IPv4 service over an IPv6 network. 
 
-<img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/ap_controller/ipv6-dslite.webp" alt="" width="500px" style="border: 1px solid #eee;display:block; margin:0 auto;" />
+<img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/vpn_router/ipv6_dslite.webp" alt="" width="500px" style="border: 1px solid #eee;display:block; margin:0 auto;" />
 
 Select *DS-Lite*, and configure MAC Clone and MTU as needed. Then click *Save & Apply*.
 
 - MAC Clone: (Optional) DS-Lite usually does not involve MAC address restrictions, so MAC Clone is not typically necessary.
 - MTU: Enter the MTU value based on your network's requirements. The value should be within the range of 1280 to 1582 bytes. The MTU setting is important to ensure that the encapsulated IPv4 packets can be transmitted over the IPv6 network without fragmentation. 
 
-
 ## QoS
 
 QoS (Quality of Service) allows you to prioritize connection of specific devices for a set duration. Devices set as high priority will be allocated more bandwidth and so continue to run smoothly even when there is heavy traffic on the network. You can set the download and upload speed for each client device here. The value can be used to calculate WAN usage. 
 
-*To set up QoS, please follow the steps below.*
+<img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/vpn_router/qos_wan1.webp" alt="" width="800px" style="border: 1px solid #eee;display:block; margin:0 auto;" />
 
-<img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/industrial_router/qos.webp" alt="" width="800px" style="border: 1px solid #eee;display:block; margin:0 auto;" />
-
-1. Click *Add* to add entries.
-2. Select the *MAC-Address* and make a comment to specify the devices, and set its *Download/Upload Speed*.
-3. Click *Save & Apply*.
+1. Select the Interface to be configured.
+2. Click *Enable*.
+3. Set a speed for the *Download* and *Upload*.
+4. Click *Save & Apply*.
 
 ## Custom DNS
 
@@ -148,23 +139,22 @@ If you set custom DNS servers, any DNS name will be resolved through the DNS Ser
 
 - **Rebind protection**: This function may cause private DNS lookup failure. Do not enable it if your network has a captive portal.
 
-- **Override All Clients' DNS**: If Enabled, your AP controller will bypass hard-coded DNS settings on all clients, such as Chrome cast, TV boxes, etc.
+- **Override All Clients' DNS**: If Enabled, your Router will bypass hard-coded DNS settings on all clients, such as Chrome cast, TV boxes, etc.
 
 - **DNS Settings**: Select a type of DNS settings.
     - Default: Uses ISP-provided DNS. Fast but lacks privacy.
     -  DNS over TLS: Encrypts queries via TLS. Secure but may add 5-10ms latency.
-        - Cloudflare: Fast global Anycast (1.1.1.1) with TLS 1.3, ideal for low-latency IoT.
-        - Google: GCP-integrated (8.8.8.8), avoid in censored regions.
-        - Quad9: Threat-blocking (9.9.9.9), best for critical infrastructure.
-        - Custom: Use internal/enterprise DNS (e.g., 10.10.1.53:853) with certificate validation.
+        - Cloudflare: Provides fast, globally distributed DNS resolution via Anycast (1.1.1.1), with TLS 1.3 support for secure, low-latency connections.
+        - Google: Provides reliable DNS resolution via Google Public DNS (8.8.8.8).
+        - NextDNS: Connects to your NextDNS configuration using your NextDNS ID (available on the Setup page of your NextDNS account), providing ad blocking, tracker protection, and parental controls.
     - Manual: Customize DNS, entering the *preferred/alternate DNS*.
 
 ## DDNS
 
-Dynamic Domain Name Service (Dynamic DNS or DDNS) is a service used to map a domain name to the dynamic IP address of a network device. Most ISPs assign a dynamic IP address to the AP controller and you can use this IP address to access your AP controller remotely. However, the IP address can change from time to time and you don't know when it changes. In this case, you might apply the DDNS feature on the AP controller to allow you to access your AP controller and local servers (FTP, HTTP, etc.) using a domain name without checking and remembering the IP address.
+Dynamic Domain Name Service (Dynamic DNS or DDNS) is a service used to map a domain name to the dynamic IP address of a network device. Most ISPs assign a dynamic IP address to the Router and you can use this IP address to access your Router remotely. However, the IP address can change from time to time and you don't know when it changes. In this case, you might apply the DDNS feature on the Router to allow you to access your Router and local servers (FTP, HTTP, etc.) using a domain name without checking and remembering the IP address.
 
 !!! Note
-    DDNS would not work if the ISP assigns a private WAN IP address (e.g. 192.168.1.x) to the AP controller.  
+    DDNS would not work if the ISP assigns a private WAN IP address (e.g. 192.168.1.x) to the Router.  
 
 <img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/industrial_router/ddns.webp" alt="" width="500px" style="border: 1px solid #eee;display:block; margin:0 auto;" />
 
@@ -183,16 +173,16 @@ Dynamic Domain Name Service (Dynamic DNS or DDNS) is a service used to map a dom
 
 ## Static Routing
 
-It is a form of routing that is configured manually by a network administrator or a user by adding entries into a routing table. The manually-configured routing information guides the AP controller in forwarding data packets to the specific destination. 
+It is a form of routing that is configured manually by a network administrator or a user by adding entries into a routing table. The manually-configured routing information guides the Router in forwarding data packets to the specific destination. 
 
-For example, I want my PC to surf the Internet through AP controller and visit my company's local network at the same time. Now I have a switch and Router B. I connect the devices as shown in the following figure so that the physical connection between my PC and my company's server is established. 
+For example, I want my PC to surf the Internet through Router and visit my company's local network at the same time. Now I have a switch and Router B. I connect the devices as shown in the following figure so that the physical connection between my PC and my company's server is established. 
 
 To configure the static routing so that you can surf the Internet and visit my company's network at the same time, please follow the steps below.
 
-<img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/ap_controller/static-routing.webp" alt="" width="700px" style="display:block; margin:0 auto;" />
+<img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/vpn_router/static_routing.webp" alt="" width="700px" style="display:block; margin:0 auto;" />
 
-1. Disable Router B's DHCP function. Change the AP controllers' LAN IP addresses to two different IP addresses on the same subnet. 
-2. Log in to AP controller's management web page [http://Cudyac.net](http://Cudyac.net), and go to *Advanced Settings -> Network -> Static Routing*.
+1. Disable Router B's DHCP function. Change the Routers' LAN IP addresses to two different IP addresses on the same subnet. 
+2. Log in to Router's management web page [http://Cudyac.net](http://Cudyac.net), and go to *Advanced Settings -> Network -> Static Routing*.
 3. Click *Add* and then enter the parameters as required.
     <img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/industrial_router/static-routing2.webp" alt="" width="800px" style="border: 1px solid #eee;display:block; margin:0 auto;" />
     - Interface: Select the type of interface that sends out data packets to the gateway.
@@ -200,9 +190,9 @@ To configure the static routing so that you can surf the Internet and visit my c
         - LAN: Local device switching (VLAN-aware for OT segmentation).
         - WISP: Wireless ISP client mode (bridge/route to upstream AP).
         - 4G: Cellular failover/Primary WAN (AT&T FirstNet certified for critical infra).
-    - Target: Enter the Host-IP or Network IP address you want to assign to a static route. This IP address cannot be on the same subnet with the WAN IP or LAN IP of AP controller.
+    - Target: Enter the Host-IP or Network IP address you want to assign to a static route. This IP address cannot be on the same subnet with the WAN IP or LAN IP of Router.
     - Subnet Mask: It is required if the Target is a network. It determines the destination network with the destination IP address. If the destination is a single IP address, enter 255.255.255.255; otherwise, enter the subnet mask of the corresponding network IP. 
-    - Gateway: Enter the IP address of the gateway device which the data packets will be sent to. This IP address must be on the same subnet with the AP controller's IP which sends out data. 
+    - Gateway: Enter the IP address of the gateway device which the data packets will be sent to. This IP address must be on the same subnet with the Router's IP which sends out data. 
 
 4. Click *Save & Apply*.
 
@@ -214,7 +204,7 @@ Port Forwards can be used to set up public services on your local network (such 
 
 Different services use different service ports. Port 80 is used in HTTP service, port 21 in FTP service, port 25 in SMTP service and port 110 in POP3 service. Do verify the service port number before the configuration.
 
-For example, I want to share my personal website I've built on the local network to my friends on the Internet. Say, my personal PC IP address is 192.168.10.100, connecting to the AP controller with WAN IP address 218.18.232.154. Please follow the step-by-step instructions to configure it.
+For example, I want to share my personal website I've built on the local network to my friends on the Internet. Say, my personal PC IP address is 192.168.10.100, connecting to the Router with WAN IP address 218.18.232.154. Please follow the step-by-step instructions to configure it.
 
 <img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/industrial_router/port-forwards.webp" alt="" width="800px" style="border: 1px solid #eee;display:block; margin:0 auto;" />
 
@@ -235,7 +225,7 @@ For example, I want to share my personal website I've built on the local network
 
 Now users on the Internet can enter *http://WAN IP* (in this example: *http://218.18.232.154*) to visit your personal website.
 
-If you want to provide several services in a AP controller, please add multiple port forwarding rules.
+If you want to provide several services in a Router, please add multiple port forwarding rules.
 
 !!! Note
     - The WAN IP should be a public IP address. For the WAN IP is assigned dynamically by the ISP, it is recommended to apply and register a domain name for the WAN ([How to set up a Dynamic DNS service account](#ddns)). Then users on the Internet can use *http://domain name* to visit the website.
@@ -245,7 +235,7 @@ If you want to provide several services in a AP controller, please add multiple 
 
 Port Trigger can specify a triggering port and its corresponding external ports. When a host on the local network initiates a connection to the triggering port, all the external ports will be opened for subsequent connections. 
 
-The AP controller can record the IP address of the host. When the data from the Internet return to the external ports, the AP controller can forward them to the corresponding host. 
+The Router can record the IP address of the host. When the data from the Internet return to the external ports, the Router can forward them to the corresponding host. 
 
 Port Triggering is mainly applied to online games, VoIPs, video players and common applications including MSN Gaming Zone, Dialpad and QuickTime 4 players, etc.
 
@@ -287,13 +277,13 @@ Now you've set your PC to a DMZ host and now you can make a team to game with ot
 
 ## TTL
 
-TTL (Time To Live) sets the maximum time for packets to survive in the network, and is filled in according to the requirements of the operator. By default, the AP controller forwards the TTL of the incoming client device minus one. 
+TTL (Time To Live) sets the maximum time for packets to survive in the network, and is filled in according to the requirements of the operator. By default, the Router forwards the TTL of the incoming client device minus one. 
 
 <img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/industrial_router/ttl.webp" alt="" width="500px" style="border: 1px solid #eee;display:block; margin:0 auto;" />
 
 - Disabled: No TTL values for any specific reason.
 - Extend the TTL Value: To increase the TTL of incoming packets.
-- Spoof LAN TTL Value: To override outgoing packets' TTL to the AP controller's default value.
+- Spoof LAN TTL Value: To override outgoing packets' TTL to the Router's default value.
 - Custom: Required to enter a specific IPv4 TTL value.
 
 ## Wake on LAN
@@ -302,13 +292,13 @@ Wake-on-LAN (WoL) is an Ethernet or Token ring computer network standard tha
 
 To use this function requires the main board and wired network adapter must support Wake-on-LAN feature. Please follow the steps below to configure it.
 
-*STEP 1: Finish your computer settings before configuring the WoL function on the AP controller.*
+*STEP 1: Finish your computer settings before configuring the WoL function on the Router.*
 
 1. Enter BIOS when starting up the computer. Then enable Resume by PCI Device and Resume by PCI-E Device. Usually this option is in power management menu.
 2. Turn on the computer and go to *Control Panel -> Network and Internet -> Network and Sharing Center -> Local area connection -> Properties -> Configure -> Advanced*. Then enable Shutdown Wake-On-Lan, Wake on Magic Packet and Wake on pattern match.
 3. Check MAC address of the computer that applies Wake-on-LAN. 
 
-*STEP 2: Go to configure the AP controller.*
+*STEP 2: Go to configure the Router.*
 
 1. Login in to [http://Cudyac.net](http://Cudyac.net) and go to *Advanced Settings -> Network -> Wake on LAN*.
 2. Click *Add*.
@@ -323,11 +313,11 @@ UPnP  (Universal  Plug  and  Play)  protocol  allows  applications  or  host  de
 
 Enable UPnP if you want to use applications for multi-player gaming, peer-to-peer connections, real-time communication (such as VoIP or telephone conference) or remote assistance, etc. 
 
-For example, when you connect your Xbox to the AP controller which has connected to the Internet to play online games, UPnP will send request to the AP controller to open the corresponding  ports allowing the following data penetrating the NAT to transmit. Therefore, you can play Xbox online games without a hitch.
+For example, when you connect your Xbox to the Router which has connected to the Internet to play online games, UPnP will send request to the Router to open the corresponding  ports allowing the following data penetrating the NAT to transmit. Therefore, you can play Xbox online games without a hitch.
 
 <img src="https://cdn.jsdelivr.net/gh/Cudytech-pr/User-Guide/docs/images/industrial_router/upnp.webp" alt="" width="800px" style="border: 1px solid #eee;display:block; margin:0 auto;" />
 
 !!! Note
-    - UPnP is enabled by default in this AP controller.
+    - UPnP is enabled by default in this Router.
     - Only the application supporting UPnP protocol can use this feature.
     - UPnP feature needs the support of operating system. Some operating systems need to install the UPnP components.
